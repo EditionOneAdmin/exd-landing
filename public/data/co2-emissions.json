@@ -1,0 +1,2708 @@
+{
+  "1990": {
+    "USA": {
+      "co2": 4694,
+      "co2_per_capita": 14.22
+    },
+    "CHN": {
+      "co2": 2428,
+      "co2_per_capita": 1.73
+    },
+    "IND": {
+      "co2": 612,
+      "co2_per_capita": 0.44
+    },
+    "RUS": {
+      "co2": 2134,
+      "co2_per_capita": 14.72
+    },
+    "JPN": {
+      "co2": 1106,
+      "co2_per_capita": 8.78
+    },
+    "DEU": {
+      "co2": 981,
+      "co2_per_capita": 11.82
+    },
+    "GBR": {
+      "co2": 555,
+      "co2_per_capita": 8.28
+    },
+    "FRA": {
+      "co2": 378,
+      "co2_per_capita": 5.64
+    },
+    "ITA": {
+      "co2": 435,
+      "co2_per_capita": 7.25
+    },
+    "CAN": {
+      "co2": 432,
+      "co2_per_capita": 11.37
+    },
+    "KOR": {
+      "co2": 267,
+      "co2_per_capita": 5.13
+    },
+    "AUS": {
+      "co2": 275,
+      "co2_per_capita": 10.58
+    },
+    "BRA": {
+      "co2": 356,
+      "co2_per_capita": 1.68
+    },
+    "MEX": {
+      "co2": 372,
+      "co2_per_capita": 2.91
+    },
+    "IDN": {
+      "co2": 198,
+      "co2_per_capita": 0.73
+    },
+    "SAU": {
+      "co2": 238,
+      "co2_per_capita": 6.8
+    },
+    "ZAF": {
+      "co2": 338,
+      "co2_per_capita": 5.63
+    },
+    "TUR": {
+      "co2": 207,
+      "co2_per_capita": 2.46
+    },
+    "POL": {
+      "co2": 376,
+      "co2_per_capita": 9.89
+    },
+    "IRN": {
+      "co2": 296,
+      "co2_per_capita": 3.52
+    }
+  },
+  "1991": {
+    "USA": {
+      "co2": 4592,
+      "co2_per_capita": 13.92
+    },
+    "CHN": {
+      "co2": 2697,
+      "co2_per_capita": 1.93
+    },
+    "IND": {
+      "co2": 603,
+      "co2_per_capita": 0.44
+    },
+    "RUS": {
+      "co2": 2252,
+      "co2_per_capita": 15.53
+    },
+    "JPN": {
+      "co2": 1125,
+      "co2_per_capita": 8.93
+    },
+    "DEU": {
+      "co2": 929,
+      "co2_per_capita": 11.19
+    },
+    "GBR": {
+      "co2": 524,
+      "co2_per_capita": 7.82
+    },
+    "FRA": {
+      "co2": 394,
+      "co2_per_capita": 5.88
+    },
+    "ITA": {
+      "co2": 400,
+      "co2_per_capita": 6.67
+    },
+    "CAN": {
+      "co2": 444,
+      "co2_per_capita": 11.68
+    },
+    "KOR": {
+      "co2": 281,
+      "co2_per_capita": 5.4
+    },
+    "AUS": {
+      "co2": 290,
+      "co2_per_capita": 11.15
+    },
+    "BRA": {
+      "co2": 347,
+      "co2_per_capita": 1.64
+    },
+    "MEX": {
+      "co2": 391,
+      "co2_per_capita": 3.05
+    },
+    "IDN": {
+      "co2": 208,
+      "co2_per_capita": 0.77
+    },
+    "SAU": {
+      "co2": 258,
+      "co2_per_capita": 7.37
+    },
+    "ZAF": {
+      "co2": 344,
+      "co2_per_capita": 5.73
+    },
+    "TUR": {
+      "co2": 205,
+      "co2_per_capita": 2.44
+    },
+    "POL": {
+      "co2": 393,
+      "co2_per_capita": 10.34
+    },
+    "IRN": {
+      "co2": 296,
+      "co2_per_capita": 3.52
+    }
+  },
+  "1992": {
+    "USA": {
+      "co2": 4800,
+      "co2_per_capita": 14.55
+    },
+    "CHN": {
+      "co2": 2702,
+      "co2_per_capita": 1.93
+    },
+    "IND": {
+      "co2": 633,
+      "co2_per_capita": 0.46
+    },
+    "RUS": {
+      "co2": 2104,
+      "co2_per_capita": 14.51
+    },
+    "JPN": {
+      "co2": 1046,
+      "co2_per_capita": 8.3
+    },
+    "DEU": {
+      "co2": 928,
+      "co2_per_capita": 11.18
+    },
+    "GBR": {
+      "co2": 517,
+      "co2_per_capita": 7.72
+    },
+    "FRA": {
+      "co2": 359,
+      "co2_per_capita": 5.36
+    },
+    "ITA": {
+      "co2": 425,
+      "co2_per_capita": 7.08
+    },
+    "CAN": {
+      "co2": 482,
+      "co2_per_capita": 12.68
+    },
+    "KOR": {
+      "co2": 307,
+      "co2_per_capita": 5.9
+    },
+    "AUS": {
+      "co2": 276,
+      "co2_per_capita": 10.62
+    },
+    "BRA": {
+      "co2": 377,
+      "co2_per_capita": 1.78
+    },
+    "MEX": {
+      "co2": 380,
+      "co2_per_capita": 2.97
+    },
+    "IDN": {
+      "co2": 206,
+      "co2_per_capita": 0.76
+    },
+    "SAU": {
+      "co2": 255,
+      "co2_per_capita": 7.29
+    },
+    "ZAF": {
+      "co2": 353,
+      "co2_per_capita": 5.88
+    },
+    "TUR": {
+      "co2": 203,
+      "co2_per_capita": 2.42
+    },
+    "POL": {
+      "co2": 369,
+      "co2_per_capita": 9.71
+    },
+    "IRN": {
+      "co2": 326,
+      "co2_per_capita": 3.88
+    }
+  },
+  "1993": {
+    "USA": {
+      "co2": 4802,
+      "co2_per_capita": 14.55
+    },
+    "CHN": {
+      "co2": 3121,
+      "co2_per_capita": 2.23
+    },
+    "IND": {
+      "co2": 685,
+      "co2_per_capita": 0.5
+    },
+    "RUS": {
+      "co2": 2108,
+      "co2_per_capita": 14.54
+    },
+    "JPN": {
+      "co2": 1019,
+      "co2_per_capita": 8.09
+    },
+    "DEU": {
+      "co2": 932,
+      "co2_per_capita": 11.23
+    },
+    "GBR": {
+      "co2": 495,
+      "co2_per_capita": 7.39
+    },
+    "FRA": {
+      "co2": 357,
+      "co2_per_capita": 5.33
+    },
+    "ITA": {
+      "co2": 389,
+      "co2_per_capita": 6.48
+    },
+    "CAN": {
+      "co2": 486,
+      "co2_per_capita": 12.79
+    },
+    "KOR": {
+      "co2": 306,
+      "co2_per_capita": 5.88
+    },
+    "AUS": {
+      "co2": 277,
+      "co2_per_capita": 10.65
+    },
+    "BRA": {
+      "co2": 372,
+      "co2_per_capita": 1.75
+    },
+    "MEX": {
+      "co2": 422,
+      "co2_per_capita": 3.3
+    },
+    "IDN": {
+      "co2": 225,
+      "co2_per_capita": 0.83
+    },
+    "SAU": {
+      "co2": 286,
+      "co2_per_capita": 8.17
+    },
+    "ZAF": {
+      "co2": 369,
+      "co2_per_capita": 6.15
+    },
+    "TUR": {
+      "co2": 218,
+      "co2_per_capita": 2.6
+    },
+    "POL": {
+      "co2": 361,
+      "co2_per_capita": 9.5
+    },
+    "IRN": {
+      "co2": 309,
+      "co2_per_capita": 3.68
+    }
+  },
+  "1994": {
+    "USA": {
+      "co2": 4516,
+      "co2_per_capita": 13.68
+    },
+    "CHN": {
+      "co2": 3230,
+      "co2_per_capita": 2.31
+    },
+    "IND": {
+      "co2": 754,
+      "co2_per_capita": 0.55
+    },
+    "RUS": {
+      "co2": 2048,
+      "co2_per_capita": 14.12
+    },
+    "JPN": {
+      "co2": 1086,
+      "co2_per_capita": 8.62
+    },
+    "DEU": {
+      "co2": 911,
+      "co2_per_capita": 10.98
+    },
+    "GBR": {
+      "co2": 506,
+      "co2_per_capita": 7.55
+    },
+    "FRA": {
+      "co2": 353,
+      "co2_per_capita": 5.27
+    },
+    "ITA": {
+      "co2": 413,
+      "co2_per_capita": 6.88
+    },
+    "CAN": {
+      "co2": 489,
+      "co2_per_capita": 12.87
+    },
+    "KOR": {
+      "co2": 314,
+      "co2_per_capita": 6.04
+    },
+    "AUS": {
+      "co2": 294,
+      "co2_per_capita": 11.31
+    },
+    "BRA": {
+      "co2": 374,
+      "co2_per_capita": 1.76
+    },
+    "MEX": {
+      "co2": 394,
+      "co2_per_capita": 3.08
+    },
+    "IDN": {
+      "co2": 227,
+      "co2_per_capita": 0.84
+    },
+    "SAU": {
+      "co2": 291,
+      "co2_per_capita": 8.31
+    },
+    "ZAF": {
+      "co2": 378,
+      "co2_per_capita": 6.3
+    },
+    "TUR": {
+      "co2": 229,
+      "co2_per_capita": 2.73
+    },
+    "POL": {
+      "co2": 366,
+      "co2_per_capita": 9.63
+    },
+    "IRN": {
+      "co2": 335,
+      "co2_per_capita": 3.99
+    }
+  },
+  "1995": {
+    "USA": {
+      "co2": 4778,
+      "co2_per_capita": 14.48
+    },
+    "CHN": {
+      "co2": 3352,
+      "co2_per_capita": 2.39
+    },
+    "IND": {
+      "co2": 729,
+      "co2_per_capita": 0.53
+    },
+    "RUS": {
+      "co2": 1954,
+      "co2_per_capita": 13.48
+    },
+    "JPN": {
+      "co2": 998,
+      "co2_per_capita": 7.92
+    },
+    "DEU": {
+      "co2": 896,
+      "co2_per_capita": 10.8
+    },
+    "GBR": {
+      "co2": 479,
+      "co2_per_capita": 7.15
+    },
+    "FRA": {
+      "co2": 372,
+      "co2_per_capita": 5.55
+    },
+    "ITA": {
+      "co2": 380,
+      "co2_per_capita": 6.33
+    },
+    "CAN": {
+      "co2": 492,
+      "co2_per_capita": 12.95
+    },
+    "KOR": {
+      "co2": 322,
+      "co2_per_capita": 6.19
+    },
+    "AUS": {
+      "co2": 298,
+      "co2_per_capita": 11.46
+    },
+    "BRA": {
+      "co2": 378,
+      "co2_per_capita": 1.78
+    },
+    "MEX": {
+      "co2": 411,
+      "co2_per_capita": 3.21
+    },
+    "IDN": {
+      "co2": 248,
+      "co2_per_capita": 0.92
+    },
+    "SAU": {
+      "co2": 292,
+      "co2_per_capita": 8.34
+    },
+    "ZAF": {
+      "co2": 379,
+      "co2_per_capita": 6.32
+    },
+    "TUR": {
+      "co2": 241,
+      "co2_per_capita": 2.87
+    },
+    "POL": {
+      "co2": 356,
+      "co2_per_capita": 9.37
+    },
+    "IRN": {
+      "co2": 316,
+      "co2_per_capita": 3.76
+    }
+  },
+  "1996": {
+    "USA": {
+      "co2": 4723,
+      "co2_per_capita": 14.31
+    },
+    "CHN": {
+      "co2": 3724,
+      "co2_per_capita": 2.66
+    },
+    "IND": {
+      "co2": 788,
+      "co2_per_capita": 0.57
+    },
+    "RUS": {
+      "co2": 1903,
+      "co2_per_capita": 13.12
+    },
+    "JPN": {
+      "co2": 1027,
+      "co2_per_capita": 8.15
+    },
+    "DEU": {
+      "co2": 859,
+      "co2_per_capita": 10.35
+    },
+    "GBR": {
+      "co2": 447,
+      "co2_per_capita": 6.67
+    },
+    "FRA": {
+      "co2": 347,
+      "co2_per_capita": 5.18
+    },
+    "ITA": {
+      "co2": 389,
+      "co2_per_capita": 6.48
+    },
+    "CAN": {
+      "co2": 458,
+      "co2_per_capita": 12.05
+    },
+    "KOR": {
+      "co2": 328,
+      "co2_per_capita": 6.31
+    },
+    "AUS": {
+      "co2": 287,
+      "co2_per_capita": 11.04
+    },
+    "BRA": {
+      "co2": 378,
+      "co2_per_capita": 1.78
+    },
+    "MEX": {
+      "co2": 442,
+      "co2_per_capita": 3.45
+    },
+    "IDN": {
+      "co2": 261,
+      "co2_per_capita": 0.97
+    },
+    "SAU": {
+      "co2": 296,
+      "co2_per_capita": 8.46
+    },
+    "ZAF": {
+      "co2": 372,
+      "co2_per_capita": 6.2
+    },
+    "TUR": {
+      "co2": 243,
+      "co2_per_capita": 2.89
+    },
+    "POL": {
+      "co2": 371,
+      "co2_per_capita": 9.76
+    },
+    "IRN": {
+      "co2": 350,
+      "co2_per_capita": 4.17
+    }
+  },
+  "1997": {
+    "USA": {
+      "co2": 4670,
+      "co2_per_capita": 14.15
+    },
+    "CHN": {
+      "co2": 4025,
+      "co2_per_capita": 2.88
+    },
+    "IND": {
+      "co2": 855,
+      "co2_per_capita": 0.62
+    },
+    "RUS": {
+      "co2": 1901,
+      "co2_per_capita": 13.11
+    },
+    "JPN": {
+      "co2": 1061,
+      "co2_per_capita": 8.42
+    },
+    "DEU": {
+      "co2": 837,
+      "co2_per_capita": 10.08
+    },
+    "GBR": {
+      "co2": 447,
+      "co2_per_capita": 6.67
+    },
+    "FRA": {
+      "co2": 351,
+      "co2_per_capita": 5.24
+    },
+    "ITA": {
+      "co2": 399,
+      "co2_per_capita": 6.65
+    },
+    "CAN": {
+      "co2": 500,
+      "co2_per_capita": 13.16
+    },
+    "KOR": {
+      "co2": 339,
+      "co2_per_capita": 6.52
+    },
+    "AUS": {
+      "co2": 286,
+      "co2_per_capita": 11
+    },
+    "BRA": {
+      "co2": 401,
+      "co2_per_capita": 1.89
+    },
+    "MEX": {
+      "co2": 423,
+      "co2_per_capita": 3.3
+    },
+    "IDN": {
+      "co2": 256,
+      "co2_per_capita": 0.95
+    },
+    "SAU": {
+      "co2": 320,
+      "co2_per_capita": 9.14
+    },
+    "ZAF": {
+      "co2": 359,
+      "co2_per_capita": 5.98
+    },
+    "TUR": {
+      "co2": 254,
+      "co2_per_capita": 3.02
+    },
+    "POL": {
+      "co2": 356,
+      "co2_per_capita": 9.37
+    },
+    "IRN": {
+      "co2": 330,
+      "co2_per_capita": 3.93
+    }
+  },
+  "1998": {
+    "USA": {
+      "co2": 4461,
+      "co2_per_capita": 13.52
+    },
+    "CHN": {
+      "co2": 4292,
+      "co2_per_capita": 3.07
+    },
+    "IND": {
+      "co2": 892,
+      "co2_per_capita": 0.65
+    },
+    "RUS": {
+      "co2": 1945,
+      "co2_per_capita": 13.41
+    },
+    "JPN": {
+      "co2": 972,
+      "co2_per_capita": 7.71
+    },
+    "DEU": {
+      "co2": 796,
+      "co2_per_capita": 9.59
+    },
+    "GBR": {
+      "co2": 429,
+      "co2_per_capita": 6.4
+    },
+    "FRA": {
+      "co2": 341,
+      "co2_per_capita": 5.09
+    },
+    "ITA": {
+      "co2": 381,
+      "co2_per_capita": 6.35
+    },
+    "CAN": {
+      "co2": 499,
+      "co2_per_capita": 13.13
+    },
+    "KOR": {
+      "co2": 364,
+      "co2_per_capita": 7
+    },
+    "AUS": {
+      "co2": 311,
+      "co2_per_capita": 11.96
+    },
+    "BRA": {
+      "co2": 415,
+      "co2_per_capita": 1.96
+    },
+    "MEX": {
+      "co2": 450,
+      "co2_per_capita": 3.52
+    },
+    "IDN": {
+      "co2": 261,
+      "co2_per_capita": 0.97
+    },
+    "SAU": {
+      "co2": 301,
+      "co2_per_capita": 8.6
+    },
+    "ZAF": {
+      "co2": 387,
+      "co2_per_capita": 6.45
+    },
+    "TUR": {
+      "co2": 248,
+      "co2_per_capita": 2.95
+    },
+    "POL": {
+      "co2": 334,
+      "co2_per_capita": 8.79
+    },
+    "IRN": {
+      "co2": 365,
+      "co2_per_capita": 4.35
+    }
+  },
+  "1999": {
+    "USA": {
+      "co2": 4545,
+      "co2_per_capita": 13.77
+    },
+    "CHN": {
+      "co2": 5024,
+      "co2_per_capita": 3.59
+    },
+    "IND": {
+      "co2": 908,
+      "co2_per_capita": 0.66
+    },
+    "RUS": {
+      "co2": 1748,
+      "co2_per_capita": 12.06
+    },
+    "JPN": {
+      "co2": 1005,
+      "co2_per_capita": 7.98
+    },
+    "DEU": {
+      "co2": 793,
+      "co2_per_capita": 9.55
+    },
+    "GBR": {
+      "co2": 430,
+      "co2_per_capita": 6.42
+    },
+    "FRA": {
+      "co2": 346,
+      "co2_per_capita": 5.16
+    },
+    "ITA": {
+      "co2": 381,
+      "co2_per_capita": 6.35
+    },
+    "CAN": {
+      "co2": 501,
+      "co2_per_capita": 13.18
+    },
+    "KOR": {
+      "co2": 356,
+      "co2_per_capita": 6.85
+    },
+    "AUS": {
+      "co2": 314,
+      "co2_per_capita": 12.08
+    },
+    "BRA": {
+      "co2": 418,
+      "co2_per_capita": 1.97
+    },
+    "MEX": {
+      "co2": 442,
+      "co2_per_capita": 3.45
+    },
+    "IDN": {
+      "co2": 287,
+      "co2_per_capita": 1.06
+    },
+    "SAU": {
+      "co2": 325,
+      "co2_per_capita": 9.29
+    },
+    "ZAF": {
+      "co2": 364,
+      "co2_per_capita": 6.07
+    },
+    "TUR": {
+      "co2": 252,
+      "co2_per_capita": 3
+    },
+    "POL": {
+      "co2": 346,
+      "co2_per_capita": 9.11
+    },
+    "IRN": {
+      "co2": 343,
+      "co2_per_capita": 4.08
+    }
+  },
+  "2000": {
+    "USA": {
+      "co2": 4129,
+      "co2_per_capita": 12.51
+    },
+    "CHN": {
+      "co2": 5215,
+      "co2_per_capita": 3.73
+    },
+    "IND": {
+      "co2": 935,
+      "co2_per_capita": 0.68
+    },
+    "RUS": {
+      "co2": 1751,
+      "co2_per_capita": 12.08
+    },
+    "JPN": {
+      "co2": 962,
+      "co2_per_capita": 7.63
+    },
+    "DEU": {
+      "co2": 793,
+      "co2_per_capita": 9.55
+    },
+    "GBR": {
+      "co2": 395,
+      "co2_per_capita": 5.9
+    },
+    "FRA": {
+      "co2": 341,
+      "co2_per_capita": 5.09
+    },
+    "ITA": {
+      "co2": 377,
+      "co2_per_capita": 6.28
+    },
+    "CAN": {
+      "co2": 478,
+      "co2_per_capita": 12.58
+    },
+    "KOR": {
+      "co2": 377,
+      "co2_per_capita": 7.25
+    },
+    "AUS": {
+      "co2": 295,
+      "co2_per_capita": 11.35
+    },
+    "BRA": {
+      "co2": 417,
+      "co2_per_capita": 1.97
+    },
+    "MEX": {
+      "co2": 461,
+      "co2_per_capita": 3.6
+    },
+    "IDN": {
+      "co2": 309,
+      "co2_per_capita": 1.14
+    },
+    "SAU": {
+      "co2": 343,
+      "co2_per_capita": 9.8
+    },
+    "ZAF": {
+      "co2": 382,
+      "co2_per_capita": 6.37
+    },
+    "TUR": {
+      "co2": 257,
+      "co2_per_capita": 3.06
+    },
+    "POL": {
+      "co2": 327,
+      "co2_per_capita": 8.61
+    },
+    "IRN": {
+      "co2": 360,
+      "co2_per_capita": 4.29
+    }
+  },
+  "2001": {
+    "USA": {
+      "co2": 4303,
+      "co2_per_capita": 13.04
+    },
+    "CHN": {
+      "co2": 5600,
+      "co2_per_capita": 4
+    },
+    "IND": {
+      "co2": 1043,
+      "co2_per_capita": 0.76
+    },
+    "RUS": {
+      "co2": 1705,
+      "co2_per_capita": 11.76
+    },
+    "JPN": {
+      "co2": 1012,
+      "co2_per_capita": 8.03
+    },
+    "DEU": {
+      "co2": 752,
+      "co2_per_capita": 9.06
+    },
+    "GBR": {
+      "co2": 390,
+      "co2_per_capita": 5.82
+    },
+    "FRA": {
+      "co2": 326,
+      "co2_per_capita": 4.87
+    },
+    "ITA": {
+      "co2": 384,
+      "co2_per_capita": 6.4
+    },
+    "CAN": {
+      "co2": 523,
+      "co2_per_capita": 13.76
+    },
+    "KOR": {
+      "co2": 378,
+      "co2_per_capita": 7.27
+    },
+    "AUS": {
+      "co2": 299,
+      "co2_per_capita": 11.5
+    },
+    "BRA": {
+      "co2": 426,
+      "co2_per_capita": 2.01
+    },
+    "MEX": {
+      "co2": 474,
+      "co2_per_capita": 3.7
+    },
+    "IDN": {
+      "co2": 308,
+      "co2_per_capita": 1.14
+    },
+    "SAU": {
+      "co2": 335,
+      "co2_per_capita": 9.57
+    },
+    "ZAF": {
+      "co2": 378,
+      "co2_per_capita": 6.3
+    },
+    "TUR": {
+      "co2": 277,
+      "co2_per_capita": 3.3
+    },
+    "POL": {
+      "co2": 354,
+      "co2_per_capita": 9.32
+    },
+    "IRN": {
+      "co2": 390,
+      "co2_per_capita": 4.64
+    }
+  },
+  "2002": {
+    "USA": {
+      "co2": 4116,
+      "co2_per_capita": 12.47
+    },
+    "CHN": {
+      "co2": 6205,
+      "co2_per_capita": 4.43
+    },
+    "IND": {
+      "co2": 1089,
+      "co2_per_capita": 0.79
+    },
+    "RUS": {
+      "co2": 1686,
+      "co2_per_capita": 11.63
+    },
+    "JPN": {
+      "co2": 1021,
+      "co2_per_capita": 8.1
+    },
+    "DEU": {
+      "co2": 749,
+      "co2_per_capita": 9.02
+    },
+    "GBR": {
+      "co2": 372,
+      "co2_per_capita": 5.55
+    },
+    "FRA": {
+      "co2": 345,
+      "co2_per_capita": 5.15
+    },
+    "ITA": {
+      "co2": 375,
+      "co2_per_capita": 6.25
+    },
+    "CAN": {
+      "co2": 484,
+      "co2_per_capita": 12.74
+    },
+    "KOR": {
+      "co2": 402,
+      "co2_per_capita": 7.73
+    },
+    "AUS": {
+      "co2": 317,
+      "co2_per_capita": 12.19
+    },
+    "BRA": {
+      "co2": 441,
+      "co2_per_capita": 2.08
+    },
+    "MEX": {
+      "co2": 481,
+      "co2_per_capita": 3.76
+    },
+    "IDN": {
+      "co2": 324,
+      "co2_per_capita": 1.2
+    },
+    "SAU": {
+      "co2": 364,
+      "co2_per_capita": 10.4
+    },
+    "ZAF": {
+      "co2": 407,
+      "co2_per_capita": 6.78
+    },
+    "TUR": {
+      "co2": 281,
+      "co2_per_capita": 3.35
+    },
+    "POL": {
+      "co2": 347,
+      "co2_per_capita": 9.13
+    },
+    "IRN": {
+      "co2": 378,
+      "co2_per_capita": 4.5
+    }
+  },
+  "2003": {
+    "USA": {
+      "co2": 4198,
+      "co2_per_capita": 12.72
+    },
+    "CHN": {
+      "co2": 6831,
+      "co2_per_capita": 4.88
+    },
+    "IND": {
+      "co2": 1143,
+      "co2_per_capita": 0.83
+    },
+    "RUS": {
+      "co2": 1756,
+      "co2_per_capita": 12.11
+    },
+    "JPN": {
+      "co2": 984,
+      "co2_per_capita": 7.81
+    },
+    "DEU": {
+      "co2": 725,
+      "co2_per_capita": 8.73
+    },
+    "GBR": {
+      "co2": 371,
+      "co2_per_capita": 5.54
+    },
+    "FRA": {
+      "co2": 347,
+      "co2_per_capita": 5.18
+    },
+    "ITA": {
+      "co2": 362,
+      "co2_per_capita": 6.03
+    },
+    "CAN": {
+      "co2": 523,
+      "co2_per_capita": 13.76
+    },
+    "KOR": {
+      "co2": 430,
+      "co2_per_capita": 8.27
+    },
+    "AUS": {
+      "co2": 323,
+      "co2_per_capita": 12.42
+    },
+    "BRA": {
+      "co2": 456,
+      "co2_per_capita": 2.15
+    },
+    "MEX": {
+      "co2": 498,
+      "co2_per_capita": 3.89
+    },
+    "IDN": {
+      "co2": 333,
+      "co2_per_capita": 1.23
+    },
+    "SAU": {
+      "co2": 382,
+      "co2_per_capita": 10.91
+    },
+    "ZAF": {
+      "co2": 417,
+      "co2_per_capita": 6.95
+    },
+    "TUR": {
+      "co2": 305,
+      "co2_per_capita": 3.63
+    },
+    "POL": {
+      "co2": 324,
+      "co2_per_capita": 8.53
+    },
+    "IRN": {
+      "co2": 382,
+      "co2_per_capita": 4.55
+    }
+  },
+  "2004": {
+    "USA": {
+      "co2": 4373,
+      "co2_per_capita": 13.25
+    },
+    "CHN": {
+      "co2": 7233,
+      "co2_per_capita": 5.17
+    },
+    "IND": {
+      "co2": 1164,
+      "co2_per_capita": 0.84
+    },
+    "RUS": {
+      "co2": 1616,
+      "co2_per_capita": 11.14
+    },
+    "JPN": {
+      "co2": 1000,
+      "co2_per_capita": 7.94
+    },
+    "DEU": {
+      "co2": 745,
+      "co2_per_capita": 8.98
+    },
+    "GBR": {
+      "co2": 356,
+      "co2_per_capita": 5.31
+    },
+    "FRA": {
+      "co2": 342,
+      "co2_per_capita": 5.1
+    },
+    "ITA": {
+      "co2": 355,
+      "co2_per_capita": 5.92
+    },
+    "CAN": {
+      "co2": 509,
+      "co2_per_capita": 13.39
+    },
+    "KOR": {
+      "co2": 410,
+      "co2_per_capita": 7.88
+    },
+    "AUS": {
+      "co2": 312,
+      "co2_per_capita": 12
+    },
+    "BRA": {
+      "co2": 485,
+      "co2_per_capita": 2.29
+    },
+    "MEX": {
+      "co2": 513,
+      "co2_per_capita": 4.01
+    },
+    "IDN": {
+      "co2": 334,
+      "co2_per_capita": 1.24
+    },
+    "SAU": {
+      "co2": 393,
+      "co2_per_capita": 11.23
+    },
+    "ZAF": {
+      "co2": 383,
+      "co2_per_capita": 6.38
+    },
+    "TUR": {
+      "co2": 317,
+      "co2_per_capita": 3.77
+    },
+    "POL": {
+      "co2": 318,
+      "co2_per_capita": 8.37
+    },
+    "IRN": {
+      "co2": 392,
+      "co2_per_capita": 4.67
+    }
+  },
+  "2005": {
+    "USA": {
+      "co2": 3998,
+      "co2_per_capita": 12.12
+    },
+    "CHN": {
+      "co2": 7256,
+      "co2_per_capita": 5.18
+    },
+    "IND": {
+      "co2": 1196,
+      "co2_per_capita": 0.87
+    },
+    "RUS": {
+      "co2": 1595,
+      "co2_per_capita": 11
+    },
+    "JPN": {
+      "co2": 983,
+      "co2_per_capita": 7.8
+    },
+    "DEU": {
+      "co2": 672,
+      "co2_per_capita": 8.1
+    },
+    "GBR": {
+      "co2": 350,
+      "co2_per_capita": 5.22
+    },
+    "FRA": {
+      "co2": 328,
+      "co2_per_capita": 4.9
+    },
+    "ITA": {
+      "co2": 364,
+      "co2_per_capita": 6.07
+    },
+    "CAN": {
+      "co2": 498,
+      "co2_per_capita": 13.11
+    },
+    "KOR": {
+      "co2": 441,
+      "co2_per_capita": 8.48
+    },
+    "AUS": {
+      "co2": 319,
+      "co2_per_capita": 12.27
+    },
+    "BRA": {
+      "co2": 452,
+      "co2_per_capita": 2.13
+    },
+    "MEX": {
+      "co2": 498,
+      "co2_per_capita": 3.89
+    },
+    "IDN": {
+      "co2": 358,
+      "co2_per_capita": 1.33
+    },
+    "SAU": {
+      "co2": 408,
+      "co2_per_capita": 11.66
+    },
+    "ZAF": {
+      "co2": 395,
+      "co2_per_capita": 6.58
+    },
+    "TUR": {
+      "co2": 325,
+      "co2_per_capita": 3.87
+    },
+    "POL": {
+      "co2": 342,
+      "co2_per_capita": 9
+    },
+    "IRN": {
+      "co2": 413,
+      "co2_per_capita": 4.92
+    }
+  },
+  "2006": {
+    "USA": {
+      "co2": 3899,
+      "co2_per_capita": 11.82
+    },
+    "CHN": {
+      "co2": 8486,
+      "co2_per_capita": 6.06
+    },
+    "IND": {
+      "co2": 1298,
+      "co2_per_capita": 0.94
+    },
+    "RUS": {
+      "co2": 1642,
+      "co2_per_capita": 11.32
+    },
+    "JPN": {
+      "co2": 916,
+      "co2_per_capita": 7.27
+    },
+    "DEU": {
+      "co2": 657,
+      "co2_per_capita": 7.92
+    },
+    "GBR": {
+      "co2": 346,
+      "co2_per_capita": 5.16
+    },
+    "FRA": {
+      "co2": 340,
+      "co2_per_capita": 5.07
+    },
+    "ITA": {
+      "co2": 353,
+      "co2_per_capita": 5.88
+    },
+    "CAN": {
+      "co2": 523,
+      "co2_per_capita": 13.76
+    },
+    "KOR": {
+      "co2": 444,
+      "co2_per_capita": 8.54
+    },
+    "AUS": {
+      "co2": 325,
+      "co2_per_capita": 12.5
+    },
+    "BRA": {
+      "co2": 488,
+      "co2_per_capita": 2.3
+    },
+    "MEX": {
+      "co2": 511,
+      "co2_per_capita": 3.99
+    },
+    "IDN": {
+      "co2": 393,
+      "co2_per_capita": 1.46
+    },
+    "SAU": {
+      "co2": 383,
+      "co2_per_capita": 10.94
+    },
+    "ZAF": {
+      "co2": 393,
+      "co2_per_capita": 6.55
+    },
+    "TUR": {
+      "co2": 323,
+      "co2_per_capita": 3.85
+    },
+    "POL": {
+      "co2": 335,
+      "co2_per_capita": 8.82
+    },
+    "IRN": {
+      "co2": 425,
+      "co2_per_capita": 5.06
+    }
+  },
+  "2007": {
+    "USA": {
+      "co2": 3881,
+      "co2_per_capita": 11.76
+    },
+    "CHN": {
+      "co2": 9232,
+      "co2_per_capita": 6.59
+    },
+    "IND": {
+      "co2": 1321,
+      "co2_per_capita": 0.96
+    },
+    "RUS": {
+      "co2": 1537,
+      "co2_per_capita": 10.6
+    },
+    "JPN": {
+      "co2": 917,
+      "co2_per_capita": 7.28
+    },
+    "DEU": {
+      "co2": 704,
+      "co2_per_capita": 8.48
+    },
+    "GBR": {
+      "co2": 318,
+      "co2_per_capita": 4.75
+    },
+    "FRA": {
+      "co2": 318,
+      "co2_per_capita": 4.75
+    },
+    "ITA": {
+      "co2": 340,
+      "co2_per_capita": 5.67
+    },
+    "CAN": {
+      "co2": 545,
+      "co2_per_capita": 14.34
+    },
+    "KOR": {
+      "co2": 464,
+      "co2_per_capita": 8.92
+    },
+    "AUS": {
+      "co2": 337,
+      "co2_per_capita": 12.96
+    },
+    "BRA": {
+      "co2": 470,
+      "co2_per_capita": 2.22
+    },
+    "MEX": {
+      "co2": 536,
+      "co2_per_capita": 4.19
+    },
+    "IDN": {
+      "co2": 374,
+      "co2_per_capita": 1.39
+    },
+    "SAU": {
+      "co2": 423,
+      "co2_per_capita": 12.09
+    },
+    "ZAF": {
+      "co2": 408,
+      "co2_per_capita": 6.8
+    },
+    "TUR": {
+      "co2": 325,
+      "co2_per_capita": 3.87
+    },
+    "POL": {
+      "co2": 336,
+      "co2_per_capita": 8.84
+    },
+    "IRN": {
+      "co2": 429,
+      "co2_per_capita": 5.11
+    }
+  },
+  "2008": {
+    "USA": {
+      "co2": 3871,
+      "co2_per_capita": 11.73
+    },
+    "CHN": {
+      "co2": 9115,
+      "co2_per_capita": 6.51
+    },
+    "IND": {
+      "co2": 1374,
+      "co2_per_capita": 1
+    },
+    "RUS": {
+      "co2": 1503,
+      "co2_per_capita": 10.37
+    },
+    "JPN": {
+      "co2": 939,
+      "co2_per_capita": 7.45
+    },
+    "DEU": {
+      "co2": 638,
+      "co2_per_capita": 7.69
+    },
+    "GBR": {
+      "co2": 330,
+      "co2_per_capita": 4.93
+    },
+    "FRA": {
+      "co2": 314,
+      "co2_per_capita": 4.69
+    },
+    "ITA": {
+      "co2": 338,
+      "co2_per_capita": 5.63
+    },
+    "CAN": {
+      "co2": 559,
+      "co2_per_capita": 14.71
+    },
+    "KOR": {
+      "co2": 461,
+      "co2_per_capita": 8.87
+    },
+    "AUS": {
+      "co2": 326,
+      "co2_per_capita": 12.54
+    },
+    "BRA": {
+      "co2": 499,
+      "co2_per_capita": 2.35
+    },
+    "MEX": {
+      "co2": 565,
+      "co2_per_capita": 4.41
+    },
+    "IDN": {
+      "co2": 410,
+      "co2_per_capita": 1.52
+    },
+    "SAU": {
+      "co2": 445,
+      "co2_per_capita": 12.71
+    },
+    "ZAF": {
+      "co2": 436,
+      "co2_per_capita": 7.27
+    },
+    "TUR": {
+      "co2": 350,
+      "co2_per_capita": 4.17
+    },
+    "POL": {
+      "co2": 305,
+      "co2_per_capita": 8.03
+    },
+    "IRN": {
+      "co2": 410,
+      "co2_per_capita": 4.88
+    }
+  },
+  "2009": {
+    "USA": {
+      "co2": 3929,
+      "co2_per_capita": 11.91
+    },
+    "CHN": {
+      "co2": 9857,
+      "co2_per_capita": 7.04
+    },
+    "IND": {
+      "co2": 1464,
+      "co2_per_capita": 1.06
+    },
+    "RUS": {
+      "co2": 1573,
+      "co2_per_capita": 10.85
+    },
+    "JPN": {
+      "co2": 942,
+      "co2_per_capita": 7.48
+    },
+    "DEU": {
+      "co2": 627,
+      "co2_per_capita": 7.55
+    },
+    "GBR": {
+      "co2": 309,
+      "co2_per_capita": 4.61
+    },
+    "FRA": {
+      "co2": 309,
+      "co2_per_capita": 4.61
+    },
+    "ITA": {
+      "co2": 350,
+      "co2_per_capita": 5.83
+    },
+    "CAN": {
+      "co2": 565,
+      "co2_per_capita": 14.87
+    },
+    "KOR": {
+      "co2": 487,
+      "co2_per_capita": 9.37
+    },
+    "AUS": {
+      "co2": 345,
+      "co2_per_capita": 13.27
+    },
+    "BRA": {
+      "co2": 529,
+      "co2_per_capita": 2.5
+    },
+    "MEX": {
+      "co2": 578,
+      "co2_per_capita": 4.52
+    },
+    "IDN": {
+      "co2": 420,
+      "co2_per_capita": 1.56
+    },
+    "SAU": {
+      "co2": 455,
+      "co2_per_capita": 13
+    },
+    "ZAF": {
+      "co2": 404,
+      "co2_per_capita": 6.73
+    },
+    "TUR": {
+      "co2": 363,
+      "co2_per_capita": 4.32
+    },
+    "POL": {
+      "co2": 316,
+      "co2_per_capita": 8.32
+    },
+    "IRN": {
+      "co2": 426,
+      "co2_per_capita": 5.07
+    }
+  },
+  "2010": {
+    "USA": {
+      "co2": 4028,
+      "co2_per_capita": 12.21
+    },
+    "CHN": {
+      "co2": 11533,
+      "co2_per_capita": 8.24
+    },
+    "IND": {
+      "co2": 1518,
+      "co2_per_capita": 1.1
+    },
+    "RUS": {
+      "co2": 1465,
+      "co2_per_capita": 10.1
+    },
+    "JPN": {
+      "co2": 888,
+      "co2_per_capita": 7.05
+    },
+    "DEU": {
+      "co2": 611,
+      "co2_per_capita": 7.36
+    },
+    "GBR": {
+      "co2": 286,
+      "co2_per_capita": 4.27
+    },
+    "FRA": {
+      "co2": 301,
+      "co2_per_capita": 4.49
+    },
+    "ITA": {
+      "co2": 352,
+      "co2_per_capita": 5.87
+    },
+    "CAN": {
+      "co2": 530,
+      "co2_per_capita": 13.95
+    },
+    "KOR": {
+      "co2": 494,
+      "co2_per_capita": 9.5
+    },
+    "AUS": {
+      "co2": 328,
+      "co2_per_capita": 12.62
+    },
+    "BRA": {
+      "co2": 537,
+      "co2_per_capita": 2.53
+    },
+    "MEX": {
+      "co2": 540,
+      "co2_per_capita": 4.22
+    },
+    "IDN": {
+      "co2": 450,
+      "co2_per_capita": 1.67
+    },
+    "SAU": {
+      "co2": 473,
+      "co2_per_capita": 13.51
+    },
+    "ZAF": {
+      "co2": 434,
+      "co2_per_capita": 7.23
+    },
+    "TUR": {
+      "co2": 373,
+      "co2_per_capita": 4.44
+    },
+    "POL": {
+      "co2": 296,
+      "co2_per_capita": 7.79
+    },
+    "IRN": {
+      "co2": 455,
+      "co2_per_capita": 5.42
+    }
+  },
+  "2011": {
+    "USA": {
+      "co2": 3915,
+      "co2_per_capita": 11.86
+    },
+    "CHN": {
+      "co2": 11974,
+      "co2_per_capita": 8.55
+    },
+    "IND": {
+      "co2": 1731,
+      "co2_per_capita": 1.25
+    },
+    "RUS": {
+      "co2": 1375,
+      "co2_per_capita": 9.48
+    },
+    "JPN": {
+      "co2": 916,
+      "co2_per_capita": 7.27
+    },
+    "DEU": {
+      "co2": 633,
+      "co2_per_capita": 7.63
+    },
+    "GBR": {
+      "co2": 301,
+      "co2_per_capita": 4.49
+    },
+    "FRA": {
+      "co2": 315,
+      "co2_per_capita": 4.7
+    },
+    "ITA": {
+      "co2": 356,
+      "co2_per_capita": 5.93
+    },
+    "CAN": {
+      "co2": 574,
+      "co2_per_capita": 15.11
+    },
+    "KOR": {
+      "co2": 529,
+      "co2_per_capita": 10.17
+    },
+    "AUS": {
+      "co2": 335,
+      "co2_per_capita": 12.88
+    },
+    "BRA": {
+      "co2": 546,
+      "co2_per_capita": 2.58
+    },
+    "MEX": {
+      "co2": 595,
+      "co2_per_capita": 4.65
+    },
+    "IDN": {
+      "co2": 438,
+      "co2_per_capita": 1.62
+    },
+    "SAU": {
+      "co2": 470,
+      "co2_per_capita": 13.43
+    },
+    "ZAF": {
+      "co2": 418,
+      "co2_per_capita": 6.97
+    },
+    "TUR": {
+      "co2": 370,
+      "co2_per_capita": 4.4
+    },
+    "POL": {
+      "co2": 301,
+      "co2_per_capita": 7.92
+    },
+    "IRN": {
+      "co2": 438,
+      "co2_per_capita": 5.21
+    }
+  },
+  "2012": {
+    "USA": {
+      "co2": 3703,
+      "co2_per_capita": 11.22
+    },
+    "CHN": {
+      "co2": 13099,
+      "co2_per_capita": 9.36
+    },
+    "IND": {
+      "co2": 1759,
+      "co2_per_capita": 1.27
+    },
+    "RUS": {
+      "co2": 1379,
+      "co2_per_capita": 9.51
+    },
+    "JPN": {
+      "co2": 902,
+      "co2_per_capita": 7.16
+    },
+    "DEU": {
+      "co2": 580,
+      "co2_per_capita": 6.99
+    },
+    "GBR": {
+      "co2": 293,
+      "co2_per_capita": 4.37
+    },
+    "FRA": {
+      "co2": 295,
+      "co2_per_capita": 4.4
+    },
+    "ITA": {
+      "co2": 331,
+      "co2_per_capita": 5.52
+    },
+    "CAN": {
+      "co2": 570,
+      "co2_per_capita": 15
+    },
+    "KOR": {
+      "co2": 548,
+      "co2_per_capita": 10.54
+    },
+    "AUS": {
+      "co2": 331,
+      "co2_per_capita": 12.73
+    },
+    "BRA": {
+      "co2": 524,
+      "co2_per_capita": 2.47
+    },
+    "MEX": {
+      "co2": 600,
+      "co2_per_capita": 4.69
+    },
+    "IDN": {
+      "co2": 473,
+      "co2_per_capita": 1.75
+    },
+    "SAU": {
+      "co2": 486,
+      "co2_per_capita": 13.89
+    },
+    "ZAF": {
+      "co2": 449,
+      "co2_per_capita": 7.48
+    },
+    "TUR": {
+      "co2": 389,
+      "co2_per_capita": 4.63
+    },
+    "POL": {
+      "co2": 314,
+      "co2_per_capita": 8.26
+    },
+    "IRN": {
+      "co2": 455,
+      "co2_per_capita": 5.42
+    }
+  },
+  "2013": {
+    "USA": {
+      "co2": 3930,
+      "co2_per_capita": 11.91
+    },
+    "CHN": {
+      "co2": 14325,
+      "co2_per_capita": 10.23
+    },
+    "IND": {
+      "co2": 1761,
+      "co2_per_capita": 1.28
+    },
+    "RUS": {
+      "co2": 1437,
+      "co2_per_capita": 9.91
+    },
+    "JPN": {
+      "co2": 840,
+      "co2_per_capita": 6.67
+    },
+    "DEU": {
+      "co2": 575,
+      "co2_per_capita": 6.93
+    },
+    "GBR": {
+      "co2": 271,
+      "co2_per_capita": 4.04
+    },
+    "FRA": {
+      "co2": 294,
+      "co2_per_capita": 4.39
+    },
+    "ITA": {
+      "co2": 341,
+      "co2_per_capita": 5.68
+    },
+    "CAN": {
+      "co2": 554,
+      "co2_per_capita": 14.58
+    },
+    "KOR": {
+      "co2": 533,
+      "co2_per_capita": 10.25
+    },
+    "AUS": {
+      "co2": 344,
+      "co2_per_capita": 13.23
+    },
+    "BRA": {
+      "co2": 553,
+      "co2_per_capita": 2.61
+    },
+    "MEX": {
+      "co2": 611,
+      "co2_per_capita": 4.77
+    },
+    "IDN": {
+      "co2": 490,
+      "co2_per_capita": 1.81
+    },
+    "SAU": {
+      "co2": 478,
+      "co2_per_capita": 13.66
+    },
+    "ZAF": {
+      "co2": 456,
+      "co2_per_capita": 7.6
+    },
+    "TUR": {
+      "co2": 414,
+      "co2_per_capita": 4.93
+    },
+    "POL": {
+      "co2": 302,
+      "co2_per_capita": 7.95
+    },
+    "IRN": {
+      "co2": 472,
+      "co2_per_capita": 5.62
+    }
+  },
+  "2014": {
+    "USA": {
+      "co2": 3720,
+      "co2_per_capita": 11.27
+    },
+    "CHN": {
+      "co2": 15685,
+      "co2_per_capita": 11.2
+    },
+    "IND": {
+      "co2": 1856,
+      "co2_per_capita": 1.34
+    },
+    "RUS": {
+      "co2": 1412,
+      "co2_per_capita": 9.74
+    },
+    "JPN": {
+      "co2": 847,
+      "co2_per_capita": 6.72
+    },
+    "DEU": {
+      "co2": 601,
+      "co2_per_capita": 7.24
+    },
+    "GBR": {
+      "co2": 273,
+      "co2_per_capita": 4.07
+    },
+    "FRA": {
+      "co2": 290,
+      "co2_per_capita": 4.33
+    },
+    "ITA": {
+      "co2": 340,
+      "co2_per_capita": 5.67
+    },
+    "CAN": {
+      "co2": 581,
+      "co2_per_capita": 15.29
+    },
+    "KOR": {
+      "co2": 597,
+      "co2_per_capita": 11.48
+    },
+    "AUS": {
+      "co2": 372,
+      "co2_per_capita": 14.31
+    },
+    "BRA": {
+      "co2": 579,
+      "co2_per_capita": 2.73
+    },
+    "MEX": {
+      "co2": 588,
+      "co2_per_capita": 4.59
+    },
+    "IDN": {
+      "co2": 509,
+      "co2_per_capita": 1.89
+    },
+    "SAU": {
+      "co2": 520,
+      "co2_per_capita": 14.86
+    },
+    "ZAF": {
+      "co2": 433,
+      "co2_per_capita": 7.22
+    },
+    "TUR": {
+      "co2": 411,
+      "co2_per_capita": 4.89
+    },
+    "POL": {
+      "co2": 305,
+      "co2_per_capita": 8.03
+    },
+    "IRN": {
+      "co2": 494,
+      "co2_per_capita": 5.88
+    }
+  },
+  "2015": {
+    "USA": {
+      "co2": 3720,
+      "co2_per_capita": 11.27
+    },
+    "CHN": {
+      "co2": 16350,
+      "co2_per_capita": 11.68
+    },
+    "IND": {
+      "co2": 2067,
+      "co2_per_capita": 1.5
+    },
+    "RUS": {
+      "co2": 1338,
+      "co2_per_capita": 9.23
+    },
+    "JPN": {
+      "co2": 894,
+      "co2_per_capita": 7.1
+    },
+    "DEU": {
+      "co2": 575,
+      "co2_per_capita": 6.93
+    },
+    "GBR": {
+      "co2": 253,
+      "co2_per_capita": 3.78
+    },
+    "FRA": {
+      "co2": 291,
+      "co2_per_capita": 4.34
+    },
+    "ITA": {
+      "co2": 337,
+      "co2_per_capita": 5.62
+    },
+    "CAN": {
+      "co2": 559,
+      "co2_per_capita": 14.71
+    },
+    "KOR": {
+      "co2": 565,
+      "co2_per_capita": 10.87
+    },
+    "AUS": {
+      "co2": 364,
+      "co2_per_capita": 14
+    },
+    "BRA": {
+      "co2": 591,
+      "co2_per_capita": 2.79
+    },
+    "MEX": {
+      "co2": 635,
+      "co2_per_capita": 4.96
+    },
+    "IDN": {
+      "co2": 527,
+      "co2_per_capita": 1.95
+    },
+    "SAU": {
+      "co2": 530,
+      "co2_per_capita": 15.14
+    },
+    "ZAF": {
+      "co2": 459,
+      "co2_per_capita": 7.65
+    },
+    "TUR": {
+      "co2": 399,
+      "co2_per_capita": 4.75
+    },
+    "POL": {
+      "co2": 307,
+      "co2_per_capita": 8.08
+    },
+    "IRN": {
+      "co2": 484,
+      "co2_per_capita": 5.76
+    }
+  },
+  "2016": {
+    "USA": {
+      "co2": 3672,
+      "co2_per_capita": 11.13
+    },
+    "CHN": {
+      "co2": 17343,
+      "co2_per_capita": 12.39
+    },
+    "IND": {
+      "co2": 2231,
+      "co2_per_capita": 1.62
+    },
+    "RUS": {
+      "co2": 1349,
+      "co2_per_capita": 9.3
+    },
+    "JPN": {
+      "co2": 820,
+      "co2_per_capita": 6.51
+    },
+    "DEU": {
+      "co2": 553,
+      "co2_per_capita": 6.66
+    },
+    "GBR": {
+      "co2": 257,
+      "co2_per_capita": 3.84
+    },
+    "FRA": {
+      "co2": 285,
+      "co2_per_capita": 4.25
+    },
+    "ITA": {
+      "co2": 317,
+      "co2_per_capita": 5.28
+    },
+    "CAN": {
+      "co2": 570,
+      "co2_per_capita": 15
+    },
+    "KOR": {
+      "co2": 576,
+      "co2_per_capita": 11.08
+    },
+    "AUS": {
+      "co2": 366,
+      "co2_per_capita": 14.08
+    },
+    "BRA": {
+      "co2": 600,
+      "co2_per_capita": 2.83
+    },
+    "MEX": {
+      "co2": 665,
+      "co2_per_capita": 5.2
+    },
+    "IDN": {
+      "co2": 528,
+      "co2_per_capita": 1.96
+    },
+    "SAU": {
+      "co2": 563,
+      "co2_per_capita": 16.09
+    },
+    "ZAF": {
+      "co2": 463,
+      "co2_per_capita": 7.72
+    },
+    "TUR": {
+      "co2": 451,
+      "co2_per_capita": 5.37
+    },
+    "POL": {
+      "co2": 285,
+      "co2_per_capita": 7.5
+    },
+    "IRN": {
+      "co2": 518,
+      "co2_per_capita": 6.17
+    }
+  },
+  "2017": {
+    "USA": {
+      "co2": 3491,
+      "co2_per_capita": 10.58
+    },
+    "CHN": {
+      "co2": 18856,
+      "co2_per_capita": 13.47
+    },
+    "IND": {
+      "co2": 2325,
+      "co2_per_capita": 1.68
+    },
+    "RUS": {
+      "co2": 1274,
+      "co2_per_capita": 8.79
+    },
+    "JPN": {
+      "co2": 864,
+      "co2_per_capita": 6.86
+    },
+    "DEU": {
+      "co2": 571,
+      "co2_per_capita": 6.88
+    },
+    "GBR": {
+      "co2": 232,
+      "co2_per_capita": 3.46
+    },
+    "FRA": {
+      "co2": 300,
+      "co2_per_capita": 4.48
+    },
+    "ITA": {
+      "co2": 328,
+      "co2_per_capita": 5.47
+    },
+    "CAN": {
+      "co2": 602,
+      "co2_per_capita": 15.84
+    },
+    "KOR": {
+      "co2": 612,
+      "co2_per_capita": 11.77
+    },
+    "AUS": {
+      "co2": 371,
+      "co2_per_capita": 14.27
+    },
+    "BRA": {
+      "co2": 610,
+      "co2_per_capita": 2.88
+    },
+    "MEX": {
+      "co2": 679,
+      "co2_per_capita": 5.3
+    },
+    "IDN": {
+      "co2": 575,
+      "co2_per_capita": 2.13
+    },
+    "SAU": {
+      "co2": 573,
+      "co2_per_capita": 16.37
+    },
+    "ZAF": {
+      "co2": 472,
+      "co2_per_capita": 7.87
+    },
+    "TUR": {
+      "co2": 426,
+      "co2_per_capita": 5.07
+    },
+    "POL": {
+      "co2": 304,
+      "co2_per_capita": 8
+    },
+    "IRN": {
+      "co2": 499,
+      "co2_per_capita": 5.94
+    }
+  },
+  "2018": {
+    "USA": {
+      "co2": 3558,
+      "co2_per_capita": 10.78
+    },
+    "CHN": {
+      "co2": 21015,
+      "co2_per_capita": 15.01
+    },
+    "IND": {
+      "co2": 2450,
+      "co2_per_capita": 1.78
+    },
+    "RUS": {
+      "co2": 1244,
+      "co2_per_capita": 8.58
+    },
+    "JPN": {
+      "co2": 846,
+      "co2_per_capita": 6.71
+    },
+    "DEU": {
+      "co2": 548,
+      "co2_per_capita": 6.6
+    },
+    "GBR": {
+      "co2": 238,
+      "co2_per_capita": 3.55
+    },
+    "FRA": {
+      "co2": 292,
+      "co2_per_capita": 4.36
+    },
+    "ITA": {
+      "co2": 307,
+      "co2_per_capita": 5.12
+    },
+    "CAN": {
+      "co2": 614,
+      "co2_per_capita": 16.16
+    },
+    "KOR": {
+      "co2": 625,
+      "co2_per_capita": 12.02
+    },
+    "AUS": {
+      "co2": 387,
+      "co2_per_capita": 14.88
+    },
+    "BRA": {
+      "co2": 579,
+      "co2_per_capita": 2.73
+    },
+    "MEX": {
+      "co2": 684,
+      "co2_per_capita": 5.34
+    },
+    "IDN": {
+      "co2": 617,
+      "co2_per_capita": 2.29
+    },
+    "SAU": {
+      "co2": 595,
+      "co2_per_capita": 17
+    },
+    "ZAF": {
+      "co2": 473,
+      "co2_per_capita": 7.88
+    },
+    "TUR": {
+      "co2": 474,
+      "co2_per_capita": 5.64
+    },
+    "POL": {
+      "co2": 287,
+      "co2_per_capita": 7.55
+    },
+    "IRN": {
+      "co2": 515,
+      "co2_per_capita": 6.13
+    }
+  },
+  "2019": {
+    "USA": {
+      "co2": 3492,
+      "co2_per_capita": 10.58
+    },
+    "CHN": {
+      "co2": 21253,
+      "co2_per_capita": 15.18
+    },
+    "IND": {
+      "co2": 2401,
+      "co2_per_capita": 1.74
+    },
+    "RUS": {
+      "co2": 1263,
+      "co2_per_capita": 8.71
+    },
+    "JPN": {
+      "co2": 837,
+      "co2_per_capita": 6.64
+    },
+    "DEU": {
+      "co2": 526,
+      "co2_per_capita": 6.34
+    },
+    "GBR": {
+      "co2": 231,
+      "co2_per_capita": 3.45
+    },
+    "FRA": {
+      "co2": 281,
+      "co2_per_capita": 4.19
+    },
+    "ITA": {
+      "co2": 307,
+      "co2_per_capita": 5.12
+    },
+    "CAN": {
+      "co2": 581,
+      "co2_per_capita": 15.29
+    },
+    "KOR": {
+      "co2": 672,
+      "co2_per_capita": 12.92
+    },
+    "AUS": {
+      "co2": 373,
+      "co2_per_capita": 14.35
+    },
+    "BRA": {
+      "co2": 611,
+      "co2_per_capita": 2.88
+    },
+    "MEX": {
+      "co2": 688,
+      "co2_per_capita": 5.38
+    },
+    "IDN": {
+      "co2": 613,
+      "co2_per_capita": 2.27
+    },
+    "SAU": {
+      "co2": 599,
+      "co2_per_capita": 17.11
+    },
+    "ZAF": {
+      "co2": 489,
+      "co2_per_capita": 8.15
+    },
+    "TUR": {
+      "co2": 466,
+      "co2_per_capita": 5.55
+    },
+    "POL": {
+      "co2": 274,
+      "co2_per_capita": 7.21
+    },
+    "IRN": {
+      "co2": 548,
+      "co2_per_capita": 6.52
+    }
+  },
+  "2020": {
+    "USA": {
+      "co2": 3487,
+      "co2_per_capita": 10.57
+    },
+    "CHN": {
+      "co2": 25265,
+      "co2_per_capita": 18.05
+    },
+    "IND": {
+      "co2": 2485,
+      "co2_per_capita": 1.8
+    },
+    "RUS": {
+      "co2": 1211,
+      "co2_per_capita": 8.35
+    },
+    "JPN": {
+      "co2": 776,
+      "co2_per_capita": 6.16
+    },
+    "DEU": {
+      "co2": 519,
+      "co2_per_capita": 6.25
+    },
+    "GBR": {
+      "co2": 215,
+      "co2_per_capita": 3.21
+    },
+    "FRA": {
+      "co2": 280,
+      "co2_per_capita": 4.18
+    },
+    "ITA": {
+      "co2": 305,
+      "co2_per_capita": 5.08
+    },
+    "CAN": {
+      "co2": 617,
+      "co2_per_capita": 16.24
+    },
+    "KOR": {
+      "co2": 673,
+      "co2_per_capita": 12.94
+    },
+    "AUS": {
+      "co2": 362,
+      "co2_per_capita": 13.92
+    },
+    "BRA": {
+      "co2": 650,
+      "co2_per_capita": 3.07
+    },
+    "MEX": {
+      "co2": 719,
+      "co2_per_capita": 5.62
+    },
+    "IDN": {
+      "co2": 676,
+      "co2_per_capita": 2.5
+    },
+    "SAU": {
+      "co2": 605,
+      "co2_per_capita": 17.29
+    },
+    "ZAF": {
+      "co2": 465,
+      "co2_per_capita": 7.75
+    },
+    "TUR": {
+      "co2": 481,
+      "co2_per_capita": 5.73
+    },
+    "POL": {
+      "co2": 273,
+      "co2_per_capita": 7.18
+    },
+    "IRN": {
+      "co2": 538,
+      "co2_per_capita": 6.4
+    }
+  },
+  "2021": {
+    "USA": {
+      "co2": 3378,
+      "co2_per_capita": 10.24
+    },
+    "CHN": {
+      "co2": 27034,
+      "co2_per_capita": 19.31
+    },
+    "IND": {
+      "co2": 2844,
+      "co2_per_capita": 2.06
+    },
+    "RUS": {
+      "co2": 1221,
+      "co2_per_capita": 8.42
+    },
+    "JPN": {
+      "co2": 786,
+      "co2_per_capita": 6.24
+    },
+    "DEU": {
+      "co2": 526,
+      "co2_per_capita": 6.34
+    },
+    "GBR": {
+      "co2": 221,
+      "co2_per_capita": 3.3
+    },
+    "FRA": {
+      "co2": 286,
+      "co2_per_capita": 4.27
+    },
+    "ITA": {
+      "co2": 302,
+      "co2_per_capita": 5.03
+    },
+    "CAN": {
+      "co2": 589,
+      "co2_per_capita": 15.5
+    },
+    "KOR": {
+      "co2": 672,
+      "co2_per_capita": 12.92
+    },
+    "AUS": {
+      "co2": 372,
+      "co2_per_capita": 14.31
+    },
+    "BRA": {
+      "co2": 657,
+      "co2_per_capita": 3.1
+    },
+    "MEX": {
+      "co2": 717,
+      "co2_per_capita": 5.6
+    },
+    "IDN": {
+      "co2": 656,
+      "co2_per_capita": 2.43
+    },
+    "SAU": {
+      "co2": 629,
+      "co2_per_capita": 17.97
+    },
+    "ZAF": {
+      "co2": 490,
+      "co2_per_capita": 8.17
+    },
+    "TUR": {
+      "co2": 517,
+      "co2_per_capita": 6.15
+    },
+    "POL": {
+      "co2": 277,
+      "co2_per_capita": 7.29
+    },
+    "IRN": {
+      "co2": 548,
+      "co2_per_capita": 6.52
+    }
+  },
+  "2022": {
+    "USA": {
+      "co2": 3629,
+      "co2_per_capita": 11
+    },
+    "CHN": {
+      "co2": 28207,
+      "co2_per_capita": 20.15
+    },
+    "IND": {
+      "co2": 2730,
+      "co2_per_capita": 1.98
+    },
+    "RUS": {
+      "co2": 1108,
+      "co2_per_capita": 7.64
+    },
+    "JPN": {
+      "co2": 773,
+      "co2_per_capita": 6.13
+    },
+    "DEU": {
+      "co2": 522,
+      "co2_per_capita": 6.29
+    },
+    "GBR": {
+      "co2": 200,
+      "co2_per_capita": 2.99
+    },
+    "FRA": {
+      "co2": 266,
+      "co2_per_capita": 3.97
+    },
+    "ITA": {
+      "co2": 309,
+      "co2_per_capita": 5.15
+    },
+    "CAN": {
+      "co2": 620,
+      "co2_per_capita": 16.32
+    },
+    "KOR": {
+      "co2": 732,
+      "co2_per_capita": 14.08
+    },
+    "AUS": {
+      "co2": 393,
+      "co2_per_capita": 15.12
+    },
+    "BRA": {
+      "co2": 665,
+      "co2_per_capita": 3.14
+    },
+    "MEX": {
+      "co2": 683,
+      "co2_per_capita": 5.34
+    },
+    "IDN": {
+      "co2": 688,
+      "co2_per_capita": 2.55
+    },
+    "SAU": {
+      "co2": 612,
+      "co2_per_capita": 17.49
+    },
+    "ZAF": {
+      "co2": 487,
+      "co2_per_capita": 8.12
+    },
+    "TUR": {
+      "co2": 510,
+      "co2_per_capita": 6.07
+    },
+    "POL": {
+      "co2": 286,
+      "co2_per_capita": 7.53
+    },
+    "IRN": {
+      "co2": 563,
+      "co2_per_capita": 6.7
+    }
+  }
+}

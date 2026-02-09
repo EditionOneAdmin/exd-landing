@@ -55,14 +55,19 @@ export default function Navigation() {
 
         {/* Navigation links */}
         <div className="hidden md:flex items-center gap-8">
-          {['Features', 'How it Works', 'About'].map((link, i) => (
+          {[
+            { label: 'Experience', href: '#experience' },
+            { label: 'Use Cases', href: '#use-cases' },
+            { label: 'Demo', href: '#demo' },
+            { label: 'Features', href: '#features' },
+          ].map((link, i) => (
             <motion.a
               key={i}
-              href={link === 'Features' ? '#features' : link === 'How it Works' ? '#' : '#'}
+              href={link.href}
               className="text-sm text-gray-400 hover:text-white transition-colors"
               whileHover={{ y: -2 }}
             >
-              {link}
+              {link.label}
             </motion.a>
           ))}
         </div>

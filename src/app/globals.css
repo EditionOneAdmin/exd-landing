@@ -142,3 +142,58 @@ body {
 .animate-pulse-glow {
   animation: pulse-glow 3s ease-in-out infinite;
 }
+
+/* EXD Visualization Styles */
+:root {
+  --exd-bg-primary: #0a0a0f;
+  --exd-bg-secondary: #12121a;
+  --exd-bg-tertiary: #1a1a24;
+  --exd-text-primary: #ffffff;
+  --exd-text-secondary: #a1a1aa;
+  --exd-text-muted: #52525b;
+  --exd-accent-primary: #6366f1;
+  --exd-accent-secondary: #8b5cf6;
+  --exd-accent-tertiary: #06b6d4;
+  --exd-border: rgba(255, 255, 255, 0.08);
+}
+
+.exd-card {
+  background: var(--exd-bg-secondary);
+  border: 1px solid var(--exd-border);
+  border-radius: 1rem;
+}
+
+.exd-glow {
+  box-shadow: 
+    0 0 60px rgba(99, 102, 241, 0.1),
+    0 0 100px rgba(139, 92, 246, 0.05);
+}
+
+.exd-gradient-text {
+  background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #06b6d4 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.chart-tooltip {
+  position: fixed;
+  z-index: 1000;
+  background: rgba(10, 10, 15, 0.95);
+  border: 1px solid rgba(99, 102, 241, 0.3);
+  border-radius: 0.75rem;
+  padding: 0.75rem 1rem;
+  pointer-events: none;
+  backdrop-filter: blur(12px);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
+}
+
+.chart-axis path,
+.chart-axis line {
+  stroke: rgba(255, 255, 255, 0.1);
+}
+
+@keyframes shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}

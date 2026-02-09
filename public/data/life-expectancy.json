@@ -1,0 +1,9044 @@
+{
+  "1990": [
+    {
+      "code": "USA",
+      "name": "United States",
+      "life": 75.2,
+      "gdp": 23800,
+      "pop": 250000000,
+      "region": "Americas"
+    },
+    {
+      "code": "CHN",
+      "name": "China",
+      "life": 69.4,
+      "gdp": 350,
+      "pop": 1140000000,
+      "region": "Asia"
+    },
+    {
+      "code": "IND",
+      "name": "India",
+      "life": 58.2,
+      "gdp": 380,
+      "pop": 870000000,
+      "region": "Asia"
+    },
+    {
+      "code": "JPN",
+      "name": "Japan",
+      "life": 78.9,
+      "gdp": 25900,
+      "pop": 124000000,
+      "region": "Asia"
+    },
+    {
+      "code": "DEU",
+      "name": "Germany",
+      "life": 75.4,
+      "gdp": 22300,
+      "pop": 79000000,
+      "region": "Europe"
+    },
+    {
+      "code": "GBR",
+      "name": "United Kingdom",
+      "life": 75.8,
+      "gdp": 18700,
+      "pop": 57000000,
+      "region": "Europe"
+    },
+    {
+      "code": "FRA",
+      "name": "France",
+      "life": 76.9,
+      "gdp": 21800,
+      "pop": 58000000,
+      "region": "Europe"
+    },
+    {
+      "code": "BRA",
+      "name": "Brazil",
+      "life": 66.3,
+      "gdp": 3200,
+      "pop": 150000000,
+      "region": "Americas"
+    },
+    {
+      "code": "RUS",
+      "name": "Russia",
+      "life": 69.2,
+      "gdp": 3800,
+      "pop": 148000000,
+      "region": "Europe"
+    },
+    {
+      "code": "NGA",
+      "name": "Nigeria",
+      "life": 45.9,
+      "gdp": 320,
+      "pop": 96000000,
+      "region": "Africa"
+    },
+    {
+      "code": "MEX",
+      "name": "Mexico",
+      "life": 70.8,
+      "gdp": 3100,
+      "pop": 83000000,
+      "region": "Americas"
+    },
+    {
+      "code": "IDN",
+      "name": "Indonesia",
+      "life": 62.1,
+      "gdp": 640,
+      "pop": 181000000,
+      "region": "Asia"
+    },
+    {
+      "code": "ETH",
+      "name": "Ethiopia",
+      "life": 47,
+      "gdp": 250,
+      "pop": 51000000,
+      "region": "Africa"
+    },
+    {
+      "code": "EGY",
+      "name": "Egypt",
+      "life": 64.5,
+      "gdp": 1000,
+      "pop": 57000000,
+      "region": "Africa"
+    },
+    {
+      "code": "VNM",
+      "name": "Vietnam",
+      "life": 65.4,
+      "gdp": 100,
+      "pop": 66000000,
+      "region": "Asia"
+    },
+    {
+      "code": "TUR",
+      "name": "Turkey",
+      "life": 66.3,
+      "gdp": 2800,
+      "pop": 56000000,
+      "region": "Europe"
+    },
+    {
+      "code": "KOR",
+      "name": "South Korea",
+      "life": 71.3,
+      "gdp": 6500,
+      "pop": 43000000,
+      "region": "Asia"
+    },
+    {
+      "code": "ZAF",
+      "name": "South Africa",
+      "life": 62.1,
+      "gdp": 3400,
+      "pop": 37000000,
+      "region": "Africa"
+    },
+    {
+      "code": "COL",
+      "name": "Colombia",
+      "life": 68.6,
+      "gdp": 1300,
+      "pop": 33000000,
+      "region": "Americas"
+    },
+    {
+      "code": "ESP",
+      "name": "Spain",
+      "life": 76.9,
+      "gdp": 13200,
+      "pop": 39000000,
+      "region": "Europe"
+    },
+    {
+      "code": "ARG",
+      "name": "Argentina",
+      "life": 71.5,
+      "gdp": 4500,
+      "pop": 33000000,
+      "region": "Americas"
+    },
+    {
+      "code": "POL",
+      "name": "Poland",
+      "life": 71,
+      "gdp": 1700,
+      "pop": 38000000,
+      "region": "Europe"
+    },
+    {
+      "code": "CAN",
+      "name": "Canada",
+      "life": 77.4,
+      "gdp": 21400,
+      "pop": 28000000,
+      "region": "Americas"
+    },
+    {
+      "code": "AUS",
+      "name": "Australia",
+      "life": 77,
+      "gdp": 18100,
+      "pop": 17000000,
+      "region": "Oceania"
+    },
+    {
+      "code": "SAU",
+      "name": "Saudi Arabia",
+      "life": 68.6,
+      "gdp": 7200,
+      "pop": 16000000,
+      "region": "Asia"
+    },
+    {
+      "code": "THA",
+      "name": "Thailand",
+      "life": 68.2,
+      "gdp": 1500,
+      "pop": 55000000,
+      "region": "Asia"
+    },
+    {
+      "code": "MYS",
+      "name": "Malaysia",
+      "life": 70.8,
+      "gdp": 2400,
+      "pop": 18000000,
+      "region": "Asia"
+    },
+    {
+      "code": "PHL",
+      "name": "Philippines",
+      "life": 66.1,
+      "gdp": 730,
+      "pop": 61000000,
+      "region": "Asia"
+    },
+    {
+      "code": "PAK",
+      "name": "Pakistan",
+      "life": 59,
+      "gdp": 390,
+      "pop": 108000000,
+      "region": "Asia"
+    },
+    {
+      "code": "BGD",
+      "name": "Bangladesh",
+      "life": 56.9,
+      "gdp": 280,
+      "pop": 104000000,
+      "region": "Asia"
+    },
+    {
+      "code": "NLD",
+      "name": "Netherlands",
+      "life": 77,
+      "gdp": 19800,
+      "pop": 15000000,
+      "region": "Europe"
+    },
+    {
+      "code": "CHE",
+      "name": "Switzerland",
+      "life": 77.4,
+      "gdp": 33600,
+      "pop": 7000000,
+      "region": "Europe"
+    },
+    {
+      "code": "SWE",
+      "name": "Sweden",
+      "life": 77.7,
+      "gdp": 27500,
+      "pop": 9000000,
+      "region": "Europe"
+    },
+    {
+      "code": "NOR",
+      "name": "Norway",
+      "life": 76.6,
+      "gdp": 27600,
+      "pop": 4000000,
+      "region": "Europe"
+    }
+  ],
+  "1991": [
+    {
+      "code": "USA",
+      "name": "United States",
+      "life": 75.4,
+      "gdp": 24276,
+      "pop": 253000000,
+      "region": "Americas"
+    },
+    {
+      "code": "CHN",
+      "name": "China",
+      "life": 69.5,
+      "gdp": 371,
+      "pop": 1153680000,
+      "region": "Asia"
+    },
+    {
+      "code": "IND",
+      "name": "India",
+      "life": 58.3,
+      "gdp": 403,
+      "pop": 880440000,
+      "region": "Asia"
+    },
+    {
+      "code": "JPN",
+      "name": "Japan",
+      "life": 79.1,
+      "gdp": 26418,
+      "pop": 125488000,
+      "region": "Asia"
+    },
+    {
+      "code": "DEU",
+      "name": "Germany",
+      "life": 75.6,
+      "gdp": 22746,
+      "pop": 79237000,
+      "region": "Europe"
+    },
+    {
+      "code": "GBR",
+      "name": "United Kingdom",
+      "life": 76,
+      "gdp": 19074,
+      "pop": 57171000,
+      "region": "Europe"
+    },
+    {
+      "code": "FRA",
+      "name": "France",
+      "life": 77.1,
+      "gdp": 22236,
+      "pop": 58174000,
+      "region": "Europe"
+    },
+    {
+      "code": "BRA",
+      "name": "Brazil",
+      "life": 66.4,
+      "gdp": 3328,
+      "pop": 151800000,
+      "region": "Americas"
+    },
+    {
+      "code": "RUS",
+      "name": "Russia",
+      "life": 69.3,
+      "gdp": 3952,
+      "pop": 148444000,
+      "region": "Europe"
+    },
+    {
+      "code": "NGA",
+      "name": "Nigeria",
+      "life": 46.1,
+      "gdp": 339,
+      "pop": 98400000,
+      "region": "Africa"
+    },
+    {
+      "code": "MEX",
+      "name": "Mexico",
+      "life": 70.9,
+      "gdp": 3224,
+      "pop": 83996000,
+      "region": "Americas"
+    },
+    {
+      "code": "IDN",
+      "name": "Indonesia",
+      "life": 62.2,
+      "gdp": 678,
+      "pop": 183172000,
+      "region": "Asia"
+    },
+    {
+      "code": "ETH",
+      "name": "Ethiopia",
+      "life": 47.2,
+      "gdp": 265,
+      "pop": 52275000,
+      "region": "Africa"
+    },
+    {
+      "code": "EGY",
+      "name": "Egypt",
+      "life": 64.8,
+      "gdp": 1040,
+      "pop": 58425000,
+      "region": "Africa"
+    },
+    {
+      "code": "VNM",
+      "name": "Vietnam",
+      "life": 65.5,
+      "gdp": 106,
+      "pop": 66792000,
+      "region": "Asia"
+    },
+    {
+      "code": "TUR",
+      "name": "Turkey",
+      "life": 66.4,
+      "gdp": 2912,
+      "pop": 56168000,
+      "region": "Europe"
+    },
+    {
+      "code": "KOR",
+      "name": "South Korea",
+      "life": 71.4,
+      "gdp": 6630,
+      "pop": 43516000,
+      "region": "Asia"
+    },
+    {
+      "code": "ZAF",
+      "name": "South Africa",
+      "life": 62.3,
+      "gdp": 3536,
+      "pop": 37925000,
+      "region": "Africa"
+    },
+    {
+      "code": "COL",
+      "name": "Colombia",
+      "life": 68.7,
+      "gdp": 1352,
+      "pop": 33396000,
+      "region": "Americas"
+    },
+    {
+      "code": "ESP",
+      "name": "Spain",
+      "life": 77.1,
+      "gdp": 13464,
+      "pop": 39117000,
+      "region": "Europe"
+    },
+    {
+      "code": "ARG",
+      "name": "Argentina",
+      "life": 71.6,
+      "gdp": 4680,
+      "pop": 33396000,
+      "region": "Americas"
+    },
+    {
+      "code": "POL",
+      "name": "Poland",
+      "life": 71.1,
+      "gdp": 1768,
+      "pop": 38114000,
+      "region": "Europe"
+    },
+    {
+      "code": "CAN",
+      "name": "Canada",
+      "life": 77.6,
+      "gdp": 21828,
+      "pop": 28336000,
+      "region": "Americas"
+    },
+    {
+      "code": "AUS",
+      "name": "Australia",
+      "life": 77.2,
+      "gdp": 18462,
+      "pop": 17204000,
+      "region": "Oceania"
+    },
+    {
+      "code": "SAU",
+      "name": "Saudi Arabia",
+      "life": 68.7,
+      "gdp": 7344,
+      "pop": 16192000,
+      "region": "Asia"
+    },
+    {
+      "code": "THA",
+      "name": "Thailand",
+      "life": 68.3,
+      "gdp": 1560,
+      "pop": 55660000,
+      "region": "Asia"
+    },
+    {
+      "code": "MYS",
+      "name": "Malaysia",
+      "life": 70.9,
+      "gdp": 2496,
+      "pop": 18216000,
+      "region": "Asia"
+    },
+    {
+      "code": "PHL",
+      "name": "Philippines",
+      "life": 66.2,
+      "gdp": 774,
+      "pop": 61732000,
+      "region": "Asia"
+    },
+    {
+      "code": "PAK",
+      "name": "Pakistan",
+      "life": 59.1,
+      "gdp": 413,
+      "pop": 109296000,
+      "region": "Asia"
+    },
+    {
+      "code": "BGD",
+      "name": "Bangladesh",
+      "life": 57,
+      "gdp": 297,
+      "pop": 105248000,
+      "region": "Asia"
+    },
+    {
+      "code": "NLD",
+      "name": "Netherlands",
+      "life": 77.2,
+      "gdp": 20196,
+      "pop": 15045000,
+      "region": "Europe"
+    },
+    {
+      "code": "CHE",
+      "name": "Switzerland",
+      "life": 77.6,
+      "gdp": 34272,
+      "pop": 7021000,
+      "region": "Europe"
+    },
+    {
+      "code": "SWE",
+      "name": "Sweden",
+      "life": 77.9,
+      "gdp": 28050,
+      "pop": 9027000,
+      "region": "Europe"
+    },
+    {
+      "code": "NOR",
+      "name": "Norway",
+      "life": 76.8,
+      "gdp": 28152,
+      "pop": 4012000,
+      "region": "Europe"
+    }
+  ],
+  "1992": [
+    {
+      "code": "USA",
+      "name": "United States",
+      "life": 75.5,
+      "gdp": 24762,
+      "pop": 256036000,
+      "region": "Americas"
+    },
+    {
+      "code": "CHN",
+      "name": "China",
+      "life": 69.7,
+      "gdp": 393,
+      "pop": 1167524160,
+      "region": "Asia"
+    },
+    {
+      "code": "IND",
+      "name": "India",
+      "life": 58.4,
+      "gdp": 427,
+      "pop": 891005280,
+      "region": "Asia"
+    },
+    {
+      "code": "JPN",
+      "name": "Japan",
+      "life": 79.2,
+      "gdp": 26946,
+      "pop": 126993856,
+      "region": "Asia"
+    },
+    {
+      "code": "DEU",
+      "name": "Germany",
+      "life": 75.7,
+      "gdp": 23201,
+      "pop": 79474711,
+      "region": "Europe"
+    },
+    {
+      "code": "GBR",
+      "name": "United Kingdom",
+      "life": 76.1,
+      "gdp": 19455,
+      "pop": 57342513,
+      "region": "Europe"
+    },
+    {
+      "code": "FRA",
+      "name": "France",
+      "life": 77.2,
+      "gdp": 22681,
+      "pop": 58348522,
+      "region": "Europe"
+    },
+    {
+      "code": "BRA",
+      "name": "Brazil",
+      "life": 66.6,
+      "gdp": 3461,
+      "pop": 153621600,
+      "region": "Americas"
+    },
+    {
+      "code": "RUS",
+      "name": "Russia",
+      "life": 69.5,
+      "gdp": 4110,
+      "pop": 148889332,
+      "region": "Europe"
+    },
+    {
+      "code": "NGA",
+      "name": "Nigeria",
+      "life": 46.3,
+      "gdp": 360,
+      "pop": 100860000,
+      "region": "Africa"
+    },
+    {
+      "code": "MEX",
+      "name": "Mexico",
+      "life": 71.1,
+      "gdp": 3353,
+      "pop": 85003952,
+      "region": "Americas"
+    },
+    {
+      "code": "IDN",
+      "name": "Indonesia",
+      "life": 62.3,
+      "gdp": 719,
+      "pop": 185370064,
+      "region": "Asia"
+    },
+    {
+      "code": "ETH",
+      "name": "Ethiopia",
+      "life": 47.4,
+      "gdp": 281,
+      "pop": 53581875,
+      "region": "Africa"
+    },
+    {
+      "code": "EGY",
+      "name": "Egypt",
+      "life": 65,
+      "gdp": 1082,
+      "pop": 59885625,
+      "region": "Africa"
+    },
+    {
+      "code": "VNM",
+      "name": "Vietnam",
+      "life": 65.7,
+      "gdp": 112,
+      "pop": 67593504,
+      "region": "Asia"
+    },
+    {
+      "code": "TUR",
+      "name": "Turkey",
+      "life": 66.6,
+      "gdp": 3028,
+      "pop": 56336504,
+      "region": "Europe"
+    },
+    {
+      "code": "KOR",
+      "name": "South Korea",
+      "life": 71.6,
+      "gdp": 6763,
+      "pop": 44038192,
+      "region": "Asia"
+    },
+    {
+      "code": "ZAF",
+      "name": "South Africa",
+      "life": 62.6,
+      "gdp": 3677,
+      "pop": 38873125,
+      "region": "Africa"
+    },
+    {
+      "code": "COL",
+      "name": "Colombia",
+      "life": 68.9,
+      "gdp": 1406,
+      "pop": 33796752,
+      "region": "Americas"
+    },
+    {
+      "code": "ESP",
+      "name": "Spain",
+      "life": 77.2,
+      "gdp": 13733,
+      "pop": 39234351,
+      "region": "Europe"
+    },
+    {
+      "code": "ARG",
+      "name": "Argentina",
+      "life": 71.8,
+      "gdp": 4867,
+      "pop": 33796752,
+      "region": "Americas"
+    },
+    {
+      "code": "POL",
+      "name": "Poland",
+      "life": 71.3,
+      "gdp": 1839,
+      "pop": 38228342,
+      "region": "Europe"
+    },
+    {
+      "code": "CAN",
+      "name": "Canada",
+      "life": 77.7,
+      "gdp": 22265,
+      "pop": 28676032,
+      "region": "Americas"
+    },
+    {
+      "code": "AUS",
+      "name": "Australia",
+      "life": 77.3,
+      "gdp": 18831,
+      "pop": 17410448,
+      "region": "Oceania"
+    },
+    {
+      "code": "SAU",
+      "name": "Saudi Arabia",
+      "life": 68.9,
+      "gdp": 7491,
+      "pop": 16386304,
+      "region": "Asia"
+    },
+    {
+      "code": "THA",
+      "name": "Thailand",
+      "life": 68.5,
+      "gdp": 1622,
+      "pop": 56327920,
+      "region": "Asia"
+    },
+    {
+      "code": "MYS",
+      "name": "Malaysia",
+      "life": 71.1,
+      "gdp": 2596,
+      "pop": 18434592,
+      "region": "Asia"
+    },
+    {
+      "code": "PHL",
+      "name": "Philippines",
+      "life": 66.4,
+      "gdp": 820,
+      "pop": 62472784,
+      "region": "Asia"
+    },
+    {
+      "code": "PAK",
+      "name": "Pakistan",
+      "life": 59.2,
+      "gdp": 438,
+      "pop": 110607552,
+      "region": "Asia"
+    },
+    {
+      "code": "BGD",
+      "name": "Bangladesh",
+      "life": 57.1,
+      "gdp": 315,
+      "pop": 106510976,
+      "region": "Asia"
+    },
+    {
+      "code": "NLD",
+      "name": "Netherlands",
+      "life": 77.3,
+      "gdp": 20600,
+      "pop": 15090135,
+      "region": "Europe"
+    },
+    {
+      "code": "CHE",
+      "name": "Switzerland",
+      "life": 77.7,
+      "gdp": 34957,
+      "pop": 7042063,
+      "region": "Europe"
+    },
+    {
+      "code": "SWE",
+      "name": "Sweden",
+      "life": 78,
+      "gdp": 28611,
+      "pop": 9054081,
+      "region": "Europe"
+    },
+    {
+      "code": "NOR",
+      "name": "Norway",
+      "life": 76.9,
+      "gdp": 28715,
+      "pop": 4024036,
+      "region": "Europe"
+    }
+  ],
+  "1993": [
+    {
+      "code": "USA",
+      "name": "United States",
+      "life": 75.7,
+      "gdp": 25257,
+      "pop": 259108432,
+      "region": "Americas"
+    },
+    {
+      "code": "CHN",
+      "name": "China",
+      "life": 69.8,
+      "gdp": 417,
+      "pop": 1181534450,
+      "region": "Asia"
+    },
+    {
+      "code": "IND",
+      "name": "India",
+      "life": 58.5,
+      "gdp": 453,
+      "pop": 901697343,
+      "region": "Asia"
+    },
+    {
+      "code": "JPN",
+      "name": "Japan",
+      "life": 79.4,
+      "gdp": 27485,
+      "pop": 128517782,
+      "region": "Asia"
+    },
+    {
+      "code": "DEU",
+      "name": "Germany",
+      "life": 75.9,
+      "gdp": 23665,
+      "pop": 79713135,
+      "region": "Europe"
+    },
+    {
+      "code": "GBR",
+      "name": "United Kingdom",
+      "life": 76.3,
+      "gdp": 19845,
+      "pop": 57514541,
+      "region": "Europe"
+    },
+    {
+      "code": "FRA",
+      "name": "France",
+      "life": 77.4,
+      "gdp": 23134,
+      "pop": 58523568,
+      "region": "Europe"
+    },
+    {
+      "code": "BRA",
+      "name": "Brazil",
+      "life": 66.7,
+      "gdp": 3600,
+      "pop": 155465059,
+      "region": "Americas"
+    },
+    {
+      "code": "RUS",
+      "name": "Russia",
+      "life": 69.6,
+      "gdp": 4274,
+      "pop": 149336000,
+      "region": "Europe"
+    },
+    {
+      "code": "NGA",
+      "name": "Nigeria",
+      "life": 46.5,
+      "gdp": 381,
+      "pop": 103381500,
+      "region": "Africa"
+    },
+    {
+      "code": "MEX",
+      "name": "Mexico",
+      "life": 71.2,
+      "gdp": 3487,
+      "pop": 86023999,
+      "region": "Americas"
+    },
+    {
+      "code": "IDN",
+      "name": "Indonesia",
+      "life": 62.5,
+      "gdp": 762,
+      "pop": 187594505,
+      "region": "Asia"
+    },
+    {
+      "code": "ETH",
+      "name": "Ethiopia",
+      "life": 47.6,
+      "gdp": 298,
+      "pop": 54921422,
+      "region": "Africa"
+    },
+    {
+      "code": "EGY",
+      "name": "Egypt",
+      "life": 65.3,
+      "gdp": 1125,
+      "pop": 61382766,
+      "region": "Africa"
+    },
+    {
+      "code": "VNM",
+      "name": "Vietnam",
+      "life": 65.8,
+      "gdp": 119,
+      "pop": 68404626,
+      "region": "Asia"
+    },
+    {
+      "code": "TUR",
+      "name": "Turkey",
+      "life": 66.7,
+      "gdp": 3150,
+      "pop": 56505514,
+      "region": "Europe"
+    },
+    {
+      "code": "KOR",
+      "name": "South Korea",
+      "life": 71.7,
+      "gdp": 6898,
+      "pop": 44566650,
+      "region": "Asia"
+    },
+    {
+      "code": "ZAF",
+      "name": "South Africa",
+      "life": 62.8,
+      "gdp": 3825,
+      "pop": 39844953,
+      "region": "Africa"
+    },
+    {
+      "code": "COL",
+      "name": "Colombia",
+      "life": 69,
+      "gdp": 1462,
+      "pop": 34202313,
+      "region": "Americas"
+    },
+    {
+      "code": "ESP",
+      "name": "Spain",
+      "life": 77.4,
+      "gdp": 14008,
+      "pop": 39352054,
+      "region": "Europe"
+    },
+    {
+      "code": "ARG",
+      "name": "Argentina",
+      "life": 71.9,
+      "gdp": 5062,
+      "pop": 34202313,
+      "region": "Americas"
+    },
+    {
+      "code": "POL",
+      "name": "Poland",
+      "life": 71.4,
+      "gdp": 1912,
+      "pop": 38343027,
+      "region": "Europe"
+    },
+    {
+      "code": "CAN",
+      "name": "Canada",
+      "life": 77.9,
+      "gdp": 22710,
+      "pop": 29020144,
+      "region": "Americas"
+    },
+    {
+      "code": "AUS",
+      "name": "Australia",
+      "life": 77.5,
+      "gdp": 19208,
+      "pop": 17619373,
+      "region": "Oceania"
+    },
+    {
+      "code": "SAU",
+      "name": "Saudi Arabia",
+      "life": 69,
+      "gdp": 7641,
+      "pop": 16582940,
+      "region": "Asia"
+    },
+    {
+      "code": "THA",
+      "name": "Thailand",
+      "life": 68.6,
+      "gdp": 1687,
+      "pop": 57003855,
+      "region": "Asia"
+    },
+    {
+      "code": "MYS",
+      "name": "Malaysia",
+      "life": 71.2,
+      "gdp": 2700,
+      "pop": 18655807,
+      "region": "Asia"
+    },
+    {
+      "code": "PHL",
+      "name": "Philippines",
+      "life": 66.5,
+      "gdp": 869,
+      "pop": 63222457,
+      "region": "Asia"
+    },
+    {
+      "code": "PAK",
+      "name": "Pakistan",
+      "life": 59.4,
+      "gdp": 464,
+      "pop": 111934843,
+      "region": "Asia"
+    },
+    {
+      "code": "BGD",
+      "name": "Bangladesh",
+      "life": 57.2,
+      "gdp": 333,
+      "pop": 107789108,
+      "region": "Asia"
+    },
+    {
+      "code": "NLD",
+      "name": "Netherlands",
+      "life": 77.5,
+      "gdp": 21012,
+      "pop": 15135405,
+      "region": "Europe"
+    },
+    {
+      "code": "CHE",
+      "name": "Switzerland",
+      "life": 77.9,
+      "gdp": 35657,
+      "pop": 7063189,
+      "region": "Europe"
+    },
+    {
+      "code": "SWE",
+      "name": "Sweden",
+      "life": 78.2,
+      "gdp": 29183,
+      "pop": 9081243,
+      "region": "Europe"
+    },
+    {
+      "code": "NOR",
+      "name": "Norway",
+      "life": 77.1,
+      "gdp": 29289,
+      "pop": 4036108,
+      "region": "Europe"
+    }
+  ],
+  "1994": [
+    {
+      "code": "USA",
+      "name": "United States",
+      "life": 75.8,
+      "gdp": 25762,
+      "pop": 262217733,
+      "region": "Americas"
+    },
+    {
+      "code": "CHN",
+      "name": "China",
+      "life": 70,
+      "gdp": 442,
+      "pop": 1195712863,
+      "region": "Asia"
+    },
+    {
+      "code": "IND",
+      "name": "India",
+      "life": 58.7,
+      "gdp": 480,
+      "pop": 912517711,
+      "region": "Asia"
+    },
+    {
+      "code": "JPN",
+      "name": "Japan",
+      "life": 79.5,
+      "gdp": 28035,
+      "pop": 130059996,
+      "region": "Asia"
+    },
+    {
+      "code": "DEU",
+      "name": "Germany",
+      "life": 76,
+      "gdp": 24138,
+      "pop": 79952275,
+      "region": "Europe"
+    },
+    {
+      "code": "GBR",
+      "name": "United Kingdom",
+      "life": 76.4,
+      "gdp": 20241,
+      "pop": 57687084,
+      "region": "Europe"
+    },
+    {
+      "code": "FRA",
+      "name": "France",
+      "life": 77.5,
+      "gdp": 23597,
+      "pop": 58699138,
+      "region": "Europe"
+    },
+    {
+      "code": "BRA",
+      "name": "Brazil",
+      "life": 66.8,
+      "gdp": 3744,
+      "pop": 157330640,
+      "region": "Americas"
+    },
+    {
+      "code": "RUS",
+      "name": "Russia",
+      "life": 69.8,
+      "gdp": 4445,
+      "pop": 149784008,
+      "region": "Europe"
+    },
+    {
+      "code": "NGA",
+      "name": "Nigeria",
+      "life": 46.6,
+      "gdp": 404,
+      "pop": 105966037,
+      "region": "Africa"
+    },
+    {
+      "code": "MEX",
+      "name": "Mexico",
+      "life": 71.4,
+      "gdp": 3627,
+      "pop": 87056287,
+      "region": "Americas"
+    },
+    {
+      "code": "IDN",
+      "name": "Indonesia",
+      "life": 62.6,
+      "gdp": 808,
+      "pop": 189845639,
+      "region": "Asia"
+    },
+    {
+      "code": "ETH",
+      "name": "Ethiopia",
+      "life": 47.8,
+      "gdp": 316,
+      "pop": 56294457,
+      "region": "Africa"
+    },
+    {
+      "code": "EGY",
+      "name": "Egypt",
+      "life": 65.5,
+      "gdp": 1170,
+      "pop": 62917335,
+      "region": "Africa"
+    },
+    {
+      "code": "VNM",
+      "name": "Vietnam",
+      "life": 65.9,
+      "gdp": 126,
+      "pop": 69225482,
+      "region": "Asia"
+    },
+    {
+      "code": "TUR",
+      "name": "Turkey",
+      "life": 66.8,
+      "gdp": 3276,
+      "pop": 56675030,
+      "region": "Europe"
+    },
+    {
+      "code": "KOR",
+      "name": "South Korea",
+      "life": 71.9,
+      "gdp": 7036,
+      "pop": 45101450,
+      "region": "Asia"
+    },
+    {
+      "code": "ZAF",
+      "name": "South Africa",
+      "life": 63.1,
+      "gdp": 3978,
+      "pop": 40841077,
+      "region": "Africa"
+    },
+    {
+      "code": "COL",
+      "name": "Colombia",
+      "life": 69.1,
+      "gdp": 1521,
+      "pop": 34612741,
+      "region": "Americas"
+    },
+    {
+      "code": "ESP",
+      "name": "Spain",
+      "life": 77.5,
+      "gdp": 14288,
+      "pop": 39470110,
+      "region": "Europe"
+    },
+    {
+      "code": "ARG",
+      "name": "Argentina",
+      "life": 72.1,
+      "gdp": 5264,
+      "pop": 34612741,
+      "region": "Americas"
+    },
+    {
+      "code": "POL",
+      "name": "Poland",
+      "life": 71.6,
+      "gdp": 1989,
+      "pop": 38458056,
+      "region": "Europe"
+    },
+    {
+      "code": "CAN",
+      "name": "Canada",
+      "life": 78,
+      "gdp": 23164,
+      "pop": 29368386,
+      "region": "Americas"
+    },
+    {
+      "code": "AUS",
+      "name": "Australia",
+      "life": 77.6,
+      "gdp": 19592,
+      "pop": 17830806,
+      "region": "Oceania"
+    },
+    {
+      "code": "SAU",
+      "name": "Saudi Arabia",
+      "life": 69.1,
+      "gdp": 7794,
+      "pop": 16781935,
+      "region": "Asia"
+    },
+    {
+      "code": "THA",
+      "name": "Thailand",
+      "life": 68.7,
+      "gdp": 1755,
+      "pop": 57687901,
+      "region": "Asia"
+    },
+    {
+      "code": "MYS",
+      "name": "Malaysia",
+      "life": 71.4,
+      "gdp": 2808,
+      "pop": 18879677,
+      "region": "Asia"
+    },
+    {
+      "code": "PHL",
+      "name": "Philippines",
+      "life": 66.6,
+      "gdp": 922,
+      "pop": 63981127,
+      "region": "Asia"
+    },
+    {
+      "code": "PAK",
+      "name": "Pakistan",
+      "life": 59.5,
+      "gdp": 492,
+      "pop": 113278061,
+      "region": "Asia"
+    },
+    {
+      "code": "BGD",
+      "name": "Bangladesh",
+      "life": 57.4,
+      "gdp": 353,
+      "pop": 109082577,
+      "region": "Asia"
+    },
+    {
+      "code": "NLD",
+      "name": "Netherlands",
+      "life": 77.6,
+      "gdp": 21432,
+      "pop": 15180812,
+      "region": "Europe"
+    },
+    {
+      "code": "CHE",
+      "name": "Switzerland",
+      "life": 78,
+      "gdp": 36370,
+      "pop": 7084379,
+      "region": "Europe"
+    },
+    {
+      "code": "SWE",
+      "name": "Sweden",
+      "life": 78.3,
+      "gdp": 29767,
+      "pop": 9108487,
+      "region": "Europe"
+    },
+    {
+      "code": "NOR",
+      "name": "Norway",
+      "life": 77.2,
+      "gdp": 29875,
+      "pop": 4048216,
+      "region": "Europe"
+    }
+  ],
+  "1995": [
+    {
+      "code": "USA",
+      "name": "United States",
+      "life": 76,
+      "gdp": 26277,
+      "pop": 265364346,
+      "region": "Americas"
+    },
+    {
+      "code": "CHN",
+      "name": "China",
+      "life": 70.1,
+      "gdp": 468,
+      "pop": 1210061418,
+      "region": "Asia"
+    },
+    {
+      "code": "IND",
+      "name": "India",
+      "life": 58.8,
+      "gdp": 509,
+      "pop": 923467924,
+      "region": "Asia"
+    },
+    {
+      "code": "JPN",
+      "name": "Japan",
+      "life": 79.7,
+      "gdp": 28596,
+      "pop": 131620716,
+      "region": "Asia"
+    },
+    {
+      "code": "DEU",
+      "name": "Germany",
+      "life": 76.2,
+      "gdp": 24621,
+      "pop": 80192131,
+      "region": "Europe"
+    },
+    {
+      "code": "GBR",
+      "name": "United Kingdom",
+      "life": 76.6,
+      "gdp": 20646,
+      "pop": 57860145,
+      "region": "Europe"
+    },
+    {
+      "code": "FRA",
+      "name": "France",
+      "life": 77.7,
+      "gdp": 24069,
+      "pop": 58875236,
+      "region": "Europe"
+    },
+    {
+      "code": "BRA",
+      "name": "Brazil",
+      "life": 67,
+      "gdp": 3893,
+      "pop": 159218608,
+      "region": "Americas"
+    },
+    {
+      "code": "RUS",
+      "name": "Russia",
+      "life": 69.9,
+      "gdp": 4623,
+      "pop": 150233360,
+      "region": "Europe"
+    },
+    {
+      "code": "NGA",
+      "name": "Nigeria",
+      "life": 46.8,
+      "gdp": 428,
+      "pop": 108615188,
+      "region": "Africa"
+    },
+    {
+      "code": "MEX",
+      "name": "Mexico",
+      "life": 71.5,
+      "gdp": 3772,
+      "pop": 88100963,
+      "region": "Americas"
+    },
+    {
+      "code": "IDN",
+      "name": "Indonesia",
+      "life": 62.7,
+      "gdp": 856,
+      "pop": 192123786,
+      "region": "Asia"
+    },
+    {
+      "code": "ETH",
+      "name": "Ethiopia",
+      "life": 47.9,
+      "gdp": 335,
+      "pop": 57701819,
+      "region": "Africa"
+    },
+    {
+      "code": "EGY",
+      "name": "Egypt",
+      "life": 65.8,
+      "gdp": 1217,
+      "pop": 64490268,
+      "region": "Africa"
+    },
+    {
+      "code": "VNM",
+      "name": "Vietnam",
+      "life": 66.1,
+      "gdp": 134,
+      "pop": 70056187,
+      "region": "Asia"
+    },
+    {
+      "code": "TUR",
+      "name": "Turkey",
+      "life": 67,
+      "gdp": 3407,
+      "pop": 56845055,
+      "region": "Europe"
+    },
+    {
+      "code": "KOR",
+      "name": "South Korea",
+      "life": 72,
+      "gdp": 7177,
+      "pop": 45642668,
+      "region": "Asia"
+    },
+    {
+      "code": "ZAF",
+      "name": "South Africa",
+      "life": 63.3,
+      "gdp": 4137,
+      "pop": 41862104,
+      "region": "Africa"
+    },
+    {
+      "code": "COL",
+      "name": "Colombia",
+      "life": 69.3,
+      "gdp": 1582,
+      "pop": 35028094,
+      "region": "Americas"
+    },
+    {
+      "code": "ESP",
+      "name": "Spain",
+      "life": 77.7,
+      "gdp": 14574,
+      "pop": 39588521,
+      "region": "Europe"
+    },
+    {
+      "code": "ARG",
+      "name": "Argentina",
+      "life": 72.2,
+      "gdp": 5475,
+      "pop": 35028094,
+      "region": "Americas"
+    },
+    {
+      "code": "POL",
+      "name": "Poland",
+      "life": 71.7,
+      "gdp": 2068,
+      "pop": 38573430,
+      "region": "Europe"
+    },
+    {
+      "code": "CAN",
+      "name": "Canada",
+      "life": 78.2,
+      "gdp": 23627,
+      "pop": 29720807,
+      "region": "Americas"
+    },
+    {
+      "code": "AUS",
+      "name": "Australia",
+      "life": 77.8,
+      "gdp": 19984,
+      "pop": 18044776,
+      "region": "Oceania"
+    },
+    {
+      "code": "SAU",
+      "name": "Saudi Arabia",
+      "life": 69.3,
+      "gdp": 7949,
+      "pop": 16983318,
+      "region": "Asia"
+    },
+    {
+      "code": "THA",
+      "name": "Thailand",
+      "life": 68.9,
+      "gdp": 1825,
+      "pop": 58380156,
+      "region": "Asia"
+    },
+    {
+      "code": "MYS",
+      "name": "Malaysia",
+      "life": 71.5,
+      "gdp": 2920,
+      "pop": 19106233,
+      "region": "Asia"
+    },
+    {
+      "code": "PHL",
+      "name": "Philippines",
+      "life": 66.8,
+      "gdp": 977,
+      "pop": 64748900,
+      "region": "Asia"
+    },
+    {
+      "code": "PAK",
+      "name": "Pakistan",
+      "life": 59.6,
+      "gdp": 522,
+      "pop": 114637397,
+      "region": "Asia"
+    },
+    {
+      "code": "BGD",
+      "name": "Bangladesh",
+      "life": 57.5,
+      "gdp": 375,
+      "pop": 110391568,
+      "region": "Asia"
+    },
+    {
+      "code": "NLD",
+      "name": "Netherlands",
+      "life": 77.8,
+      "gdp": 21861,
+      "pop": 15226354,
+      "region": "Europe"
+    },
+    {
+      "code": "CHE",
+      "name": "Switzerland",
+      "life": 78.2,
+      "gdp": 37097,
+      "pop": 7105632,
+      "region": "Europe"
+    },
+    {
+      "code": "SWE",
+      "name": "Sweden",
+      "life": 78.5,
+      "gdp": 30362,
+      "pop": 9135812,
+      "region": "Europe"
+    },
+    {
+      "code": "NOR",
+      "name": "Norway",
+      "life": 77.4,
+      "gdp": 30473,
+      "pop": 4060361,
+      "region": "Europe"
+    }
+  ],
+  "1996": [
+    {
+      "code": "USA",
+      "name": "United States",
+      "life": 76.1,
+      "gdp": 26803,
+      "pop": 268548718,
+      "region": "Americas"
+    },
+    {
+      "code": "CHN",
+      "name": "China",
+      "life": 70.2,
+      "gdp": 496,
+      "pop": 1224582155,
+      "region": "Asia"
+    },
+    {
+      "code": "IND",
+      "name": "India",
+      "life": 58.9,
+      "gdp": 539,
+      "pop": 934549539,
+      "region": "Asia"
+    },
+    {
+      "code": "JPN",
+      "name": "Japan",
+      "life": 79.8,
+      "gdp": 29168,
+      "pop": 133200164,
+      "region": "Asia"
+    },
+    {
+      "code": "DEU",
+      "name": "Germany",
+      "life": 76.3,
+      "gdp": 25113,
+      "pop": 80432708,
+      "region": "Europe"
+    },
+    {
+      "code": "GBR",
+      "name": "United Kingdom",
+      "life": 76.7,
+      "gdp": 21059,
+      "pop": 58033726,
+      "region": "Europe"
+    },
+    {
+      "code": "FRA",
+      "name": "France",
+      "life": 77.8,
+      "gdp": 24550,
+      "pop": 59051861,
+      "region": "Europe"
+    },
+    {
+      "code": "BRA",
+      "name": "Brazil",
+      "life": 67.1,
+      "gdp": 4049,
+      "pop": 161129231,
+      "region": "Americas"
+    },
+    {
+      "code": "RUS",
+      "name": "Russia",
+      "life": 70,
+      "gdp": 4808,
+      "pop": 150684060,
+      "region": "Europe"
+    },
+    {
+      "code": "NGA",
+      "name": "Nigeria",
+      "life": 47,
+      "gdp": 454,
+      "pop": 111330568,
+      "region": "Africa"
+    },
+    {
+      "code": "MEX",
+      "name": "Mexico",
+      "life": 71.6,
+      "gdp": 3922,
+      "pop": 89158174,
+      "region": "Americas"
+    },
+    {
+      "code": "IDN",
+      "name": "Indonesia",
+      "life": 62.8,
+      "gdp": 908,
+      "pop": 194429272,
+      "region": "Asia"
+    },
+    {
+      "code": "ETH",
+      "name": "Ethiopia",
+      "life": 48.1,
+      "gdp": 355,
+      "pop": 59144364,
+      "region": "Africa"
+    },
+    {
+      "code": "EGY",
+      "name": "Egypt",
+      "life": 66,
+      "gdp": 1265,
+      "pop": 66102525,
+      "region": "Africa"
+    },
+    {
+      "code": "VNM",
+      "name": "Vietnam",
+      "life": 66.2,
+      "gdp": 142,
+      "pop": 70896862,
+      "region": "Asia"
+    },
+    {
+      "code": "TUR",
+      "name": "Turkey",
+      "life": 67.1,
+      "gdp": 3543,
+      "pop": 57015590,
+      "region": "Europe"
+    },
+    {
+      "code": "KOR",
+      "name": "South Korea",
+      "life": 72.2,
+      "gdp": 7320,
+      "pop": 46190380,
+      "region": "Asia"
+    },
+    {
+      "code": "ZAF",
+      "name": "South Africa",
+      "life": 63.6,
+      "gdp": 4302,
+      "pop": 42908656,
+      "region": "Africa"
+    },
+    {
+      "code": "COL",
+      "name": "Colombia",
+      "life": 69.4,
+      "gdp": 1645,
+      "pop": 35448431,
+      "region": "Americas"
+    },
+    {
+      "code": "ESP",
+      "name": "Spain",
+      "life": 77.8,
+      "gdp": 14865,
+      "pop": 39707286,
+      "region": "Europe"
+    },
+    {
+      "code": "ARG",
+      "name": "Argentina",
+      "life": 72.4,
+      "gdp": 5694,
+      "pop": 35448431,
+      "region": "Americas"
+    },
+    {
+      "code": "POL",
+      "name": "Poland",
+      "life": 71.9,
+      "gdp": 2151,
+      "pop": 38689151,
+      "region": "Europe"
+    },
+    {
+      "code": "CAN",
+      "name": "Canada",
+      "life": 78.3,
+      "gdp": 24100,
+      "pop": 30077456,
+      "region": "Americas"
+    },
+    {
+      "code": "AUS",
+      "name": "Australia",
+      "life": 77.9,
+      "gdp": 20384,
+      "pop": 18261313,
+      "region": "Oceania"
+    },
+    {
+      "code": "SAU",
+      "name": "Saudi Arabia",
+      "life": 69.4,
+      "gdp": 8108,
+      "pop": 17187118,
+      "region": "Asia"
+    },
+    {
+      "code": "THA",
+      "name": "Thailand",
+      "life": 69,
+      "gdp": 1898,
+      "pop": 59080718,
+      "region": "Asia"
+    },
+    {
+      "code": "MYS",
+      "name": "Malaysia",
+      "life": 71.6,
+      "gdp": 3037,
+      "pop": 19335508,
+      "region": "Asia"
+    },
+    {
+      "code": "PHL",
+      "name": "Philippines",
+      "life": 66.9,
+      "gdp": 1036,
+      "pop": 65525887,
+      "region": "Asia"
+    },
+    {
+      "code": "PAK",
+      "name": "Pakistan",
+      "life": 59.7,
+      "gdp": 553,
+      "pop": 116013046,
+      "region": "Asia"
+    },
+    {
+      "code": "BGD",
+      "name": "Bangladesh",
+      "life": 57.6,
+      "gdp": 397,
+      "pop": 111716267,
+      "region": "Asia"
+    },
+    {
+      "code": "NLD",
+      "name": "Netherlands",
+      "life": 77.9,
+      "gdp": 22298,
+      "pop": 15272033,
+      "region": "Europe"
+    },
+    {
+      "code": "CHE",
+      "name": "Switzerland",
+      "life": 78.3,
+      "gdp": 37839,
+      "pop": 7126949,
+      "region": "Europe"
+    },
+    {
+      "code": "SWE",
+      "name": "Sweden",
+      "life": 78.6,
+      "gdp": 30969,
+      "pop": 9163220,
+      "region": "Europe"
+    },
+    {
+      "code": "NOR",
+      "name": "Norway",
+      "life": 77.5,
+      "gdp": 31082,
+      "pop": 4072542,
+      "region": "Europe"
+    }
+  ],
+  "1997": [
+    {
+      "code": "USA",
+      "name": "United States",
+      "life": 76.3,
+      "gdp": 27339,
+      "pop": 271771303,
+      "region": "Americas"
+    },
+    {
+      "code": "CHN",
+      "name": "China",
+      "life": 70.4,
+      "gdp": 526,
+      "pop": 1239277141,
+      "region": "Asia"
+    },
+    {
+      "code": "IND",
+      "name": "India",
+      "life": 59,
+      "gdp": 571,
+      "pop": 945764134,
+      "region": "Asia"
+    },
+    {
+      "code": "JPN",
+      "name": "Japan",
+      "life": 80,
+      "gdp": 29751,
+      "pop": 134798566,
+      "region": "Asia"
+    },
+    {
+      "code": "DEU",
+      "name": "Germany",
+      "life": 76.5,
+      "gdp": 25616,
+      "pop": 80674006,
+      "region": "Europe"
+    },
+    {
+      "code": "GBR",
+      "name": "United Kingdom",
+      "life": 76.9,
+      "gdp": 21480,
+      "pop": 58207827,
+      "region": "Europe"
+    },
+    {
+      "code": "FRA",
+      "name": "France",
+      "life": 78,
+      "gdp": 25041,
+      "pop": 59229017,
+      "region": "Europe"
+    },
+    {
+      "code": "BRA",
+      "name": "Brazil",
+      "life": 67.2,
+      "gdp": 4211,
+      "pop": 163062782,
+      "region": "Americas"
+    },
+    {
+      "code": "RUS",
+      "name": "Russia",
+      "life": 70.2,
+      "gdp": 5001,
+      "pop": 151136112,
+      "region": "Europe"
+    },
+    {
+      "code": "NGA",
+      "name": "Nigeria",
+      "life": 47.2,
+      "gdp": 481,
+      "pop": 114113832,
+      "region": "Africa"
+    },
+    {
+      "code": "MEX",
+      "name": "Mexico",
+      "life": 71.8,
+      "gdp": 4079,
+      "pop": 90228073,
+      "region": "Americas"
+    },
+    {
+      "code": "IDN",
+      "name": "Indonesia",
+      "life": 63,
+      "gdp": 962,
+      "pop": 196762423,
+      "region": "Asia"
+    },
+    {
+      "code": "ETH",
+      "name": "Ethiopia",
+      "life": 48.3,
+      "gdp": 376,
+      "pop": 60622973,
+      "region": "Africa"
+    },
+    {
+      "code": "EGY",
+      "name": "Egypt",
+      "life": 66.3,
+      "gdp": 1316,
+      "pop": 67755088,
+      "region": "Africa"
+    },
+    {
+      "code": "VNM",
+      "name": "Vietnam",
+      "life": 66.3,
+      "gdp": 150,
+      "pop": 71747624,
+      "region": "Asia"
+    },
+    {
+      "code": "TUR",
+      "name": "Turkey",
+      "life": 67.2,
+      "gdp": 3685,
+      "pop": 57186637,
+      "region": "Europe"
+    },
+    {
+      "code": "KOR",
+      "name": "South Korea",
+      "life": 72.3,
+      "gdp": 7466,
+      "pop": 46744664,
+      "region": "Asia"
+    },
+    {
+      "code": "ZAF",
+      "name": "South Africa",
+      "life": 63.8,
+      "gdp": 4474,
+      "pop": 43981373,
+      "region": "Africa"
+    },
+    {
+      "code": "COL",
+      "name": "Colombia",
+      "life": 69.6,
+      "gdp": 1711,
+      "pop": 35873812,
+      "region": "Americas"
+    },
+    {
+      "code": "ESP",
+      "name": "Spain",
+      "life": 78,
+      "gdp": 15163,
+      "pop": 39826408,
+      "region": "Europe"
+    },
+    {
+      "code": "ARG",
+      "name": "Argentina",
+      "life": 72.5,
+      "gdp": 5922,
+      "pop": 35873812,
+      "region": "Americas"
+    },
+    {
+      "code": "POL",
+      "name": "Poland",
+      "life": 72,
+      "gdp": 2237,
+      "pop": 38805218,
+      "region": "Europe"
+    },
+    {
+      "code": "CAN",
+      "name": "Canada",
+      "life": 78.5,
+      "gdp": 24582,
+      "pop": 30438386,
+      "region": "Americas"
+    },
+    {
+      "code": "AUS",
+      "name": "Australia",
+      "life": 78.1,
+      "gdp": 20791,
+      "pop": 18480449,
+      "region": "Oceania"
+    },
+    {
+      "code": "SAU",
+      "name": "Saudi Arabia",
+      "life": 69.6,
+      "gdp": 8271,
+      "pop": 17393363,
+      "region": "Asia"
+    },
+    {
+      "code": "THA",
+      "name": "Thailand",
+      "life": 69.2,
+      "gdp": 1974,
+      "pop": 59789687,
+      "region": "Asia"
+    },
+    {
+      "code": "MYS",
+      "name": "Malaysia",
+      "life": 71.8,
+      "gdp": 3158,
+      "pop": 19567534,
+      "region": "Asia"
+    },
+    {
+      "code": "PHL",
+      "name": "Philippines",
+      "life": 67,
+      "gdp": 1098,
+      "pop": 66312198,
+      "region": "Asia"
+    },
+    {
+      "code": "PAK",
+      "name": "Pakistan",
+      "life": 59.8,
+      "gdp": 586,
+      "pop": 117405203,
+      "region": "Asia"
+    },
+    {
+      "code": "BGD",
+      "name": "Bangladesh",
+      "life": 57.7,
+      "gdp": 421,
+      "pop": 113056862,
+      "region": "Asia"
+    },
+    {
+      "code": "NLD",
+      "name": "Netherlands",
+      "life": 78.1,
+      "gdp": 22744,
+      "pop": 15317849,
+      "region": "Europe"
+    },
+    {
+      "code": "CHE",
+      "name": "Switzerland",
+      "life": 78.5,
+      "gdp": 38596,
+      "pop": 7148330,
+      "region": "Europe"
+    },
+    {
+      "code": "SWE",
+      "name": "Sweden",
+      "life": 78.8,
+      "gdp": 31589,
+      "pop": 9190710,
+      "region": "Europe"
+    },
+    {
+      "code": "NOR",
+      "name": "Norway",
+      "life": 77.7,
+      "gdp": 31704,
+      "pop": 4084760,
+      "region": "Europe"
+    }
+  ],
+  "1998": [
+    {
+      "code": "USA",
+      "name": "United States",
+      "life": 76.4,
+      "gdp": 27885,
+      "pop": 275032558,
+      "region": "Americas"
+    },
+    {
+      "code": "CHN",
+      "name": "China",
+      "life": 70.5,
+      "gdp": 558,
+      "pop": 1254148466,
+      "region": "Asia"
+    },
+    {
+      "code": "IND",
+      "name": "India",
+      "life": 59.1,
+      "gdp": 606,
+      "pop": 957113303,
+      "region": "Asia"
+    },
+    {
+      "code": "JPN",
+      "name": "Japan",
+      "life": 80.2,
+      "gdp": 30346,
+      "pop": 136416149,
+      "region": "Asia"
+    },
+    {
+      "code": "DEU",
+      "name": "Germany",
+      "life": 76.6,
+      "gdp": 26128,
+      "pop": 80916028,
+      "region": "Europe"
+    },
+    {
+      "code": "GBR",
+      "name": "United Kingdom",
+      "life": 77,
+      "gdp": 21910,
+      "pop": 58382451,
+      "region": "Europe"
+    },
+    {
+      "code": "FRA",
+      "name": "France",
+      "life": 78.1,
+      "gdp": 25542,
+      "pop": 59406704,
+      "region": "Europe"
+    },
+    {
+      "code": "BRA",
+      "name": "Brazil",
+      "life": 67.4,
+      "gdp": 4379,
+      "pop": 165019535,
+      "region": "Americas"
+    },
+    {
+      "code": "RUS",
+      "name": "Russia",
+      "life": 70.3,
+      "gdp": 5201,
+      "pop": 151589521,
+      "region": "Europe"
+    },
+    {
+      "code": "NGA",
+      "name": "Nigeria",
+      "life": 47.4,
+      "gdp": 510,
+      "pop": 116966678,
+      "region": "Africa"
+    },
+    {
+      "code": "MEX",
+      "name": "Mexico",
+      "life": 71.9,
+      "gdp": 4243,
+      "pop": 91310809,
+      "region": "Americas"
+    },
+    {
+      "code": "IDN",
+      "name": "Indonesia",
+      "life": 63.1,
+      "gdp": 1020,
+      "pop": 199123572,
+      "region": "Asia"
+    },
+    {
+      "code": "ETH",
+      "name": "Ethiopia",
+      "life": 48.5,
+      "gdp": 398,
+      "pop": 62138548,
+      "region": "Africa"
+    },
+    {
+      "code": "EGY",
+      "name": "Egypt",
+      "life": 66.6,
+      "gdp": 1369,
+      "pop": 69448965,
+      "region": "Africa"
+    },
+    {
+      "code": "VNM",
+      "name": "Vietnam",
+      "life": 66.4,
+      "gdp": 159,
+      "pop": 72608595,
+      "region": "Asia"
+    },
+    {
+      "code": "TUR",
+      "name": "Turkey",
+      "life": 67.4,
+      "gdp": 3832,
+      "pop": 57358197,
+      "region": "Europe"
+    },
+    {
+      "code": "KOR",
+      "name": "South Korea",
+      "life": 72.4,
+      "gdp": 7616,
+      "pop": 47305600,
+      "region": "Asia"
+    },
+    {
+      "code": "ZAF",
+      "name": "South Africa",
+      "life": 64.1,
+      "gdp": 4653,
+      "pop": 45080907,
+      "region": "Africa"
+    },
+    {
+      "code": "COL",
+      "name": "Colombia",
+      "life": 69.7,
+      "gdp": 1779,
+      "pop": 36304298,
+      "region": "Americas"
+    },
+    {
+      "code": "ESP",
+      "name": "Spain",
+      "life": 78.1,
+      "gdp": 15466,
+      "pop": 39945887,
+      "region": "Europe"
+    },
+    {
+      "code": "ARG",
+      "name": "Argentina",
+      "life": 72.6,
+      "gdp": 6159,
+      "pop": 36304298,
+      "region": "Americas"
+    },
+    {
+      "code": "POL",
+      "name": "Poland",
+      "life": 72.1,
+      "gdp": 2327,
+      "pop": 38921634,
+      "region": "Europe"
+    },
+    {
+      "code": "CAN",
+      "name": "Canada",
+      "life": 78.6,
+      "gdp": 25074,
+      "pop": 30803647,
+      "region": "Americas"
+    },
+    {
+      "code": "AUS",
+      "name": "Australia",
+      "life": 78.2,
+      "gdp": 21207,
+      "pop": 18702214,
+      "region": "Oceania"
+    },
+    {
+      "code": "SAU",
+      "name": "Saudi Arabia",
+      "life": 69.7,
+      "gdp": 8436,
+      "pop": 17602084,
+      "region": "Asia"
+    },
+    {
+      "code": "THA",
+      "name": "Thailand",
+      "life": 69.3,
+      "gdp": 2053,
+      "pop": 60507163,
+      "region": "Asia"
+    },
+    {
+      "code": "MYS",
+      "name": "Malaysia",
+      "life": 71.9,
+      "gdp": 3285,
+      "pop": 19802344,
+      "region": "Asia"
+    },
+    {
+      "code": "PHL",
+      "name": "Philippines",
+      "life": 67.2,
+      "gdp": 1164,
+      "pop": 67107944,
+      "region": "Asia"
+    },
+    {
+      "code": "PAK",
+      "name": "Pakistan",
+      "life": 59.9,
+      "gdp": 622,
+      "pop": 118814065,
+      "region": "Asia"
+    },
+    {
+      "code": "BGD",
+      "name": "Bangladesh",
+      "life": 57.8,
+      "gdp": 446,
+      "pop": 114413544,
+      "region": "Asia"
+    },
+    {
+      "code": "NLD",
+      "name": "Netherlands",
+      "life": 78.2,
+      "gdp": 23199,
+      "pop": 15363803,
+      "region": "Europe"
+    },
+    {
+      "code": "CHE",
+      "name": "Switzerland",
+      "life": 78.6,
+      "gdp": 39368,
+      "pop": 7169775,
+      "region": "Europe"
+    },
+    {
+      "code": "SWE",
+      "name": "Sweden",
+      "life": 78.9,
+      "gdp": 32221,
+      "pop": 9218282,
+      "region": "Europe"
+    },
+    {
+      "code": "NOR",
+      "name": "Norway",
+      "life": 77.8,
+      "gdp": 32338,
+      "pop": 4097014,
+      "region": "Europe"
+    }
+  ],
+  "1999": [
+    {
+      "code": "USA",
+      "name": "United States",
+      "life": 76.6,
+      "gdp": 28443,
+      "pop": 278332949,
+      "region": "Americas"
+    },
+    {
+      "code": "CHN",
+      "name": "China",
+      "life": 70.6,
+      "gdp": 591,
+      "pop": 1269198248,
+      "region": "Asia"
+    },
+    {
+      "code": "IND",
+      "name": "India",
+      "life": 59.2,
+      "gdp": 642,
+      "pop": 968598663,
+      "region": "Asia"
+    },
+    {
+      "code": "JPN",
+      "name": "Japan",
+      "life": 80.3,
+      "gdp": 30953,
+      "pop": 138053143,
+      "region": "Asia"
+    },
+    {
+      "code": "DEU",
+      "name": "Germany",
+      "life": 76.8,
+      "gdp": 26651,
+      "pop": 81158776,
+      "region": "Europe"
+    },
+    {
+      "code": "GBR",
+      "name": "United Kingdom",
+      "life": 77.2,
+      "gdp": 22348,
+      "pop": 58557598,
+      "region": "Europe"
+    },
+    {
+      "code": "FRA",
+      "name": "France",
+      "life": 78.3,
+      "gdp": 26053,
+      "pop": 59584924,
+      "region": "Europe"
+    },
+    {
+      "code": "BRA",
+      "name": "Brazil",
+      "life": 67.5,
+      "gdp": 4555,
+      "pop": 166999769,
+      "region": "Americas"
+    },
+    {
+      "code": "RUS",
+      "name": "Russia",
+      "life": 70.4,
+      "gdp": 5409,
+      "pop": 152044289,
+      "region": "Europe"
+    },
+    {
+      "code": "NGA",
+      "name": "Nigeria",
+      "life": 47.6,
+      "gdp": 541,
+      "pop": 119890845,
+      "region": "Africa"
+    },
+    {
+      "code": "MEX",
+      "name": "Mexico",
+      "life": 72.1,
+      "gdp": 4412,
+      "pop": 92406539,
+      "region": "Americas"
+    },
+    {
+      "code": "IDN",
+      "name": "Indonesia",
+      "life": 63.2,
+      "gdp": 1081,
+      "pop": 201513055,
+      "region": "Asia"
+    },
+    {
+      "code": "ETH",
+      "name": "Ethiopia",
+      "life": 48.7,
+      "gdp": 422,
+      "pop": 63692011,
+      "region": "Africa"
+    },
+    {
+      "code": "EGY",
+      "name": "Egypt",
+      "life": 66.8,
+      "gdp": 1423,
+      "pop": 71185189,
+      "region": "Africa"
+    },
+    {
+      "code": "VNM",
+      "name": "Vietnam",
+      "life": 66.6,
+      "gdp": 169,
+      "pop": 73479899,
+      "region": "Asia"
+    },
+    {
+      "code": "TUR",
+      "name": "Turkey",
+      "life": 67.5,
+      "gdp": 3985,
+      "pop": 57530272,
+      "region": "Europe"
+    },
+    {
+      "code": "KOR",
+      "name": "South Korea",
+      "life": 72.6,
+      "gdp": 7768,
+      "pop": 47873267,
+      "region": "Asia"
+    },
+    {
+      "code": "ZAF",
+      "name": "South Africa",
+      "life": 64.3,
+      "gdp": 4839,
+      "pop": 46207930,
+      "region": "Africa"
+    },
+    {
+      "code": "COL",
+      "name": "Colombia",
+      "life": 69.8,
+      "gdp": 1850,
+      "pop": 36739949,
+      "region": "Americas"
+    },
+    {
+      "code": "ESP",
+      "name": "Spain",
+      "life": 78.3,
+      "gdp": 15775,
+      "pop": 40065725,
+      "region": "Europe"
+    },
+    {
+      "code": "ARG",
+      "name": "Argentina",
+      "life": 72.8,
+      "gdp": 6405,
+      "pop": 36739949,
+      "region": "Americas"
+    },
+    {
+      "code": "POL",
+      "name": "Poland",
+      "life": 72.3,
+      "gdp": 2420,
+      "pop": 39038399,
+      "region": "Europe"
+    },
+    {
+      "code": "CAN",
+      "name": "Canada",
+      "life": 78.8,
+      "gdp": 25575,
+      "pop": 31173290,
+      "region": "Americas"
+    },
+    {
+      "code": "AUS",
+      "name": "Australia",
+      "life": 78.4,
+      "gdp": 21631,
+      "pop": 18926641,
+      "region": "Oceania"
+    },
+    {
+      "code": "SAU",
+      "name": "Saudi Arabia",
+      "life": 69.8,
+      "gdp": 8605,
+      "pop": 17813309,
+      "region": "Asia"
+    },
+    {
+      "code": "THA",
+      "name": "Thailand",
+      "life": 69.4,
+      "gdp": 2135,
+      "pop": 61233249,
+      "region": "Asia"
+    },
+    {
+      "code": "MYS",
+      "name": "Malaysia",
+      "life": 72.1,
+      "gdp": 3416,
+      "pop": 20039972,
+      "region": "Asia"
+    },
+    {
+      "code": "PHL",
+      "name": "Philippines",
+      "life": 67.3,
+      "gdp": 1233,
+      "pop": 67913240,
+      "region": "Asia"
+    },
+    {
+      "code": "PAK",
+      "name": "Pakistan",
+      "life": 60.1,
+      "gdp": 659,
+      "pop": 120239834,
+      "region": "Asia"
+    },
+    {
+      "code": "BGD",
+      "name": "Bangladesh",
+      "life": 57.9,
+      "gdp": 473,
+      "pop": 115786507,
+      "region": "Asia"
+    },
+    {
+      "code": "NLD",
+      "name": "Netherlands",
+      "life": 78.4,
+      "gdp": 23663,
+      "pop": 15409894,
+      "region": "Europe"
+    },
+    {
+      "code": "CHE",
+      "name": "Switzerland",
+      "life": 78.8,
+      "gdp": 40155,
+      "pop": 7191284,
+      "region": "Europe"
+    },
+    {
+      "code": "SWE",
+      "name": "Sweden",
+      "life": 79.1,
+      "gdp": 32865,
+      "pop": 9245937,
+      "region": "Europe"
+    },
+    {
+      "code": "NOR",
+      "name": "Norway",
+      "life": 78,
+      "gdp": 32985,
+      "pop": 4109305,
+      "region": "Europe"
+    }
+  ],
+  "2000": [
+    {
+      "code": "USA",
+      "name": "United States",
+      "life": 76.7,
+      "gdp": 29012,
+      "pop": 281672944,
+      "region": "Americas"
+    },
+    {
+      "code": "CHN",
+      "name": "China",
+      "life": 70.8,
+      "gdp": 627,
+      "pop": 1284428627,
+      "region": "Asia"
+    },
+    {
+      "code": "IND",
+      "name": "India",
+      "life": 59.4,
+      "gdp": 681,
+      "pop": 980221847,
+      "region": "Asia"
+    },
+    {
+      "code": "JPN",
+      "name": "Japan",
+      "life": 80.5,
+      "gdp": 31572,
+      "pop": 139709780,
+      "region": "Asia"
+    },
+    {
+      "code": "DEU",
+      "name": "Germany",
+      "life": 76.9,
+      "gdp": 27184,
+      "pop": 81402252,
+      "region": "Europe"
+    },
+    {
+      "code": "GBR",
+      "name": "United Kingdom",
+      "life": 77.3,
+      "gdp": 22795,
+      "pop": 58733271,
+      "region": "Europe"
+    },
+    {
+      "code": "FRA",
+      "name": "France",
+      "life": 78.4,
+      "gdp": 26574,
+      "pop": 59763679,
+      "region": "Europe"
+    },
+    {
+      "code": "BRA",
+      "name": "Brazil",
+      "life": 67.6,
+      "gdp": 4737,
+      "pop": 169003767,
+      "region": "Americas"
+    },
+    {
+      "code": "RUS",
+      "name": "Russia",
+      "life": 70.6,
+      "gdp": 5625,
+      "pop": 152500422,
+      "region": "Europe"
+    },
+    {
+      "code": "NGA",
+      "name": "Nigeria",
+      "life": 47.7,
+      "gdp": 573,
+      "pop": 122888116,
+      "region": "Africa"
+    },
+    {
+      "code": "MEX",
+      "name": "Mexico",
+      "life": 72.2,
+      "gdp": 4589,
+      "pop": 93515418,
+      "region": "Americas"
+    },
+    {
+      "code": "IDN",
+      "name": "Indonesia",
+      "life": 63.3,
+      "gdp": 1146,
+      "pop": 203931212,
+      "region": "Asia"
+    },
+    {
+      "code": "ETH",
+      "name": "Ethiopia",
+      "life": 48.9,
+      "gdp": 448,
+      "pop": 65284312,
+      "region": "Africa"
+    },
+    {
+      "code": "EGY",
+      "name": "Egypt",
+      "life": 67.1,
+      "gdp": 1480,
+      "pop": 72964819,
+      "region": "Africa"
+    },
+    {
+      "code": "VNM",
+      "name": "Vietnam",
+      "life": 66.7,
+      "gdp": 179,
+      "pop": 74361657,
+      "region": "Asia"
+    },
+    {
+      "code": "TUR",
+      "name": "Turkey",
+      "life": 67.6,
+      "gdp": 4145,
+      "pop": 57702862,
+      "region": "Europe"
+    },
+    {
+      "code": "KOR",
+      "name": "South Korea",
+      "life": 72.7,
+      "gdp": 7923,
+      "pop": 48447746,
+      "region": "Asia"
+    },
+    {
+      "code": "ZAF",
+      "name": "South Africa",
+      "life": 64.6,
+      "gdp": 5033,
+      "pop": 47363128,
+      "region": "Africa"
+    },
+    {
+      "code": "COL",
+      "name": "Colombia",
+      "life": 70,
+      "gdp": 1924,
+      "pop": 37180829,
+      "region": "Americas"
+    },
+    {
+      "code": "ESP",
+      "name": "Spain",
+      "life": 78.4,
+      "gdp": 16091,
+      "pop": 40185922,
+      "region": "Europe"
+    },
+    {
+      "code": "ARG",
+      "name": "Argentina",
+      "life": 72.9,
+      "gdp": 6661,
+      "pop": 37180829,
+      "region": "Americas"
+    },
+    {
+      "code": "POL",
+      "name": "Poland",
+      "life": 72.4,
+      "gdp": 2516,
+      "pop": 39155514,
+      "region": "Europe"
+    },
+    {
+      "code": "CAN",
+      "name": "Canada",
+      "life": 78.9,
+      "gdp": 26086,
+      "pop": 31547370,
+      "region": "Americas"
+    },
+    {
+      "code": "AUS",
+      "name": "Australia",
+      "life": 78.5,
+      "gdp": 22064,
+      "pop": 19153760,
+      "region": "Oceania"
+    },
+    {
+      "code": "SAU",
+      "name": "Saudi Arabia",
+      "life": 70,
+      "gdp": 8777,
+      "pop": 18027068,
+      "region": "Asia"
+    },
+    {
+      "code": "THA",
+      "name": "Thailand",
+      "life": 69.6,
+      "gdp": 2220,
+      "pop": 61968048,
+      "region": "Asia"
+    },
+    {
+      "code": "MYS",
+      "name": "Malaysia",
+      "life": 72.2,
+      "gdp": 3553,
+      "pop": 20280452,
+      "region": "Asia"
+    },
+    {
+      "code": "PHL",
+      "name": "Philippines",
+      "life": 67.4,
+      "gdp": 1307,
+      "pop": 68728198,
+      "region": "Asia"
+    },
+    {
+      "code": "PAK",
+      "name": "Pakistan",
+      "life": 60.2,
+      "gdp": 698,
+      "pop": 121682712,
+      "region": "Asia"
+    },
+    {
+      "code": "BGD",
+      "name": "Bangladesh",
+      "life": 58,
+      "gdp": 501,
+      "pop": 117175945,
+      "region": "Asia"
+    },
+    {
+      "code": "NLD",
+      "name": "Netherlands",
+      "life": 78.5,
+      "gdp": 24136,
+      "pop": 15456124,
+      "region": "Europe"
+    },
+    {
+      "code": "CHE",
+      "name": "Switzerland",
+      "life": 78.9,
+      "gdp": 40958,
+      "pop": 7212858,
+      "region": "Europe"
+    },
+    {
+      "code": "SWE",
+      "name": "Sweden",
+      "life": 79.3,
+      "gdp": 33522,
+      "pop": 9273674,
+      "region": "Europe"
+    },
+    {
+      "code": "NOR",
+      "name": "Norway",
+      "life": 78.1,
+      "gdp": 33644,
+      "pop": 4121633,
+      "region": "Europe"
+    }
+  ],
+  "2001": [
+    {
+      "code": "USA",
+      "name": "United States",
+      "life": 76.9,
+      "gdp": 29592,
+      "pop": 285053020,
+      "region": "Americas"
+    },
+    {
+      "code": "CHN",
+      "name": "China",
+      "life": 70.9,
+      "gdp": 664,
+      "pop": 1299841770,
+      "region": "Asia"
+    },
+    {
+      "code": "IND",
+      "name": "India",
+      "life": 59.5,
+      "gdp": 721,
+      "pop": 991984509,
+      "region": "Asia"
+    },
+    {
+      "code": "JPN",
+      "name": "Japan",
+      "life": 80.6,
+      "gdp": 32203,
+      "pop": 141386298,
+      "region": "Asia"
+    },
+    {
+      "code": "DEU",
+      "name": "Germany",
+      "life": 77.1,
+      "gdp": 27727,
+      "pop": 81646459,
+      "region": "Europe"
+    },
+    {
+      "code": "GBR",
+      "name": "United Kingdom",
+      "life": 77.5,
+      "gdp": 23251,
+      "pop": 58909470,
+      "region": "Europe"
+    },
+    {
+      "code": "FRA",
+      "name": "France",
+      "life": 78.6,
+      "gdp": 27106,
+      "pop": 59942970,
+      "region": "Europe"
+    },
+    {
+      "code": "BRA",
+      "name": "Brazil",
+      "life": 67.8,
+      "gdp": 4926,
+      "pop": 171031812,
+      "region": "Americas"
+    },
+    {
+      "code": "RUS",
+      "name": "Russia",
+      "life": 70.7,
+      "gdp": 5850,
+      "pop": 152957923,
+      "region": "Europe"
+    },
+    {
+      "code": "NGA",
+      "name": "Nigeria",
+      "life": 47.9,
+      "gdp": 607,
+      "pop": 125960319,
+      "region": "Africa"
+    },
+    {
+      "code": "MEX",
+      "name": "Mexico",
+      "life": 72.4,
+      "gdp": 4772,
+      "pop": 94637603,
+      "region": "Americas"
+    },
+    {
+      "code": "IDN",
+      "name": "Indonesia",
+      "life": 63.5,
+      "gdp": 1215,
+      "pop": 206378386,
+      "region": "Asia"
+    },
+    {
+      "code": "ETH",
+      "name": "Ethiopia",
+      "life": 49.1,
+      "gdp": 475,
+      "pop": 66916420,
+      "region": "Africa"
+    },
+    {
+      "code": "EGY",
+      "name": "Egypt",
+      "life": 67.3,
+      "gdp": 1539,
+      "pop": 74788939,
+      "region": "Africa"
+    },
+    {
+      "code": "VNM",
+      "name": "Vietnam",
+      "life": 66.8,
+      "gdp": 190,
+      "pop": 75253997,
+      "region": "Asia"
+    },
+    {
+      "code": "TUR",
+      "name": "Turkey",
+      "life": 67.8,
+      "gdp": 4310,
+      "pop": 57875971,
+      "region": "Europe"
+    },
+    {
+      "code": "KOR",
+      "name": "South Korea",
+      "life": 72.9,
+      "gdp": 8082,
+      "pop": 49029119,
+      "region": "Asia"
+    },
+    {
+      "code": "ZAF",
+      "name": "South Africa",
+      "life": 64.8,
+      "gdp": 5234,
+      "pop": 48547206,
+      "region": "Africa"
+    },
+    {
+      "code": "COL",
+      "name": "Colombia",
+      "life": 70.1,
+      "gdp": 2001,
+      "pop": 37626999,
+      "region": "Americas"
+    },
+    {
+      "code": "ESP",
+      "name": "Spain",
+      "life": 78.6,
+      "gdp": 16413,
+      "pop": 40306480,
+      "region": "Europe"
+    },
+    {
+      "code": "ARG",
+      "name": "Argentina",
+      "life": 73.1,
+      "gdp": 6928,
+      "pop": 37626999,
+      "region": "Americas"
+    },
+    {
+      "code": "POL",
+      "name": "Poland",
+      "life": 72.6,
+      "gdp": 2617,
+      "pop": 39272980,
+      "region": "Europe"
+    },
+    {
+      "code": "CAN",
+      "name": "Canada",
+      "life": 79.1,
+      "gdp": 26608,
+      "pop": 31925938,
+      "region": "Americas"
+    },
+    {
+      "code": "AUS",
+      "name": "Australia",
+      "life": 78.7,
+      "gdp": 22505,
+      "pop": 19383605,
+      "region": "Oceania"
+    },
+    {
+      "code": "SAU",
+      "name": "Saudi Arabia",
+      "life": 70.1,
+      "gdp": 8952,
+      "pop": 18243393,
+      "region": "Asia"
+    },
+    {
+      "code": "THA",
+      "name": "Thailand",
+      "life": 69.7,
+      "gdp": 2309,
+      "pop": 62711664,
+      "region": "Asia"
+    },
+    {
+      "code": "MYS",
+      "name": "Malaysia",
+      "life": 72.4,
+      "gdp": 3695,
+      "pop": 20523817,
+      "region": "Asia"
+    },
+    {
+      "code": "PHL",
+      "name": "Philippines",
+      "life": 67.6,
+      "gdp": 1386,
+      "pop": 69552937,
+      "region": "Asia"
+    },
+    {
+      "code": "PAK",
+      "name": "Pakistan",
+      "life": 60.3,
+      "gdp": 740,
+      "pop": 123142905,
+      "region": "Asia"
+    },
+    {
+      "code": "BGD",
+      "name": "Bangladesh",
+      "life": 58.2,
+      "gdp": 532,
+      "pop": 118582056,
+      "region": "Asia"
+    },
+    {
+      "code": "NLD",
+      "name": "Netherlands",
+      "life": 78.7,
+      "gdp": 24619,
+      "pop": 15502492,
+      "region": "Europe"
+    },
+    {
+      "code": "CHE",
+      "name": "Switzerland",
+      "life": 79.1,
+      "gdp": 41777,
+      "pop": 7234496,
+      "region": "Europe"
+    },
+    {
+      "code": "SWE",
+      "name": "Sweden",
+      "life": 79.4,
+      "gdp": 34193,
+      "pop": 9301495,
+      "region": "Europe"
+    },
+    {
+      "code": "NOR",
+      "name": "Norway",
+      "life": 78.3,
+      "gdp": 34317,
+      "pop": 4133998,
+      "region": "Europe"
+    }
+  ],
+  "2002": [
+    {
+      "code": "USA",
+      "name": "United States",
+      "life": 77,
+      "gdp": 30184,
+      "pop": 288473656,
+      "region": "Americas"
+    },
+    {
+      "code": "CHN",
+      "name": "China",
+      "life": 71.1,
+      "gdp": 704,
+      "pop": 1315439872,
+      "region": "Asia"
+    },
+    {
+      "code": "IND",
+      "name": "India",
+      "life": 59.6,
+      "gdp": 765,
+      "pop": 1003888323,
+      "region": "Asia"
+    },
+    {
+      "code": "JPN",
+      "name": "Japan",
+      "life": 80.8,
+      "gdp": 32847,
+      "pop": 143082933,
+      "region": "Asia"
+    },
+    {
+      "code": "DEU",
+      "name": "Germany",
+      "life": 77.2,
+      "gdp": 28282,
+      "pop": 81891398,
+      "region": "Europe"
+    },
+    {
+      "code": "GBR",
+      "name": "United Kingdom",
+      "life": 77.6,
+      "gdp": 23716,
+      "pop": 59086199,
+      "region": "Europe"
+    },
+    {
+      "code": "FRA",
+      "name": "France",
+      "life": 78.7,
+      "gdp": 27648,
+      "pop": 60122799,
+      "region": "Europe"
+    },
+    {
+      "code": "BRA",
+      "name": "Brazil",
+      "life": 67.9,
+      "gdp": 5123,
+      "pop": 173084194,
+      "region": "Americas"
+    },
+    {
+      "code": "RUS",
+      "name": "Russia",
+      "life": 70.9,
+      "gdp": 6084,
+      "pop": 153416797,
+      "region": "Europe"
+    },
+    {
+      "code": "NGA",
+      "name": "Nigeria",
+      "life": 48.1,
+      "gdp": 644,
+      "pop": 129109327,
+      "region": "Africa"
+    },
+    {
+      "code": "MEX",
+      "name": "Mexico",
+      "life": 72.5,
+      "gdp": 4963,
+      "pop": 95773254,
+      "region": "Americas"
+    },
+    {
+      "code": "IDN",
+      "name": "Indonesia",
+      "life": 63.6,
+      "gdp": 1288,
+      "pop": 208854927,
+      "region": "Asia"
+    },
+    {
+      "code": "ETH",
+      "name": "Ethiopia",
+      "life": 49.3,
+      "gdp": 503,
+      "pop": 68589330,
+      "region": "Africa"
+    },
+    {
+      "code": "EGY",
+      "name": "Egypt",
+      "life": 67.6,
+      "gdp": 1601,
+      "pop": 76658663,
+      "region": "Africa"
+    },
+    {
+      "code": "VNM",
+      "name": "Vietnam",
+      "life": 67,
+      "gdp": 201,
+      "pop": 76157045,
+      "region": "Asia"
+    },
+    {
+      "code": "TUR",
+      "name": "Turkey",
+      "life": 67.9,
+      "gdp": 4483,
+      "pop": 58049599,
+      "region": "Europe"
+    },
+    {
+      "code": "KOR",
+      "name": "South Korea",
+      "life": 73,
+      "gdp": 8244,
+      "pop": 49617469,
+      "region": "Asia"
+    },
+    {
+      "code": "ZAF",
+      "name": "South Africa",
+      "life": 65.1,
+      "gdp": 5444,
+      "pop": 49760886,
+      "region": "Africa"
+    },
+    {
+      "code": "COL",
+      "name": "Colombia",
+      "life": 70.2,
+      "gdp": 2081,
+      "pop": 38078523,
+      "region": "Americas"
+    },
+    {
+      "code": "ESP",
+      "name": "Spain",
+      "life": 78.7,
+      "gdp": 16741,
+      "pop": 40427399,
+      "region": "Europe"
+    },
+    {
+      "code": "ARG",
+      "name": "Argentina",
+      "life": 73.2,
+      "gdp": 7205,
+      "pop": 38078523,
+      "region": "Americas"
+    },
+    {
+      "code": "POL",
+      "name": "Poland",
+      "life": 72.7,
+      "gdp": 2722,
+      "pop": 39390799,
+      "region": "Europe"
+    },
+    {
+      "code": "CAN",
+      "name": "Canada",
+      "life": 79.3,
+      "gdp": 27140,
+      "pop": 32309049,
+      "region": "Americas"
+    },
+    {
+      "code": "AUS",
+      "name": "Australia",
+      "life": 78.8,
+      "gdp": 22955,
+      "pop": 19616209,
+      "region": "Oceania"
+    },
+    {
+      "code": "SAU",
+      "name": "Saudi Arabia",
+      "life": 70.2,
+      "gdp": 9131,
+      "pop": 18462314,
+      "region": "Asia"
+    },
+    {
+      "code": "THA",
+      "name": "Thailand",
+      "life": 69.8,
+      "gdp": 2402,
+      "pop": 63464204,
+      "region": "Asia"
+    },
+    {
+      "code": "MYS",
+      "name": "Malaysia",
+      "life": 72.5,
+      "gdp": 3842,
+      "pop": 20770103,
+      "region": "Asia"
+    },
+    {
+      "code": "PHL",
+      "name": "Philippines",
+      "life": 67.7,
+      "gdp": 1469,
+      "pop": 70387572,
+      "region": "Asia"
+    },
+    {
+      "code": "PAK",
+      "name": "Pakistan",
+      "life": 60.4,
+      "gdp": 785,
+      "pop": 124620619,
+      "region": "Asia"
+    },
+    {
+      "code": "BGD",
+      "name": "Bangladesh",
+      "life": 58.3,
+      "gdp": 563,
+      "pop": 120005041,
+      "region": "Asia"
+    },
+    {
+      "code": "NLD",
+      "name": "Netherlands",
+      "life": 78.8,
+      "gdp": 25111,
+      "pop": 15549000,
+      "region": "Europe"
+    },
+    {
+      "code": "CHE",
+      "name": "Switzerland",
+      "life": 79.3,
+      "gdp": 42613,
+      "pop": 7256200,
+      "region": "Europe"
+    },
+    {
+      "code": "SWE",
+      "name": "Sweden",
+      "life": 79.6,
+      "gdp": 34877,
+      "pop": 9329400,
+      "region": "Europe"
+    },
+    {
+      "code": "NOR",
+      "name": "Norway",
+      "life": 78.4,
+      "gdp": 35003,
+      "pop": 4146400,
+      "region": "Europe"
+    }
+  ],
+  "2003": [
+    {
+      "code": "USA",
+      "name": "United States",
+      "life": 77.2,
+      "gdp": 30788,
+      "pop": 291935340,
+      "region": "Americas"
+    },
+    {
+      "code": "CHN",
+      "name": "China",
+      "life": 71.2,
+      "gdp": 747,
+      "pop": 1331225150,
+      "region": "Asia"
+    },
+    {
+      "code": "IND",
+      "name": "India",
+      "life": 59.7,
+      "gdp": 811,
+      "pop": 1015934983,
+      "region": "Asia"
+    },
+    {
+      "code": "JPN",
+      "name": "Japan",
+      "life": 81,
+      "gdp": 33504,
+      "pop": 144799929,
+      "region": "Asia"
+    },
+    {
+      "code": "DEU",
+      "name": "Germany",
+      "life": 77.4,
+      "gdp": 28847,
+      "pop": 82137073,
+      "region": "Europe"
+    },
+    {
+      "code": "GBR",
+      "name": "United Kingdom",
+      "life": 77.8,
+      "gdp": 24190,
+      "pop": 59263457,
+      "region": "Europe"
+    },
+    {
+      "code": "FRA",
+      "name": "France",
+      "life": 78.9,
+      "gdp": 28201,
+      "pop": 60303167,
+      "region": "Europe"
+    },
+    {
+      "code": "BRA",
+      "name": "Brazil",
+      "life": 68,
+      "gdp": 5328,
+      "pop": 175161204,
+      "region": "Americas"
+    },
+    {
+      "code": "RUS",
+      "name": "Russia",
+      "life": 71,
+      "gdp": 6327,
+      "pop": 153877047,
+      "region": "Europe"
+    },
+    {
+      "code": "NGA",
+      "name": "Nigeria",
+      "life": 48.3,
+      "gdp": 683,
+      "pop": 132337060,
+      "region": "Africa"
+    },
+    {
+      "code": "MEX",
+      "name": "Mexico",
+      "life": 72.6,
+      "gdp": 5162,
+      "pop": 96922533,
+      "region": "Americas"
+    },
+    {
+      "code": "IDN",
+      "name": "Indonesia",
+      "life": 63.7,
+      "gdp": 1365,
+      "pop": 211361186,
+      "region": "Asia"
+    },
+    {
+      "code": "ETH",
+      "name": "Ethiopia",
+      "life": 49.4,
+      "gdp": 533,
+      "pop": 70304063,
+      "region": "Africa"
+    },
+    {
+      "code": "EGY",
+      "name": "Egypt",
+      "life": 67.9,
+      "gdp": 1665,
+      "pop": 78575130,
+      "region": "Africa"
+    },
+    {
+      "code": "VNM",
+      "name": "Vietnam",
+      "life": 67.1,
+      "gdp": 213,
+      "pop": 77070930,
+      "region": "Asia"
+    },
+    {
+      "code": "TUR",
+      "name": "Turkey",
+      "life": 68,
+      "gdp": 4662,
+      "pop": 58223748,
+      "region": "Europe"
+    },
+    {
+      "code": "KOR",
+      "name": "South Korea",
+      "life": 73.2,
+      "gdp": 8408,
+      "pop": 50212878,
+      "region": "Asia"
+    },
+    {
+      "code": "ZAF",
+      "name": "South Africa",
+      "life": 65.3,
+      "gdp": 5661,
+      "pop": 51004909,
+      "region": "Africa"
+    },
+    {
+      "code": "COL",
+      "name": "Colombia",
+      "life": 70.4,
+      "gdp": 2165,
+      "pop": 38535465,
+      "region": "Americas"
+    },
+    {
+      "code": "ESP",
+      "name": "Spain",
+      "life": 78.9,
+      "gdp": 17076,
+      "pop": 40548681,
+      "region": "Europe"
+    },
+    {
+      "code": "ARG",
+      "name": "Argentina",
+      "life": 73.4,
+      "gdp": 7493,
+      "pop": 38535465,
+      "region": "Americas"
+    },
+    {
+      "code": "POL",
+      "name": "Poland",
+      "life": 72.8,
+      "gdp": 2831,
+      "pop": 39508972,
+      "region": "Europe"
+    },
+    {
+      "code": "CAN",
+      "name": "Canada",
+      "life": 79.4,
+      "gdp": 27683,
+      "pop": 32696758,
+      "region": "Americas"
+    },
+    {
+      "code": "AUS",
+      "name": "Australia",
+      "life": 79,
+      "gdp": 23414,
+      "pop": 19851603,
+      "region": "Oceania"
+    },
+    {
+      "code": "SAU",
+      "name": "Saudi Arabia",
+      "life": 70.4,
+      "gdp": 9314,
+      "pop": 18683862,
+      "region": "Asia"
+    },
+    {
+      "code": "THA",
+      "name": "Thailand",
+      "life": 70,
+      "gdp": 2498,
+      "pop": 64225775,
+      "region": "Asia"
+    },
+    {
+      "code": "MYS",
+      "name": "Malaysia",
+      "life": 72.6,
+      "gdp": 3996,
+      "pop": 21019344,
+      "region": "Asia"
+    },
+    {
+      "code": "PHL",
+      "name": "Philippines",
+      "life": 67.8,
+      "gdp": 1557,
+      "pop": 71232223,
+      "region": "Asia"
+    },
+    {
+      "code": "PAK",
+      "name": "Pakistan",
+      "life": 60.5,
+      "gdp": 832,
+      "pop": 126116067,
+      "region": "Asia"
+    },
+    {
+      "code": "BGD",
+      "name": "Bangladesh",
+      "life": 58.4,
+      "gdp": 597,
+      "pop": 121445101,
+      "region": "Asia"
+    },
+    {
+      "code": "NLD",
+      "name": "Netherlands",
+      "life": 79,
+      "gdp": 25613,
+      "pop": 15595647,
+      "region": "Europe"
+    },
+    {
+      "code": "CHE",
+      "name": "Switzerland",
+      "life": 79.4,
+      "gdp": 43465,
+      "pop": 7277968,
+      "region": "Europe"
+    },
+    {
+      "code": "SWE",
+      "name": "Sweden",
+      "life": 79.7,
+      "gdp": 35574,
+      "pop": 9357388,
+      "region": "Europe"
+    },
+    {
+      "code": "NOR",
+      "name": "Norway",
+      "life": 78.6,
+      "gdp": 35704,
+      "pop": 4158839,
+      "region": "Europe"
+    }
+  ],
+  "2004": [
+    {
+      "code": "USA",
+      "name": "United States",
+      "life": 77.3,
+      "gdp": 31404,
+      "pop": 295438564,
+      "region": "Americas"
+    },
+    {
+      "code": "CHN",
+      "name": "China",
+      "life": 71.3,
+      "gdp": 791,
+      "pop": 1347199852,
+      "region": "Asia"
+    },
+    {
+      "code": "IND",
+      "name": "India",
+      "life": 59.8,
+      "gdp": 859,
+      "pop": 1028126203,
+      "region": "Asia"
+    },
+    {
+      "code": "JPN",
+      "name": "Japan",
+      "life": 81.1,
+      "gdp": 34174,
+      "pop": 146537528,
+      "region": "Asia"
+    },
+    {
+      "code": "DEU",
+      "name": "Germany",
+      "life": 77.5,
+      "gdp": 29424,
+      "pop": 82383484,
+      "region": "Europe"
+    },
+    {
+      "code": "GBR",
+      "name": "United Kingdom",
+      "life": 77.9,
+      "gdp": 24674,
+      "pop": 59441248,
+      "region": "Europe"
+    },
+    {
+      "code": "FRA",
+      "name": "France",
+      "life": 79.1,
+      "gdp": 28765,
+      "pop": 60484077,
+      "region": "Europe"
+    },
+    {
+      "code": "BRA",
+      "name": "Brazil",
+      "life": 68.2,
+      "gdp": 5541,
+      "pop": 177263138,
+      "region": "Americas"
+    },
+    {
+      "code": "RUS",
+      "name": "Russia",
+      "life": 71.1,
+      "gdp": 6580,
+      "pop": 154338679,
+      "region": "Europe"
+    },
+    {
+      "code": "NGA",
+      "name": "Nigeria",
+      "life": 48.5,
+      "gdp": 723,
+      "pop": 135645487,
+      "region": "Africa"
+    },
+    {
+      "code": "MEX",
+      "name": "Mexico",
+      "life": 72.8,
+      "gdp": 5368,
+      "pop": 98085603,
+      "region": "Americas"
+    },
+    {
+      "code": "IDN",
+      "name": "Indonesia",
+      "life": 63.8,
+      "gdp": 1447,
+      "pop": 213897520,
+      "region": "Asia"
+    },
+    {
+      "code": "ETH",
+      "name": "Ethiopia",
+      "life": 49.6,
+      "gdp": 565,
+      "pop": 72061665,
+      "region": "Africa"
+    },
+    {
+      "code": "EGY",
+      "name": "Egypt",
+      "life": 68.1,
+      "gdp": 1732,
+      "pop": 80539508,
+      "region": "Africa"
+    },
+    {
+      "code": "VNM",
+      "name": "Vietnam",
+      "life": 67.2,
+      "gdp": 226,
+      "pop": 77995781,
+      "region": "Asia"
+    },
+    {
+      "code": "TUR",
+      "name": "Turkey",
+      "life": 68.2,
+      "gdp": 4849,
+      "pop": 58398419,
+      "region": "Europe"
+    },
+    {
+      "code": "KOR",
+      "name": "South Korea",
+      "life": 73.3,
+      "gdp": 8577,
+      "pop": 50815433,
+      "region": "Asia"
+    },
+    {
+      "code": "ZAF",
+      "name": "South Africa",
+      "life": 65.6,
+      "gdp": 5888,
+      "pop": 52280031,
+      "region": "Africa"
+    },
+    {
+      "code": "COL",
+      "name": "Colombia",
+      "life": 70.5,
+      "gdp": 2251,
+      "pop": 38997890,
+      "region": "Americas"
+    },
+    {
+      "code": "ESP",
+      "name": "Spain",
+      "life": 79.1,
+      "gdp": 17417,
+      "pop": 40670327,
+      "region": "Europe"
+    },
+    {
+      "code": "ARG",
+      "name": "Argentina",
+      "life": 73.5,
+      "gdp": 7793,
+      "pop": 38997890,
+      "region": "Americas"
+    },
+    {
+      "code": "POL",
+      "name": "Poland",
+      "life": 73,
+      "gdp": 2944,
+      "pop": 39627499,
+      "region": "Europe"
+    },
+    {
+      "code": "CAN",
+      "name": "Canada",
+      "life": 79.6,
+      "gdp": 28237,
+      "pop": 33089119,
+      "region": "Americas"
+    },
+    {
+      "code": "AUS",
+      "name": "Australia",
+      "life": 79.2,
+      "gdp": 23883,
+      "pop": 20089822,
+      "region": "Oceania"
+    },
+    {
+      "code": "SAU",
+      "name": "Saudi Arabia",
+      "life": 70.5,
+      "gdp": 9500,
+      "pop": 18908068,
+      "region": "Asia"
+    },
+    {
+      "code": "THA",
+      "name": "Thailand",
+      "life": 70.1,
+      "gdp": 2598,
+      "pop": 64996484,
+      "region": "Asia"
+    },
+    {
+      "code": "MYS",
+      "name": "Malaysia",
+      "life": 72.8,
+      "gdp": 4156,
+      "pop": 21271577,
+      "region": "Asia"
+    },
+    {
+      "code": "PHL",
+      "name": "Philippines",
+      "life": 68,
+      "gdp": 1650,
+      "pop": 72087010,
+      "region": "Asia"
+    },
+    {
+      "code": "PAK",
+      "name": "Pakistan",
+      "life": 60.7,
+      "gdp": 882,
+      "pop": 127629460,
+      "region": "Asia"
+    },
+    {
+      "code": "BGD",
+      "name": "Bangladesh",
+      "life": 58.5,
+      "gdp": 633,
+      "pop": 122902443,
+      "region": "Asia"
+    },
+    {
+      "code": "NLD",
+      "name": "Netherlands",
+      "life": 79.2,
+      "gdp": 26126,
+      "pop": 15642434,
+      "region": "Europe"
+    },
+    {
+      "code": "CHE",
+      "name": "Switzerland",
+      "life": 79.6,
+      "gdp": 44334,
+      "pop": 7299802,
+      "region": "Europe"
+    },
+    {
+      "code": "SWE",
+      "name": "Sweden",
+      "life": 79.9,
+      "gdp": 36286,
+      "pop": 9385460,
+      "region": "Europe"
+    },
+    {
+      "code": "NOR",
+      "name": "Norway",
+      "life": 78.7,
+      "gdp": 36418,
+      "pop": 4171316,
+      "region": "Europe"
+    }
+  ],
+  "2005": [
+    {
+      "code": "USA",
+      "name": "United States",
+      "life": 77.5,
+      "gdp": 32032,
+      "pop": 298983827,
+      "region": "Americas"
+    },
+    {
+      "code": "CHN",
+      "name": "China",
+      "life": 71.5,
+      "gdp": 839,
+      "pop": 1363366250,
+      "region": "Asia"
+    },
+    {
+      "code": "IND",
+      "name": "India",
+      "life": 59.9,
+      "gdp": 911,
+      "pop": 1040463717,
+      "region": "Asia"
+    },
+    {
+      "code": "JPN",
+      "name": "Japan",
+      "life": 81.3,
+      "gdp": 34858,
+      "pop": 148295978,
+      "region": "Asia"
+    },
+    {
+      "code": "DEU",
+      "name": "Germany",
+      "life": 77.7,
+      "gdp": 30013,
+      "pop": 82630634,
+      "region": "Europe"
+    },
+    {
+      "code": "GBR",
+      "name": "United Kingdom",
+      "life": 78.1,
+      "gdp": 25168,
+      "pop": 59619572,
+      "region": "Europe"
+    },
+    {
+      "code": "FRA",
+      "name": "France",
+      "life": 79.2,
+      "gdp": 29340,
+      "pop": 60665529,
+      "region": "Europe"
+    },
+    {
+      "code": "BRA",
+      "name": "Brazil",
+      "life": 68.3,
+      "gdp": 5763,
+      "pop": 179390296,
+      "region": "Americas"
+    },
+    {
+      "code": "RUS",
+      "name": "Russia",
+      "life": 71.3,
+      "gdp": 6844,
+      "pop": 154801695,
+      "region": "Europe"
+    },
+    {
+      "code": "NGA",
+      "name": "Nigeria",
+      "life": 48.7,
+      "gdp": 767,
+      "pop": 139036624,
+      "region": "Africa"
+    },
+    {
+      "code": "MEX",
+      "name": "Mexico",
+      "life": 72.9,
+      "gdp": 5583,
+      "pop": 99262630,
+      "region": "Americas"
+    },
+    {
+      "code": "IDN",
+      "name": "Indonesia",
+      "life": 64,
+      "gdp": 1534,
+      "pop": 216464291,
+      "region": "Asia"
+    },
+    {
+      "code": "ETH",
+      "name": "Ethiopia",
+      "life": 49.8,
+      "gdp": 599,
+      "pop": 73863206,
+      "region": "Africa"
+    },
+    {
+      "code": "EGY",
+      "name": "Egypt",
+      "life": 68.4,
+      "gdp": 1801,
+      "pop": 82552995,
+      "region": "Africa"
+    },
+    {
+      "code": "VNM",
+      "name": "Vietnam",
+      "life": 67.4,
+      "gdp": 240,
+      "pop": 78931730,
+      "region": "Asia"
+    },
+    {
+      "code": "TUR",
+      "name": "Turkey",
+      "life": 68.3,
+      "gdp": 5043,
+      "pop": 58573614,
+      "region": "Europe"
+    },
+    {
+      "code": "KOR",
+      "name": "South Korea",
+      "life": 73.4,
+      "gdp": 8748,
+      "pop": 51425218,
+      "region": "Asia"
+    },
+    {
+      "code": "ZAF",
+      "name": "South Africa",
+      "life": 65.8,
+      "gdp": 6123,
+      "pop": 53587032,
+      "region": "Africa"
+    },
+    {
+      "code": "COL",
+      "name": "Colombia",
+      "life": 70.7,
+      "gdp": 2341,
+      "pop": 39465865,
+      "region": "Americas"
+    },
+    {
+      "code": "ESP",
+      "name": "Spain",
+      "life": 79.2,
+      "gdp": 17765,
+      "pop": 40792338,
+      "region": "Europe"
+    },
+    {
+      "code": "ARG",
+      "name": "Argentina",
+      "life": 73.6,
+      "gdp": 8104,
+      "pop": 39465865,
+      "region": "Americas"
+    },
+    {
+      "code": "POL",
+      "name": "Poland",
+      "life": 73.1,
+      "gdp": 3062,
+      "pop": 39746381,
+      "region": "Europe"
+    },
+    {
+      "code": "CAN",
+      "name": "Canada",
+      "life": 79.7,
+      "gdp": 28802,
+      "pop": 33486189,
+      "region": "Americas"
+    },
+    {
+      "code": "AUS",
+      "name": "Australia",
+      "life": 79.3,
+      "gdp": 24360,
+      "pop": 20330900,
+      "region": "Oceania"
+    },
+    {
+      "code": "SAU",
+      "name": "Saudi Arabia",
+      "life": 70.7,
+      "gdp": 9690,
+      "pop": 19134965,
+      "region": "Asia"
+    },
+    {
+      "code": "THA",
+      "name": "Thailand",
+      "life": 70.2,
+      "gdp": 2701,
+      "pop": 65776442,
+      "region": "Asia"
+    },
+    {
+      "code": "MYS",
+      "name": "Malaysia",
+      "life": 72.9,
+      "gdp": 4322,
+      "pop": 21526836,
+      "region": "Asia"
+    },
+    {
+      "code": "PHL",
+      "name": "Philippines",
+      "life": 68.1,
+      "gdp": 1749,
+      "pop": 72952054,
+      "region": "Asia"
+    },
+    {
+      "code": "PAK",
+      "name": "Pakistan",
+      "life": 60.8,
+      "gdp": 935,
+      "pop": 129161013,
+      "region": "Asia"
+    },
+    {
+      "code": "BGD",
+      "name": "Bangladesh",
+      "life": 58.6,
+      "gdp": 671,
+      "pop": 124377272,
+      "region": "Asia"
+    },
+    {
+      "code": "NLD",
+      "name": "Netherlands",
+      "life": 79.3,
+      "gdp": 26648,
+      "pop": 15689361,
+      "region": "Europe"
+    },
+    {
+      "code": "CHE",
+      "name": "Switzerland",
+      "life": 79.7,
+      "gdp": 45221,
+      "pop": 7321702,
+      "region": "Europe"
+    },
+    {
+      "code": "SWE",
+      "name": "Sweden",
+      "life": 80,
+      "gdp": 37011,
+      "pop": 9413617,
+      "region": "Europe"
+    },
+    {
+      "code": "NOR",
+      "name": "Norway",
+      "life": 78.9,
+      "gdp": 37146,
+      "pop": 4183830,
+      "region": "Europe"
+    }
+  ],
+  "2006": [
+    {
+      "code": "USA",
+      "name": "United States",
+      "life": 77.6,
+      "gdp": 32672,
+      "pop": 302571633,
+      "region": "Americas"
+    },
+    {
+      "code": "CHN",
+      "name": "China",
+      "life": 71.6,
+      "gdp": 889,
+      "pop": 1379726645,
+      "region": "Asia"
+    },
+    {
+      "code": "IND",
+      "name": "India",
+      "life": 60.1,
+      "gdp": 965,
+      "pop": 1052949282,
+      "region": "Asia"
+    },
+    {
+      "code": "JPN",
+      "name": "Japan",
+      "life": 81.4,
+      "gdp": 35555,
+      "pop": 150075530,
+      "region": "Asia"
+    },
+    {
+      "code": "DEU",
+      "name": "Germany",
+      "life": 77.8,
+      "gdp": 30613,
+      "pop": 82878526,
+      "region": "Europe"
+    },
+    {
+      "code": "GBR",
+      "name": "United Kingdom",
+      "life": 78.2,
+      "gdp": 25671,
+      "pop": 59798430,
+      "region": "Europe"
+    },
+    {
+      "code": "FRA",
+      "name": "France",
+      "life": 79.4,
+      "gdp": 29927,
+      "pop": 60847526,
+      "region": "Europe"
+    },
+    {
+      "code": "BRA",
+      "name": "Brazil",
+      "life": 68.4,
+      "gdp": 5994,
+      "pop": 181542980,
+      "region": "Americas"
+    },
+    {
+      "code": "RUS",
+      "name": "Russia",
+      "life": 71.4,
+      "gdp": 7117,
+      "pop": 155266100,
+      "region": "Europe"
+    },
+    {
+      "code": "NGA",
+      "name": "Nigeria",
+      "life": 48.8,
+      "gdp": 813,
+      "pop": 142512540,
+      "region": "Africa"
+    },
+    {
+      "code": "MEX",
+      "name": "Mexico",
+      "life": 73.1,
+      "gdp": 5806,
+      "pop": 100453782,
+      "region": "Americas"
+    },
+    {
+      "code": "IDN",
+      "name": "Indonesia",
+      "life": 64.1,
+      "gdp": 1626,
+      "pop": 219061862,
+      "region": "Asia"
+    },
+    {
+      "code": "ETH",
+      "name": "Ethiopia",
+      "life": 50,
+      "gdp": 635,
+      "pop": 75709787,
+      "region": "Africa"
+    },
+    {
+      "code": "EGY",
+      "name": "Egypt",
+      "life": 68.6,
+      "gdp": 1873,
+      "pop": 84616820,
+      "region": "Africa"
+    },
+    {
+      "code": "VNM",
+      "name": "Vietnam",
+      "life": 67.5,
+      "gdp": 254,
+      "pop": 79878911,
+      "region": "Asia"
+    },
+    {
+      "code": "TUR",
+      "name": "Turkey",
+      "life": 68.4,
+      "gdp": 5244,
+      "pop": 58749335,
+      "region": "Europe"
+    },
+    {
+      "code": "KOR",
+      "name": "South Korea",
+      "life": 73.6,
+      "gdp": 8923,
+      "pop": 52042321,
+      "region": "Asia"
+    },
+    {
+      "code": "ZAF",
+      "name": "South Africa",
+      "life": 66.1,
+      "gdp": 6368,
+      "pop": 54926708,
+      "region": "Africa"
+    },
+    {
+      "code": "COL",
+      "name": "Colombia",
+      "life": 70.8,
+      "gdp": 2435,
+      "pop": 39939456,
+      "region": "Americas"
+    },
+    {
+      "code": "ESP",
+      "name": "Spain",
+      "life": 79.4,
+      "gdp": 18121,
+      "pop": 40914715,
+      "region": "Europe"
+    },
+    {
+      "code": "ARG",
+      "name": "Argentina",
+      "life": 73.8,
+      "gdp": 8428,
+      "pop": 39939456,
+      "region": "Americas"
+    },
+    {
+      "code": "POL",
+      "name": "Poland",
+      "life": 73.3,
+      "gdp": 3184,
+      "pop": 39865620,
+      "region": "Europe"
+    },
+    {
+      "code": "CAN",
+      "name": "Canada",
+      "life": 79.9,
+      "gdp": 29378,
+      "pop": 33888023,
+      "region": "Americas"
+    },
+    {
+      "code": "AUS",
+      "name": "Australia",
+      "life": 79.5,
+      "gdp": 24847,
+      "pop": 20574871,
+      "region": "Oceania"
+    },
+    {
+      "code": "SAU",
+      "name": "Saudi Arabia",
+      "life": 70.8,
+      "gdp": 9884,
+      "pop": 19364584,
+      "region": "Asia"
+    },
+    {
+      "code": "THA",
+      "name": "Thailand",
+      "life": 70.4,
+      "gdp": 2809,
+      "pop": 66565759,
+      "region": "Asia"
+    },
+    {
+      "code": "MYS",
+      "name": "Malaysia",
+      "life": 73.1,
+      "gdp": 4495,
+      "pop": 21785158,
+      "region": "Asia"
+    },
+    {
+      "code": "PHL",
+      "name": "Philippines",
+      "life": 68.2,
+      "gdp": 1854,
+      "pop": 73827478,
+      "region": "Asia"
+    },
+    {
+      "code": "PAK",
+      "name": "Pakistan",
+      "life": 60.9,
+      "gdp": 991,
+      "pop": 130710945,
+      "region": "Asia"
+    },
+    {
+      "code": "BGD",
+      "name": "Bangladesh",
+      "life": 58.7,
+      "gdp": 711,
+      "pop": 125869799,
+      "region": "Asia"
+    },
+    {
+      "code": "NLD",
+      "name": "Netherlands",
+      "life": 79.5,
+      "gdp": 27181,
+      "pop": 15736429,
+      "region": "Europe"
+    },
+    {
+      "code": "CHE",
+      "name": "Switzerland",
+      "life": 79.9,
+      "gdp": 46126,
+      "pop": 7343667,
+      "region": "Europe"
+    },
+    {
+      "code": "SWE",
+      "name": "Sweden",
+      "life": 80.2,
+      "gdp": 37752,
+      "pop": 9441857,
+      "region": "Europe"
+    },
+    {
+      "code": "NOR",
+      "name": "Norway",
+      "life": 79.1,
+      "gdp": 37889,
+      "pop": 4196381,
+      "region": "Europe"
+    }
+  ],
+  "2007": [
+    {
+      "code": "USA",
+      "name": "United States",
+      "life": 77.8,
+      "gdp": 33326,
+      "pop": 306202492,
+      "region": "Americas"
+    },
+    {
+      "code": "CHN",
+      "name": "China",
+      "life": 71.8,
+      "gdp": 942,
+      "pop": 1396283365,
+      "region": "Asia"
+    },
+    {
+      "code": "IND",
+      "name": "India",
+      "life": 60.2,
+      "gdp": 1023,
+      "pop": 1065584673,
+      "region": "Asia"
+    },
+    {
+      "code": "JPN",
+      "name": "Japan",
+      "life": 81.6,
+      "gdp": 36266,
+      "pop": 151876436,
+      "region": "Asia"
+    },
+    {
+      "code": "DEU",
+      "name": "Germany",
+      "life": 78,
+      "gdp": 31225,
+      "pop": 83127162,
+      "region": "Europe"
+    },
+    {
+      "code": "GBR",
+      "name": "United Kingdom",
+      "life": 78.4,
+      "gdp": 26185,
+      "pop": 59977826,
+      "region": "Europe"
+    },
+    {
+      "code": "FRA",
+      "name": "France",
+      "life": 79.5,
+      "gdp": 30525,
+      "pop": 61030068,
+      "region": "Europe"
+    },
+    {
+      "code": "BRA",
+      "name": "Brazil",
+      "life": 68.6,
+      "gdp": 6233,
+      "pop": 183721495,
+      "region": "Americas"
+    },
+    {
+      "code": "RUS",
+      "name": "Russia",
+      "life": 71.6,
+      "gdp": 7402,
+      "pop": 155731898,
+      "region": "Europe"
+    },
+    {
+      "code": "NGA",
+      "name": "Nigeria",
+      "life": 49,
+      "gdp": 862,
+      "pop": 146075353,
+      "region": "Africa"
+    },
+    {
+      "code": "MEX",
+      "name": "Mexico",
+      "life": 73.2,
+      "gdp": 6038,
+      "pop": 101659227,
+      "region": "Americas"
+    },
+    {
+      "code": "IDN",
+      "name": "Indonesia",
+      "life": 64.2,
+      "gdp": 1723,
+      "pop": 221690604,
+      "region": "Asia"
+    },
+    {
+      "code": "ETH",
+      "name": "Ethiopia",
+      "life": 50.2,
+      "gdp": 673,
+      "pop": 77602531,
+      "region": "Africa"
+    },
+    {
+      "code": "EGY",
+      "name": "Egypt",
+      "life": 68.9,
+      "gdp": 1948,
+      "pop": 86732241,
+      "region": "Africa"
+    },
+    {
+      "code": "VNM",
+      "name": "Vietnam",
+      "life": 67.6,
+      "gdp": 269,
+      "pop": 80837458,
+      "region": "Asia"
+    },
+    {
+      "code": "TUR",
+      "name": "Turkey",
+      "life": 68.6,
+      "gdp": 5454,
+      "pop": 58925583,
+      "region": "Europe"
+    },
+    {
+      "code": "KOR",
+      "name": "South Korea",
+      "life": 73.7,
+      "gdp": 9102,
+      "pop": 52666829,
+      "region": "Asia"
+    },
+    {
+      "code": "ZAF",
+      "name": "South Africa",
+      "life": 66.3,
+      "gdp": 6623,
+      "pop": 56299876,
+      "region": "Africa"
+    },
+    {
+      "code": "COL",
+      "name": "Colombia",
+      "life": 70.9,
+      "gdp": 2532,
+      "pop": 40418729,
+      "region": "Americas"
+    },
+    {
+      "code": "ESP",
+      "name": "Spain",
+      "life": 79.5,
+      "gdp": 18483,
+      "pop": 41037460,
+      "region": "Europe"
+    },
+    {
+      "code": "ARG",
+      "name": "Argentina",
+      "life": 73.9,
+      "gdp": 8766,
+      "pop": 40418729,
+      "region": "Americas"
+    },
+    {
+      "code": "POL",
+      "name": "Poland",
+      "life": 73.4,
+      "gdp": 3311,
+      "pop": 39985217,
+      "region": "Europe"
+    },
+    {
+      "code": "CAN",
+      "name": "Canada",
+      "life": 80,
+      "gdp": 29965,
+      "pop": 34294679,
+      "region": "Americas"
+    },
+    {
+      "code": "AUS",
+      "name": "Australia",
+      "life": 79.6,
+      "gdp": 25344,
+      "pop": 20821769,
+      "region": "Oceania"
+    },
+    {
+      "code": "SAU",
+      "name": "Saudi Arabia",
+      "life": 70.9,
+      "gdp": 10082,
+      "pop": 19596960,
+      "region": "Asia"
+    },
+    {
+      "code": "THA",
+      "name": "Thailand",
+      "life": 70.5,
+      "gdp": 2922,
+      "pop": 67364548,
+      "region": "Asia"
+    },
+    {
+      "code": "MYS",
+      "name": "Malaysia",
+      "life": 73.2,
+      "gdp": 4675,
+      "pop": 22046579,
+      "region": "Asia"
+    },
+    {
+      "code": "PHL",
+      "name": "Philippines",
+      "life": 68.3,
+      "gdp": 1966,
+      "pop": 74713408,
+      "region": "Asia"
+    },
+    {
+      "code": "PAK",
+      "name": "Pakistan",
+      "life": 61,
+      "gdp": 1050,
+      "pop": 132279477,
+      "region": "Asia"
+    },
+    {
+      "code": "BGD",
+      "name": "Bangladesh",
+      "life": 58.8,
+      "gdp": 754,
+      "pop": 127380237,
+      "region": "Asia"
+    },
+    {
+      "code": "NLD",
+      "name": "Netherlands",
+      "life": 79.6,
+      "gdp": 27725,
+      "pop": 15783638,
+      "region": "Europe"
+    },
+    {
+      "code": "CHE",
+      "name": "Switzerland",
+      "life": 80,
+      "gdp": 47048,
+      "pop": 7365698,
+      "region": "Europe"
+    },
+    {
+      "code": "SWE",
+      "name": "Sweden",
+      "life": 80.3,
+      "gdp": 38507,
+      "pop": 9470183,
+      "region": "Europe"
+    },
+    {
+      "code": "NOR",
+      "name": "Norway",
+      "life": 79.2,
+      "gdp": 38647,
+      "pop": 4208970,
+      "region": "Europe"
+    }
+  ],
+  "2008": [
+    {
+      "code": "USA",
+      "name": "United States",
+      "life": 77.9,
+      "gdp": 33992,
+      "pop": 309876922,
+      "region": "Americas"
+    },
+    {
+      "code": "CHN",
+      "name": "China",
+      "life": 71.9,
+      "gdp": 999,
+      "pop": 1413038765,
+      "region": "Asia"
+    },
+    {
+      "code": "IND",
+      "name": "India",
+      "life": 60.3,
+      "gdp": 1085,
+      "pop": 1078371689,
+      "region": "Asia"
+    },
+    {
+      "code": "JPN",
+      "name": "Japan",
+      "life": 81.7,
+      "gdp": 36992,
+      "pop": 153698953,
+      "region": "Asia"
+    },
+    {
+      "code": "DEU",
+      "name": "Germany",
+      "life": 78.1,
+      "gdp": 31850,
+      "pop": 83376543,
+      "region": "Europe"
+    },
+    {
+      "code": "GBR",
+      "name": "United Kingdom",
+      "life": 78.5,
+      "gdp": 26708,
+      "pop": 60157759,
+      "region": "Europe"
+    },
+    {
+      "code": "FRA",
+      "name": "France",
+      "life": 79.7,
+      "gdp": 31136,
+      "pop": 61213158,
+      "region": "Europe"
+    },
+    {
+      "code": "BRA",
+      "name": "Brazil",
+      "life": 68.7,
+      "gdp": 6483,
+      "pop": 185926153,
+      "region": "Americas"
+    },
+    {
+      "code": "RUS",
+      "name": "Russia",
+      "life": 71.7,
+      "gdp": 7698,
+      "pop": 156199094,
+      "region": "Europe"
+    },
+    {
+      "code": "NGA",
+      "name": "Nigeria",
+      "life": 49.2,
+      "gdp": 913,
+      "pop": 149727237,
+      "region": "Africa"
+    },
+    {
+      "code": "MEX",
+      "name": "Mexico",
+      "life": 73.3,
+      "gdp": 6280,
+      "pop": 102879138,
+      "region": "Americas"
+    },
+    {
+      "code": "IDN",
+      "name": "Indonesia",
+      "life": 64.3,
+      "gdp": 1827,
+      "pop": 224350892,
+      "region": "Asia"
+    },
+    {
+      "code": "ETH",
+      "name": "Ethiopia",
+      "life": 50.4,
+      "gdp": 714,
+      "pop": 79542595,
+      "region": "Africa"
+    },
+    {
+      "code": "EGY",
+      "name": "Egypt",
+      "life": 69.1,
+      "gdp": 2026,
+      "pop": 88900547,
+      "region": "Africa"
+    },
+    {
+      "code": "VNM",
+      "name": "Vietnam",
+      "life": 67.8,
+      "gdp": 285,
+      "pop": 81807507,
+      "region": "Asia"
+    },
+    {
+      "code": "TUR",
+      "name": "Turkey",
+      "life": 68.7,
+      "gdp": 5672,
+      "pop": 59102360,
+      "region": "Europe"
+    },
+    {
+      "code": "KOR",
+      "name": "South Korea",
+      "life": 73.9,
+      "gdp": 9284,
+      "pop": 53298831,
+      "region": "Asia"
+    },
+    {
+      "code": "ZAF",
+      "name": "South Africa",
+      "life": 66.6,
+      "gdp": 6888,
+      "pop": 57707373,
+      "region": "Africa"
+    },
+    {
+      "code": "COL",
+      "name": "Colombia",
+      "life": 71.1,
+      "gdp": 2634,
+      "pop": 40903754,
+      "region": "Americas"
+    },
+    {
+      "code": "ESP",
+      "name": "Spain",
+      "life": 79.7,
+      "gdp": 18853,
+      "pop": 41160572,
+      "region": "Europe"
+    },
+    {
+      "code": "ARG",
+      "name": "Argentina",
+      "life": 74.1,
+      "gdp": 9116,
+      "pop": 40903754,
+      "region": "Americas"
+    },
+    {
+      "code": "POL",
+      "name": "Poland",
+      "life": 73.6,
+      "gdp": 3444,
+      "pop": 40105173,
+      "region": "Europe"
+    },
+    {
+      "code": "CAN",
+      "name": "Canada",
+      "life": 80.2,
+      "gdp": 30564,
+      "pop": 34706215,
+      "region": "Americas"
+    },
+    {
+      "code": "AUS",
+      "name": "Australia",
+      "life": 79.8,
+      "gdp": 25851,
+      "pop": 21071631,
+      "region": "Oceania"
+    },
+    {
+      "code": "SAU",
+      "name": "Saudi Arabia",
+      "life": 71.1,
+      "gdp": 10283,
+      "pop": 19832123,
+      "region": "Asia"
+    },
+    {
+      "code": "THA",
+      "name": "Thailand",
+      "life": 70.7,
+      "gdp": 3039,
+      "pop": 68172923,
+      "region": "Asia"
+    },
+    {
+      "code": "MYS",
+      "name": "Malaysia",
+      "life": 73.3,
+      "gdp": 4862,
+      "pop": 22311138,
+      "region": "Asia"
+    },
+    {
+      "code": "PHL",
+      "name": "Philippines",
+      "life": 68.5,
+      "gdp": 2084,
+      "pop": 75609969,
+      "region": "Asia"
+    },
+    {
+      "code": "PAK",
+      "name": "Pakistan",
+      "life": 61.1,
+      "gdp": 1113,
+      "pop": 133866830,
+      "region": "Asia"
+    },
+    {
+      "code": "BGD",
+      "name": "Bangladesh",
+      "life": 58.9,
+      "gdp": 799,
+      "pop": 128908800,
+      "region": "Asia"
+    },
+    {
+      "code": "NLD",
+      "name": "Netherlands",
+      "life": 79.8,
+      "gdp": 28279,
+      "pop": 15830989,
+      "region": "Europe"
+    },
+    {
+      "code": "CHE",
+      "name": "Switzerland",
+      "life": 80.2,
+      "gdp": 47989,
+      "pop": 7387795,
+      "region": "Europe"
+    },
+    {
+      "code": "SWE",
+      "name": "Sweden",
+      "life": 80.5,
+      "gdp": 39277,
+      "pop": 9498594,
+      "region": "Europe"
+    },
+    {
+      "code": "NOR",
+      "name": "Norway",
+      "life": 79.4,
+      "gdp": 39420,
+      "pop": 4221597,
+      "region": "Europe"
+    }
+  ],
+  "2009": [
+    {
+      "code": "USA",
+      "name": "United States",
+      "life": 78.1,
+      "gdp": 34672,
+      "pop": 313595445,
+      "region": "Americas"
+    },
+    {
+      "code": "CHN",
+      "name": "China",
+      "life": 72,
+      "gdp": 1059,
+      "pop": 1429995230,
+      "region": "Asia"
+    },
+    {
+      "code": "IND",
+      "name": "India",
+      "life": 60.4,
+      "gdp": 1150,
+      "pop": 1091312149,
+      "region": "Asia"
+    },
+    {
+      "code": "JPN",
+      "name": "Japan",
+      "life": 81.9,
+      "gdp": 37731,
+      "pop": 155543341,
+      "region": "Asia"
+    },
+    {
+      "code": "DEU",
+      "name": "Germany",
+      "life": 78.3,
+      "gdp": 32487,
+      "pop": 83626673,
+      "region": "Europe"
+    },
+    {
+      "code": "GBR",
+      "name": "United Kingdom",
+      "life": 78.7,
+      "gdp": 27242,
+      "pop": 60338232,
+      "region": "Europe"
+    },
+    {
+      "code": "FRA",
+      "name": "France",
+      "life": 79.8,
+      "gdp": 31758,
+      "pop": 61396798,
+      "region": "Europe"
+    },
+    {
+      "code": "BRA",
+      "name": "Brazil",
+      "life": 68.8,
+      "gdp": 6742,
+      "pop": 188157267,
+      "region": "Americas"
+    },
+    {
+      "code": "RUS",
+      "name": "Russia",
+      "life": 71.8,
+      "gdp": 8006,
+      "pop": 156667691,
+      "region": "Europe"
+    },
+    {
+      "code": "NGA",
+      "name": "Nigeria",
+      "life": 49.4,
+      "gdp": 968,
+      "pop": 153470418,
+      "region": "Africa"
+    },
+    {
+      "code": "MEX",
+      "name": "Mexico",
+      "life": 73.5,
+      "gdp": 6531,
+      "pop": 104113688,
+      "region": "Americas"
+    },
+    {
+      "code": "IDN",
+      "name": "Indonesia",
+      "life": 64.5,
+      "gdp": 1936,
+      "pop": 227043102,
+      "region": "Asia"
+    },
+    {
+      "code": "ETH",
+      "name": "Ethiopia",
+      "life": 50.6,
+      "gdp": 756,
+      "pop": 81531159,
+      "region": "Africa"
+    },
+    {
+      "code": "EGY",
+      "name": "Egypt",
+      "life": 69.4,
+      "gdp": 2107,
+      "pop": 91123061,
+      "region": "Africa"
+    },
+    {
+      "code": "VNM",
+      "name": "Vietnam",
+      "life": 67.9,
+      "gdp": 303,
+      "pop": 82789198,
+      "region": "Asia"
+    },
+    {
+      "code": "TUR",
+      "name": "Turkey",
+      "life": 68.8,
+      "gdp": 5899,
+      "pop": 59279667,
+      "region": "Europe"
+    },
+    {
+      "code": "KOR",
+      "name": "South Korea",
+      "life": 74,
+      "gdp": 9469,
+      "pop": 53938417,
+      "region": "Asia"
+    },
+    {
+      "code": "ZAF",
+      "name": "South Africa",
+      "life": 66.8,
+      "gdp": 7163,
+      "pop": 59150057,
+      "region": "Africa"
+    },
+    {
+      "code": "COL",
+      "name": "Colombia",
+      "life": 71.2,
+      "gdp": 2739,
+      "pop": 41394599,
+      "region": "Americas"
+    },
+    {
+      "code": "ESP",
+      "name": "Spain",
+      "life": 79.8,
+      "gdp": 19230,
+      "pop": 41284054,
+      "region": "Europe"
+    },
+    {
+      "code": "ARG",
+      "name": "Argentina",
+      "life": 74.2,
+      "gdp": 9481,
+      "pop": 41394599,
+      "region": "Americas"
+    },
+    {
+      "code": "POL",
+      "name": "Poland",
+      "life": 73.7,
+      "gdp": 3582,
+      "pop": 40225488,
+      "region": "Europe"
+    },
+    {
+      "code": "CAN",
+      "name": "Canada",
+      "life": 80.3,
+      "gdp": 31176,
+      "pop": 35122690,
+      "region": "Americas"
+    },
+    {
+      "code": "AUS",
+      "name": "Australia",
+      "life": 79.9,
+      "gdp": 26368,
+      "pop": 21324490,
+      "region": "Oceania"
+    },
+    {
+      "code": "SAU",
+      "name": "Saudi Arabia",
+      "life": 71.2,
+      "gdp": 10489,
+      "pop": 20070108,
+      "region": "Asia"
+    },
+    {
+      "code": "THA",
+      "name": "Thailand",
+      "life": 70.8,
+      "gdp": 3160,
+      "pop": 68990998,
+      "region": "Asia"
+    },
+    {
+      "code": "MYS",
+      "name": "Malaysia",
+      "life": 73.5,
+      "gdp": 5056,
+      "pop": 22578872,
+      "region": "Asia"
+    },
+    {
+      "code": "PHL",
+      "name": "Philippines",
+      "life": 68.6,
+      "gdp": 2209,
+      "pop": 76517289,
+      "region": "Asia"
+    },
+    {
+      "code": "PAK",
+      "name": "Pakistan",
+      "life": 61.2,
+      "gdp": 1180,
+      "pop": 135473232,
+      "region": "Asia"
+    },
+    {
+      "code": "BGD",
+      "name": "Bangladesh",
+      "life": 59.1,
+      "gdp": 847,
+      "pop": 130455705,
+      "region": "Asia"
+    },
+    {
+      "code": "NLD",
+      "name": "Netherlands",
+      "life": 79.9,
+      "gdp": 28845,
+      "pop": 15878482,
+      "region": "Europe"
+    },
+    {
+      "code": "CHE",
+      "name": "Switzerland",
+      "life": 80.3,
+      "gdp": 48949,
+      "pop": 7409958,
+      "region": "Europe"
+    },
+    {
+      "code": "SWE",
+      "name": "Sweden",
+      "life": 80.7,
+      "gdp": 40062,
+      "pop": 9527089,
+      "region": "Europe"
+    },
+    {
+      "code": "NOR",
+      "name": "Norway",
+      "life": 79.5,
+      "gdp": 40208,
+      "pop": 4234262,
+      "region": "Europe"
+    }
+  ],
+  "2010": [
+    {
+      "code": "USA",
+      "name": "United States",
+      "life": 78.2,
+      "gdp": 35366,
+      "pop": 317358591,
+      "region": "Americas"
+    },
+    {
+      "code": "CHN",
+      "name": "China",
+      "life": 72.2,
+      "gdp": 1122,
+      "pop": 1447155173,
+      "region": "Asia"
+    },
+    {
+      "code": "IND",
+      "name": "India",
+      "life": 60.5,
+      "gdp": 1219,
+      "pop": 1104407895,
+      "region": "Asia"
+    },
+    {
+      "code": "JPN",
+      "name": "Japan",
+      "life": 82.1,
+      "gdp": 38486,
+      "pop": 157409861,
+      "region": "Asia"
+    },
+    {
+      "code": "DEU",
+      "name": "Germany",
+      "life": 78.4,
+      "gdp": 33137,
+      "pop": 83877553,
+      "region": "Europe"
+    },
+    {
+      "code": "GBR",
+      "name": "United Kingdom",
+      "life": 78.8,
+      "gdp": 27787,
+      "pop": 60519247,
+      "region": "Europe"
+    },
+    {
+      "code": "FRA",
+      "name": "France",
+      "life": 80,
+      "gdp": 32394,
+      "pop": 61580988,
+      "region": "Europe"
+    },
+    {
+      "code": "BRA",
+      "name": "Brazil",
+      "life": 69,
+      "gdp": 7012,
+      "pop": 190415154,
+      "region": "Americas"
+    },
+    {
+      "code": "RUS",
+      "name": "Russia",
+      "life": 72,
+      "gdp": 8326,
+      "pop": 157137694,
+      "region": "Europe"
+    },
+    {
+      "code": "NGA",
+      "name": "Nigeria",
+      "life": 49.6,
+      "gdp": 1026,
+      "pop": 157307178,
+      "region": "Africa"
+    },
+    {
+      "code": "MEX",
+      "name": "Mexico",
+      "life": 73.6,
+      "gdp": 6792,
+      "pop": 105363052,
+      "region": "Americas"
+    },
+    {
+      "code": "IDN",
+      "name": "Indonesia",
+      "life": 64.6,
+      "gdp": 2053,
+      "pop": 229767620,
+      "region": "Asia"
+    },
+    {
+      "code": "ETH",
+      "name": "Ethiopia",
+      "life": 50.8,
+      "gdp": 802,
+      "pop": 83569438,
+      "region": "Africa"
+    },
+    {
+      "code": "EGY",
+      "name": "Egypt",
+      "life": 69.7,
+      "gdp": 2191,
+      "pop": 93401137,
+      "region": "Africa"
+    },
+    {
+      "code": "VNM",
+      "name": "Vietnam",
+      "life": 68,
+      "gdp": 321,
+      "pop": 83782668,
+      "region": "Asia"
+    },
+    {
+      "code": "TUR",
+      "name": "Turkey",
+      "life": 69,
+      "gdp": 6135,
+      "pop": 59457506,
+      "region": "Europe"
+    },
+    {
+      "code": "KOR",
+      "name": "South Korea",
+      "life": 74.2,
+      "gdp": 9659,
+      "pop": 54585678,
+      "region": "Asia"
+    },
+    {
+      "code": "ZAF",
+      "name": "South Africa",
+      "life": 67.1,
+      "gdp": 7450,
+      "pop": 60628808,
+      "region": "Africa"
+    },
+    {
+      "code": "COL",
+      "name": "Colombia",
+      "life": 71.3,
+      "gdp": 2848,
+      "pop": 41891334,
+      "region": "Americas"
+    },
+    {
+      "code": "ESP",
+      "name": "Spain",
+      "life": 80,
+      "gdp": 19615,
+      "pop": 41407906,
+      "region": "Europe"
+    },
+    {
+      "code": "ARG",
+      "name": "Argentina",
+      "life": 74.4,
+      "gdp": 9860,
+      "pop": 41891334,
+      "region": "Americas"
+    },
+    {
+      "code": "POL",
+      "name": "Poland",
+      "life": 73.8,
+      "gdp": 3725,
+      "pop": 40346165,
+      "region": "Europe"
+    },
+    {
+      "code": "CAN",
+      "name": "Canada",
+      "life": 80.5,
+      "gdp": 31799,
+      "pop": 35544162,
+      "region": "Americas"
+    },
+    {
+      "code": "AUS",
+      "name": "Australia",
+      "life": 80.1,
+      "gdp": 26896,
+      "pop": 21580384,
+      "region": "Oceania"
+    },
+    {
+      "code": "SAU",
+      "name": "Saudi Arabia",
+      "life": 71.3,
+      "gdp": 10699,
+      "pop": 20310950,
+      "region": "Asia"
+    },
+    {
+      "code": "THA",
+      "name": "Thailand",
+      "life": 70.9,
+      "gdp": 3287,
+      "pop": 69818890,
+      "region": "Asia"
+    },
+    {
+      "code": "MYS",
+      "name": "Malaysia",
+      "life": 73.6,
+      "gdp": 5259,
+      "pop": 22849819,
+      "region": "Asia"
+    },
+    {
+      "code": "PHL",
+      "name": "Philippines",
+      "life": 68.7,
+      "gdp": 2341,
+      "pop": 77435496,
+      "region": "Asia"
+    },
+    {
+      "code": "PAK",
+      "name": "Pakistan",
+      "life": 61.4,
+      "gdp": 1251,
+      "pop": 137098911,
+      "region": "Asia"
+    },
+    {
+      "code": "BGD",
+      "name": "Bangladesh",
+      "life": 59.2,
+      "gdp": 898,
+      "pop": 132021174,
+      "region": "Asia"
+    },
+    {
+      "code": "NLD",
+      "name": "Netherlands",
+      "life": 80.1,
+      "gdp": 29422,
+      "pop": 15926118,
+      "region": "Europe"
+    },
+    {
+      "code": "CHE",
+      "name": "Switzerland",
+      "life": 80.5,
+      "gdp": 49928,
+      "pop": 7432188,
+      "region": "Europe"
+    },
+    {
+      "code": "SWE",
+      "name": "Sweden",
+      "life": 80.8,
+      "gdp": 40864,
+      "pop": 9555671,
+      "region": "Europe"
+    },
+    {
+      "code": "NOR",
+      "name": "Norway",
+      "life": 79.7,
+      "gdp": 41012,
+      "pop": 4246965,
+      "region": "Europe"
+    }
+  ],
+  "2011": [
+    {
+      "code": "USA",
+      "name": "United States",
+      "life": 78.4,
+      "gdp": 36073,
+      "pop": 321166894,
+      "region": "Americas"
+    },
+    {
+      "code": "CHN",
+      "name": "China",
+      "life": 72.3,
+      "gdp": 1190,
+      "pop": 1464521035,
+      "region": "Asia"
+    },
+    {
+      "code": "IND",
+      "name": "India",
+      "life": 60.6,
+      "gdp": 1292,
+      "pop": 1117660790,
+      "region": "Asia"
+    },
+    {
+      "code": "JPN",
+      "name": "Japan",
+      "life": 82.2,
+      "gdp": 39256,
+      "pop": 159298779,
+      "region": "Asia"
+    },
+    {
+      "code": "DEU",
+      "name": "Germany",
+      "life": 78.6,
+      "gdp": 33799,
+      "pop": 84129186,
+      "region": "Europe"
+    },
+    {
+      "code": "GBR",
+      "name": "United Kingdom",
+      "life": 79,
+      "gdp": 28343,
+      "pop": 60700805,
+      "region": "Europe"
+    },
+    {
+      "code": "FRA",
+      "name": "France",
+      "life": 80.1,
+      "gdp": 33042,
+      "pop": 61765731,
+      "region": "Europe"
+    },
+    {
+      "code": "BRA",
+      "name": "Brazil",
+      "life": 69.1,
+      "gdp": 7292,
+      "pop": 192700136,
+      "region": "Americas"
+    },
+    {
+      "code": "RUS",
+      "name": "Russia",
+      "life": 72.1,
+      "gdp": 8659,
+      "pop": 157609107,
+      "region": "Europe"
+    },
+    {
+      "code": "NGA",
+      "name": "Nigeria",
+      "life": 49.8,
+      "gdp": 1088,
+      "pop": 161239858,
+      "region": "Africa"
+    },
+    {
+      "code": "MEX",
+      "name": "Mexico",
+      "life": 73.8,
+      "gdp": 7064,
+      "pop": 106627409,
+      "region": "Americas"
+    },
+    {
+      "code": "IDN",
+      "name": "Indonesia",
+      "life": 64.7,
+      "gdp": 2176,
+      "pop": 232524831,
+      "region": "Asia"
+    },
+    {
+      "code": "ETH",
+      "name": "Ethiopia",
+      "life": 50.9,
+      "gdp": 850,
+      "pop": 85658674,
+      "region": "Africa"
+    },
+    {
+      "code": "EGY",
+      "name": "Egypt",
+      "life": 69.9,
+      "gdp": 2279,
+      "pop": 95736166,
+      "region": "Africa"
+    },
+    {
+      "code": "VNM",
+      "name": "Vietnam",
+      "life": 68.1,
+      "gdp": 340,
+      "pop": 84788060,
+      "region": "Asia"
+    },
+    {
+      "code": "TUR",
+      "name": "Turkey",
+      "life": 69.1,
+      "gdp": 6381,
+      "pop": 59635878,
+      "region": "Europe"
+    },
+    {
+      "code": "KOR",
+      "name": "South Korea",
+      "life": 74.3,
+      "gdp": 9852,
+      "pop": 55240706,
+      "region": "Asia"
+    },
+    {
+      "code": "ZAF",
+      "name": "South Africa",
+      "life": 67.3,
+      "gdp": 7748,
+      "pop": 62144528,
+      "region": "Africa"
+    },
+    {
+      "code": "COL",
+      "name": "Colombia",
+      "life": 71.5,
+      "gdp": 2962,
+      "pop": 42394030,
+      "region": "Americas"
+    },
+    {
+      "code": "ESP",
+      "name": "Spain",
+      "life": 80.1,
+      "gdp": 20007,
+      "pop": 41532130,
+      "region": "Europe"
+    },
+    {
+      "code": "ARG",
+      "name": "Argentina",
+      "life": 74.5,
+      "gdp": 10254,
+      "pop": 42394030,
+      "region": "Americas"
+    },
+    {
+      "code": "POL",
+      "name": "Poland",
+      "life": 74,
+      "gdp": 3874,
+      "pop": 40467203,
+      "region": "Europe"
+    },
+    {
+      "code": "CAN",
+      "name": "Canada",
+      "life": 80.7,
+      "gdp": 32435,
+      "pop": 35970692,
+      "region": "Americas"
+    },
+    {
+      "code": "AUS",
+      "name": "Australia",
+      "life": 80.2,
+      "gdp": 27434,
+      "pop": 21839349,
+      "region": "Oceania"
+    },
+    {
+      "code": "SAU",
+      "name": "Saudi Arabia",
+      "life": 71.5,
+      "gdp": 10913,
+      "pop": 20554681,
+      "region": "Asia"
+    },
+    {
+      "code": "THA",
+      "name": "Thailand",
+      "life": 71.1,
+      "gdp": 3418,
+      "pop": 70656717,
+      "region": "Asia"
+    },
+    {
+      "code": "MYS",
+      "name": "Malaysia",
+      "life": 73.8,
+      "gdp": 5469,
+      "pop": 23124016,
+      "region": "Asia"
+    },
+    {
+      "code": "PHL",
+      "name": "Philippines",
+      "life": 68.9,
+      "gdp": 2482,
+      "pop": 78364722,
+      "region": "Asia"
+    },
+    {
+      "code": "PAK",
+      "name": "Pakistan",
+      "life": 61.5,
+      "gdp": 1326,
+      "pop": 138744098,
+      "region": "Asia"
+    },
+    {
+      "code": "BGD",
+      "name": "Bangladesh",
+      "life": 59.3,
+      "gdp": 952,
+      "pop": 133605428,
+      "region": "Asia"
+    },
+    {
+      "code": "NLD",
+      "name": "Netherlands",
+      "life": 80.2,
+      "gdp": 30010,
+      "pop": 15973896,
+      "region": "Europe"
+    },
+    {
+      "code": "CHE",
+      "name": "Switzerland",
+      "life": 80.7,
+      "gdp": 50926,
+      "pop": 7454485,
+      "region": "Europe"
+    },
+    {
+      "code": "SWE",
+      "name": "Sweden",
+      "life": 81,
+      "gdp": 41681,
+      "pop": 9584338,
+      "region": "Europe"
+    },
+    {
+      "code": "NOR",
+      "name": "Norway",
+      "life": 79.8,
+      "gdp": 41832,
+      "pop": 4259706,
+      "region": "Europe"
+    }
+  ],
+  "2012": [
+    {
+      "code": "USA",
+      "name": "United States",
+      "life": 78.5,
+      "gdp": 36794,
+      "pop": 325020896,
+      "region": "Americas"
+    },
+    {
+      "code": "CHN",
+      "name": "China",
+      "life": 72.5,
+      "gdp": 1261,
+      "pop": 1482095288,
+      "region": "Asia"
+    },
+    {
+      "code": "IND",
+      "name": "India",
+      "life": 60.8,
+      "gdp": 1369,
+      "pop": 1131072719,
+      "region": "Asia"
+    },
+    {
+      "code": "JPN",
+      "name": "Japan",
+      "life": 82.4,
+      "gdp": 40041,
+      "pop": 161210365,
+      "region": "Asia"
+    },
+    {
+      "code": "DEU",
+      "name": "Germany",
+      "life": 78.7,
+      "gdp": 34475,
+      "pop": 84381573,
+      "region": "Europe"
+    },
+    {
+      "code": "GBR",
+      "name": "United Kingdom",
+      "life": 79.1,
+      "gdp": 28910,
+      "pop": 60882907,
+      "region": "Europe"
+    },
+    {
+      "code": "FRA",
+      "name": "France",
+      "life": 80.3,
+      "gdp": 33702,
+      "pop": 61951028,
+      "region": "Europe"
+    },
+    {
+      "code": "BRA",
+      "name": "Brazil",
+      "life": 69.2,
+      "gdp": 7584,
+      "pop": 195012538,
+      "region": "Americas"
+    },
+    {
+      "code": "RUS",
+      "name": "Russia",
+      "life": 72.2,
+      "gdp": 9006,
+      "pop": 158081934,
+      "region": "Europe"
+    },
+    {
+      "code": "NGA",
+      "name": "Nigeria",
+      "life": 49.9,
+      "gdp": 1153,
+      "pop": 165270854,
+      "region": "Africa"
+    },
+    {
+      "code": "MEX",
+      "name": "Mexico",
+      "life": 73.9,
+      "gdp": 7347,
+      "pop": 107906938,
+      "region": "Americas"
+    },
+    {
+      "code": "IDN",
+      "name": "Indonesia",
+      "life": 64.8,
+      "gdp": 2306,
+      "pop": 235315129,
+      "region": "Asia"
+    },
+    {
+      "code": "ETH",
+      "name": "Ethiopia",
+      "life": 51.1,
+      "gdp": 901,
+      "pop": 87800141,
+      "region": "Africa"
+    },
+    {
+      "code": "EGY",
+      "name": "Egypt",
+      "life": 70.2,
+      "gdp": 2370,
+      "pop": 98129570,
+      "region": "Africa"
+    },
+    {
+      "code": "VNM",
+      "name": "Vietnam",
+      "life": 68.3,
+      "gdp": 360,
+      "pop": 85805517,
+      "region": "Asia"
+    },
+    {
+      "code": "TUR",
+      "name": "Turkey",
+      "life": 69.2,
+      "gdp": 6636,
+      "pop": 59814786,
+      "region": "Europe"
+    },
+    {
+      "code": "KOR",
+      "name": "South Korea",
+      "life": 74.4,
+      "gdp": 10049,
+      "pop": 55903594,
+      "region": "Asia"
+    },
+    {
+      "code": "ZAF",
+      "name": "South Africa",
+      "life": 67.6,
+      "gdp": 8058,
+      "pop": 63698142,
+      "region": "Africa"
+    },
+    {
+      "code": "COL",
+      "name": "Colombia",
+      "life": 71.6,
+      "gdp": 3081,
+      "pop": 42902758,
+      "region": "Americas"
+    },
+    {
+      "code": "ESP",
+      "name": "Spain",
+      "life": 80.3,
+      "gdp": 20407,
+      "pop": 41656726,
+      "region": "Europe"
+    },
+    {
+      "code": "ARG",
+      "name": "Argentina",
+      "life": 74.6,
+      "gdp": 10665,
+      "pop": 42902758,
+      "region": "Americas"
+    },
+    {
+      "code": "POL",
+      "name": "Poland",
+      "life": 74.1,
+      "gdp": 4029,
+      "pop": 40588605,
+      "region": "Europe"
+    },
+    {
+      "code": "CAN",
+      "name": "Canada",
+      "life": 80.8,
+      "gdp": 33084,
+      "pop": 36402340,
+      "region": "Americas"
+    },
+    {
+      "code": "AUS",
+      "name": "Australia",
+      "life": 80.4,
+      "gdp": 27982,
+      "pop": 22101421,
+      "region": "Oceania"
+    },
+    {
+      "code": "SAU",
+      "name": "Saudi Arabia",
+      "life": 71.6,
+      "gdp": 11131,
+      "pop": 20801337,
+      "region": "Asia"
+    },
+    {
+      "code": "THA",
+      "name": "Thailand",
+      "life": 71.2,
+      "gdp": 3555,
+      "pop": 71504597,
+      "region": "Asia"
+    },
+    {
+      "code": "MYS",
+      "name": "Malaysia",
+      "life": 73.9,
+      "gdp": 5688,
+      "pop": 23401505,
+      "region": "Asia"
+    },
+    {
+      "code": "PHL",
+      "name": "Philippines",
+      "life": 69,
+      "gdp": 2631,
+      "pop": 79305099,
+      "region": "Asia"
+    },
+    {
+      "code": "PAK",
+      "name": "Pakistan",
+      "life": 61.6,
+      "gdp": 1405,
+      "pop": 140409027,
+      "region": "Asia"
+    },
+    {
+      "code": "BGD",
+      "name": "Bangladesh",
+      "life": 59.4,
+      "gdp": 1009,
+      "pop": 135208693,
+      "region": "Asia"
+    },
+    {
+      "code": "NLD",
+      "name": "Netherlands",
+      "life": 80.4,
+      "gdp": 30610,
+      "pop": 16021818,
+      "region": "Europe"
+    },
+    {
+      "code": "CHE",
+      "name": "Switzerland",
+      "life": 80.8,
+      "gdp": 51945,
+      "pop": 7476848,
+      "region": "Europe"
+    },
+    {
+      "code": "SWE",
+      "name": "Sweden",
+      "life": 81.1,
+      "gdp": 42514,
+      "pop": 9613091,
+      "region": "Europe"
+    },
+    {
+      "code": "NOR",
+      "name": "Norway",
+      "life": 80,
+      "gdp": 42669,
+      "pop": 4272485,
+      "region": "Europe"
+    }
+  ],
+  "2013": [
+    {
+      "code": "USA",
+      "name": "United States",
+      "life": 78.7,
+      "gdp": 37530,
+      "pop": 328921147,
+      "region": "Americas"
+    },
+    {
+      "code": "CHN",
+      "name": "China",
+      "life": 72.6,
+      "gdp": 1337,
+      "pop": 1499880431,
+      "region": "Asia"
+    },
+    {
+      "code": "IND",
+      "name": "India",
+      "life": 60.9,
+      "gdp": 1452,
+      "pop": 1144645592,
+      "region": "Asia"
+    },
+    {
+      "code": "JPN",
+      "name": "Japan",
+      "life": 82.5,
+      "gdp": 40842,
+      "pop": 163144889,
+      "region": "Asia"
+    },
+    {
+      "code": "DEU",
+      "name": "Germany",
+      "life": 78.9,
+      "gdp": 35165,
+      "pop": 84634718,
+      "region": "Europe"
+    },
+    {
+      "code": "GBR",
+      "name": "United Kingdom",
+      "life": 79.3,
+      "gdp": 29488,
+      "pop": 61065556,
+      "region": "Europe"
+    },
+    {
+      "code": "FRA",
+      "name": "France",
+      "life": 80.4,
+      "gdp": 34376,
+      "pop": 62136881,
+      "region": "Europe"
+    },
+    {
+      "code": "BRA",
+      "name": "Brazil",
+      "life": 69.3,
+      "gdp": 7887,
+      "pop": 197352688,
+      "region": "Americas"
+    },
+    {
+      "code": "RUS",
+      "name": "Russia",
+      "life": 72.4,
+      "gdp": 9366,
+      "pop": 158556180,
+      "region": "Europe"
+    },
+    {
+      "code": "NGA",
+      "name": "Nigeria",
+      "life": 50.1,
+      "gdp": 1222,
+      "pop": 169402626,
+      "region": "Africa"
+    },
+    {
+      "code": "MEX",
+      "name": "Mexico",
+      "life": 74.1,
+      "gdp": 7641,
+      "pop": 109201821,
+      "region": "Americas"
+    },
+    {
+      "code": "IDN",
+      "name": "Indonesia",
+      "life": 65,
+      "gdp": 2445,
+      "pop": 238138911,
+      "region": "Asia"
+    },
+    {
+      "code": "ETH",
+      "name": "Ethiopia",
+      "life": 51.3,
+      "gdp": 955,
+      "pop": 89995145,
+      "region": "Africa"
+    },
+    {
+      "code": "EGY",
+      "name": "Egypt",
+      "life": 70.4,
+      "gdp": 2465,
+      "pop": 100582809,
+      "region": "Africa"
+    },
+    {
+      "code": "VNM",
+      "name": "Vietnam",
+      "life": 68.4,
+      "gdp": 382,
+      "pop": 86835183,
+      "region": "Asia"
+    },
+    {
+      "code": "TUR",
+      "name": "Turkey",
+      "life": 69.3,
+      "gdp": 6901,
+      "pop": 59994230,
+      "region": "Europe"
+    },
+    {
+      "code": "KOR",
+      "name": "South Korea",
+      "life": 74.6,
+      "gdp": 10250,
+      "pop": 56574437,
+      "region": "Asia"
+    },
+    {
+      "code": "ZAF",
+      "name": "South Africa",
+      "life": 67.8,
+      "gdp": 8380,
+      "pop": 65290595,
+      "region": "Africa"
+    },
+    {
+      "code": "COL",
+      "name": "Colombia",
+      "life": 71.8,
+      "gdp": 3204,
+      "pop": 43417591,
+      "region": "Americas"
+    },
+    {
+      "code": "ESP",
+      "name": "Spain",
+      "life": 80.4,
+      "gdp": 20815,
+      "pop": 41781696,
+      "region": "Europe"
+    },
+    {
+      "code": "ARG",
+      "name": "Argentina",
+      "life": 74.8,
+      "gdp": 11091,
+      "pop": 43417591,
+      "region": "Americas"
+    },
+    {
+      "code": "POL",
+      "name": "Poland",
+      "life": 74.3,
+      "gdp": 4190,
+      "pop": 40710371,
+      "region": "Europe"
+    },
+    {
+      "code": "CAN",
+      "name": "Canada",
+      "life": 81,
+      "gdp": 33746,
+      "pop": 36839168,
+      "region": "Americas"
+    },
+    {
+      "code": "AUS",
+      "name": "Australia",
+      "life": 80.5,
+      "gdp": 28542,
+      "pop": 22366638,
+      "region": "Oceania"
+    },
+    {
+      "code": "SAU",
+      "name": "Saudi Arabia",
+      "life": 71.8,
+      "gdp": 11354,
+      "pop": 21050953,
+      "region": "Asia"
+    },
+    {
+      "code": "THA",
+      "name": "Thailand",
+      "life": 71.3,
+      "gdp": 3697,
+      "pop": 72362652,
+      "region": "Asia"
+    },
+    {
+      "code": "MYS",
+      "name": "Malaysia",
+      "life": 74.1,
+      "gdp": 5915,
+      "pop": 23682323,
+      "region": "Asia"
+    },
+    {
+      "code": "PHL",
+      "name": "Philippines",
+      "life": 69.1,
+      "gdp": 2788,
+      "pop": 80256760,
+      "region": "Asia"
+    },
+    {
+      "code": "PAK",
+      "name": "Pakistan",
+      "life": 61.7,
+      "gdp": 1490,
+      "pop": 142093936,
+      "region": "Asia"
+    },
+    {
+      "code": "BGD",
+      "name": "Bangladesh",
+      "life": 59.5,
+      "gdp": 1070,
+      "pop": 136831197,
+      "region": "Asia"
+    },
+    {
+      "code": "NLD",
+      "name": "Netherlands",
+      "life": 80.5,
+      "gdp": 31223,
+      "pop": 16069883,
+      "region": "Europe"
+    },
+    {
+      "code": "CHE",
+      "name": "Switzerland",
+      "life": 81,
+      "gdp": 52984,
+      "pop": 7499279,
+      "region": "Europe"
+    },
+    {
+      "code": "SWE",
+      "name": "Sweden",
+      "life": 81.3,
+      "gdp": 43365,
+      "pop": 9641930,
+      "region": "Europe"
+    },
+    {
+      "code": "NOR",
+      "name": "Norway",
+      "life": 80.1,
+      "gdp": 43522,
+      "pop": 4285302,
+      "region": "Europe"
+    }
+  ],
+  "2014": [
+    {
+      "code": "USA",
+      "name": "United States",
+      "life": 78.8,
+      "gdp": 38281,
+      "pop": 332868201,
+      "region": "Americas"
+    },
+    {
+      "code": "CHN",
+      "name": "China",
+      "life": 72.7,
+      "gdp": 1417,
+      "pop": 1517878996,
+      "region": "Asia"
+    },
+    {
+      "code": "IND",
+      "name": "India",
+      "life": 61,
+      "gdp": 1539,
+      "pop": 1158381339,
+      "region": "Asia"
+    },
+    {
+      "code": "JPN",
+      "name": "Japan",
+      "life": 82.7,
+      "gdp": 41659,
+      "pop": 165102628,
+      "region": "Asia"
+    },
+    {
+      "code": "DEU",
+      "name": "Germany",
+      "life": 79,
+      "gdp": 35868,
+      "pop": 84888622,
+      "region": "Europe"
+    },
+    {
+      "code": "GBR",
+      "name": "United Kingdom",
+      "life": 79.4,
+      "gdp": 30078,
+      "pop": 61248753,
+      "region": "Europe"
+    },
+    {
+      "code": "FRA",
+      "name": "France",
+      "life": 80.6,
+      "gdp": 35064,
+      "pop": 62323292,
+      "region": "Europe"
+    },
+    {
+      "code": "BRA",
+      "name": "Brazil",
+      "life": 69.5,
+      "gdp": 8203,
+      "pop": 199720921,
+      "region": "Americas"
+    },
+    {
+      "code": "RUS",
+      "name": "Russia",
+      "life": 72.5,
+      "gdp": 9741,
+      "pop": 159031849,
+      "region": "Europe"
+    },
+    {
+      "code": "NGA",
+      "name": "Nigeria",
+      "life": 50.3,
+      "gdp": 1296,
+      "pop": 173637691,
+      "region": "Africa"
+    },
+    {
+      "code": "MEX",
+      "name": "Mexico",
+      "life": 74.2,
+      "gdp": 7946,
+      "pop": 110512243,
+      "region": "Americas"
+    },
+    {
+      "code": "IDN",
+      "name": "Indonesia",
+      "life": 65.1,
+      "gdp": 2591,
+      "pop": 240996577,
+      "region": "Asia"
+    },
+    {
+      "code": "ETH",
+      "name": "Ethiopia",
+      "life": 51.5,
+      "gdp": 1012,
+      "pop": 92245023,
+      "region": "Africa"
+    },
+    {
+      "code": "EGY",
+      "name": "Egypt",
+      "life": 70.7,
+      "gdp": 2563,
+      "pop": 103097379,
+      "region": "Africa"
+    },
+    {
+      "code": "VNM",
+      "name": "Vietnam",
+      "life": 68.5,
+      "gdp": 405,
+      "pop": 87877205,
+      "region": "Asia"
+    },
+    {
+      "code": "TUR",
+      "name": "Turkey",
+      "life": 69.5,
+      "gdp": 7177,
+      "pop": 60174213,
+      "region": "Europe"
+    },
+    {
+      "code": "KOR",
+      "name": "South Korea",
+      "life": 74.7,
+      "gdp": 10455,
+      "pop": 57253331,
+      "region": "Asia"
+    },
+    {
+      "code": "ZAF",
+      "name": "South Africa",
+      "life": 68.1,
+      "gdp": 8715,
+      "pop": 66922860,
+      "region": "Africa"
+    },
+    {
+      "code": "COL",
+      "name": "Colombia",
+      "life": 71.9,
+      "gdp": 3332,
+      "pop": 43938603,
+      "region": "Americas"
+    },
+    {
+      "code": "ESP",
+      "name": "Spain",
+      "life": 80.6,
+      "gdp": 21231,
+      "pop": 41907041,
+      "region": "Europe"
+    },
+    {
+      "code": "ARG",
+      "name": "Argentina",
+      "life": 74.9,
+      "gdp": 11535,
+      "pop": 43938603,
+      "region": "Americas"
+    },
+    {
+      "code": "POL",
+      "name": "Poland",
+      "life": 74.4,
+      "gdp": 4358,
+      "pop": 40832502,
+      "region": "Europe"
+    },
+    {
+      "code": "CAN",
+      "name": "Canada",
+      "life": 81.1,
+      "gdp": 34421,
+      "pop": 37281239,
+      "region": "Americas"
+    },
+    {
+      "code": "AUS",
+      "name": "Australia",
+      "life": 80.7,
+      "gdp": 29113,
+      "pop": 22635038,
+      "region": "Oceania"
+    },
+    {
+      "code": "SAU",
+      "name": "Saudi Arabia",
+      "life": 71.9,
+      "gdp": 11581,
+      "pop": 21303565,
+      "region": "Asia"
+    },
+    {
+      "code": "THA",
+      "name": "Thailand",
+      "life": 71.5,
+      "gdp": 3845,
+      "pop": 73231004,
+      "region": "Asia"
+    },
+    {
+      "code": "MYS",
+      "name": "Malaysia",
+      "life": 74.2,
+      "gdp": 6152,
+      "pop": 23966510,
+      "region": "Asia"
+    },
+    {
+      "code": "PHL",
+      "name": "Philippines",
+      "life": 69.3,
+      "gdp": 2956,
+      "pop": 81219841,
+      "region": "Asia"
+    },
+    {
+      "code": "PAK",
+      "name": "Pakistan",
+      "life": 61.8,
+      "gdp": 1579,
+      "pop": 143799063,
+      "region": "Asia"
+    },
+    {
+      "code": "BGD",
+      "name": "Bangladesh",
+      "life": 59.6,
+      "gdp": 1134,
+      "pop": 138473172,
+      "region": "Asia"
+    },
+    {
+      "code": "NLD",
+      "name": "Netherlands",
+      "life": 80.7,
+      "gdp": 31847,
+      "pop": 16118093,
+      "region": "Europe"
+    },
+    {
+      "code": "CHE",
+      "name": "Switzerland",
+      "life": 81.1,
+      "gdp": 54043,
+      "pop": 7521777,
+      "region": "Europe"
+    },
+    {
+      "code": "SWE",
+      "name": "Sweden",
+      "life": 81.4,
+      "gdp": 44232,
+      "pop": 9670856,
+      "region": "Europe"
+    },
+    {
+      "code": "NOR",
+      "name": "Norway",
+      "life": 80.3,
+      "gdp": 44393,
+      "pop": 4298158,
+      "region": "Europe"
+    }
+  ],
+  "2015": [
+    {
+      "code": "USA",
+      "name": "United States",
+      "life": 79,
+      "gdp": 39046,
+      "pop": 336862619,
+      "region": "Americas"
+    },
+    {
+      "code": "CHN",
+      "name": "China",
+      "life": 72.9,
+      "gdp": 1502,
+      "pop": 1536093544,
+      "region": "Asia"
+    },
+    {
+      "code": "IND",
+      "name": "India",
+      "life": 61.1,
+      "gdp": 1631,
+      "pop": 1172281915,
+      "region": "Asia"
+    },
+    {
+      "code": "JPN",
+      "name": "Japan",
+      "life": 82.8,
+      "gdp": 42492,
+      "pop": 167083859,
+      "region": "Asia"
+    },
+    {
+      "code": "DEU",
+      "name": "Germany",
+      "life": 79.2,
+      "gdp": 36586,
+      "pop": 85143288,
+      "region": "Europe"
+    },
+    {
+      "code": "GBR",
+      "name": "United Kingdom",
+      "life": 79.6,
+      "gdp": 30679,
+      "pop": 61432499,
+      "region": "Europe"
+    },
+    {
+      "code": "FRA",
+      "name": "France",
+      "life": 80.7,
+      "gdp": 35765,
+      "pop": 62510262,
+      "region": "Europe"
+    },
+    {
+      "code": "BRA",
+      "name": "Brazil",
+      "life": 69.6,
+      "gdp": 8531,
+      "pop": 202117572,
+      "region": "Americas"
+    },
+    {
+      "code": "RUS",
+      "name": "Russia",
+      "life": 72.7,
+      "gdp": 10130,
+      "pop": 159508944,
+      "region": "Europe"
+    },
+    {
+      "code": "NGA",
+      "name": "Nigeria",
+      "life": 50.5,
+      "gdp": 1373,
+      "pop": 177978633,
+      "region": "Africa"
+    },
+    {
+      "code": "MEX",
+      "name": "Mexico",
+      "life": 74.3,
+      "gdp": 8264,
+      "pop": 111838390,
+      "region": "Americas"
+    },
+    {
+      "code": "IDN",
+      "name": "Indonesia",
+      "life": 65.2,
+      "gdp": 2747,
+      "pop": 243888536,
+      "region": "Asia"
+    },
+    {
+      "code": "ETH",
+      "name": "Ethiopia",
+      "life": 51.7,
+      "gdp": 1073,
+      "pop": 94551149,
+      "region": "Africa"
+    },
+    {
+      "code": "EGY",
+      "name": "Egypt",
+      "life": 71,
+      "gdp": 2666,
+      "pop": 105674814,
+      "region": "Africa"
+    },
+    {
+      "code": "VNM",
+      "name": "Vietnam",
+      "life": 68.7,
+      "gdp": 429,
+      "pop": 88931732,
+      "region": "Asia"
+    },
+    {
+      "code": "TUR",
+      "name": "Turkey",
+      "life": 69.6,
+      "gdp": 7464,
+      "pop": 60354736,
+      "region": "Europe"
+    },
+    {
+      "code": "KOR",
+      "name": "South Korea",
+      "life": 74.9,
+      "gdp": 10664,
+      "pop": 57940371,
+      "region": "Asia"
+    },
+    {
+      "code": "ZAF",
+      "name": "South Africa",
+      "life": 68.3,
+      "gdp": 9064,
+      "pop": 68595932,
+      "region": "Africa"
+    },
+    {
+      "code": "COL",
+      "name": "Colombia",
+      "life": 72,
+      "gdp": 3466,
+      "pop": 44465866,
+      "region": "Americas"
+    },
+    {
+      "code": "ESP",
+      "name": "Spain",
+      "life": 80.7,
+      "gdp": 21656,
+      "pop": 42032762,
+      "region": "Europe"
+    },
+    {
+      "code": "ARG",
+      "name": "Argentina",
+      "life": 75.1,
+      "gdp": 11996,
+      "pop": 44465866,
+      "region": "Americas"
+    },
+    {
+      "code": "POL",
+      "name": "Poland",
+      "life": 74.6,
+      "gdp": 4532,
+      "pop": 40954999,
+      "region": "Europe"
+    },
+    {
+      "code": "CAN",
+      "name": "Canada",
+      "life": 81.3,
+      "gdp": 35109,
+      "pop": 37728613,
+      "region": "Americas"
+    },
+    {
+      "code": "AUS",
+      "name": "Australia",
+      "life": 80.9,
+      "gdp": 29695,
+      "pop": 22906658,
+      "region": "Oceania"
+    },
+    {
+      "code": "SAU",
+      "name": "Saudi Arabia",
+      "life": 72,
+      "gdp": 11812,
+      "pop": 21559208,
+      "region": "Asia"
+    },
+    {
+      "code": "THA",
+      "name": "Thailand",
+      "life": 71.6,
+      "gdp": 3999,
+      "pop": 74109776,
+      "region": "Asia"
+    },
+    {
+      "code": "MYS",
+      "name": "Malaysia",
+      "life": 74.3,
+      "gdp": 6398,
+      "pop": 24254109,
+      "region": "Asia"
+    },
+    {
+      "code": "PHL",
+      "name": "Philippines",
+      "life": 69.4,
+      "gdp": 3133,
+      "pop": 82194479,
+      "region": "Asia"
+    },
+    {
+      "code": "PAK",
+      "name": "Pakistan",
+      "life": 62,
+      "gdp": 1674,
+      "pop": 145524652,
+      "region": "Asia"
+    },
+    {
+      "code": "BGD",
+      "name": "Bangladesh",
+      "life": 59.7,
+      "gdp": 1202,
+      "pop": 140134850,
+      "region": "Asia"
+    },
+    {
+      "code": "NLD",
+      "name": "Netherlands",
+      "life": 80.9,
+      "gdp": 32484,
+      "pop": 16166447,
+      "region": "Europe"
+    },
+    {
+      "code": "CHE",
+      "name": "Switzerland",
+      "life": 81.3,
+      "gdp": 55124,
+      "pop": 7544342,
+      "region": "Europe"
+    },
+    {
+      "code": "SWE",
+      "name": "Sweden",
+      "life": 81.6,
+      "gdp": 45117,
+      "pop": 9699868,
+      "region": "Europe"
+    },
+    {
+      "code": "NOR",
+      "name": "Norway",
+      "life": 80.4,
+      "gdp": 45281,
+      "pop": 4311053,
+      "region": "Europe"
+    }
+  ],
+  "2016": [
+    {
+      "code": "USA",
+      "name": "United States",
+      "life": 79.1,
+      "gdp": 39827,
+      "pop": 340904971,
+      "region": "Americas"
+    },
+    {
+      "code": "CHN",
+      "name": "China",
+      "life": 73,
+      "gdp": 1592,
+      "pop": 1554526667,
+      "region": "Asia"
+    },
+    {
+      "code": "IND",
+      "name": "India",
+      "life": 61.2,
+      "gdp": 1729,
+      "pop": 1186349298,
+      "region": "Asia"
+    },
+    {
+      "code": "JPN",
+      "name": "Japan",
+      "life": 83,
+      "gdp": 43342,
+      "pop": 169088866,
+      "region": "Asia"
+    },
+    {
+      "code": "DEU",
+      "name": "Germany",
+      "life": 79.3,
+      "gdp": 37317,
+      "pop": 85398718,
+      "region": "Europe"
+    },
+    {
+      "code": "GBR",
+      "name": "United Kingdom",
+      "life": 79.7,
+      "gdp": 31293,
+      "pop": 61616796,
+      "region": "Europe"
+    },
+    {
+      "code": "FRA",
+      "name": "France",
+      "life": 80.9,
+      "gdp": 36481,
+      "pop": 62697793,
+      "region": "Europe"
+    },
+    {
+      "code": "BRA",
+      "name": "Brazil",
+      "life": 69.7,
+      "gdp": 8872,
+      "pop": 204542982,
+      "region": "Americas"
+    },
+    {
+      "code": "RUS",
+      "name": "Russia",
+      "life": 72.8,
+      "gdp": 10535,
+      "pop": 159987471,
+      "region": "Europe"
+    },
+    {
+      "code": "NGA",
+      "name": "Nigeria",
+      "life": 50.7,
+      "gdp": 1456,
+      "pop": 182428099,
+      "region": "Africa"
+    },
+    {
+      "code": "MEX",
+      "name": "Mexico",
+      "life": 74.5,
+      "gdp": 8595,
+      "pop": 113180450,
+      "region": "Americas"
+    },
+    {
+      "code": "IDN",
+      "name": "Indonesia",
+      "life": 65.3,
+      "gdp": 2912,
+      "pop": 246815199,
+      "region": "Asia"
+    },
+    {
+      "code": "ETH",
+      "name": "Ethiopia",
+      "life": 51.9,
+      "gdp": 1137,
+      "pop": 96914928,
+      "region": "Africa"
+    },
+    {
+      "code": "EGY",
+      "name": "Egypt",
+      "life": 71.2,
+      "gdp": 2772,
+      "pop": 108316684,
+      "region": "Africa"
+    },
+    {
+      "code": "VNM",
+      "name": "Vietnam",
+      "life": 68.8,
+      "gdp": 455,
+      "pop": 89998912,
+      "region": "Asia"
+    },
+    {
+      "code": "TUR",
+      "name": "Turkey",
+      "life": 69.7,
+      "gdp": 7763,
+      "pop": 60535800,
+      "region": "Europe"
+    },
+    {
+      "code": "KOR",
+      "name": "South Korea",
+      "life": 75,
+      "gdp": 10877,
+      "pop": 58635655,
+      "region": "Asia"
+    },
+    {
+      "code": "ZAF",
+      "name": "South Africa",
+      "life": 68.6,
+      "gdp": 9426,
+      "pop": 70310830,
+      "region": "Africa"
+    },
+    {
+      "code": "COL",
+      "name": "Colombia",
+      "life": 72.2,
+      "gdp": 3604,
+      "pop": 44999456,
+      "region": "Americas"
+    },
+    {
+      "code": "ESP",
+      "name": "Spain",
+      "life": 80.9,
+      "gdp": 22089,
+      "pop": 42158861,
+      "region": "Europe"
+    },
+    {
+      "code": "ARG",
+      "name": "Argentina",
+      "life": 75.2,
+      "gdp": 12476,
+      "pop": 44999456,
+      "region": "Americas"
+    },
+    {
+      "code": "POL",
+      "name": "Poland",
+      "life": 74.7,
+      "gdp": 4713,
+      "pop": 41077864,
+      "region": "Europe"
+    },
+    {
+      "code": "CAN",
+      "name": "Canada",
+      "life": 81.4,
+      "gdp": 35811,
+      "pop": 38181357,
+      "region": "Americas"
+    },
+    {
+      "code": "AUS",
+      "name": "Australia",
+      "life": 81,
+      "gdp": 30289,
+      "pop": 23181538,
+      "region": "Oceania"
+    },
+    {
+      "code": "SAU",
+      "name": "Saudi Arabia",
+      "life": 72.2,
+      "gdp": 12049,
+      "pop": 21817918,
+      "region": "Asia"
+    },
+    {
+      "code": "THA",
+      "name": "Thailand",
+      "life": 71.7,
+      "gdp": 4159,
+      "pop": 74999094,
+      "region": "Asia"
+    },
+    {
+      "code": "MYS",
+      "name": "Malaysia",
+      "life": 74.5,
+      "gdp": 6654,
+      "pop": 24545158,
+      "region": "Asia"
+    },
+    {
+      "code": "PHL",
+      "name": "Philippines",
+      "life": 69.5,
+      "gdp": 3321,
+      "pop": 83180813,
+      "region": "Asia"
+    },
+    {
+      "code": "PAK",
+      "name": "Pakistan",
+      "life": 62.1,
+      "gdp": 1774,
+      "pop": 147270947,
+      "region": "Asia"
+    },
+    {
+      "code": "BGD",
+      "name": "Bangladesh",
+      "life": 59.9,
+      "gdp": 1274,
+      "pop": 141816468,
+      "region": "Asia"
+    },
+    {
+      "code": "NLD",
+      "name": "Netherlands",
+      "life": 81,
+      "gdp": 33134,
+      "pop": 16214946,
+      "region": "Europe"
+    },
+    {
+      "code": "CHE",
+      "name": "Switzerland",
+      "life": 81.4,
+      "gdp": 56227,
+      "pop": 7566975,
+      "region": "Europe"
+    },
+    {
+      "code": "SWE",
+      "name": "Sweden",
+      "life": 81.7,
+      "gdp": 46019,
+      "pop": 9728968,
+      "region": "Europe"
+    },
+    {
+      "code": "NOR",
+      "name": "Norway",
+      "life": 80.6,
+      "gdp": 46186,
+      "pop": 4323986,
+      "region": "Europe"
+    }
+  ],
+  "2017": [
+    {
+      "code": "USA",
+      "name": "United States",
+      "life": 79.3,
+      "gdp": 40624,
+      "pop": 344995830,
+      "region": "Americas"
+    },
+    {
+      "code": "CHN",
+      "name": "China",
+      "life": 73.1,
+      "gdp": 1688,
+      "pop": 1573180987,
+      "region": "Asia"
+    },
+    {
+      "code": "IND",
+      "name": "India",
+      "life": 61.3,
+      "gdp": 1832,
+      "pop": 1200585490,
+      "region": "Asia"
+    },
+    {
+      "code": "JPN",
+      "name": "Japan",
+      "life": 83.2,
+      "gdp": 44208,
+      "pop": 171117932,
+      "region": "Asia"
+    },
+    {
+      "code": "DEU",
+      "name": "Germany",
+      "life": 79.5,
+      "gdp": 38064,
+      "pop": 85654914,
+      "region": "Europe"
+    },
+    {
+      "code": "GBR",
+      "name": "United Kingdom",
+      "life": 79.9,
+      "gdp": 31919,
+      "pop": 61801647,
+      "region": "Europe"
+    },
+    {
+      "code": "FRA",
+      "name": "France",
+      "life": 81.1,
+      "gdp": 37210,
+      "pop": 62885886,
+      "region": "Europe"
+    },
+    {
+      "code": "BRA",
+      "name": "Brazil",
+      "life": 69.9,
+      "gdp": 9227,
+      "pop": 206997498,
+      "region": "Americas"
+    },
+    {
+      "code": "RUS",
+      "name": "Russia",
+      "life": 72.9,
+      "gdp": 10957,
+      "pop": 160467434,
+      "region": "Europe"
+    },
+    {
+      "code": "NGA",
+      "name": "Nigeria",
+      "life": 50.9,
+      "gdp": 1543,
+      "pop": 186988802,
+      "region": "Africa"
+    },
+    {
+      "code": "MEX",
+      "name": "Mexico",
+      "life": 74.6,
+      "gdp": 8938,
+      "pop": 114538616,
+      "region": "Americas"
+    },
+    {
+      "code": "IDN",
+      "name": "Indonesia",
+      "life": 65.5,
+      "gdp": 3086,
+      "pop": 249776981,
+      "region": "Asia"
+    },
+    {
+      "code": "ETH",
+      "name": "Ethiopia",
+      "life": 52.1,
+      "gdp": 1206,
+      "pop": 99337801,
+      "region": "Africa"
+    },
+    {
+      "code": "EGY",
+      "name": "Egypt",
+      "life": 71.5,
+      "gdp": 2883,
+      "pop": 111024601,
+      "region": "Africa"
+    },
+    {
+      "code": "VNM",
+      "name": "Vietnam",
+      "life": 68.9,
+      "gdp": 482,
+      "pop": 91078899,
+      "region": "Asia"
+    },
+    {
+      "code": "TUR",
+      "name": "Turkey",
+      "life": 69.9,
+      "gdp": 8073,
+      "pop": 60717407,
+      "region": "Europe"
+    },
+    {
+      "code": "KOR",
+      "name": "South Korea",
+      "life": 75.2,
+      "gdp": 11095,
+      "pop": 59339283,
+      "region": "Asia"
+    },
+    {
+      "code": "ZAF",
+      "name": "South Africa",
+      "life": 68.8,
+      "gdp": 9803,
+      "pop": 72068601,
+      "region": "Africa"
+    },
+    {
+      "code": "COL",
+      "name": "Colombia",
+      "life": 72.3,
+      "gdp": 3748,
+      "pop": 45539450,
+      "region": "Americas"
+    },
+    {
+      "code": "ESP",
+      "name": "Spain",
+      "life": 81.1,
+      "gdp": 22531,
+      "pop": 42285337,
+      "region": "Europe"
+    },
+    {
+      "code": "ARG",
+      "name": "Argentina",
+      "life": 75.4,
+      "gdp": 12975,
+      "pop": 45539450,
+      "region": "Americas"
+    },
+    {
+      "code": "POL",
+      "name": "Poland",
+      "life": 74.8,
+      "gdp": 4902,
+      "pop": 41201098,
+      "region": "Europe"
+    },
+    {
+      "code": "CAN",
+      "name": "Canada",
+      "life": 81.6,
+      "gdp": 36527,
+      "pop": 38639533,
+      "region": "Americas"
+    },
+    {
+      "code": "AUS",
+      "name": "Australia",
+      "life": 81.2,
+      "gdp": 30895,
+      "pop": 23459716,
+      "region": "Oceania"
+    },
+    {
+      "code": "SAU",
+      "name": "Saudi Arabia",
+      "life": 72.3,
+      "gdp": 12290,
+      "pop": 22079733,
+      "region": "Asia"
+    },
+    {
+      "code": "THA",
+      "name": "Thailand",
+      "life": 71.9,
+      "gdp": 4325,
+      "pop": 75899083,
+      "region": "Asia"
+    },
+    {
+      "code": "MYS",
+      "name": "Malaysia",
+      "life": 74.6,
+      "gdp": 6920,
+      "pop": 24839700,
+      "region": "Asia"
+    },
+    {
+      "code": "PHL",
+      "name": "Philippines",
+      "life": 69.7,
+      "gdp": 3520,
+      "pop": 84178983,
+      "region": "Asia"
+    },
+    {
+      "code": "PAK",
+      "name": "Pakistan",
+      "life": 62.2,
+      "gdp": 1881,
+      "pop": 149038199,
+      "region": "Asia"
+    },
+    {
+      "code": "BGD",
+      "name": "Bangladesh",
+      "life": 60,
+      "gdp": 1350,
+      "pop": 143518265,
+      "region": "Asia"
+    },
+    {
+      "code": "NLD",
+      "name": "Netherlands",
+      "life": 81.2,
+      "gdp": 33796,
+      "pop": 16263591,
+      "region": "Europe"
+    },
+    {
+      "code": "CHE",
+      "name": "Switzerland",
+      "life": 81.6,
+      "gdp": 57351,
+      "pop": 7589676,
+      "region": "Europe"
+    },
+    {
+      "code": "SWE",
+      "name": "Sweden",
+      "life": 81.9,
+      "gdp": 46939,
+      "pop": 9758155,
+      "region": "Europe"
+    },
+    {
+      "code": "NOR",
+      "name": "Norway",
+      "life": 80.7,
+      "gdp": 47110,
+      "pop": 4336958,
+      "region": "Europe"
+    }
+  ],
+  "2018": [
+    {
+      "code": "USA",
+      "name": "United States",
+      "life": 79.4,
+      "gdp": 41436,
+      "pop": 349135780,
+      "region": "Americas"
+    },
+    {
+      "code": "CHN",
+      "name": "China",
+      "life": 73.3,
+      "gdp": 1789,
+      "pop": 1592059159,
+      "region": "Asia"
+    },
+    {
+      "code": "IND",
+      "name": "India",
+      "life": 61.5,
+      "gdp": 1942,
+      "pop": 1214992516,
+      "region": "Asia"
+    },
+    {
+      "code": "JPN",
+      "name": "Japan",
+      "life": 83.3,
+      "gdp": 45093,
+      "pop": 173171347,
+      "region": "Asia"
+    },
+    {
+      "code": "DEU",
+      "name": "Germany",
+      "life": 79.6,
+      "gdp": 38825,
+      "pop": 85911879,
+      "region": "Europe"
+    },
+    {
+      "code": "GBR",
+      "name": "United Kingdom",
+      "life": 80,
+      "gdp": 32557,
+      "pop": 61987052,
+      "region": "Europe"
+    },
+    {
+      "code": "FRA",
+      "name": "France",
+      "life": 81.2,
+      "gdp": 37954,
+      "pop": 63074544,
+      "region": "Europe"
+    },
+    {
+      "code": "BRA",
+      "name": "Brazil",
+      "life": 70,
+      "gdp": 9596,
+      "pop": 209481468,
+      "region": "Americas"
+    },
+    {
+      "code": "RUS",
+      "name": "Russia",
+      "life": 73.1,
+      "gdp": 11395,
+      "pop": 160948836,
+      "region": "Europe"
+    },
+    {
+      "code": "NGA",
+      "name": "Nigeria",
+      "life": 51,
+      "gdp": 1636,
+      "pop": 191663522,
+      "region": "Africa"
+    },
+    {
+      "code": "MEX",
+      "name": "Mexico",
+      "life": 74.8,
+      "gdp": 9296,
+      "pop": 115913079,
+      "region": "Americas"
+    },
+    {
+      "code": "IDN",
+      "name": "Indonesia",
+      "life": 65.6,
+      "gdp": 3271,
+      "pop": 252774305,
+      "region": "Asia"
+    },
+    {
+      "code": "ETH",
+      "name": "Ethiopia",
+      "life": 52.3,
+      "gdp": 1278,
+      "pop": 101821246,
+      "region": "Africa"
+    },
+    {
+      "code": "EGY",
+      "name": "Egypt",
+      "life": 71.7,
+      "gdp": 2999,
+      "pop": 113800216,
+      "region": "Africa"
+    },
+    {
+      "code": "VNM",
+      "name": "Vietnam",
+      "life": 69.1,
+      "gdp": 511,
+      "pop": 92171846,
+      "region": "Asia"
+    },
+    {
+      "code": "TUR",
+      "name": "Turkey",
+      "life": 70,
+      "gdp": 8396,
+      "pop": 60899560,
+      "region": "Europe"
+    },
+    {
+      "code": "KOR",
+      "name": "South Korea",
+      "life": 75.3,
+      "gdp": 11317,
+      "pop": 60051354,
+      "region": "Asia"
+    },
+    {
+      "code": "ZAF",
+      "name": "South Africa",
+      "life": 69.1,
+      "gdp": 10196,
+      "pop": 73870316,
+      "region": "Africa"
+    },
+    {
+      "code": "COL",
+      "name": "Colombia",
+      "life": 72.4,
+      "gdp": 3898,
+      "pop": 46085923,
+      "region": "Americas"
+    },
+    {
+      "code": "ESP",
+      "name": "Spain",
+      "life": 81.2,
+      "gdp": 22982,
+      "pop": 42412193,
+      "region": "Europe"
+    },
+    {
+      "code": "ARG",
+      "name": "Argentina",
+      "life": 75.5,
+      "gdp": 13494,
+      "pop": 46085923,
+      "region": "Americas"
+    },
+    {
+      "code": "POL",
+      "name": "Poland",
+      "life": 75,
+      "gdp": 5098,
+      "pop": 41324701,
+      "region": "Europe"
+    },
+    {
+      "code": "CAN",
+      "name": "Canada",
+      "life": 81.7,
+      "gdp": 37258,
+      "pop": 39103207,
+      "region": "Americas"
+    },
+    {
+      "code": "AUS",
+      "name": "Australia",
+      "life": 81.3,
+      "gdp": 31513,
+      "pop": 23741233,
+      "region": "Oceania"
+    },
+    {
+      "code": "SAU",
+      "name": "Saudi Arabia",
+      "life": 72.4,
+      "gdp": 12535,
+      "pop": 22344690,
+      "region": "Asia"
+    },
+    {
+      "code": "THA",
+      "name": "Thailand",
+      "life": 72,
+      "gdp": 4498,
+      "pop": 76809872,
+      "region": "Asia"
+    },
+    {
+      "code": "MYS",
+      "name": "Malaysia",
+      "life": 74.8,
+      "gdp": 7197,
+      "pop": 25137776,
+      "region": "Asia"
+    },
+    {
+      "code": "PHL",
+      "name": "Philippines",
+      "life": 69.8,
+      "gdp": 3732,
+      "pop": 85189130,
+      "region": "Asia"
+    },
+    {
+      "code": "PAK",
+      "name": "Pakistan",
+      "life": 62.3,
+      "gdp": 1994,
+      "pop": 150826657,
+      "region": "Asia"
+    },
+    {
+      "code": "BGD",
+      "name": "Bangladesh",
+      "life": 60.1,
+      "gdp": 1431,
+      "pop": 145240485,
+      "region": "Asia"
+    },
+    {
+      "code": "NLD",
+      "name": "Netherlands",
+      "life": 81.3,
+      "gdp": 34472,
+      "pop": 16312382,
+      "region": "Europe"
+    },
+    {
+      "code": "CHE",
+      "name": "Switzerland",
+      "life": 81.7,
+      "gdp": 58498,
+      "pop": 7612445,
+      "region": "Europe"
+    },
+    {
+      "code": "SWE",
+      "name": "Sweden",
+      "life": 82.1,
+      "gdp": 47878,
+      "pop": 9787429,
+      "region": "Europe"
+    },
+    {
+      "code": "NOR",
+      "name": "Norway",
+      "life": 80.9,
+      "gdp": 48052,
+      "pop": 4349969,
+      "region": "Europe"
+    }
+  ],
+  "2019": [
+    {
+      "code": "USA",
+      "name": "United States",
+      "life": 79.6,
+      "gdp": 42265,
+      "pop": 353325410,
+      "region": "Americas"
+    },
+    {
+      "code": "CHN",
+      "name": "China",
+      "life": 73.4,
+      "gdp": 1896,
+      "pop": 1611163868,
+      "region": "Asia"
+    },
+    {
+      "code": "IND",
+      "name": "India",
+      "life": 61.6,
+      "gdp": 2059,
+      "pop": 1229572426,
+      "region": "Asia"
+    },
+    {
+      "code": "JPN",
+      "name": "Japan",
+      "life": 83.5,
+      "gdp": 45994,
+      "pop": 175249403,
+      "region": "Asia"
+    },
+    {
+      "code": "DEU",
+      "name": "Germany",
+      "life": 79.8,
+      "gdp": 39601,
+      "pop": 86169614,
+      "region": "Europe"
+    },
+    {
+      "code": "GBR",
+      "name": "United Kingdom",
+      "life": 80.2,
+      "gdp": 33208,
+      "pop": 62173013,
+      "region": "Europe"
+    },
+    {
+      "code": "FRA",
+      "name": "France",
+      "life": 81.4,
+      "gdp": 38713,
+      "pop": 63263767,
+      "region": "Europe"
+    },
+    {
+      "code": "BRA",
+      "name": "Brazil",
+      "life": 70.1,
+      "gdp": 9980,
+      "pop": 211995246,
+      "region": "Americas"
+    },
+    {
+      "code": "RUS",
+      "name": "Russia",
+      "life": 73.2,
+      "gdp": 11851,
+      "pop": 161431682,
+      "region": "Europe"
+    },
+    {
+      "code": "NGA",
+      "name": "Nigeria",
+      "life": 51.2,
+      "gdp": 1734,
+      "pop": 196455110,
+      "region": "Africa"
+    },
+    {
+      "code": "MEX",
+      "name": "Mexico",
+      "life": 74.9,
+      "gdp": 9668,
+      "pop": 117304036,
+      "region": "Americas"
+    },
+    {
+      "code": "IDN",
+      "name": "Indonesia",
+      "life": 65.7,
+      "gdp": 3468,
+      "pop": 255807597,
+      "region": "Asia"
+    },
+    {
+      "code": "ETH",
+      "name": "Ethiopia",
+      "life": 52.5,
+      "gdp": 1355,
+      "pop": 104366777,
+      "region": "Africa"
+    },
+    {
+      "code": "EGY",
+      "name": "Egypt",
+      "life": 72,
+      "gdp": 3119,
+      "pop": 116645221,
+      "region": "Africa"
+    },
+    {
+      "code": "VNM",
+      "name": "Vietnam",
+      "life": 69.2,
+      "gdp": 542,
+      "pop": 93277908,
+      "region": "Asia"
+    },
+    {
+      "code": "TUR",
+      "name": "Turkey",
+      "life": 70.1,
+      "gdp": 8732,
+      "pop": 61082258,
+      "region": "Europe"
+    },
+    {
+      "code": "KOR",
+      "name": "South Korea",
+      "life": 75.4,
+      "gdp": 11543,
+      "pop": 60771970,
+      "region": "Asia"
+    },
+    {
+      "code": "ZAF",
+      "name": "South Africa",
+      "life": 69.3,
+      "gdp": 10603,
+      "pop": 75717074,
+      "region": "Africa"
+    },
+    {
+      "code": "COL",
+      "name": "Colombia",
+      "life": 72.6,
+      "gdp": 4054,
+      "pop": 46638954,
+      "region": "Americas"
+    },
+    {
+      "code": "ESP",
+      "name": "Spain",
+      "life": 81.4,
+      "gdp": 23441,
+      "pop": 42539430,
+      "region": "Europe"
+    },
+    {
+      "code": "ARG",
+      "name": "Argentina",
+      "life": 75.6,
+      "gdp": 14034,
+      "pop": 46638954,
+      "region": "Americas"
+    },
+    {
+      "code": "POL",
+      "name": "Poland",
+      "life": 75.1,
+      "gdp": 5302,
+      "pop": 41448675,
+      "region": "Europe"
+    },
+    {
+      "code": "CAN",
+      "name": "Canada",
+      "life": 81.9,
+      "gdp": 38003,
+      "pop": 39572446,
+      "region": "Americas"
+    },
+    {
+      "code": "AUS",
+      "name": "Australia",
+      "life": 81.5,
+      "gdp": 32143,
+      "pop": 24026128,
+      "region": "Oceania"
+    },
+    {
+      "code": "SAU",
+      "name": "Saudi Arabia",
+      "life": 72.6,
+      "gdp": 12786,
+      "pop": 22612826,
+      "region": "Asia"
+    },
+    {
+      "code": "THA",
+      "name": "Thailand",
+      "life": 72.2,
+      "gdp": 4678,
+      "pop": 77731590,
+      "region": "Asia"
+    },
+    {
+      "code": "MYS",
+      "name": "Malaysia",
+      "life": 74.9,
+      "gdp": 7485,
+      "pop": 25439430,
+      "region": "Asia"
+    },
+    {
+      "code": "PHL",
+      "name": "Philippines",
+      "life": 69.9,
+      "gdp": 3955,
+      "pop": 86211400,
+      "region": "Asia"
+    },
+    {
+      "code": "PAK",
+      "name": "Pakistan",
+      "life": 62.4,
+      "gdp": 2113,
+      "pop": 152636577,
+      "region": "Asia"
+    },
+    {
+      "code": "BGD",
+      "name": "Bangladesh",
+      "life": 60.2,
+      "gdp": 1517,
+      "pop": 146983370,
+      "region": "Asia"
+    },
+    {
+      "code": "NLD",
+      "name": "Netherlands",
+      "life": 81.5,
+      "gdp": 35162,
+      "pop": 16361319,
+      "region": "Europe"
+    },
+    {
+      "code": "CHE",
+      "name": "Switzerland",
+      "life": 81.9,
+      "gdp": 59668,
+      "pop": 7635282,
+      "region": "Europe"
+    },
+    {
+      "code": "SWE",
+      "name": "Sweden",
+      "life": 82.2,
+      "gdp": 48836,
+      "pop": 9816791,
+      "region": "Europe"
+    },
+    {
+      "code": "NOR",
+      "name": "Norway",
+      "life": 81,
+      "gdp": 49013,
+      "pop": 4363018,
+      "region": "Europe"
+    }
+  ],
+  "2020": [
+    {
+      "code": "USA",
+      "name": "United States",
+      "life": 79.7,
+      "gdp": 43110,
+      "pop": 357565315,
+      "region": "Americas"
+    },
+    {
+      "code": "CHN",
+      "name": "China",
+      "life": 73.6,
+      "gdp": 2010,
+      "pop": 1630497835,
+      "region": "Asia"
+    },
+    {
+      "code": "IND",
+      "name": "India",
+      "life": 61.7,
+      "gdp": 2183,
+      "pop": 1244327295,
+      "region": "Asia"
+    },
+    {
+      "code": "JPN",
+      "name": "Japan",
+      "life": 83.6,
+      "gdp": 46914,
+      "pop": 177352396,
+      "region": "Asia"
+    },
+    {
+      "code": "DEU",
+      "name": "Germany",
+      "life": 79.9,
+      "gdp": 40393,
+      "pop": 86428123,
+      "region": "Europe"
+    },
+    {
+      "code": "GBR",
+      "name": "United Kingdom",
+      "life": 80.3,
+      "gdp": 33872,
+      "pop": 62359532,
+      "region": "Europe"
+    },
+    {
+      "code": "FRA",
+      "name": "France",
+      "life": 81.5,
+      "gdp": 39488,
+      "pop": 63453559,
+      "region": "Europe"
+    },
+    {
+      "code": "BRA",
+      "name": "Brazil",
+      "life": 70.3,
+      "gdp": 10379,
+      "pop": 214539189,
+      "region": "Americas"
+    },
+    {
+      "code": "RUS",
+      "name": "Russia",
+      "life": 73.4,
+      "gdp": 12325,
+      "pop": 161915977,
+      "region": "Europe"
+    },
+    {
+      "code": "NGA",
+      "name": "Nigeria",
+      "life": 51.4,
+      "gdp": 1838,
+      "pop": 201366488,
+      "region": "Africa"
+    },
+    {
+      "code": "MEX",
+      "name": "Mexico",
+      "life": 75,
+      "gdp": 10055,
+      "pop": 118711684,
+      "region": "Americas"
+    },
+    {
+      "code": "IDN",
+      "name": "Indonesia",
+      "life": 65.8,
+      "gdp": 3676,
+      "pop": 258877288,
+      "region": "Asia"
+    },
+    {
+      "code": "ETH",
+      "name": "Ethiopia",
+      "life": 52.6,
+      "gdp": 1436,
+      "pop": 106975947,
+      "region": "Africa"
+    },
+    {
+      "code": "EGY",
+      "name": "Egypt",
+      "life": 72.2,
+      "gdp": 3243,
+      "pop": 119561352,
+      "region": "Africa"
+    },
+    {
+      "code": "VNM",
+      "name": "Vietnam",
+      "life": 69.3,
+      "gdp": 574,
+      "pop": 94397243,
+      "region": "Asia"
+    },
+    {
+      "code": "TUR",
+      "name": "Turkey",
+      "life": 70.3,
+      "gdp": 9082,
+      "pop": 61265505,
+      "region": "Europe"
+    },
+    {
+      "code": "KOR",
+      "name": "South Korea",
+      "life": 75.6,
+      "gdp": 11774,
+      "pop": 61501234,
+      "region": "Asia"
+    },
+    {
+      "code": "ZAF",
+      "name": "South Africa",
+      "life": 69.6,
+      "gdp": 11028,
+      "pop": 77610000,
+      "region": "Africa"
+    },
+    {
+      "code": "COL",
+      "name": "Colombia",
+      "life": 72.7,
+      "gdp": 4216,
+      "pop": 47198622,
+      "region": "Americas"
+    },
+    {
+      "code": "ESP",
+      "name": "Spain",
+      "life": 81.5,
+      "gdp": 23910,
+      "pop": 42667048,
+      "region": "Europe"
+    },
+    {
+      "code": "ARG",
+      "name": "Argentina",
+      "life": 75.8,
+      "gdp": 14595,
+      "pop": 47198622,
+      "region": "Americas"
+    },
+    {
+      "code": "POL",
+      "name": "Poland",
+      "life": 75.3,
+      "gdp": 5514,
+      "pop": 41573021,
+      "region": "Europe"
+    },
+    {
+      "code": "CAN",
+      "name": "Canada",
+      "life": 82,
+      "gdp": 38763,
+      "pop": 40047315,
+      "region": "Americas"
+    },
+    {
+      "code": "AUS",
+      "name": "Australia",
+      "life": 81.6,
+      "gdp": 32786,
+      "pop": 24314441,
+      "region": "Oceania"
+    },
+    {
+      "code": "SAU",
+      "name": "Saudi Arabia",
+      "life": 72.7,
+      "gdp": 13042,
+      "pop": 22884180,
+      "region": "Asia"
+    },
+    {
+      "code": "THA",
+      "name": "Thailand",
+      "life": 72.3,
+      "gdp": 4865,
+      "pop": 78664369,
+      "region": "Asia"
+    },
+    {
+      "code": "MYS",
+      "name": "Malaysia",
+      "life": 75,
+      "gdp": 7784,
+      "pop": 25744703,
+      "region": "Asia"
+    },
+    {
+      "code": "PHL",
+      "name": "Philippines",
+      "life": 70.1,
+      "gdp": 4193,
+      "pop": 87245937,
+      "region": "Asia"
+    },
+    {
+      "code": "PAK",
+      "name": "Pakistan",
+      "life": 62.5,
+      "gdp": 2240,
+      "pop": 154468216,
+      "region": "Asia"
+    },
+    {
+      "code": "BGD",
+      "name": "Bangladesh",
+      "life": 60.3,
+      "gdp": 1608,
+      "pop": 148747171,
+      "region": "Asia"
+    },
+    {
+      "code": "NLD",
+      "name": "Netherlands",
+      "life": 81.6,
+      "gdp": 35865,
+      "pop": 16410403,
+      "region": "Europe"
+    },
+    {
+      "code": "CHE",
+      "name": "Switzerland",
+      "life": 82,
+      "gdp": 60862,
+      "pop": 7658188,
+      "region": "Europe"
+    },
+    {
+      "code": "SWE",
+      "name": "Sweden",
+      "life": 82.4,
+      "gdp": 49812,
+      "pop": 9846242,
+      "region": "Europe"
+    },
+    {
+      "code": "NOR",
+      "name": "Norway",
+      "life": 81.2,
+      "gdp": 49994,
+      "pop": 4376107,
+      "region": "Europe"
+    }
+  ],
+  "2021": [
+    {
+      "code": "USA",
+      "name": "United States",
+      "life": 79.9,
+      "gdp": 43973,
+      "pop": 361856098,
+      "region": "Americas"
+    },
+    {
+      "code": "CHN",
+      "name": "China",
+      "life": 73.7,
+      "gdp": 2131,
+      "pop": 1650063809,
+      "region": "Asia"
+    },
+    {
+      "code": "IND",
+      "name": "India",
+      "life": 61.8,
+      "gdp": 2313,
+      "pop": 1259259223,
+      "region": "Asia"
+    },
+    {
+      "code": "JPN",
+      "name": "Japan",
+      "life": 83.8,
+      "gdp": 47853,
+      "pop": 179480625,
+      "region": "Asia"
+    },
+    {
+      "code": "DEU",
+      "name": "Germany",
+      "life": 80.1,
+      "gdp": 41201,
+      "pop": 86687407,
+      "region": "Europe"
+    },
+    {
+      "code": "GBR",
+      "name": "United Kingdom",
+      "life": 80.5,
+      "gdp": 34550,
+      "pop": 62546610,
+      "region": "Europe"
+    },
+    {
+      "code": "FRA",
+      "name": "France",
+      "life": 81.7,
+      "gdp": 40277,
+      "pop": 63643919,
+      "region": "Europe"
+    },
+    {
+      "code": "BRA",
+      "name": "Brazil",
+      "life": 70.4,
+      "gdp": 10794,
+      "pop": 217113659,
+      "region": "Americas"
+    },
+    {
+      "code": "RUS",
+      "name": "Russia",
+      "life": 73.5,
+      "gdp": 12818,
+      "pop": 162401725,
+      "region": "Europe"
+    },
+    {
+      "code": "NGA",
+      "name": "Nigeria",
+      "life": 51.6,
+      "gdp": 1948,
+      "pop": 206400650,
+      "region": "Africa"
+    },
+    {
+      "code": "MEX",
+      "name": "Mexico",
+      "life": 75.2,
+      "gdp": 10457,
+      "pop": 120136225,
+      "region": "Americas"
+    },
+    {
+      "code": "IDN",
+      "name": "Indonesia",
+      "life": 66,
+      "gdp": 3896,
+      "pop": 261983815,
+      "region": "Asia"
+    },
+    {
+      "code": "ETH",
+      "name": "Ethiopia",
+      "life": 52.8,
+      "gdp": 1522,
+      "pop": 109650345,
+      "region": "Africa"
+    },
+    {
+      "code": "EGY",
+      "name": "Egypt",
+      "life": 72.5,
+      "gdp": 3373,
+      "pop": 122550386,
+      "region": "Africa"
+    },
+    {
+      "code": "VNM",
+      "name": "Vietnam",
+      "life": 69.5,
+      "gdp": 609,
+      "pop": 95530010,
+      "region": "Asia"
+    },
+    {
+      "code": "TUR",
+      "name": "Turkey",
+      "life": 70.4,
+      "gdp": 9445,
+      "pop": 61449302,
+      "region": "Europe"
+    },
+    {
+      "code": "KOR",
+      "name": "South Korea",
+      "life": 75.7,
+      "gdp": 12009,
+      "pop": 62239249,
+      "region": "Asia"
+    },
+    {
+      "code": "ZAF",
+      "name": "South Africa",
+      "life": 69.8,
+      "gdp": 11469,
+      "pop": 79550250,
+      "region": "Africa"
+    },
+    {
+      "code": "COL",
+      "name": "Colombia",
+      "life": 72.9,
+      "gdp": 4385,
+      "pop": 47765005,
+      "region": "Americas"
+    },
+    {
+      "code": "ESP",
+      "name": "Spain",
+      "life": 81.7,
+      "gdp": 24388,
+      "pop": 42795049,
+      "region": "Europe"
+    },
+    {
+      "code": "ARG",
+      "name": "Argentina",
+      "life": 75.9,
+      "gdp": 15179,
+      "pop": 47765005,
+      "region": "Americas"
+    },
+    {
+      "code": "POL",
+      "name": "Poland",
+      "life": 75.4,
+      "gdp": 5734,
+      "pop": 41697740,
+      "region": "Europe"
+    },
+    {
+      "code": "CAN",
+      "name": "Canada",
+      "life": 82.2,
+      "gdp": 39538,
+      "pop": 40527883,
+      "region": "Americas"
+    },
+    {
+      "code": "AUS",
+      "name": "Australia",
+      "life": 81.8,
+      "gdp": 33441,
+      "pop": 24606215,
+      "region": "Oceania"
+    },
+    {
+      "code": "SAU",
+      "name": "Saudi Arabia",
+      "life": 72.9,
+      "gdp": 13303,
+      "pop": 23158790,
+      "region": "Asia"
+    },
+    {
+      "code": "THA",
+      "name": "Thailand",
+      "life": 72.4,
+      "gdp": 5060,
+      "pop": 79608342,
+      "region": "Asia"
+    },
+    {
+      "code": "MYS",
+      "name": "Malaysia",
+      "life": 75.2,
+      "gdp": 8096,
+      "pop": 26053639,
+      "region": "Asia"
+    },
+    {
+      "code": "PHL",
+      "name": "Philippines",
+      "life": 70.2,
+      "gdp": 4444,
+      "pop": 88292888,
+      "region": "Asia"
+    },
+    {
+      "code": "PAK",
+      "name": "Pakistan",
+      "life": 62.7,
+      "gdp": 2374,
+      "pop": 156321835,
+      "region": "Asia"
+    },
+    {
+      "code": "BGD",
+      "name": "Bangladesh",
+      "life": 60.4,
+      "gdp": 1705,
+      "pop": 150532137,
+      "region": "Asia"
+    },
+    {
+      "code": "NLD",
+      "name": "Netherlands",
+      "life": 81.8,
+      "gdp": 36582,
+      "pop": 16459634,
+      "region": "Europe"
+    },
+    {
+      "code": "CHE",
+      "name": "Switzerland",
+      "life": 82.2,
+      "gdp": 62079,
+      "pop": 7681163,
+      "region": "Europe"
+    },
+    {
+      "code": "SWE",
+      "name": "Sweden",
+      "life": 82.5,
+      "gdp": 50809,
+      "pop": 9875781,
+      "region": "Europe"
+    },
+    {
+      "code": "NOR",
+      "name": "Norway",
+      "life": 81.3,
+      "gdp": 50993,
+      "pop": 4389236,
+      "region": "Europe"
+    }
+  ],
+  "2022": [
+    {
+      "code": "USA",
+      "name": "United States",
+      "life": 80,
+      "gdp": 44852,
+      "pop": 366198372,
+      "region": "Americas"
+    },
+    {
+      "code": "CHN",
+      "name": "China",
+      "life": 73.8,
+      "gdp": 2259,
+      "pop": 1669864575,
+      "region": "Asia"
+    },
+    {
+      "code": "IND",
+      "name": "India",
+      "life": 61.9,
+      "gdp": 2452,
+      "pop": 1274370333,
+      "region": "Asia"
+    },
+    {
+      "code": "JPN",
+      "name": "Japan",
+      "life": 83.9,
+      "gdp": 48810,
+      "pop": 181634392,
+      "region": "Asia"
+    },
+    {
+      "code": "DEU",
+      "name": "Germany",
+      "life": 80.2,
+      "gdp": 42025,
+      "pop": 86947470,
+      "region": "Europe"
+    },
+    {
+      "code": "GBR",
+      "name": "United Kingdom",
+      "life": 80.7,
+      "gdp": 35241,
+      "pop": 62734250,
+      "region": "Europe"
+    },
+    {
+      "code": "FRA",
+      "name": "France",
+      "life": 81.8,
+      "gdp": 41083,
+      "pop": 63834851,
+      "region": "Europe"
+    },
+    {
+      "code": "BRA",
+      "name": "Brazil",
+      "life": 70.5,
+      "gdp": 11226,
+      "pop": 219719023,
+      "region": "Americas"
+    },
+    {
+      "code": "RUS",
+      "name": "Russia",
+      "life": 73.6,
+      "gdp": 13331,
+      "pop": 162888931,
+      "region": "Europe"
+    },
+    {
+      "code": "NGA",
+      "name": "Nigeria",
+      "life": 51.8,
+      "gdp": 2065,
+      "pop": 211560666,
+      "region": "Africa"
+    },
+    {
+      "code": "MEX",
+      "name": "Mexico",
+      "life": 75.3,
+      "gdp": 10875,
+      "pop": 121577859,
+      "region": "Americas"
+    },
+    {
+      "code": "IDN",
+      "name": "Indonesia",
+      "life": 66.1,
+      "gdp": 4130,
+      "pop": 265127621,
+      "region": "Asia"
+    },
+    {
+      "code": "ETH",
+      "name": "Ethiopia",
+      "life": 53,
+      "gdp": 1613,
+      "pop": 112391604,
+      "region": "Africa"
+    },
+    {
+      "code": "EGY",
+      "name": "Egypt",
+      "life": 72.8,
+      "gdp": 3508,
+      "pop": 125614145,
+      "region": "Africa"
+    },
+    {
+      "code": "VNM",
+      "name": "Vietnam",
+      "life": 69.6,
+      "gdp": 645,
+      "pop": 96676370,
+      "region": "Asia"
+    },
+    {
+      "code": "TUR",
+      "name": "Turkey",
+      "life": 70.5,
+      "gdp": 9823,
+      "pop": 61633649,
+      "region": "Europe"
+    },
+    {
+      "code": "KOR",
+      "name": "South Korea",
+      "life": 75.9,
+      "gdp": 12250,
+      "pop": 62986120,
+      "region": "Asia"
+    },
+    {
+      "code": "ZAF",
+      "name": "South Africa",
+      "life": 70,
+      "gdp": 11927,
+      "pop": 81539007,
+      "region": "Africa"
+    },
+    {
+      "code": "COL",
+      "name": "Colombia",
+      "life": 73,
+      "gdp": 4560,
+      "pop": 48338185,
+      "region": "Americas"
+    },
+    {
+      "code": "ESP",
+      "name": "Spain",
+      "life": 81.8,
+      "gdp": 24876,
+      "pop": 42923434,
+      "region": "Europe"
+    },
+    {
+      "code": "ARG",
+      "name": "Argentina",
+      "life": 76.1,
+      "gdp": 15786,
+      "pop": 48338185,
+      "region": "Americas"
+    },
+    {
+      "code": "POL",
+      "name": "Poland",
+      "life": 75.5,
+      "gdp": 5964,
+      "pop": 41822834,
+      "region": "Europe"
+    },
+    {
+      "code": "CAN",
+      "name": "Canada",
+      "life": 82.4,
+      "gdp": 40329,
+      "pop": 41014218,
+      "region": "Americas"
+    },
+    {
+      "code": "AUS",
+      "name": "Australia",
+      "life": 81.9,
+      "gdp": 34110,
+      "pop": 24901489,
+      "region": "Oceania"
+    },
+    {
+      "code": "SAU",
+      "name": "Saudi Arabia",
+      "life": 73,
+      "gdp": 13569,
+      "pop": 23436696,
+      "region": "Asia"
+    },
+    {
+      "code": "THA",
+      "name": "Thailand",
+      "life": 72.6,
+      "gdp": 5262,
+      "pop": 80563642,
+      "region": "Asia"
+    },
+    {
+      "code": "MYS",
+      "name": "Malaysia",
+      "life": 75.3,
+      "gdp": 8419,
+      "pop": 26366283,
+      "region": "Asia"
+    },
+    {
+      "code": "PHL",
+      "name": "Philippines",
+      "life": 70.3,
+      "gdp": 4711,
+      "pop": 89352403,
+      "region": "Asia"
+    },
+    {
+      "code": "PAK",
+      "name": "Pakistan",
+      "life": 62.8,
+      "gdp": 2517,
+      "pop": 158197697,
+      "region": "Asia"
+    },
+    {
+      "code": "BGD",
+      "name": "Bangladesh",
+      "life": 60.5,
+      "gdp": 1807,
+      "pop": 152338523,
+      "region": "Asia"
+    },
+    {
+      "code": "NLD",
+      "name": "Netherlands",
+      "life": 81.9,
+      "gdp": 37314,
+      "pop": 16509013,
+      "region": "Europe"
+    },
+    {
+      "code": "CHE",
+      "name": "Switzerland",
+      "life": 82.4,
+      "gdp": 63321,
+      "pop": 7704206,
+      "region": "Europe"
+    },
+    {
+      "code": "SWE",
+      "name": "Sweden",
+      "life": 82.7,
+      "gdp": 51825,
+      "pop": 9905408,
+      "region": "Europe"
+    },
+    {
+      "code": "NOR",
+      "name": "Norway",
+      "life": 81.5,
+      "gdp": 52013,
+      "pop": 4402404,
+      "region": "Europe"
+    }
+  ]
+}
