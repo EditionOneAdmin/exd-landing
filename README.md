@@ -1,36 +1,84 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# EXD Landing Page
 
-## Getting Started
+> **Data you don't just see. You feel.**
 
-First, run the development server:
+A stunning, futuristic landing page for EXD - the Experience Data Platform.
+
+## 🌐 Live Site
+
+**https://editiononeadmin.github.io/exd-landing/**
+
+## ✨ Features
+
+- **Futuristic Dark Design** - Near-black theme with subtle gradient accents
+- **Smooth Animations** - Powered by Framer Motion
+- **Parallax Effects** - Dynamic scrolling experiences
+- **Glassmorphism UI** - Modern glass-effect cards
+- **Responsive** - Beautiful on all devices
+- **Interactive Elements** - Animated orbs, floating particles, gradient borders
+
+## 🛠 Tech Stack
+
+- **Next.js 16** - App Router with TypeScript
+- **Tailwind CSS** - Utility-first styling
+- **Framer Motion** - Animation library
+- **Inter Font** - Modern typography
+
+## 📦 Sections
+
+1. **Hero** - Animated tagline with word cycling, CTA buttons
+2. **Problem/Solution** - Before/after comparison with visual previews
+3. **Features** - Interactive visualization, AI copilot, data storytelling
+4. **How It Works** - 3-step process with animated icons
+5. **Waitlist** - Email capture with success state
+6. **Footer** - Social links, navigation
+
+## 🚀 Local Development
 
 ```bash
+# Install dependencies
+npm install
+
+# Run development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# Build for production
+npm run build
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📁 Project Structure
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+src/
+├── app/
+│   ├── globals.css      # Global styles, animations
+│   ├── layout.tsx       # Root layout with metadata
+│   └── page.tsx         # Main page
+└── components/
+    ├── Hero.tsx         # Hero section
+    ├── Problem.tsx      # Problem/Solution section
+    ├── Features.tsx     # Features showcase
+    ├── HowItWorks.tsx   # 3-step process
+    ├── Waitlist.tsx     # Email signup
+    ├── Footer.tsx       # Footer
+    └── Navigation.tsx   # Fixed nav bar
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🎨 Design System
 
-## Learn More
+### Colors
+- Background: `#050507` (near-black)
+- Primary Accent: `#6366f1` (indigo)
+- Secondary Accent: `#8b5cf6` (purple)
+- Tertiary Accent: `#06b6d4` (cyan)
 
-To learn more about Next.js, take a look at the following resources:
+### Effects
+- Glassmorphism cards with backdrop blur
+- Gradient text for emphasis
+- Animated gradient borders
+- Floating background orbs
+- Noise texture overlay
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📄 License
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+MIT © 2025 EXD
