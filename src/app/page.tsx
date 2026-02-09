@@ -2,6 +2,7 @@ import Navigation from '@/components/Navigation';
 import Hero from '@/components/Hero';
 import Problem from '@/components/Problem';
 import ExperienceData from '@/components/ExperienceData';
+import DataLibrary from '@/components/DataLibrary';
 import UseCases from '@/components/UseCases';
 import LiveDemo from '@/components/LiveDemo';
 import Features from '@/components/Features';
@@ -16,6 +17,7 @@ export default function Home() {
       <Hero />
       <Problem />
       <ExperienceData />
+      <DataLibrary />
       <UseCases />
       <LiveDemo />
       <Features />

@@ -57,9 +57,9 @@ export default function Navigation() {
         <div className="hidden md:flex items-center gap-8">
           {[
             { label: 'Experience', href: '#experience' },
+            { label: 'Data', href: '#data-library' },
             { label: 'Use Cases', href: '#use-cases' },
             { label: 'Demo', href: '#demo' },
-            { label: 'Features', href: '#features' },
           ].map((link, i) => (
             <motion.a
               key={i}
