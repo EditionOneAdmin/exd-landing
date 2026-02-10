@@ -74,20 +74,75 @@ export default function Navigation() {
           ))}
         </div>
 
-        {/* CTA */}
-        <motion.a
-          href="#waitlist"
-          className={`px-5 py-2.5 rounded-full text-sm font-medium transition-all duration-300 ${
-            isScrolled
-              ? 'bg-gradient-to-r from-indigo-500 to-purple-500 text-white'
-              : 'bg-white/5 border border-white/10 text-white hover:bg-white/10'
-          }`}
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-        >
-          Join Waitlist
-        </motion.a>
+        {/* CTA + Mobile menu button */}
+        <div className="flex items-center gap-3">
+          <motion.a
+            href="#waitlist"
+            className={`hidden sm:inline-flex px-5 py-2.5 rounded-full text-sm font-medium transition-all duration-300 ${
+              isScrolled
+                ? 'bg-gradient-to-r from-indigo-500 to-purple-500 text-white'
+                : 'bg-white/5 border border-white/10 text-white hover:bg-white/10'
+            }`}
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            Join Waitlist
+          </motion.a>
+          
+          {/* Mobile hamburger */}
+          <button
+            className="md:hidden p-2 text-gray-400 hover:text-white transition-colors"
+            onClick={() => setIsMobileMenuOpen(prev => !prev)}
+            aria-label="Toggle menu"
+          >
+            <svg className="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              {isMobileMenuOpen ? (
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              ) : (
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+              )}
+            </svg>
+          </button>
+        </div>
       </div>
+
+      {/* Mobile menu */}
+      <AnimatePresence>
+        {isMobileMenuOpen && (
+          <motion.div
+            initial={{ opacity: 0, height: 0 }}
+            animate={{ opacity: 1, height: 'auto' }}
+            exit={{ opacity: 0, height: 0 }}
+            className="md:hidden overflow-hidden bg-[#050507]/95 backdrop-blur-xl border-t border-white/5"
+          >
+            <div className="flex flex-col gap-1 px-6 py-4">
+              {[
+                { label: 'Experience', href: '#experience' },
+                { label: 'Data', href: '#data-library' },
+                { label: 'Use Cases', href: '#use-cases' },
+                { label: 'Demo', href: '#demo' },
+                { label: 'AI Copilot', href: '#ai-copilot' },
+              ].map((link, i) => (
+                <a
+                  key={i}
+                  href={link.href}
+                  className="text-sm text-gray-400 hover:text-white transition-colors py-2"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  {link.label}
+                </a>
+              ))}
+              <a
+                href="#waitlist"
+                className="mt-2 px-5 py-2.5 rounded-full text-sm font-medium text-center bg-gradient-to-r from-indigo-500 to-purple-500 text-white"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Join Waitlist
+              </a>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </motion.nav>
   );
 }

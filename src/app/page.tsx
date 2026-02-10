@@ -13,7 +13,7 @@ import Footer from '@/components/Footer';
 
 export default function Home() {
   return (
-    <main className="noise-overlay">
+    <main className="noise-overlay overflow-x-hidden">
       <Navigation />
       <Hero />
       <Problem />
