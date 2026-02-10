@@ -61,6 +61,7 @@ export default function Navigation() {
             { label: 'Use Cases', href: '#use-cases' },
             { label: 'Demo', href: '#demo' },
             { label: 'AI Copilot', href: '/copilot' },
+            { label: 'Data Story ✨', href: '/stories/world-in-50-years/' },
           ].map((link, i) => (
             <motion.a
               key={i}

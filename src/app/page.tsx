@@ -3,6 +3,7 @@ import Hero from '@/components/Hero';
 import Problem from '@/components/Problem';
 import ExperienceData from '@/components/ExperienceData';
 import DataLibrary from '@/components/DataLibrary';
+import AICopilot from '@/components/AICopilot';
 import UseCases from '@/components/UseCases';
 import LiveDemo from '@/components/LiveDemo';
 import Features from '@/components/Features';
@@ -17,6 +18,7 @@ export default function Home() {
       <Hero />
       <Problem />
       <ExperienceData />
+      <AICopilot />
       <DataLibrary />
       <UseCases />
       <LiveDemo />

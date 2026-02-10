@@ -152,7 +152,7 @@ export default function Waitlist() {
           >
             {[
               { value: '500+', label: 'On Waitlist' },
-              { value: 'Q1 2025', label: 'Early Access' },
+              { value: 'Q2 2026', label: 'Early Access' },
               { value: '∞', label: 'Possibilities' },
             ].map((stat, i) => (
               <div key={i}>
