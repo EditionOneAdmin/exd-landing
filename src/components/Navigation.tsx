@@ -60,8 +60,7 @@ export default function Navigation() {
             { label: 'Data', href: '#data-library' },
             { label: 'Use Cases', href: '#use-cases' },
             { label: 'Demo', href: '#demo' },
-            { label: 'AI Copilot', href: '/copilot' },
-            { label: 'Data Story ✨', href: '/stories/world-in-50-years/' },
+            { label: 'AI Copilot', href: '#ai-copilot' },
           ].map((link, i) => (
             <motion.a
               key={i}
