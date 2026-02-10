@@ -1,253 +1,190 @@
 'use client';
 
-import { useState, useEffect, useRef, useMemo, useCallback } from 'react';
-import * as d3 from 'd3';
-import { motion, useScroll, useTransform, AnimatePresence, useInView } from 'framer-motion';
-import Link from 'next/link';
-import { ArrowLeft, ChevronDown } from 'lucide-react';
+import { useRef, useState, useEffect } from 'react';
+import { motion, useScroll, useTransform, useInView } from 'framer-motion';
+import ScrollySection from '@/components/story/ScrollySection';
+import RacingBarChart from '@/components/visualizations/RacingBarChart';
+import PopulationPyramid from '@/components/visualizations/PopulationPyramid';
 
-// ─── Types ───────────────────────────────────────────────────────────
+// ─── Inline Demo Data ────────────────────────────────────────────────
 
-interface LifeExpDataPoint {
-  code: string;
-  name: string;
-  life: number;
-  gdp: number;
-  pop: number;
-  region: string;
-}
+const GDP_DATA = (() => {
+  const countries = [
+    { code: 'USA', name: 'United States', base: 21000 },
+    { code: 'CHN', name: 'China', base: 14700 },
+    { code: 'IND', name: 'India', base: 3200 },
+    { code: 'DEU', name: 'Germany', base: 4200 },
+    { code: 'JPN', name: 'Japan', base: 5100 },
+    { code: 'GBR', name: 'United Kingdom', base: 3100 },
+    { code: 'BRA', name: 'Brazil', base: 1800 },
+    { code: 'IDN', name: 'Indonesia', base: 1200 },
+    { code: 'NGA', name: 'Nigeria', base: 450 },
+    { code: 'KOR', name: 'South Korea', base: 1800 },
+  ];
+  const rates: Record<string, number> = {
+    USA: 1.02, CHN: 1.045, IND: 1.06, DEU: 1.015, JPN: 1.008,
+    GBR: 1.018, BRA: 1.025, IDN: 1.05, NGA: 1.055, KOR: 1.025,
+  };
+  const years = [];
+  for (let y = 2025; y <= 2075; y += 5) {
+    const factor = (y - 2025) / 5;
+    years.push({
+      year: y,
+      countries: countries
+        .map(c => ({
+          code: c.code,
+          name: c.name,
+          value: Math.round(c.base * Math.pow(rates[c.code], factor * 5) * 1e9),
+        }))
+        .sort((a, b) => b.value - a.value),
+    });
+  }
+  return years;
+})();
 
-interface GDPEntry {
-  year: number;
-  countries: { code: string; value: number; name: string }[];
-}
+const POPULATION_DATA = (() => {
+  const ageGroups = ['0-9', '10-19', '20-29', '30-39', '40-49', '50-59', '60-69', '70-79', '80+'];
+  const make = (maleArr: number[], femaleArr: number[]) =>
+    ageGroups.map((age, i) => ({ age, male: maleArr[i], female: femaleArr[i] }));
 
-interface CO2YearData {
-  [countryCode: string]: { co2: number; co2_per_capita: number };
-}
+  return {
+    JPN: {
+      '2020': make([4.8, 5.2, 5.9, 7.0, 8.2, 8.5, 8.0, 6.5, 3.5], [4.6, 5.0, 5.7, 6.8, 8.0, 8.3, 8.2, 7.2, 5.2]),
+      '2050': make([3.2, 3.5, 3.8, 4.2, 4.8, 5.5, 6.8, 7.5, 6.0], [3.1, 3.3, 3.6, 4.0, 4.6, 5.3, 6.9, 8.0, 8.5]),
+    },
+    IND: {
+      '2020': make([12.5, 12.8, 11.5, 10.2, 8.5, 7.0, 5.2, 3.0, 1.2], [11.5, 11.8, 10.8, 9.5, 8.0, 6.5, 4.8, 2.8, 1.0]),
+      '2050': make([9.0, 9.5, 10.2, 11.0, 10.8, 10.0, 8.5, 6.0, 3.0], [8.5, 9.0, 9.8, 10.5, 10.5, 9.8, 8.2, 6.5, 4.0]),
+    },
+    NGA: {
+      '2020': make([18.0, 15.5, 12.0, 9.0, 6.5, 4.5, 3.0, 1.5, 0.5], [17.5, 15.0, 11.5, 8.8, 6.2, 4.3, 2.8, 1.4, 0.5]),
+      '2050': make([16.0, 15.0, 14.0, 12.5, 10.0, 7.5, 5.5, 3.5, 1.5], [15.5, 14.5, 13.5, 12.0, 9.8, 7.2, 5.2, 3.8, 2.0]),
+    },
+    DEU: {
+      '2020': make([3.8, 3.9, 4.5, 5.2, 5.8, 6.5, 5.5, 4.0, 2.5], [3.6, 3.7, 4.3, 5.0, 5.6, 6.3, 5.8, 4.5, 3.8]),
+      '2050': make([3.0, 3.2, 3.5, 3.8, 4.2, 4.8, 5.5, 5.0, 4.5], [2.8, 3.0, 3.3, 3.6, 4.0, 4.6, 5.6, 5.5, 6.0]),
+    },
+  } as Record<string, Record<string, { age: string; male: number; female: number }[]>>;
+})();
 
-// ─── Narrative Step Component ────────────────────────────────────────
+// ─── Helper Components ───────────────────────────────────────────────
 
-function NarrativeBlock({
-  children,
-  onVisible,
-  isActive,
-}: {
-  children: React.ReactNode;
-  onVisible: () => void;
-  isActive: boolean;
-}) {
+function FadeInText({ children, className = '', delay = 0 }: { children: React.ReactNode; className?: string; delay?: number }) {
   const ref = useRef<HTMLDivElement>(null);
-  const isInView = useInView(ref, { margin: '-35% 0px -35% 0px' });
-
-  useEffect(() => {
-    if (isInView) onVisible();
-  }, [isInView]);
-
+  const isInView = useInView(ref, { once: true, margin: '-10% 0px' });
   return (
     <motion.div
       ref={ref}
-      className="min-h-[70vh] flex items-center py-20 md:py-28"
-      animate={{ opacity: isActive ? 1 : 0.2 }}
-      transition={{ duration: 0.6, ease: 'easeOut' }}
+      initial={{ opacity: 0, y: 40 }}
+      animate={isInView ? { opacity: 1, y: 0 } : {}}
+      transition={{ duration: 0.8, delay, ease: [0.25, 0.46, 0.45, 0.94] }}
+      className={className}
     >
-      <div className="space-y-6">{children}</div>
+      {children}
     </motion.div>
   );
 }
 
-// ─── Animated Number ─────────────────────────────────────────────────
-
-function AnimNum({ value, decimals = 0, prefix = '', suffix = '' }: { value: number; decimals?: number; prefix?: string; suffix?: string }) {
-  const [display, setDisplay] = useState(value);
-  const ref = useRef<HTMLSpanElement>(null);
-  const prev = useRef(value);
-
-  useEffect(() => {
-    const from = prev.current;
-    const to = value;
-    prev.current = value;
-    let start: number;
-    const dur = 800;
-    const tick = (t: number) => {
-      if (!start) start = t;
-      const p = Math.min((t - start) / dur, 1);
-      const ease = 1 - Math.pow(1 - p, 3);
-      setDisplay(from + (to - from) * ease);
-      if (p < 1) requestAnimationFrame(tick);
-    };
-    requestAnimationFrame(tick);
-  }, [value]);
-
+function ParallaxSection({ children, speed = 0.3, className = '' }: { children: React.ReactNode; speed?: number; className?: string }) {
+  const ref = useRef<HTMLDivElement>(null);
+  const { scrollYProgress } = useScroll({ target: ref, offset: ['start end', 'end start'] });
+  const y = useTransform(scrollYProgress, [0, 1], [100 * speed, -100 * speed]);
   return (
-    <span ref={ref} className="tabular-nums">
-      {prefix}{display.toFixed(decimals)}{suffix}
-    </span>
-  );
-}
-
-// ─── Mini Bar Chart (GDP) ────────────────────────────────────────────
-
-function GDPBarChart({ data, year }: { data: GDPEntry[]; year: number }) {
-  const entry = data.find((d) => d.year === year);
-  const top10 = useMemo(() => {
-    if (!entry) return [];
-    return [...entry.countries].sort((a, b) => b.value - a.value).slice(0, 10);
-  }, [entry]);
-
-  const maxVal = top10[0]?.value || 1;
-
-  return (
-    <div className="w-full space-y-2">
-      <div className="text-center mb-6">
-        <motion.span
-          key={year}
-          initial={{ opacity: 0, y: -10 }}
-          animate={{ opacity: 1, y: 0 }}
-          className="text-5xl md:text-7xl font-bold gradient-text"
-        >
-          {year}
-        </motion.span>
-        <p className="text-sm text-gray-500 mt-2">GDP (current US$) — Top 10</p>
-      </div>
-      <div className="space-y-1.5">
-        {top10.map((c, i) => (
-          <motion.div
-            key={c.code}
-            className="flex items-center gap-3"
-            initial={{ opacity: 0, x: -20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ delay: i * 0.03, duration: 0.4 }}
-          >
-            <span className="w-10 text-right text-xs text-gray-400 font-mono">{c.code}</span>
-            <div className="flex-1 h-7 bg-white/5 rounded overflow-hidden">
-              <motion.div
-                className="h-full rounded"
-                style={{
-                  background: `linear-gradient(90deg, var(--accent-primary), var(--accent-tertiary))`,
-                }}
-                initial={{ width: 0 }}
-                animate={{ width: `${(c.value / maxVal) * 100}%` }}
-                transition={{ duration: 0.7, ease: 'easeOut' }}
-              />
-            </div>
-            <span className="w-20 text-right text-xs text-gray-400 font-mono">
-              ${(c.value / 1e12).toFixed(2)}T
-            </span>
-          </motion.div>
-        ))}
-      </div>
+    <div ref={ref} className={`relative ${className}`}>
+      <motion.div style={{ y }}>{children}</motion.div>
     </div>
   );
 }
 
-// ─── Bubble Scatter (Life Exp vs GDP) ────────────────────────────────
+function ChapterHeading({ number, title, subtitle }: { number: string; title: string; subtitle: string }) {
+  return (
+    <FadeInText className="text-center py-32 md:py-48">
+      <div className="text-sm font-mono tracking-[0.3em] uppercase text-indigo-400 mb-4">{number}</div>
+      <h2 className="text-5xl md:text-7xl font-bold mb-6 gradient-text">{title}</h2>
+      <p className="text-xl md:text-2xl text-zinc-400 max-w-2xl mx-auto leading-relaxed">{subtitle}</p>
+    </FadeInText>
+  );
+}
 
-const REGION_COLORS: Record<string, string> = {
-  Americas: '#6366f1',
-  Europe: '#22c55e',
-  Asia: '#f43f5e',
-  Africa: '#f97316',
-  Oceania: '#8b5cf6',
-};
+function StatCard({ value, label, delay = 0 }: { value: string; label: string; delay?: number }) {
+  return (
+    <FadeInText delay={delay} className="glass-card rounded-2xl p-8 text-center">
+      <div className="text-4xl md:text-5xl font-bold gradient-text mb-2">{value}</div>
+      <div className="text-zinc-400 text-sm">{label}</div>
+    </FadeInText>
+  );
+}
 
-function LifeExpScatter({ data, year, highlight }: { data: Record<string, LifeExpDataPoint[]>; year: string; highlight?: string }) {
-  const svgRef = useRef<SVGSVGElement>(null);
-  const containerRef = useRef<HTMLDivElement>(null);
-  const [dims, setDims] = useState({ w: 600, h: 450 });
+// CO2 Scenario mini-chart (self-contained, no external data)
+function CO2ScenarioChart() {
+  const ref = useRef<HTMLDivElement>(null);
+  const isInView = useInView(ref, { once: true, margin: '-20%' });
 
-  useEffect(() => {
-    if (!containerRef.current) return;
-    const ro = new ResizeObserver((entries) => {
-      const { width } = entries[0].contentRect;
-      setDims({ w: width, h: Math.min(450, width * 0.7) });
-    });
-    ro.observe(containerRef.current);
-    return () => ro.disconnect();
-  }, []);
+  const scenarios = [
+    { name: 'Business as Usual', color: '#ef4444', temps: [1.1, 1.4, 1.8, 2.3, 2.8, 3.4, 4.0] },
+    { name: 'Moderate Action', color: '#f59e0b', temps: [1.1, 1.3, 1.5, 1.7, 1.9, 2.1, 2.2] },
+    { name: 'Paris Aligned', color: '#22c55e', temps: [1.1, 1.2, 1.3, 1.4, 1.45, 1.48, 1.5] },
+  ];
+  const years = [2025, 2035, 2045, 2055, 2065, 2075];
 
-  useEffect(() => {
-    if (!svgRef.current || !data[year]) return;
-    const svg = d3.select(svgRef.current);
-    svg.selectAll('*').remove();
-
-    const m = { top: 30, right: 20, bottom: 40, left: 50 };
-    const w = dims.w - m.left - m.right;
-    const h = dims.h - m.top - m.bottom;
-
-    const g = svg.append('g').attr('transform', `translate(${m.left},${m.top})`);
-
-    const x = d3.scaleLog().domain([300, 120000]).range([0, w]);
-    const y = d3.scaleLinear().domain([30, 90]).range([h, 0]);
-    const r = d3.scaleSqrt().domain([0, 1.5e9]).range([2, 40]);
-
-    // Grid
-    g.selectAll('.hg')
-      .data(y.ticks(6))
-      .join('line')
-      .attr('x1', 0).attr('x2', w)
-      .attr('y1', (d) => y(d)).attr('y2', (d) => y(d))
-      .attr('stroke', 'rgba(99,102,241,0.08)')
-      .attr('stroke-dasharray', '3,3');
-
-    // Axes
-    g.append('g')
-      .attr('transform', `translate(0,${h})`)
-      .call(d3.axisBottom(x).ticks(4, '$,.0s'))
-      .selectAll('text').style('fill', '#52525b').style('font-size', '10px');
-
-    g.append('g')
-      .call(d3.axisLeft(y).ticks(6))
-      .selectAll('text').style('fill', '#52525b').style('font-size', '10px');
-
-    // Axis labels
-    g.append('text').attr('x', w / 2).attr('y', h + 35).attr('text-anchor', 'middle')
-      .attr('fill', '#52525b').attr('font-size', '10px').text('GDP per capita →');
-    g.append('text').attr('transform', 'rotate(-90)').attr('x', -h / 2).attr('y', -38)
-      .attr('text-anchor', 'middle').attr('fill', '#52525b').attr('font-size', '10px').text('Life expectancy →');
-
-    const pts = data[year].sort((a, b) => b.pop - a.pop);
-
-    g.selectAll('circle')
-      .data(pts)
-      .join('circle')
-      .attr('cx', (d) => x(Math.max(300, d.gdp)))
-      .attr('cy', (d) => y(d.life))
-      .attr('r', (d) => r(d.pop))
-      .attr('fill', (d) => REGION_COLORS[d.region] || '#64748b')
-      .attr('fill-opacity', (d) => (highlight && d.region !== highlight ? 0.12 : 0.65))
-      .attr('stroke', (d) => REGION_COLORS[d.region] || '#64748b')
-      .attr('stroke-width', 1)
-      .attr('stroke-opacity', (d) => (highlight && d.region !== highlight ? 0.2 : 0.8));
-
-    // Labels for big countries
-    g.selectAll('.label')
-      .data(pts.filter((d) => d.pop > 150000000))
-      .join('text')
-      .attr('x', (d) => x(Math.max(300, d.gdp)))
-      .attr('y', (d) => y(d.life))
-      .attr('dy', '0.35em')
-      .attr('text-anchor', 'middle')
-      .attr('font-size', '9px')
-      .attr('font-weight', 'bold')
-      .attr('fill', 'white')
-      .attr('pointer-events', 'none')
-      .text((d) => d.code);
-  }, [data, year, dims, highlight]);
+  const w = 600, h = 320, px = 60, py = 40;
+  const cw = w - 2 * px, ch = h - 2 * py;
 
   return (
-    <div ref={containerRef} className="w-full">
-      <div className="text-center mb-4">
-        <motion.span key={year} initial={{ opacity: 0, y: -10 }} animate={{ opacity: 1, y: 0 }} className="text-5xl md:text-7xl font-bold gradient-text">
-          {year}
-        </motion.span>
-      </div>
-      <svg ref={svgRef} width={dims.w} height={dims.h} className="overflow-visible" />
-      <div className="flex justify-center gap-4 mt-3 flex-wrap">
-        {Object.entries(REGION_COLORS).map(([region, color]) => (
-          <div key={region} className="flex items-center gap-1.5">
-            <div className="w-2.5 h-2.5 rounded-full" style={{ backgroundColor: color }} />
-            <span className="text-xs text-gray-500">{region}</span>
+    <div ref={ref} className="exd-card exd-glow p-6 overflow-hidden">
+      <h3 className="text-xl font-bold exd-gradient-text mb-1">Global Temperature Projections</h3>
+      <p className="text-sm text-zinc-500 mb-6">°C above pre-industrial levels</p>
+      <svg viewBox={`0 0 ${w} ${h}`} className="w-full">
+        {/* Grid */}
+        {[1, 2, 3, 4].map(t => (
+          <g key={t}>
+            <line x1={px} x2={w - px} y1={py + ch - (t / 4.5) * ch} y2={py + ch - (t / 4.5) * ch} stroke="rgba(99,102,241,0.1)" strokeDasharray="4 4" />
+            <text x={px - 8} y={py + ch - (t / 4.5) * ch + 4} textAnchor="end" fill="#52525b" fontSize="11">+{t}°C</text>
+          </g>
+        ))}
+        {/* 2°C danger line */}
+        <line x1={px} x2={w - px} y1={py + ch - (2 / 4.5) * ch} y2={py + ch - (2 / 4.5) * ch} stroke="#ef444466" strokeWidth="2" strokeDasharray="8 4" />
+        <text x={w - px + 4} y={py + ch - (2 / 4.5) * ch + 4} fill="#ef4444" fontSize="10">2°C limit</text>
+        {/* Year labels */}
+        {years.map((yr, i) => (
+          <text key={yr} x={px + (i / (years.length - 1)) * cw} y={h - 8} textAnchor="middle" fill="#52525b" fontSize="11">{yr}</text>
+        ))}
+        {/* Scenario lines */}
+        {scenarios.map(s => {
+          const pts = s.temps.map((t, i) => `${px + (i / (s.temps.length - 1)) * cw},${py + ch - (t / 4.5) * ch}`).join(' ');
+          return (
+            <g key={s.name}>
+              <motion.polyline
+                points={pts}
+                fill="none"
+                stroke={s.color}
+                strokeWidth="3"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                initial={{ pathLength: 0, opacity: 0 }}
+                animate={isInView ? { pathLength: 1, opacity: 1 } : {}}
+                transition={{ duration: 2, ease: 'easeOut' }}
+              />
+              {/* End label */}
+              <text
+                x={px + cw + 6}
+                y={py + ch - (s.temps[s.temps.length - 1] / 4.5) * ch + 4}
+                fill={s.color}
+                fontSize="10"
+                fontWeight="bold"
+              >
+                {s.temps[s.temps.length - 1]}°C
+              </text>
+            </g>
+          );
+        })}
+      </svg>
+      {/* Legend */}
+      <div className="flex flex-wrap gap-4 mt-4 justify-center">
+        {scenarios.map(s => (
+          <div key={s.name} className="flex items-center gap-2">
+            <div className="w-3 h-3 rounded-full" style={{ background: s.color }} />
+            <span className="text-xs text-zinc-400">{s.name}</span>
           </div>
         ))}
       </div>
@@ -255,494 +192,392 @@ function LifeExpScatter({ data, year, highlight }: { data: Record<string, LifeEx
   );
 }
 
-// ─── CO2 Top Emitters Bar ────────────────────────────────────────────
-
-function CO2Bars({ data, year }: { data: Record<string, CO2YearData>; year: string }) {
-  const yearData = data[year];
-  if (!yearData) return null;
-
-  const sorted = Object.entries(yearData)
-    .map(([code, d]) => ({ code, co2: d.co2 }))
-    .sort((a, b) => b.co2 - a.co2)
-    .slice(0, 10);
-
-  const max = sorted[0]?.co2 || 1;
-
-  return (
-    <div className="w-full space-y-2">
-      <div className="text-center mb-6">
-        <motion.span key={year} initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="text-5xl md:text-7xl font-bold gradient-text">
-          {year}
-        </motion.span>
-        <p className="text-sm text-gray-500 mt-2">CO₂ emissions (Mt) — Top 10</p>
-      </div>
-      <div className="space-y-1.5">
-        {sorted.map((c, i) => (
-          <motion.div
-            key={c.code}
-            className="flex items-center gap-3"
-            initial={{ opacity: 0, x: -20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ delay: i * 0.03 }}
-          >
-            <span className="w-10 text-right text-xs text-gray-400 font-mono">{c.code}</span>
-            <div className="flex-1 h-7 bg-white/5 rounded overflow-hidden">
-              <motion.div
-                className="h-full rounded"
-                style={{ background: 'linear-gradient(90deg, #f97316, #ef4444)' }}
-                initial={{ width: 0 }}
-                animate={{ width: `${(c.co2 / max) * 100}%` }}
-                transition={{ duration: 0.7, ease: 'easeOut' }}
-              />
-            </div>
-            <span className="w-16 text-right text-xs text-gray-400 font-mono">
-              {c.co2.toLocaleString()}
-            </span>
-          </motion.div>
-        ))}
-      </div>
-    </div>
-  );
-}
-
-// ─── Population Pyramid Mini ─────────────────────────────────────────
-
-function PopPyramidMini({ data, country, year }: { data: Record<string, Record<string, { age: string; male: number; female: number }[]>>; country: string; year: string }) {
-  const yearData = data?.[country]?.[year];
-  if (!yearData) return <div className="text-gray-500 text-center">No data for {country} {year}</div>;
-
-  const maxPop = Math.max(...yearData.flatMap((d) => [d.male, d.female]));
+function CO2EmissionsBar() {
+  const ref = useRef<HTMLDivElement>(null);
+  const isInView = useInView(ref, { once: true, margin: '-20%' });
+  const data = [
+    { name: 'China', value: 11.5, color: '#ef4444' },
+    { name: 'United States', value: 5.0, color: '#6366f1' },
+    { name: 'India', value: 2.9, color: '#14b8a6' },
+    { name: 'EU-27', value: 2.6, color: '#22c55e' },
+    { name: 'Russia', value: 1.8, color: '#ec4899' },
+    { name: 'Japan', value: 1.1, color: '#f97316' },
+    { name: 'Rest of World', value: 12.0, color: '#64748b' },
+  ];
+  const max = Math.max(...data.map(d => d.value));
 
   return (
-    <div className="w-full max-w-md mx-auto">
-      <div className="text-center mb-6">
-        <motion.span key={`${country}-${year}`} initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="text-5xl md:text-7xl font-bold gradient-text">
-          {year}
-        </motion.span>
-        <p className="text-sm text-gray-500 mt-2">{country} — Population by age</p>
-      </div>
-      <div className="space-y-0.5">
-        {[...yearData].reverse().map((row) => (
-          <div key={row.age} className="flex items-center gap-1 h-5">
-            {/* Male bar (right-aligned) */}
-            <div className="flex-1 flex justify-end">
+    <div ref={ref} className="exd-card exd-glow p-6">
+      <h3 className="text-xl font-bold exd-gradient-text mb-1">CO₂ Emissions by Region (2024)</h3>
+      <p className="text-sm text-zinc-500 mb-6">Billion tonnes CO₂</p>
+      <div className="space-y-3">
+        {data.map((d, i) => (
+          <div key={d.name} className="flex items-center gap-3">
+            <span className="text-sm text-zinc-400 w-28 shrink-0 text-right">{d.name}</span>
+            <div className="flex-1 h-8 bg-white/5 rounded-lg overflow-hidden">
               <motion.div
-                className="h-full rounded-l"
-                style={{ background: 'rgba(99,102,241,0.7)' }}
+                className="h-full rounded-lg flex items-center pl-3"
+                style={{ background: d.color }}
                 initial={{ width: 0 }}
-                animate={{ width: `${(row.male / maxPop) * 100}%` }}
-                transition={{ duration: 0.5 }}
-              />
-            </div>
-            <span className="w-10 text-center text-[9px] text-gray-500">{row.age}</span>
-            {/* Female bar */}
-            <div className="flex-1">
-              <motion.div
-                className="h-full rounded-r"
-                style={{ background: 'rgba(244,63,94,0.7)' }}
-                initial={{ width: 0 }}
-                animate={{ width: `${(row.female / maxPop) * 100}%` }}
-                transition={{ duration: 0.5 }}
-              />
+                animate={isInView ? { width: `${(d.value / max) * 100}%` } : {}}
+                transition={{ duration: 1, delay: i * 0.1, ease: 'easeOut' }}
+              >
+                <span className="text-xs font-bold text-white whitespace-nowrap">{d.value} Gt</span>
+              </motion.div>
             </div>
           </div>
         ))}
       </div>
-      <div className="flex justify-between mt-2 text-xs text-gray-500">
-        <span>♂ Male</span>
-        <span>Female ♀</span>
-      </div>
     </div>
   );
 }
 
-// ─── Big Number Display ──────────────────────────────────────────────
-
-function BigStat({ value, label, unit }: { value: string; label: string; unit?: string }) {
-  return (
-    <div className="text-center">
-      <div className="text-5xl md:text-8xl font-bold gradient-text">{value}</div>
-      {unit && <div className="text-lg text-gray-400 mt-1">{unit}</div>}
-      <div className="text-sm text-gray-500 mt-2">{label}</div>
-    </div>
-  );
-}
-
-// ═══════════════════════════════════════════════════════════════════════
-// MAIN PAGE
-// ═══════════════════════════════════════════════════════════════════════
+// ─── Main Page ───────────────────────────────────────────────────────
 
 export default function WorldIn50YearsPage() {
-  // ── Data state ──
-  const [lifeData, setLifeData] = useState<Record<string, LifeExpDataPoint[]>>({});
-  const [gdpData, setGDPData] = useState<GDPEntry[]>([]);
-  const [co2Data, setCO2Data] = useState<Record<string, CO2YearData>>({});
-  const [popData, setPopData] = useState<Record<string, Record<string, { age: string; male: number; female: number }[]>>>({});
-  const [loaded, setLoaded] = useState(false);
+  const [economyStep, setEconomyStep] = useState('econ-1');
+  const [populationStep, setPopulationStep] = useState('pop-1');
+  const [selectedCountry, setSelectedCountry] = useState('JPN');
 
-  // ── Active step per section ──
-  const [activeStep, setActiveStep] = useState({
-    intro: 'intro-1',
-    gdp: 'gdp-1',
-    life: 'life-1',
-    co2: 'co2-1',
-    pop: 'pop-1',
-  });
+  // GDP data to show based on step
+  const gdpStepConfig: Record<string, { startIdx: number; endIdx: number }> = {
+    'econ-1': { startIdx: 0, endIdx: 3 },
+    'econ-2': { startIdx: 3, endIdx: 7 },
+    'econ-3': { startIdx: 7, endIdx: GDP_DATA.length },
+  };
+  const currentGdpRange = gdpStepConfig[economyStep] || gdpStepConfig['econ-1'];
+  const gdpSlice = GDP_DATA.slice(currentGdpRange.startIdx, currentGdpRange.endIdx);
 
-  const basePath = typeof window !== 'undefined' && window.location.pathname.includes('exd-landing') ? '/exd-landing' : '';
-
-  // ── Load data ──
+  // Population pyramid country based on step
   useEffect(() => {
-    Promise.all([
-      fetch(`${basePath}/data/life-expectancy.json`).then((r) => r.json()),
-      fetch(`${basePath}/data/gdp-racing.json`).then((r) => r.json()),
-      fetch(`${basePath}/data/co2-emissions.json`).then((r) => r.json()),
-      fetch(`${basePath}/data/population-pyramid.json`).then((r) => r.json()),
-    ]).then(([life, gdp, co2, pop]) => {
-      setLifeData(life);
-      setGDPData(gdp);
-      setCO2Data(co2);
-      setPopData(pop);
-      setLoaded(true);
-    });
-  }, [basePath]);
-
-  // ── Derived viz params from active steps ──
-  const gdpYear = useMemo(() => {
-    const map: Record<string, number> = { 'gdp-1': 1960, 'gdp-2': 1990, 'gdp-3': 2000, 'gdp-4': 2023 };
-    return map[activeStep.gdp] || 1960;
-  }, [activeStep.gdp]);
-
-  const lifeYear = useMemo(() => {
-    const map: Record<string, string> = { 'life-1': '1990', 'life-2': '2000', 'life-3': '2010', 'life-4': '2022' };
-    return map[activeStep.life] || '1990';
-  }, [activeStep.life]);
-
-  const lifeHighlight = useMemo(() => {
-    const map: Record<string, string | undefined> = { 'life-1': undefined, 'life-2': 'Asia', 'life-3': 'Africa', 'life-4': undefined };
-    return map[activeStep.life];
-  }, [activeStep.life]);
-
-  const co2Year = useMemo(() => {
-    const map: Record<string, string> = { 'co2-1': '1990', 'co2-2': '2000', 'co2-3': '2010', 'co2-4': '2022' };
-    return map[activeStep.co2] || '1990';
-  }, [activeStep.co2]);
-
-  const popConfig = useMemo(() => {
-    const map: Record<string, { country: string; year: string }> = {
-      'pop-1': { country: 'JPN', year: '1990' },
-      'pop-2': { country: 'JPN', year: '2020' },
-      'pop-3': { country: 'USA', year: '2020' },
-      'pop-4': { country: 'DEU', year: '2020' },
-    };
-    return map[activeStep.pop] || { country: 'JPN', year: '1990' };
-  }, [activeStep.pop]);
-
-  // ── Loading ──
-  if (!loaded) {
-    return (
-      <div className="min-h-screen flex items-center justify-center bg-[var(--background)]">
-        <div className="flex flex-col items-center gap-4">
-          <div className="w-12 h-12 border-4 border-[var(--accent-primary)] border-t-transparent rounded-full animate-spin" />
-          <p className="text-gray-400">Loading the world&apos;s story…</p>
-        </div>
-      </div>
-    );
-  }
+    const map: Record<string, string> = { 'pop-1': 'JPN', 'pop-2': 'NGA', 'pop-3': 'DEU' };
+    if (map[populationStep]) setSelectedCountry(map[populationStep]);
+  }, [populationStep]);
 
   return (
-    <main className="bg-[var(--background)] text-white min-h-screen">
-      {/* ── Back nav ── */}
-      <div className="fixed top-0 left-0 right-0 z-50 px-6 py-4 bg-[var(--background)]/80 backdrop-blur-xl border-b border-white/5">
-        <div className="max-w-7xl mx-auto flex items-center gap-4">
-          <Link href="/" className="flex items-center gap-2 text-gray-400 hover:text-white transition-colors text-sm">
-            <ArrowLeft className="w-4 h-4" />
-            Back to EXD
-          </Link>
-          <div className="h-4 w-px bg-white/10" />
-          <span className="text-sm text-gray-500">Data Story</span>
-        </div>
-      </div>
-
-      {/* ══════════════════════════════════════════════════════════════ */}
-      {/* HERO */}
-      {/* ══════════════════════════════════════════════════════════════ */}
-      <section className="min-h-screen flex flex-col items-center justify-center px-6 text-center relative overflow-hidden">
-        {/* Ambient glow */}
-        <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute w-[800px] h-[800px] rounded-full opacity-20 blur-3xl" style={{ background: 'radial-gradient(circle, rgba(99,102,241,0.4), transparent 70%)', left: '50%', top: '40%', transform: 'translate(-50%,-50%)' }} />
-        </div>
-
-        <motion.div initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 1, delay: 0.3 }}>
-          <p className="text-sm uppercase tracking-[0.3em] text-gray-500 mb-6">A Data Story by EXD</p>
-          <h1 className="text-5xl md:text-8xl font-bold leading-tight mb-8">
-            <span className="text-white/90">The World</span>
-            <br />
-            <span className="gradient-text">in 50 Years</span>
-          </h1>
-          <p className="text-xl md:text-2xl text-gray-400 max-w-2xl mx-auto leading-relaxed">
-            How wealth, health, climate, and demographics reshaped humanity — told through the data that witnessed it all.
-          </p>
-        </motion.div>
-
-        <motion.div
-          className="absolute bottom-12"
-          animate={{ y: [0, 8, 0] }}
-          transition={{ repeat: Infinity, duration: 2 }}
-        >
-          <ChevronDown className="w-6 h-6 text-gray-500" />
-        </motion.div>
-      </section>
-
-      {/* ══════════════════════════════════════════════════════════════ */}
-      {/* SECTION 1: GDP — The Rise of Nations */}
-      {/* ══════════════════════════════════════════════════════════════ */}
-      <section className="max-w-7xl mx-auto px-6 py-16">
-        <div className="flex flex-col md:flex-row gap-8 md:gap-16">
-          {/* Narrative */}
-          <div className="md:w-[40%]">
-            <NarrativeBlock isActive={activeStep.gdp === 'gdp-1'} onVisible={() => setActiveStep((s) => ({ ...s, gdp: 'gdp-1' }))}>
-              <p className="text-indigo-400 text-sm uppercase tracking-widest mb-3">Chapter I</p>
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">The Rise of Nations</h2>
-              <p className="text-lg text-gray-300 leading-relaxed">
-                In <strong className="text-white">1960</strong>, the United States stood alone at the top — its economy larger than the next five nations combined. The world was still rebuilding from war. Most of Asia and Africa were finding their footing as newly independent nations.
-              </p>
-              <p className="text-gray-400 mt-4">
-                Global GDP was just <span className="text-white font-medium">$1.4 trillion</span>. Today, Apple alone is worth twice that.
-              </p>
-            </NarrativeBlock>
-
-            <NarrativeBlock isActive={activeStep.gdp === 'gdp-2'} onVisible={() => setActiveStep((s) => ({ ...s, gdp: 'gdp-2' }))}>
-              <p className="text-lg text-gray-300 leading-relaxed">
-                By <strong className="text-white">1990</strong>, Japan had stunned the world — its economic miracle lifted 120 million people into unprecedented prosperity. Germany reunified. The Soviet Union crumbled.
-              </p>
-              <p className="text-gray-400 mt-4">
-                The rules of the game were being rewritten, and new players were warming up.
-              </p>
-            </NarrativeBlock>
-
-            <NarrativeBlock isActive={activeStep.gdp === 'gdp-3'} onVisible={() => setActiveStep((s) => ({ ...s, gdp: 'gdp-3' }))}>
-              <p className="text-lg text-gray-300 leading-relaxed">
-                <strong className="text-white">2000</strong>. The dot-com bubble had just burst, but something bigger was brewing. China&apos;s GDP had grown 10× in two decades. India was waking up. The center of economic gravity was shifting — slowly, then all at once.
-              </p>
-            </NarrativeBlock>
-
-            <NarrativeBlock isActive={activeStep.gdp === 'gdp-4'} onVisible={() => setActiveStep((s) => ({ ...s, gdp: 'gdp-4' }))}>
-              <p className="text-lg text-gray-300 leading-relaxed">
-                <strong className="text-white">2023</strong>. China is now the world&apos;s second-largest economy. India has surpassed the UK. The top 10 looks nothing like it did 60 years ago.
-              </p>
-              <p className="text-gray-400 mt-4">
-                The story of GDP is the story of ambition — billions of people refusing to accept that poverty was their destiny.
-              </p>
-            </NarrativeBlock>
-          </div>
-
-          {/* Sticky viz */}
-          <div className="md:w-[60%]">
-            <div className="sticky top-24 pt-8">
-              <div className="glass-card rounded-2xl p-6 md:p-8">
-                <GDPBarChart data={gdpData} year={gdpYear} />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ══════════════════════════════════════════════════════════════ */}
-      {/* SECTION 2: Life Expectancy — The Gift of Years */}
-      {/* ══════════════════════════════════════════════════════════════ */}
-      <section className="max-w-7xl mx-auto px-6 py-16">
-        <div className="flex flex-col md:flex-row gap-8 md:gap-16">
-          <div className="md:w-[40%]">
-            <NarrativeBlock isActive={activeStep.life === 'life-1'} onVisible={() => setActiveStep((s) => ({ ...s, life: 'life-1' }))}>
-              <p className="text-emerald-400 text-sm uppercase tracking-widest mb-3">Chapter II</p>
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">The Gift of Years</h2>
-              <p className="text-lg text-gray-300 leading-relaxed">
-                In <strong className="text-white">1990</strong>, the average human could expect to live about <span className="text-emerald-400 font-bold text-2xl">65 years</span>. But that number hid a cruel truth: where you were born determined how long you&apos;d live.
-              </p>
-              <p className="text-gray-400 mt-4">
-                A child born in Japan could expect 79 years. A child born in Sierra Leone? Just 38.
-              </p>
-            </NarrativeBlock>
-
-            <NarrativeBlock isActive={activeStep.life === 'life-2'} onVisible={() => setActiveStep((s) => ({ ...s, life: 'life-2' }))}>
-              <p className="text-lg text-gray-300 leading-relaxed">
-                Then something remarkable happened. <strong className="text-white">Asia</strong> began closing the gap — not in decades, but in years. Vaccines, clean water, education. Simple things that changed everything.
-              </p>
-              <p className="text-gray-400 mt-4">
-                By 2000, China&apos;s life expectancy had reached 72 years. India hit 63. The bubbles were drifting upward — slowly, stubbornly, beautifully.
-              </p>
-            </NarrativeBlock>
-
-            <NarrativeBlock isActive={activeStep.life === 'life-3'} onVisible={() => setActiveStep((s) => ({ ...s, life: 'life-3' }))}>
-              <p className="text-lg text-gray-300 leading-relaxed">
-                But <strong className="text-white">Africa</strong> tells a different story. The HIV/AIDS crisis of the early 2000s reversed decades of progress. In some nations, life expectancy dropped by 20 years.
-              </p>
-              <p className="text-gray-400 mt-4">
-                Look at the orange cluster. That&apos;s not just data — those are millions of lives cut short, families broken, futures stolen.
-              </p>
-            </NarrativeBlock>
-
-            <NarrativeBlock isActive={activeStep.life === 'life-4'} onVisible={() => setActiveStep((s) => ({ ...s, life: 'life-4' }))}>
-              <p className="text-lg text-gray-300 leading-relaxed">
-                By <strong className="text-white">2022</strong>, the world has largely recovered. The gap between richest and poorest nations has narrowed from 40 years to about 25.
-              </p>
-              <p className="text-gray-400 mt-4">
-                We&apos;re not there yet. But the trajectory is clear: <span className="text-white">humanity is winning the race against death</span> — one vaccine, one well, one clinic at a time.
-              </p>
-            </NarrativeBlock>
-          </div>
-
-          <div className="md:w-[60%]">
-            <div className="sticky top-24 pt-8">
-              <div className="glass-card rounded-2xl p-6 md:p-8">
-                <LifeExpScatter data={lifeData} year={lifeYear} highlight={lifeHighlight} />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ══════════════════════════════════════════════════════════════ */}
-      {/* SECTION 3: CO₂ — The Price of Progress */}
-      {/* ══════════════════════════════════════════════════════════════ */}
-      <section className="max-w-7xl mx-auto px-6 py-16">
-        <div className="flex flex-col md:flex-row gap-8 md:gap-16">
-          <div className="md:w-[40%]">
-            <NarrativeBlock isActive={activeStep.co2 === 'co2-1'} onVisible={() => setActiveStep((s) => ({ ...s, co2: 'co2-1' }))}>
-              <p className="text-orange-400 text-sm uppercase tracking-widest mb-3">Chapter III</p>
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">The Price of Progress</h2>
-              <p className="text-lg text-gray-300 leading-relaxed">
-                Every ton of GDP came with a shadow: carbon dioxide. In <strong className="text-white">1990</strong>, the world emitted 22 billion tons of CO₂. The US and Europe were the undisputed champions of this dubious race.
-              </p>
-              <p className="text-gray-400 mt-4">
-                For 200 years, the West had been burning fossil fuels as if the atmosphere were infinite. It isn&apos;t.
-              </p>
-            </NarrativeBlock>
-
-            <NarrativeBlock isActive={activeStep.co2 === 'co2-2'} onVisible={() => setActiveStep((s) => ({ ...s, co2: 'co2-2' }))}>
-              <p className="text-lg text-gray-300 leading-relaxed">
-                By <strong className="text-white">2000</strong>, a new giant was emerging. China&apos;s factories — building the products the world wanted — were pumping out CO₂ at an accelerating rate.
-              </p>
-              <p className="text-gray-400 mt-4">
-                The moral question haunts every climate summit: who pays for progress?
-              </p>
-            </NarrativeBlock>
-
-            <NarrativeBlock isActive={activeStep.co2 === 'co2-3'} onVisible={() => setActiveStep((s) => ({ ...s, co2: 'co2-3' }))}>
-              <p className="text-lg text-gray-300 leading-relaxed">
-                <strong className="text-white">2010</strong>. China surpasses the United States as the world&apos;s largest emitter. India enters the top 3. The global south argues: &ldquo;You industrialized with coal. Why can&apos;t we?&rdquo;
-              </p>
-              <p className="text-gray-400 mt-4">
-                They have a point. The cumulative emissions tell a very different story than the annual ones.
-              </p>
-            </NarrativeBlock>
-
-            <NarrativeBlock isActive={activeStep.co2 === 'co2-4'} onVisible={() => setActiveStep((s) => ({ ...s, co2: 'co2-4' }))}>
-              <p className="text-lg text-gray-300 leading-relaxed">
-                <strong className="text-white">2022</strong>. Global emissions: 37 billion tons. But there are glimmers of hope — European emissions are falling. Renewable energy is now cheaper than coal in most of the world.
-              </p>
-              <p className="text-gray-400 mt-4">
-                The question is no longer <em>if</em> we can transition. It&apos;s <span className="text-white">whether we&apos;ll do it fast enough</span>.
-              </p>
-            </NarrativeBlock>
-          </div>
-
-          <div className="md:w-[60%]">
-            <div className="sticky top-24 pt-8">
-              <div className="glass-card rounded-2xl p-6 md:p-8">
-                <CO2Bars data={co2Data} year={co2Year} />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ══════════════════════════════════════════════════════════════ */}
-      {/* SECTION 4: Population — The Shape of Tomorrow */}
-      {/* ══════════════════════════════════════════════════════════════ */}
-      <section className="max-w-7xl mx-auto px-6 py-16">
-        <div className="flex flex-col md:flex-row gap-8 md:gap-16">
-          <div className="md:w-[40%]">
-            <NarrativeBlock isActive={activeStep.pop === 'pop-1'} onVisible={() => setActiveStep((s) => ({ ...s, pop: 'pop-1' }))}>
-              <p className="text-pink-400 text-sm uppercase tracking-widest mb-3">Chapter IV</p>
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">The Shape of Tomorrow</h2>
-              <p className="text-lg text-gray-300 leading-relaxed">
-                A population pyramid tells you everything about a nation&apos;s future. In <strong className="text-white">Japan, 1990</strong>, the shape was healthy — wide at the base, tapering at the top. Young people everywhere. Potential everywhere.
-              </p>
-            </NarrativeBlock>
-
-            <NarrativeBlock isActive={activeStep.pop === 'pop-2'} onVisible={() => setActiveStep((s) => ({ ...s, pop: 'pop-2' }))}>
-              <p className="text-lg text-gray-300 leading-relaxed">
-                Fast forward to <strong className="text-white">Japan, 2020</strong>. The pyramid has inverted. The bulge has shifted upward. Japan now sells more adult diapers than baby diapers.
-              </p>
-              <p className="text-gray-400 mt-4">
-                This isn&apos;t just a demographic curiosity — it&apos;s an economic earthquake. Fewer workers supporting more retirees. A shrinking tax base. Empty schools. Entire villages abandoned.
-              </p>
-            </NarrativeBlock>
-
-            <NarrativeBlock isActive={activeStep.pop === 'pop-3'} onVisible={() => setActiveStep((s) => ({ ...s, pop: 'pop-3' }))}>
-              <p className="text-lg text-gray-300 leading-relaxed">
-                The <strong className="text-white">United States</strong> tells a different story. Immigration has kept the base wider. The millennial generation creates a bulge in the middle. But the trend is the same — just slower.
-              </p>
-            </NarrativeBlock>
-
-            <NarrativeBlock isActive={activeStep.pop === 'pop-4'} onVisible={() => setActiveStep((s) => ({ ...s, pop: 'pop-4' }))}>
-              <p className="text-lg text-gray-300 leading-relaxed">
-                <strong className="text-white">Germany</strong> — Europe&apos;s largest economy — faces the same challenge. The baby boom generation is retiring. Who will build the cars? Who will pay the pensions?
-              </p>
-              <p className="text-gray-400 mt-4">
-                The shape of a population isn&apos;t just a chart. It&apos;s a <span className="text-white">prophecy</span>.
-              </p>
-            </NarrativeBlock>
-          </div>
-
-          <div className="md:w-[60%]">
-            <div className="sticky top-24 pt-8">
-              <div className="glass-card rounded-2xl p-6 md:p-8">
-                <PopPyramidMini data={popData} country={popConfig.country} year={popConfig.year} />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ══════════════════════════════════════════════════════════════ */}
-      {/* OUTRO */}
-      {/* ══════════════════════════════════════════════════════════════ */}
-      <section className="min-h-screen flex flex-col items-center justify-center px-6 text-center relative overflow-hidden">
-        <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute w-[1000px] h-[1000px] rounded-full opacity-15 blur-3xl" style={{ background: 'radial-gradient(circle, rgba(139,92,246,0.4), transparent 70%)', left: '50%', top: '50%', transform: 'translate(-50%,-50%)' }} />
+    <main className="bg-[#050507] text-white min-h-screen overflow-x-hidden">
+      {/* ═══════ HERO ═══════ */}
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+        {/* Animated background particles */}
+        <div className="absolute inset-0">
+          {[...Array(5)].map((_, i) => (
+            <motion.div
+              key={i}
+              className="absolute rounded-full blur-3xl opacity-20"
+              style={{
+                width: 300 + i * 100,
+                height: 300 + i * 100,
+                background: i % 2 === 0 ? 'radial-gradient(circle, #6366f1, transparent)' : 'radial-gradient(circle, #06b6d4, transparent)',
+                left: `${10 + i * 18}%`,
+                top: `${20 + (i % 3) * 20}%`,
+              }}
+              animate={{
+                x: [0, 30 * (i % 2 === 0 ? 1 : -1), 0],
+                y: [0, -20 * (i % 2 === 0 ? -1 : 1), 0],
+                scale: [1, 1.1, 1],
+              }}
+              transition={{ duration: 8 + i * 2, repeat: Infinity, ease: 'easeInOut' }}
+            />
+          ))}
         </div>
 
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 1 }}
-          className="max-w-3xl"
-        >
-          <h2 className="text-4xl md:text-6xl font-bold mb-8">
-            <span className="text-white/90">Data doesn&apos;t just</span>
-            <br />
-            <span className="text-white/90">describe the world.</span>
-            <br />
-            <span className="gradient-text">It reveals its soul.</span>
-          </h2>
-          <p className="text-xl text-gray-400 leading-relaxed mb-12">
-            Behind every data point is a human life. A child who survived. A factory that opened. A forest that burned. A nation that rose. These numbers are not abstract — they are the autobiography of our species.
-          </p>
-          <Link
-            href="/"
-            className="inline-flex items-center gap-3 px-8 py-4 rounded-full bg-gradient-to-r from-indigo-500 to-purple-500 text-white font-semibold hover:scale-105 transition-transform"
+        <div className="relative z-10 text-center px-6 max-w-5xl">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1 }}
+            className="text-sm font-mono tracking-[0.4em] uppercase text-indigo-400 mb-8"
           >
-            Explore More with EXD
-          </Link>
-          <p className="text-gray-600 text-sm mt-8">
-            Sources: World Bank, Our World in Data, United Nations
-          </p>
-        </motion.div>
+            A Data Story by EXD
+          </motion.div>
+
+          <motion.h1
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1.2, delay: 0.2 }}
+            className="text-6xl md:text-8xl lg:text-9xl font-bold leading-[0.9] mb-8"
+          >
+            <span className="gradient-text">The World</span>
+            <br />
+            <span className="text-white/90">in 50 Years</span>
+          </motion.h1>
+
+          <motion.p
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1, delay: 0.6 }}
+            className="text-xl md:text-2xl text-zinc-400 max-w-2xl mx-auto leading-relaxed mb-12"
+          >
+            What will the world look like in 2075?
+            <br />
+            Scroll to explore the forces shaping our future.
+          </motion.p>
+
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 1.2 }}
+            className="flex flex-col items-center gap-2 text-zinc-500"
+          >
+            <span className="text-sm">Scroll to begin</span>
+            <motion.div
+              animate={{ y: [0, 10, 0] }}
+              transition={{ duration: 1.5, repeat: Infinity }}
+              className="w-6 h-10 rounded-full border-2 border-zinc-600 flex items-start justify-center pt-2"
+            >
+              <div className="w-1.5 h-2.5 rounded-full bg-zinc-500" />
+            </motion.div>
+          </motion.div>
+        </div>
       </section>
+
+      {/* ═══════ CONTEXT ═══════ */}
+      <section className="max-w-6xl mx-auto px-6 py-24 md:py-40">
+        <FadeInText className="max-w-3xl mx-auto text-center mb-20">
+          <p className="text-2xl md:text-3xl text-zinc-300 leading-relaxed">
+            In the next half-century, the world will undergo transformations more profound than any in human history.
+            <span className="gradient-text font-semibold"> Economies will shift. Climates will change. Populations will age — or explode.</span>
+          </p>
+        </FadeInText>
+
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+          <StatCard value="9.7B" label="Global Population by 2050" delay={0} />
+          <StatCard value="+2.7°C" label="Projected Warming (Business as Usual)" delay={0.1} />
+          <StatCard value="$180T" label="Global GDP by 2075 (projected)" delay={0.2} />
+          <StatCard value="28%" label="Population over 65 in Europe by 2050" delay={0.3} />
+        </div>
+      </section>
+
+      {/* ═══════ CHAPTER 1: ECONOMY ═══════ */}
+      <section className="relative">
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-indigo-950/10 to-transparent pointer-events-none" />
+        <div className="max-w-7xl mx-auto px-6">
+          <ChapterHeading
+            number="Chapter One"
+            title="The Economy"
+            subtitle="The great rebalancing: as Asia rises, the global economic center of gravity shifts east."
+          />
+
+          <ScrollySection
+            activeStep={economyStep}
+            onStepChange={setEconomyStep}
+            steps={[
+              {
+                id: 'econ-1',
+                content: (
+                  <div>
+                    <h3 className="text-2xl font-bold mb-4 text-indigo-300">2025 — The Starting Line</h3>
+                    <p className="text-zinc-400 leading-relaxed text-lg">
+                      Today, the United States leads the world in GDP, with China close behind.
+                      But the seeds of change have already been planted. India&apos;s growth engine is accelerating.
+                    </p>
+                  </div>
+                ),
+              },
+              {
+                id: 'econ-2',
+                content: (
+                  <div>
+                    <h3 className="text-2xl font-bold mb-4 text-purple-300">2050 — The Overtake</h3>
+                    <p className="text-zinc-400 leading-relaxed text-lg">
+                      By mid-century, China&apos;s economy is projected to surpass the US. India leaps into the top three.
+                      Indonesia, Nigeria — the new tigers emerge. The old order fractures.
+                    </p>
+                  </div>
+                ),
+              },
+              {
+                id: 'econ-3',
+                content: (
+                  <div>
+                    <h3 className="text-2xl font-bold mb-4 text-cyan-300">2075 — A New World</h3>
+                    <p className="text-zinc-400 leading-relaxed text-lg">
+                      India could be the world&apos;s second-largest economy. Africa&apos;s share of global GDP will have doubled.
+                      The question isn&apos;t <em>if</em> the shift happens — but <em>how fast</em>.
+                    </p>
+                  </div>
+                ),
+              },
+            ]}
+            visualization={
+              <RacingBarChart
+                data={gdpSlice}
+                title="GDP Projections"
+                subtitle="Nominal GDP in trillions (projected)"
+              />
+            }
+          />
+        </div>
+      </section>
+
+      {/* ═══════ CHAPTER 2: CLIMATE ═══════ */}
+      <section className="relative mt-20">
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-red-950/5 to-transparent pointer-events-none" />
+        <div className="max-w-7xl mx-auto px-6">
+          <ChapterHeading
+            number="Chapter Two"
+            title="The Climate"
+            subtitle="The most consequential graph you'll ever see: three paths, three futures."
+          />
+
+          <div className="max-w-3xl mx-auto mb-16">
+            <FadeInText>
+              <p className="text-xl text-zinc-300 leading-relaxed mb-8">
+                Every fraction of a degree matters. The difference between 1.5°C and 4°C of warming is the difference between
+                <span className="text-amber-400 font-semibold"> adaptation</span> and
+                <span className="text-red-400 font-semibold"> catastrophe</span>.
+              </p>
+            </FadeInText>
+          </div>
+
+          <ParallaxSection speed={0.15} className="max-w-4xl mx-auto mb-16">
+            <CO2ScenarioChart />
+          </ParallaxSection>
+
+          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto mb-20">
+            <FadeInText delay={0.1}>
+              <CO2EmissionsBar />
+            </FadeInText>
+            <FadeInText delay={0.2}>
+              <div className="exd-card exd-glow p-8 flex flex-col justify-center">
+                <h3 className="text-2xl font-bold mb-6 gradient-text">What +4°C Looks Like</h3>
+                <ul className="space-y-4 text-zinc-400">
+                  {[
+                    ['🌊', 'Sea levels rise up to 1 meter, displacing 200M+ people'],
+                    ['🔥', 'Extreme heat events increase 5× in frequency'],
+                    ['🌾', 'Global crop yields decline 20-30%'],
+                    ['🧊', 'Arctic ice-free summers become the norm'],
+                    ['💨', 'Category 5 hurricanes double in frequency'],
+                  ].map(([icon, text]) => (
+                    <li key={text as string} className="flex items-start gap-3">
+                      <span className="text-2xl">{icon}</span>
+                      <span className="leading-relaxed">{text}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </FadeInText>
+          </div>
+        </div>
+      </section>
+
+      {/* ═══════ CHAPTER 3: POPULATION ═══════ */}
+      <section className="relative mt-20">
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-purple-950/10 to-transparent pointer-events-none" />
+        <div className="max-w-7xl mx-auto px-6">
+          <ChapterHeading
+            number="Chapter Three"
+            title="The People"
+            subtitle="Some nations will age. Others will boom. Demographics are destiny."
+          />
+
+          <ScrollySection
+            activeStep={populationStep}
+            onStepChange={setPopulationStep}
+            steps={[
+              {
+                id: 'pop-1',
+                content: (
+                  <div>
+                    <h3 className="text-2xl font-bold mb-4 text-pink-300">🇯🇵 Japan — The Silver Tsunami</h3>
+                    <p className="text-zinc-400 leading-relaxed text-lg">
+                      Japan is the canary in the coal mine. By 2050, nearly 40% of its population will be over 65.
+                      The pyramid inverts — a coffin shape, demographers grimly call it.
+                    </p>
+                  </div>
+                ),
+              },
+              {
+                id: 'pop-2',
+                content: (
+                  <div>
+                    <h3 className="text-2xl font-bold mb-4 text-orange-300">🇳🇬 Nigeria — Youth Explosion</h3>
+                    <p className="text-zinc-400 leading-relaxed text-lg">
+                      By contrast, Nigeria&apos;s population will nearly double by 2050.
+                      A median age of 18. A demographic dividend — or a ticking bomb, depending on jobs and governance.
+                    </p>
+                  </div>
+                ),
+              },
+              {
+                id: 'pop-3',
+                content: (
+                  <div>
+                    <h3 className="text-2xl font-bold mb-4 text-blue-300">🇩🇪 Germany — The Shrinking Giant</h3>
+                    <p className="text-zinc-400 leading-relaxed text-lg">
+                      Europe&apos;s largest economy faces a workforce crisis. Immigration is the lifeline,
+                      but political tensions make it complicated. The math is unforgiving.
+                    </p>
+                  </div>
+                ),
+              },
+            ]}
+            visualization={
+              <PopulationPyramid
+                data={{ [selectedCountry]: POPULATION_DATA[selectedCountry] || POPULATION_DATA['JPN'] }}
+                title={`Population Structure: ${selectedCountry}`}
+                subtitle="Millions by age group"
+              />
+            }
+          />
+        </div>
+      </section>
+
+      {/* ═══════ CHAPTER 4: CONCLUSION ═══════ */}
+      <section className="relative py-40 md:py-56">
+        <div className="absolute inset-0 overflow-hidden">
+          <motion.div
+            className="absolute inset-0 opacity-20"
+            style={{
+              background: 'radial-gradient(ellipse at 50% 50%, #6366f1, transparent 70%)',
+            }}
+            animate={{ scale: [1, 1.15, 1], opacity: [0.15, 0.25, 0.15] }}
+            transition={{ duration: 6, repeat: Infinity, ease: 'easeInOut' }}
+          />
+        </div>
+
+        <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
+          <FadeInText>
+            <div className="text-sm font-mono tracking-[0.3em] uppercase text-indigo-400 mb-6">Chapter Four</div>
+            <h2 className="text-5xl md:text-7xl font-bold mb-8 gradient-text">The Choice Is Ours</h2>
+          </FadeInText>
+
+          <FadeInText delay={0.2}>
+            <p className="text-xl md:text-2xl text-zinc-300 leading-relaxed mb-12 max-w-2xl mx-auto">
+              The future isn&apos;t written. Every projection is a <em>possibility</em>, not a certainty.
+              The decisions made in the next decade — on energy, on policy, on technology — will echo for centuries.
+            </p>
+          </FadeInText>
+
+          <FadeInText delay={0.4}>
+            <p className="text-lg text-zinc-500 leading-relaxed max-w-xl mx-auto mb-16">
+              Data doesn&apos;t just describe the future. It helps us <span className="text-white font-semibold">shape it</span>.
+            </p>
+          </FadeInText>
+
+          <FadeInText delay={0.6}>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <a
+                href="/"
+                className="px-8 py-4 bg-indigo-600 hover:bg-indigo-500 rounded-xl text-white font-semibold transition-colors shadow-lg shadow-indigo-600/30"
+              >
+                Explore More Stories
+              </a>
+              <a
+                href="/"
+                className="px-8 py-4 border border-zinc-700 hover:border-zinc-500 rounded-xl text-zinc-300 hover:text-white font-semibold transition-colors"
+              >
+                Back to EXD
+              </a>
+            </div>
+          </FadeInText>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer className="border-t border-white/5 py-12 text-center text-zinc-600 text-sm">
+        <p>Built with EXD — Data you don&apos;t just see. You feel.</p>
+      </footer>
     </main>
   );
 }
