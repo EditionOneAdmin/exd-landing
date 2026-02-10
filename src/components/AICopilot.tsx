@@ -426,7 +426,7 @@ export default function AICopilot() {
                 onChange={e => setQuery(e.target.value)}
                 onKeyDown={handleKeyDown}
                 placeholder="Show me GDP growth in Europe 2000-2024..."
-                className="flex-1 bg-transparent px-4 py-4 text-white placeholder-gray-500 focus:outline-none text-lg"
+                className="flex-1 bg-transparent px-3 sm:px-4 py-3 sm:py-4 text-white placeholder-gray-500 focus:outline-none text-base sm:text-lg"
                 disabled={loading}
               />
               <button
@@ -452,13 +452,13 @@ export default function AICopilot() {
           </div>
 
           {/* Example queries */}
-          <div className="flex flex-wrap justify-center gap-2 mt-5">
-            <span className="text-gray-500 text-sm">Try:</span>
+          <div className="flex flex-wrap justify-center gap-1.5 sm:gap-2 mt-4 sm:mt-5 px-2">
+            <span className="text-gray-500 text-xs sm:text-sm">Try:</span>
             {EXAMPLES.map((ex, i) => (
               <button
                 key={i}
                 onClick={() => handleSubmit(ex)}
-                className="px-3 py-1.5 text-sm bg-white/[0.03] border border-white/5 rounded-lg text-gray-400 hover:text-white hover:border-[var(--exd-accent-primary)]/30 transition-colors"
+                className="px-2 sm:px-3 py-1 sm:py-1.5 text-xs sm:text-sm bg-white/[0.03] border border-white/5 rounded-lg text-gray-400 hover:text-white hover:border-[var(--exd-accent-primary)]/30 transition-colors"
               >
                 {ex}
               </button>

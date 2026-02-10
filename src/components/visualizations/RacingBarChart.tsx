@@ -144,7 +144,7 @@ export default function RacingBarChart({
           key={currentYear?.year}
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
-          className="text-8xl font-bold text-center exd-gradient-text tracking-tight"
+          className="text-5xl sm:text-6xl md:text-8xl font-bold text-center exd-gradient-text tracking-tight"
         >
           {currentYear?.year}
         </motion.div>
@@ -169,17 +169,17 @@ export default function RacingBarChart({
                   layout: { type: "spring", stiffness: 100, damping: 20 },
                   duration: 0.4 
                 }}
-                className="flex items-center gap-4"
+                className="flex items-center gap-2 sm:gap-4"
               >
                 {/* Rank */}
-                <div className="w-8 text-2xl font-bold text-[var(--exd-text-muted)]">
+                <div className="w-6 sm:w-8 text-lg sm:text-2xl font-bold text-[var(--exd-text-muted)]">
                   {index + 1}
                 </div>
 
                 {/* Flag & Name */}
-                <div className="w-36 flex items-center gap-2 shrink-0">
-                  <span className="text-2xl">{flag}</span>
-                  <span className="text-sm font-medium truncate">{country.name}</span>
+                <div className="w-20 sm:w-36 flex items-center gap-1 sm:gap-2 shrink-0">
+                  <span className="text-lg sm:text-2xl">{flag}</span>
+                  <span className="text-xs sm:text-sm font-medium truncate">{country.name}</span>
                 </div>
 
                 {/* Bar */}
@@ -203,7 +203,7 @@ export default function RacingBarChart({
                   
                   {/* Value label */}
                   <motion.div 
-                    className="absolute right-2 top-1/2 -translate-y-1/2 text-sm font-bold"
+                    className="absolute right-1 sm:right-2 top-1/2 -translate-y-1/2 text-[10px] sm:text-sm font-bold"
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
                   >

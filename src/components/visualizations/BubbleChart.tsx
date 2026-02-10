@@ -291,18 +291,18 @@ export default function BubbleChart({
       </div>
 
       {/* Year Display */}
-      <div className="px-6 pt-4 flex items-center justify-between">
+      <div className="px-4 sm:px-6 pt-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
         <motion.div 
           key={year}
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
-          className="text-6xl font-bold exd-gradient-text"
+          className="text-4xl sm:text-6xl font-bold exd-gradient-text"
         >
           {year}
         </motion.div>
 
         {/* Region Legend */}
-        <div className="flex flex-wrap gap-3">
+        <div className="flex flex-wrap gap-2 sm:gap-3">
           {Object.entries(REGION_COLORS).filter(([k]) => k !== 'Other').map(([region, color]) => (
             <button
               key={region}
@@ -334,7 +334,7 @@ export default function BubbleChart({
       </div>
 
       {/* Size Legend */}
-      <div className="px-6 pb-4 flex items-center justify-center gap-6">
+      <div className="px-4 sm:px-6 pb-4 flex items-center justify-center gap-3 sm:gap-6 flex-wrap">
         <span className="text-xs text-[var(--exd-text-muted)]">Population:</span>
         {[10, 100, 500, 1000].map(pop => (
           <div key={pop} className="flex items-center gap-2">

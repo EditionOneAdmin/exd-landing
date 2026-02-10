@@ -120,7 +120,7 @@ export default function LiveDemo() {
           animate={isVisible ? { opacity: 1, y: 0 } : {}}
           transition={{ delay: 0.3, duration: 0.6 }}
         >
-          <div className="inline-flex items-center gap-8 px-6 py-3 rounded-full glass-card">
+          <div className="inline-flex items-center gap-4 sm:gap-8 px-4 sm:px-6 py-3 rounded-full glass-card">
             {tips.map((tip, index) => {
               const Icon = tip.icon;
               const isActive = activeTip === index;
@@ -129,7 +129,7 @@ export default function LiveDemo() {
                 <motion.div
                   key={tip.text}
                   className={`flex items-center gap-2 transition-opacity duration-300 ${
-                    isActive ? 'opacity-100' : 'opacity-30'
+                    isActive ? 'opacity-100' : 'opacity-30 hidden sm:flex'
                   }`}
                   animate={isActive ? { scale: [1, 1.05, 1] } : {}}
                   transition={{ duration: 0.3 }}

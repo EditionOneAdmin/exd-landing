@@ -253,8 +253,8 @@ export default function PopulationPyramid({
       </div>
 
       {/* Country selector */}
-      <div className="px-6 pt-4">
-        <div className="flex flex-wrap gap-2">
+      <div className="px-4 sm:px-6 pt-4">
+        <div className="flex flex-wrap gap-1.5 sm:gap-2">
           {Object.entries(COUNTRY_INFO).map(([code, info]) => (
             <button
               key={code}
@@ -262,21 +262,22 @@ export default function PopulationPyramid({
                 setSelectedCountry(code);
                 setIsPlaying(false);
               }}
-              className={`flex items-center gap-2 px-4 py-2 rounded-lg transition-all ${
+              className={`flex items-center gap-1 sm:gap-2 px-2 sm:px-4 py-1.5 sm:py-2 rounded-lg transition-all ${
                 selectedCountry === code
                   ? 'bg-[var(--exd-accent-primary)] text-white shadow-lg shadow-[var(--exd-accent-primary)]/30'
                   : 'bg-[var(--exd-bg-tertiary)] hover:bg-[var(--exd-bg-tertiary)]/80 text-[var(--exd-text-secondary)]'
               }`}
             >
-              <span className="text-xl">{info.flag}</span>
-              <span className="text-sm font-medium">{info.name}</span>
+              <span className="text-base sm:text-xl">{info.flag}</span>
+              <span className="text-xs sm:text-sm font-medium hidden sm:inline">{info.name}</span>
+              <span className="text-xs font-medium sm:hidden">{code}</span>
             </button>
           ))}
         </div>
       </div>
 
       {/* Country info & Year */}
-      <div className="px-6 pt-4 flex items-center justify-between">
+      <div className="px-4 sm:px-6 pt-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
         <div>
           <motion.div 
             key={selectedCountry}
@@ -284,10 +285,10 @@ export default function PopulationPyramid({
             animate={{ opacity: 1, x: 0 }}
             className="flex items-center gap-3"
           >
-            <span className="text-4xl">{countryInfo.flag}</span>
+            <span className="text-3xl sm:text-4xl">{countryInfo.flag}</span>
             <div>
-              <h3 className="text-xl font-bold">{countryInfo.name}</h3>
-              <p className="text-sm text-[var(--exd-text-muted)]">{countryInfo.description}</p>
+              <h3 className="text-lg sm:text-xl font-bold">{countryInfo.name}</h3>
+              <p className="text-xs sm:text-sm text-[var(--exd-text-muted)]">{countryInfo.description}</p>
             </div>
           </motion.div>
         </div>
@@ -296,7 +297,7 @@ export default function PopulationPyramid({
           key={currentYear}
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
-          className="text-6xl font-bold exd-gradient-text"
+          className="text-4xl sm:text-6xl font-bold exd-gradient-text"
         >
           {currentYear}
         </motion.div>

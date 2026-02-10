@@ -25,7 +25,7 @@ const PopulationPyramid = dynamic(() => import('./visualizations/PopulationPyram
 
 function VisualizationSkeleton() {
   return (
-    <div className="exd-card p-8 flex items-center justify-center min-h-[600px]">
+    <div className="exd-card p-8 flex items-center justify-center min-h-[400px] sm:min-h-[600px]">
       <div className="flex flex-col items-center gap-4">
         <div className="w-12 h-12 border-4 border-indigo-500 border-t-transparent rounded-full animate-spin" />
         <p className="text-gray-400">Loading visualization...</p>
@@ -149,7 +149,7 @@ export default function ExperienceData() {
               <button
                 key={tab.id}
                 onClick={() => setActiveTab(tab.id)}
-                className={`relative group flex items-center gap-3 px-5 py-3 rounded-xl transition-all duration-300 ${
+                className={`relative group flex items-center gap-2 sm:gap-3 px-3 sm:px-5 py-2 sm:py-3 rounded-xl transition-all duration-300 ${
                   isActive 
                     ? 'bg-white/10 shadow-lg shadow-indigo-500/10' 
                     : 'hover:bg-white/5'
@@ -169,12 +169,12 @@ export default function ExperienceData() {
                 }`} />
                 
                 <div className="text-left">
-                  <div className={`font-medium transition-colors ${
+                  <div className={`text-sm sm:text-base font-medium transition-colors ${
                     isActive ? 'text-white' : 'text-gray-400 group-hover:text-gray-200'
                   }`}>
                     {tab.label}
                   </div>
-                  <div className={`text-xs transition-colors ${
+                  <div className={`text-xs transition-colors hidden sm:block ${
                     isActive ? 'text-gray-400' : 'text-gray-600'
                   }`}>
                     {tab.description}

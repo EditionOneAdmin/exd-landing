@@ -237,14 +237,14 @@ export default function CO2WorldMap({
   return (
     <div className="exd-card exd-glow overflow-hidden">
       {/* Header */}
-      <div className="p-6 pb-4 border-b border-white/5 flex items-start justify-between">
+      <div className="p-4 sm:p-6 pb-4 border-b border-white/5 flex flex-col sm:flex-row items-start sm:items-start justify-between gap-3">
         <div>
-          <h2 className="text-2xl font-bold exd-gradient-text">{title}</h2>
-          <p className="text-[var(--exd-text-secondary)] mt-1">{subtitle}</p>
+          <h2 className="text-xl sm:text-2xl font-bold exd-gradient-text">{title}</h2>
+          <p className="text-sm sm:text-base text-[var(--exd-text-secondary)] mt-1">{subtitle}</p>
         </div>
         
         {/* Metric toggle */}
-        <div className="flex gap-1 bg-[var(--exd-bg-tertiary)] rounded-lg p-1">
+        <div className="flex gap-1 bg-[var(--exd-bg-tertiary)] rounded-lg p-1 shrink-0">
           <button
             onClick={() => setMetric('total')}
             className={`px-3 py-1.5 text-sm rounded-md transition-colors ${
@@ -274,7 +274,7 @@ export default function CO2WorldMap({
           key={year}
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="text-6xl font-bold text-center exd-gradient-text"
+          className="text-4xl sm:text-6xl font-bold text-center exd-gradient-text"
         >
           {year}
         </motion.div>

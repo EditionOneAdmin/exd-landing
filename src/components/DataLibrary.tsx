@@ -422,14 +422,24 @@ export default function DataLibrary() {
           <p className="text-gray-500 text-sm mt-4">
             Or bring your own data — we support CSV, JSON, APIs, and more
           </p>
-          <a
-            href="/stories/world-in-50-years/"
-            className="inline-flex items-center gap-2 mt-4 text-sm text-indigo-400 hover:text-indigo-300 transition-colors"
-          >
-            <Sparkles className="w-4 h-4" />
-            Read our Data Story: The World in 50 Years
-            <ArrowRight className="w-4 h-4" />
-          </a>
+          <div className="flex flex-col items-center gap-2 mt-4">
+            <a
+              href="/stories/dooh-revolution/"
+              className="inline-flex items-center gap-2 text-sm text-indigo-400 hover:text-indigo-300 transition-colors"
+            >
+              <Sparkles className="w-4 h-4" />
+              Read our Data Story: The Rise of Digital Out-of-Home
+              <ArrowRight className="w-4 h-4" />
+            </a>
+            <a
+              href="/stories/world-in-50-years/"
+              className="inline-flex items-center gap-2 text-sm text-indigo-400 hover:text-indigo-300 transition-colors"
+            >
+              <Sparkles className="w-4 h-4" />
+              Read our Data Story: The World in 50 Years
+              <ArrowRight className="w-4 h-4" />
+            </a>
+          </div>
         </motion.div>
       </div>
     </section>
