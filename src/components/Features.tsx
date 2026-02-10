@@ -2,6 +2,7 @@
 
 import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
+import Link from 'next/link';
 
 const features = [
   {
@@ -210,6 +211,17 @@ export default function Features() {
                 <p className="text-gray-400 leading-relaxed">
                   {feature.description}
                 </p>
+                {feature.title === 'AI Copilot' && (
+                  <Link href="/copilot">
+                    <motion.span
+                      className="inline-flex items-center gap-2 mt-4 px-4 py-2 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 text-white text-sm font-medium cursor-pointer"
+                      whileHover={{ scale: 1.05 }}
+                      whileTap={{ scale: 0.95 }}
+                    >
+                      Try Copilot →
+                    </motion.span>
+                  </Link>
+                )}
               </div>
             </motion.div>
           ))}
