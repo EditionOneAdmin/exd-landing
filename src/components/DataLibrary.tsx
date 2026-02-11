@@ -463,6 +463,14 @@ export default function DataLibrary() {
               Read our Data Story: Smart Cities &amp; Digital Infrastructure
               <ArrowRight className="w-4 h-4" />
             </a>
+            <a
+              href="/stories/global-health/"
+              className="inline-flex items-center gap-2 text-sm text-indigo-400 hover:text-indigo-300 transition-colors"
+            >
+              <Sparkles className="w-4 h-4" />
+              Read our Data Story: Global Health — The State of Humanity
+              <ArrowRight className="w-4 h-4" />
+            </a>
           </div>
         </motion.div>
       </div>
