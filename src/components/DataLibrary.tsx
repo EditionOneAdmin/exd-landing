@@ -447,6 +447,14 @@ export default function DataLibrary() {
               Read our Data Story: The Rise of AI
               <ArrowRight className="w-4 h-4" />
             </a>
+            <a
+              href="/stories/energy-transition/"
+              className="inline-flex items-center gap-2 text-sm text-indigo-400 hover:text-indigo-300 transition-colors"
+            >
+              <Sparkles className="w-4 h-4" />
+              Read our Data Story: The Energy Transition
+              <ArrowRight className="w-4 h-4" />
+            </a>
           </div>
         </motion.div>
       </div>

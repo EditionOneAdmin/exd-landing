@@ -1,0 +1,15 @@
+[
+  {"year":2000,"fossil":80.2,"nuclear":6.7,"hydro":2.2,"wind":0.3,"solar":0.0,"other_re":0.6},
+  {"year":2002,"fossil":80.0,"nuclear":6.5,"hydro":2.3,"wind":0.4,"solar":0.0,"other_re":0.8},
+  {"year":2004,"fossil":79.8,"nuclear":6.3,"hydro":2.3,"wind":0.5,"solar":0.1,"other_re":1.0},
+  {"year":2006,"fossil":79.5,"nuclear":5.9,"hydro":2.3,"wind":0.7,"solar":0.1,"other_re":1.5},
+  {"year":2008,"fossil":79.0,"nuclear":5.6,"hydro":2.3,"wind":1.0,"solar":0.2,"other_re":1.9},
+  {"year":2010,"fossil":78.3,"nuclear":5.2,"hydro":2.4,"wind":1.5,"solar":0.3,"other_re":2.3},
+  {"year":2012,"fossil":77.2,"nuclear":4.4,"hydro":2.4,"wind":2.0,"solar":0.6,"other_re":3.4},
+  {"year":2014,"fossil":76.0,"nuclear":4.4,"hydro":2.4,"wind":2.6,"solar":1.1,"other_re":3.5},
+  {"year":2016,"fossil":74.5,"nuclear":4.5,"hydro":2.5,"wind":3.2,"solar":1.5,"other_re":3.8},
+  {"year":2018,"fossil":72.8,"nuclear":4.3,"hydro":2.5,"wind":3.8,"solar":2.2,"other_re":4.4},
+  {"year":2020,"fossil":70.5,"nuclear":4.3,"hydro":2.6,"wind":4.8,"solar":3.0,"other_re":4.8},
+  {"year":2022,"fossil":68.0,"nuclear":4.0,"hydro":2.6,"wind":5.8,"solar":4.5,"other_re":5.1},
+  {"year":2024,"fossil":64.8,"nuclear":3.9,"hydro":2.6,"wind":7.2,"solar":6.4,"other_re":5.1}
+]

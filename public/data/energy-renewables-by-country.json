@@ -1,0 +1,15 @@
+[
+  {"year":2000,"China":16,"USA":80,"Germany":37,"India":14,"Brazil":62,"UK":3},
+  {"year":2002,"China":23,"USA":84,"Germany":46,"India":16,"Brazil":65,"UK":4},
+  {"year":2004,"China":34,"USA":88,"Germany":62,"India":19,"Brazil":69,"UK":7},
+  {"year":2006,"China":49,"USA":96,"Germany":82,"India":24,"Brazil":73,"UK":12},
+  {"year":2008,"China":73,"USA":118,"Germany":98,"India":32,"Brazil":80,"UK":21},
+  {"year":2010,"China":116,"USA":148,"Germany":120,"India":44,"Brazil":90,"UK":30},
+  {"year":2012,"China":198,"USA":186,"Germany":152,"India":62,"Brazil":102,"UK":47},
+  {"year":2014,"China":310,"USA":225,"Germany":172,"India":86,"Brazil":117,"UK":68},
+  {"year":2016,"China":480,"USA":286,"Germany":196,"India":120,"Brazil":135,"UK":87},
+  {"year":2018,"China":695,"USA":352,"Germany":220,"India":172,"Brazil":155,"UK":110},
+  {"year":2020,"China":895,"USA":420,"Germany":248,"India":230,"Brazil":176,"UK":134},
+  {"year":2022,"China":1160,"USA":498,"Germany":270,"India":310,"Brazil":198,"UK":155},
+  {"year":2024,"China":1480,"USA":570,"Germany":290,"India":420,"Brazil":222,"UK":172}
+]

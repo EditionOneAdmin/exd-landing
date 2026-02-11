@@ -1,0 +1,17 @@
+[
+  {"year":2010,"solar":359,"onshore_wind":86,"offshore_wind":162,"battery":1183},
+  {"year":2011,"solar":304,"onshore_wind":82,"offshore_wind":158,"battery":899},
+  {"year":2012,"solar":222,"onshore_wind":78,"offshore_wind":152,"battery":707},
+  {"year":2013,"solar":175,"onshore_wind":72,"offshore_wind":148,"battery":599},
+  {"year":2014,"solar":142,"onshore_wind":68,"offshore_wind":142,"battery":540},
+  {"year":2015,"solar":118,"onshore_wind":64,"offshore_wind":138,"battery":373},
+  {"year":2016,"solar":96,"onshore_wind":60,"offshore_wind":126,"battery":273},
+  {"year":2017,"solar":80,"onshore_wind":55,"offshore_wind":112,"battery":209},
+  {"year":2018,"solar":68,"onshore_wind":52,"offshore_wind":98,"battery":176},
+  {"year":2019,"solar":57,"onshore_wind":50,"offshore_wind":86,"battery":156},
+  {"year":2020,"solar":50,"onshore_wind":46,"offshore_wind":78,"battery":140},
+  {"year":2021,"solar":48,"onshore_wind":45,"offshore_wind":73,"battery":132},
+  {"year":2022,"solar":49,"onshore_wind":46,"offshore_wind":75,"battery":139},
+  {"year":2023,"solar":42,"onshore_wind":44,"offshore_wind":70,"battery":126},
+  {"year":2024,"solar":37,"onshore_wind":42,"offshore_wind":65,"battery":115}
+]
