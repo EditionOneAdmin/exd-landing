@@ -3,7 +3,8 @@
 import { useState, useRef, useEffect, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import * as d3 from 'd3';
-import { Sparkles, Send, RotateCcw, Zap, History, MessageSquare, ChevronRight, X } from 'lucide-react';
+import { Sparkles, Send, RotateCcw, Zap, History, MessageSquare, ChevronRight, X, Radio } from 'lucide-react';
+import { fetchLiveData } from '@/lib/worldBankApi';
 
 // ── Types ──────────────────────────────────────────────────────────
 type ChartType = 'line' | 'bar' | 'scatter' | 'area' | 'horizontal-bar';
@@ -26,6 +27,7 @@ interface QueryResult {
   thinking: string;
   followUps: string[];
   timestamp: number;
+  isLive?: boolean;
 }
 
 // ── Mock Data ──────────────────────────────────────────────────────
@@ -600,16 +602,24 @@ export default function AICopilot() {
 
     // Phase 3: Rendering
     setThinkingPhase('rendering');
-    await new Promise(r => setTimeout(r, 400));
 
     const key = findChart(text);
-    const data = MOCK_CHARTS[key];
+    const mockData = MOCK_CHARTS[key];
+
+    // Try live data from World Bank API
+    let liveResult = await fetchLiveData(key);
+
+    await new Promise(r => setTimeout(r, 300));
+
     const newResult: QueryResult = {
       query: text,
-      spec: data.spec,
-      thinking: data.thinking,
-      followUps: data.followUps,
+      spec: liveResult ? liveResult.spec as ChartSpec : mockData.spec,
+      thinking: liveResult
+        ? mockData.thinking.replace('…', '… ✓ Live data loaded')
+        : mockData.thinking,
+      followUps: mockData.followUps,
       timestamp: Date.now(),
+      isLive: !!liveResult,
     };
 
     setResult(newResult);
@@ -839,9 +849,17 @@ export default function AICopilot() {
                               <p className="text-sm text-[var(--exd-text-secondary)] mt-1">{result.spec.subtitle}</p>
                             )}
                           </div>
-                          <span className="text-[10px] text-gray-500 bg-white/5 px-2 py-1 rounded-full uppercase tracking-wider">
-                            {result.spec.type} chart
-                          </span>
+                          <div className="flex items-center gap-2">
+                            {result.isLive && (
+                              <span className="inline-flex items-center gap-1 text-[10px] text-emerald-400 bg-emerald-400/10 border border-emerald-400/20 px-2 py-1 rounded-full uppercase tracking-wider">
+                                <Radio className="w-2.5 h-2.5" />
+                                Live
+                              </span>
+                            )}
+                            <span className="text-[10px] text-gray-500 bg-white/5 px-2 py-1 rounded-full uppercase tracking-wider">
+                              {result.spec.type} chart
+                            </span>
+                          </div>
                         </div>
                         <div className="p-6">
                           <MiniChart spec={result.spec} />
