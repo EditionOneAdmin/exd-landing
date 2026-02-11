@@ -1,5 +1,6 @@
 import Navigation from '@/components/Navigation';
 import Hero from '@/components/Hero';
+import StatsBar from '@/components/StatsBar';
 import Problem from '@/components/Problem';
 import ExperienceData from '@/components/ExperienceData';
 import DataLibrary from '@/components/DataLibrary';
@@ -8,6 +9,7 @@ import UseCases from '@/components/UseCases';
 import LiveDemo from '@/components/LiveDemo';
 import Features from '@/components/Features';
 import HowItWorks from '@/components/HowItWorks';
+import IndustryUseCases from '@/components/IndustryUseCases';
 import Waitlist from '@/components/Waitlist';
 import Footer from '@/components/Footer';
 
@@ -16,6 +18,7 @@ export default function Home() {
     <main className="noise-overlay overflow-x-hidden">
       <Navigation />
       <Hero />
+      <StatsBar />
       <Problem />
       <ExperienceData />
       <AICopilot />
@@ -24,6 +27,7 @@ export default function Home() {
       <LiveDemo />
       <Features />
       <HowItWorks />
+      <IndustryUseCases />
       <Waitlist />
       <Footer />
     </main>

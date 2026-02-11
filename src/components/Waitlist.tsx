@@ -201,7 +201,7 @@ export default function Waitlist() {
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
                       placeholder="Enter your email"
-                      className="w-full px-6 py-4 rounded-full bg-white/5 border border-white/10 text-white placeholder-gray-500 focus:outline-none focus:border-indigo-500/50 focus:ring-2 focus:ring-indigo-500/20 transition-all pr-36"
+                      className="w-full px-6 py-4 rounded-full bg-white/5 border border-white/10 text-white placeholder-gray-500 focus:outline-none focus:border-indigo-500/50 focus:ring-2 focus:ring-indigo-500/20 transition-all pr-48"
                       required
                       disabled={status === 'loading'}
                     />
@@ -218,7 +218,7 @@ export default function Waitlist() {
                           transition={{ duration: 1, repeat: Infinity, ease: 'linear' }}
                         />
                       ) : (
-                        'Join'
+                        'Get Early Access'
                       )}
                     </button>
                   </div>
