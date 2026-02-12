@@ -125,6 +125,7 @@ export default function Navigation() {
                 { label: 'Demo', href: '#demo' },
                 { label: 'AI Copilot', href: '#ai-copilot' },
                 { label: 'Stories', href: '/stories' },
+                { label: 'Dashboard', href: '/dashboard/' },
               ].map((link, i) => (
                 <a
                   key={i}
