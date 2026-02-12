@@ -1,25 +1,10 @@
 'use client';
 
-import { motion, useInView, AnimatePresence } from 'framer-motion';
-import { useRef, useState, useEffect } from 'react';
+import { motion, useInView } from 'framer-motion';
+import { useRef, useEffect } from 'react';
 import Link from 'next/link';
 
-const STORAGE_KEY = 'exd-waitlist-emails';
-
-function getStoredEmails(): string[] {
-  if (typeof window === 'undefined') return [];
-  try {
-    return JSON.parse(localStorage.getItem(STORAGE_KEY) || '[]');
-  } catch { return []; }
-}
-
-function storeEmail(email: string) {
-  const emails = getStoredEmails();
-  if (!emails.includes(email)) {
-    emails.push(email);
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(emails));
-  }
-}
+const TYPEFORM_URL = 'https://form.typeform.com/to/RX9edslL';
 
 const featuredStories = [
   {
@@ -48,27 +33,15 @@ const featuredStories = [
 export default function Waitlist() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: '-100px' });
-  const [email, setEmail] = useState('');
-  const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
-  const [signupCount, setSignupCount] = useState(47);
 
   useEffect(() => {
-    const stored = getStoredEmails();
-    setSignupCount(47 + stored.length);
+    // Load Typeform embed script
+    const script = document.createElement('script');
+    script.src = '//embed.typeform.com/next/embed.js';
+    script.async = true;
+    document.body.appendChild(script);
+    return () => { script.remove(); };
   }, []);
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!email) return;
-
-    setStatus('loading');
-    await new Promise((resolve) => setTimeout(resolve, 1200));
-
-    storeEmail(email);
-    setSignupCount((c) => c + 1);
-    setStatus('success');
-    setEmail('');
-  };
 
   return (
     <section id="waitlist" className="relative py-32 px-6" ref={ref}>
@@ -146,89 +119,27 @@ export default function Waitlist() {
                   />
                 ))}
               </span>
-              Join {signupCount} data enthusiasts on the waitlist
+              Join 500+ data enthusiasts on the waitlist
             </motion.p>
 
-            {/* Form */}
-            <AnimatePresence mode="wait">
-              {status === 'success' ? (
-                <motion.div
-                  key="success"
-                  initial={{ opacity: 0, scale: 0.9 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  exit={{ opacity: 0, scale: 0.9 }}
-                  className="py-8"
-                >
-                  <motion.div
-                    className="w-16 h-16 rounded-full bg-emerald-500/20 flex items-center justify-center mx-auto mb-4"
-                    initial={{ scale: 0 }}
-                    animate={{ scale: 1 }}
-                    transition={{ type: 'spring', stiffness: 200, damping: 10 }}
-                  >
-                    <motion.svg
-                      className="w-8 h-8 text-emerald-400"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      initial={{ pathLength: 0 }}
-                      animate={{ pathLength: 1 }}
-                      transition={{ duration: 0.5, delay: 0.2 }}
-                    >
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                    </motion.svg>
-                  </motion.div>
-                  <h3 className="text-xl font-semibold text-white mb-2">You&apos;re on the list! 🎉</h3>
-                  <p className="text-gray-400 mb-4">We&apos;ll be in touch soon with exclusive updates.</p>
-                  <button
-                    onClick={() => setStatus('idle')}
-                    className="text-sm text-indigo-400 hover:text-indigo-300 transition-colors underline underline-offset-4"
-                  >
-                    Add another email
-                  </button>
-                </motion.div>
-              ) : (
-                <motion.form
-                  key="form"
-                  onSubmit={handleSubmit}
-                  className="relative max-w-md mx-auto"
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  exit={{ opacity: 0 }}
-                >
-                  <div className="relative flex items-center">
-                    <input
-                      type="email"
-                      value={email}
-                      onChange={(e) => setEmail(e.target.value)}
-                      placeholder="Enter your email"
-                      className="w-full px-6 py-4 rounded-full bg-white/5 border border-white/10 text-white placeholder-gray-500 focus:outline-none focus:border-indigo-500/50 focus:ring-2 focus:ring-indigo-500/20 transition-all pr-48"
-                      required
-                      disabled={status === 'loading'}
-                    />
-                    <button
-                      type="submit"
-                      disabled={status === 'loading'}
-                      className="absolute right-2 px-6 py-2.5 rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-indigo-500 text-white font-medium hover:shadow-lg hover:shadow-indigo-500/25 transition-all disabled:opacity-50 disabled:cursor-not-allowed bg-[length:200%_100%] hover:bg-right"
-                      style={{ backgroundPosition: 'left' }}
-                    >
-                      {status === 'loading' ? (
-                        <motion.div
-                          className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full"
-                          animate={{ rotate: 360 }}
-                          transition={{ duration: 1, repeat: Infinity, ease: 'linear' }}
-                        />
-                      ) : (
-                        'Get Early Access'
-                      )}
-                    </button>
-                  </div>
-
-                  <p className="text-sm text-gray-500 mt-4">
-                    No spam, ever. Unsubscribe anytime.
-                  </p>
-                </motion.form>
-              )}
-            </AnimatePresence>
+            {/* Typeform CTA Button */}
+            <div className="max-w-md mx-auto">
+              <button
+                data-tf-popup="RX9edslL"
+                data-tf-opacity="100"
+                data-tf-size="100"
+                data-tf-iframe-props="title=EXD Waitlist"
+                data-tf-transitive-search-params
+                data-tf-medium="snippet"
+                className="w-full px-8 py-4 rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-indigo-500 text-white font-medium text-lg hover:shadow-lg hover:shadow-indigo-500/25 transition-all bg-[length:200%_100%] hover:bg-right cursor-pointer"
+                style={{ backgroundPosition: 'left' }}
+              >
+                Get Early Access →
+              </button>
+              <p className="text-sm text-gray-500 mt-4">
+                No spam, ever. Unsubscribe anytime.
+              </p>
+            </div>
           </motion.div>
 
           {/* Stats */}
