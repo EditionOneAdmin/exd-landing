@@ -1,4 +1,5 @@
 'use client';
+import StoryNavigation from '@/components/StoryNavigation';
 
 import { useRef, useState, useEffect, useCallback } from 'react';
 import { motion, useScroll, useTransform, useInView, AnimatePresence } from 'framer-motion';
@@ -696,6 +697,8 @@ export default function GlobalUrbanizationPage() {
           </FadeInText>
         </div>
       </section>
+
+      <StoryNavigation currentSlug="global-urbanization" />
 
       <footer className="border-t border-white/5 py-12 text-center text-zinc-600 text-sm">
         <p>Built with EXD — Data you don&apos;t just see. You feel.</p>

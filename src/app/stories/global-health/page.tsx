@@ -1,4 +1,5 @@
 'use client';
+import StoryNavigation from '@/components/StoryNavigation';
 
 import { useRef } from 'react';
 import { motion, useScroll, useTransform, useInView } from 'framer-motion';
@@ -841,6 +842,8 @@ export default function GlobalHealthStory() {
           </FadeInText>
         </div>
       </section>
+
+      <StoryNavigation currentSlug="global-health" />
 
       {/* Footer */}
       <footer className="border-t border-white/5 py-12 text-center text-zinc-600 text-sm">
