@@ -73,6 +73,15 @@ export const STORIES: Story[] = [
     icon: '🏥',
   },
   {
+    slug: 'global-finance',
+    title: 'The Pulse of Global Finance',
+    description: 'Inflation heatmaps, interest rate cycles, market cap races, and sovereign debt — the forces driving the world economy.',
+    category: 'Economy',
+    readTime: '8 min',
+    gradient: 'from-indigo-500 to-cyan-600',
+    icon: '💹',
+  },
+  {
     slug: 'real-estate',
     title: 'Real Estate Transformed',
     description: 'How data and technology are reshaping property markets, valuations, and urban development.',
