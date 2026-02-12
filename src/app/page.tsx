@@ -1,4 +1,3 @@
-import Navigation from '@/components/Navigation';
 import Hero from '@/components/Hero';
 import StatsBar from '@/components/StatsBar';
 import Problem from '@/components/Problem';
@@ -11,12 +10,10 @@ import Features from '@/components/Features';
 import HowItWorks from '@/components/HowItWorks';
 import IndustryUseCases from '@/components/IndustryUseCases';
 import Waitlist from '@/components/Waitlist';
-import Footer from '@/components/Footer';
 
 export default function Home() {
   return (
     <main className="noise-overlay overflow-x-hidden">
-      <Navigation />
       <Hero />
       <StatsBar />
       <Problem />
@@ -29,7 +26,6 @@ export default function Home() {
       <HowItWorks />
       <IndustryUseCases />
       <Waitlist />
-      <Footer />
     </main>
   );
 }

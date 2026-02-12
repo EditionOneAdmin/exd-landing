@@ -1,18 +1,13 @@
 'use client';
-
 import { motion } from 'framer-motion';
-import Navigation from '@/components/Navigation';
-import Footer from '@/components/Footer';
 import RacingBarChart from '@/components/visualizations/RacingBarChart';
 import CO2WorldMap from '@/components/visualizations/CO2WorldMap';
 import BubbleChart from '@/components/visualizations/BubbleChart';
 import PopulationPyramid from '@/components/visualizations/PopulationPyramid';
-
 const sectionVariants = {
   hidden: { opacity: 0, y: 40 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.7, ease: 'easeOut' as const } },
 };
-
 const visualizations = [
   {
     id: 'racing-bar',
@@ -47,17 +42,13 @@ const visualizations = [
     Component: PopulationPyramid,
   },
 ];
-
 export default function VisualizationsPage() {
   return (
     <div className="min-h-screen bg-[#050507] text-white">
-      <Navigation />
-
       {/* Hero */}
       <section className="relative pt-32 pb-16 px-6 text-center overflow-hidden">
         {/* Glow background */}
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-gradient-radial from-indigo-500/10 via-purple-500/5 to-transparent rounded-full blur-3xl pointer-events-none" />
-
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -77,7 +68,6 @@ export default function VisualizationsPage() {
             Four interactive visualizations that turn raw numbers into stories you can feel.
             Play, explore, and discover patterns hidden in the data.
           </p>
-
           {/* Quick nav pills */}
           <div className="flex flex-wrap justify-center gap-3 mt-8">
             {visualizations.map((v) => (
@@ -92,7 +82,6 @@ export default function VisualizationsPage() {
           </div>
         </motion.div>
       </section>
-
       {/* Visualization Sections */}
       <div className="max-w-6xl mx-auto px-6 pb-24 space-y-28">
         {visualizations.map((viz, i) => (
@@ -125,13 +114,11 @@ export default function VisualizationsPage() {
                 ))}
               </div>
             </div>
-
             {/* Visualization */}
             <viz.Component />
           </motion.section>
         ))}
       </div>
-
       {/* Back to home */}
       <div className="text-center pb-16">
         <a
@@ -141,8 +128,6 @@ export default function VisualizationsPage() {
           ← Back to Home
         </a>
       </div>
-
-      <Footer />
     </div>
   );
 }

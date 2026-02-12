@@ -72,6 +72,11 @@ export default function Footer() {
             <h4 className="text-white font-semibold mb-4">Explore</h4>
             <ul className="space-y-3">
               <li>
+                <Link href="/dashboard" className="text-gray-500 hover:text-gray-300 transition-colors">
+                  Dashboard
+                </Link>
+              </li>
+              <li>
                 <Link href="/visualizations" className="text-gray-500 hover:text-gray-300 transition-colors">
                   Visualizations
                 </Link>
@@ -82,14 +87,9 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <a href="#features" className="text-gray-500 hover:text-gray-300 transition-colors">
-                  Features
-                </a>
-              </li>
-              <li>
-                <a href="#waitlist" className="text-gray-500 hover:text-gray-300 transition-colors">
-                  Join Waitlist
-                </a>
+                <Link href="/use-cases/dooh" className="text-gray-500 hover:text-gray-300 transition-colors">
+                  DOOH Use Case
+                </Link>
               </li>
             </ul>
           </div>
@@ -134,7 +134,11 @@ export default function Footer() {
         {/* Bottom */}
         <div className="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-white/5">
           <p className="text-gray-600 text-sm mb-4 md:mb-0">
-            © 2025 EXD. All rights reserved.
+            Built with ❤️ by{' '}
+            <a href="https://editionone.io" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
+              Edition One
+            </a>{' '}
+            · © {new Date().getFullYear()} EXD
           </p>
           <div className="flex items-center gap-6 text-sm text-gray-600">
             <a href="#" className="hover:text-gray-400 transition-colors">Privacy</a>
