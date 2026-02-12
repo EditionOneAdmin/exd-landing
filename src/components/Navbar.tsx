@@ -10,6 +10,7 @@ const navLinks = [
   { label: 'Stories', href: '/stories' },
   { label: 'Visualizations', href: '/visualizations' },
   { label: 'AI Copilot', href: '/copilot' },
+  { label: 'Compare', href: '/compare' },
 ];
 
 export default function Navbar() {
