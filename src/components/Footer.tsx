@@ -91,6 +91,11 @@ export default function Footer() {
                   DOOH Use Case
                 </Link>
               </li>
+              <li>
+                <Link href="/use-cases/smart-city" className="text-gray-500 hover:text-gray-300 transition-colors">
+                  Smart City Use Case
+                </Link>
+              </li>
             </ul>
           </div>
 

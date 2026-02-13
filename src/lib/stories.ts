@@ -82,6 +82,15 @@ export const STORIES: Story[] = [
     icon: '💹',
   },
   {
+    slug: 'ai-revolution',
+    title: 'The AI Revolution in Numbers',
+    description: 'Investment surges, compute explosions, job market shifts, and global AI readiness — the data behind the biggest technological transformation of our time.',
+    category: 'Tech',
+    readTime: '9 min',
+    gradient: 'from-purple-500 to-cyan-600',
+    icon: '🧠',
+  },
+  {
     slug: 'real-estate',
     title: 'Real Estate Transformed',
     description: 'How data and technology are reshaping property markets, valuations, and urban development.',
