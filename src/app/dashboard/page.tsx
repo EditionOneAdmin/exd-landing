@@ -3,6 +3,7 @@
 import { useState, useEffect, useRef, useCallback } from 'react';
 import * as d3 from 'd3';
 import Link from 'next/link';
+import ShareEmbed from '../../components/ShareEmbed';
 
 // --- Types ---
 interface DataPoint {
@@ -406,6 +407,8 @@ export default function DashboardPage() {
           <p className="text-xs text-gray-600">Data sourced from the World Bank Open Data API · Updated periodically</p>
         </div>
       </main>
+
+      <ShareEmbed type="dashboard" params={{ country }} />
     </div>
   );
 }
