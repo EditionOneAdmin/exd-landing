@@ -11,6 +11,7 @@ const navLinks = [
   { label: 'Visualizations', href: '/visualizations' },
   { label: 'AI Copilot', href: '/copilot' },
   { label: 'Compare', href: '/compare' },
+  { label: 'Pricing', href: '/pricing' },
 ];
 
 export default function Navbar() {
