@@ -1,5 +1,6 @@
 import Hero from '@/components/Hero';
 import StatsBar from '@/components/StatsBar';
+import DataSources from '@/components/DataSources';
 import Problem from '@/components/Problem';
 import ExperienceData from '@/components/ExperienceData';
 import DataLibrary from '@/components/DataLibrary';
@@ -16,6 +17,7 @@ export default function Home() {
     <main className="noise-overlay overflow-x-hidden">
       <Hero />
       <StatsBar />
+      <DataSources />
       <Problem />
       <ExperienceData />
       <AICopilot />

@@ -2,7 +2,16 @@
 
 import { motion } from 'framer-motion';
 import { useState, useEffect } from 'react';
-import GdpRaceChart from './GdpRaceChart';
+import dynamic from 'next/dynamic';
+
+const GdpRaceChart = dynamic(() => import('./GdpRaceChart'), {
+  ssr: false,
+  loading: () => (
+    <div className="flex items-center justify-center min-h-[300px]">
+      <div className="w-10 h-10 border-4 border-indigo-500 border-t-transparent rounded-full animate-spin" />
+    </div>
+  ),
+});
 
 const words = ['see', 'analyze', 'interpret', 'understand'];
 

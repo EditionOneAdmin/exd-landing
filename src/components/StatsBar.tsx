@@ -38,7 +38,7 @@ const stats = [
   { target: 500, suffix: '+', label: 'Datasets', icon: '📊' },
   { target: 195, suffix: '', label: 'Countries', icon: '🌍' },
   { target: 60, suffix: '+', label: 'Years of Data', icon: '📅' },
-  { target: 0, suffix: '', label: 'AI-Powered Analysis', icon: '🤖', isText: true },
+  { target: 0, suffix: '', label: 'Real-time API', icon: '⚡', isText: true, textValue: 'Live' },
 ];
 
 export default function StatsBar() {
@@ -74,7 +74,7 @@ export default function StatsBar() {
                       animate={isInView ? { opacity: 1 } : {}}
                       transition={{ delay: 0.8, duration: 0.5 }}
                     >
-                      AI
+                      {(stat as any).textValue || 'AI'}
                     </motion.span>
                   ) : (
                     <CountUp target={stat.target} suffix={stat.suffix} inView={isInView} />
