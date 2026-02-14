@@ -14,6 +14,7 @@ const navLinks = [
   { label: 'API', href: '/api-docs' },
   { label: 'Changelog', href: '/changelog' },
   { label: 'Pricing', href: '/pricing' },
+  { label: 'About', href: '/about' },
 ];
 
 export default function Navbar() {
