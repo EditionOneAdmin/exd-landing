@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { useState, useEffect } from 'react';
+import GdpRaceChart from './GdpRaceChart';
 
 const words = ['see', 'analyze', 'interpret', 'understand'];
 
@@ -166,6 +167,15 @@ export default function Hero() {
             >
               Explore Features
             </a>
+          </motion.div>
+
+          {/* Live GDP Race Chart */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 1.0, duration: 0.8 }}
+          >
+            <GdpRaceChart />
           </motion.div>
         </motion.div>
 
