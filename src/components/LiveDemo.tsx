@@ -103,11 +103,11 @@ export default function LiveDemo() {
             <span className="text-sm text-gray-400">Try It Live</span>
           </motion.div>
 
-          <h2 className="text-4xl md:text-6xl font-bold mb-6">
+          <h2 className="text-3xl sm:text-4xl md:text-6xl font-bold mb-6">
             <span className="text-white/90">See It </span>
             <span className="gradient-text">In Action</span>
           </h2>
-          <p className="text-xl text-gray-400 max-w-2xl mx-auto">
+          <p className="text-base sm:text-xl text-gray-400 max-w-2xl mx-auto">
             This is the famous Hans Rosling visualization — now in your hands. 
             Watch 30 years of global progress unfold.
           </p>

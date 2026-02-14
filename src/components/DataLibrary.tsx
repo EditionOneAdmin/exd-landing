@@ -219,11 +219,11 @@ export default function DataLibrary() {
             <span className="text-sm text-gray-400">Curated Data Library</span>
           </motion.div>
 
-          <h2 className="text-4xl md:text-6xl font-bold mb-6">
+          <h2 className="text-3xl sm:text-4xl md:text-6xl font-bold mb-6">
             <span className="text-white/90">The World&apos;s Data, </span>
             <span className="gradient-text">Ready to Explore</span>
           </h2>
-          <p className="text-xl text-gray-400 max-w-3xl mx-auto">
+          <p className="text-base sm:text-xl text-gray-400 max-w-3xl mx-auto">
             We&apos;ve aggregated and cleaned datasets from the world&apos;s most trusted sources. 
             No more hunting for CSVs — just pick a topic and start visualizing.
           </p>

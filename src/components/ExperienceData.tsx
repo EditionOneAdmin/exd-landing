@@ -124,11 +124,11 @@ export default function ExperienceData() {
             <span className="text-sm text-gray-400">Live Visualizations</span>
           </motion.div>
 
-          <h2 className="text-4xl md:text-6xl font-bold mb-6">
+          <h2 className="text-3xl sm:text-4xl md:text-6xl font-bold mb-6">
             <span className="text-white/90">Experience </span>
             <span className="gradient-text">Data</span>
           </h2>
-          <p className="text-xl text-gray-400 max-w-2xl mx-auto">
+          <p className="text-base sm:text-xl text-gray-400 max-w-2xl mx-auto">
             Not just charts. These are stories that move, breathe, and reveal 
             patterns you&apos;d never see in a spreadsheet.
           </p>

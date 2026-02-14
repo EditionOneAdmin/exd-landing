@@ -59,7 +59,7 @@ export default function VisualizationsPage() {
             <span className="w-2 h-2 rounded-full bg-cyan-400 animate-pulse" />
             Visualizations Gallery
           </div>
-          <h1 className="text-5xl md:text-6xl font-bold mb-4">
+          <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold mb-4">
             <span className="bg-gradient-to-r from-indigo-400 via-purple-400 to-cyan-400 bg-clip-text text-transparent">
               Data in Motion
             </span>

@@ -111,11 +111,11 @@ export default function UseCases() {
           animate={isVisible ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="text-4xl md:text-6xl font-bold mb-6">
+          <h2 className="text-3xl sm:text-4xl md:text-6xl font-bold mb-6">
             <span className="text-white/90">Built for </span>
             <span className="gradient-text">Everyone</span>
           </h2>
-          <p className="text-xl text-gray-400 max-w-2xl mx-auto">
+          <p className="text-base sm:text-xl text-gray-400 max-w-2xl mx-auto">
             Whether you&apos;re breaking news, publishing research, closing deals, 
             or teaching the next generation — data deserves to be experienced.
           </p>
@@ -130,7 +130,7 @@ export default function UseCases() {
             return (
               <motion.div
                 key={useCase.id}
-                className={`relative group rounded-2xl ${useCase.gradient} border border-white/5 p-8 transition-all duration-500 ${
+                className={`relative group rounded-2xl ${useCase.gradient} border border-white/5 p-5 sm:p-8 transition-all duration-500 ${
                   isHovered ? 'border-white/20 scale-[1.02]' : ''
                 }`}
                 initial={{ opacity: 0, y: 30 }}

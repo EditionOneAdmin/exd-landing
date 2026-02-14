@@ -26,7 +26,7 @@ export default function Problem() {
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
             Data has lost its <span className="gradient-text">soul</span>
           </h2>
-          <p className="text-xl text-gray-400 max-w-2xl mx-auto">
+          <p className="text-base sm:text-xl text-gray-400 max-w-2xl mx-auto">
             Spreadsheets. Bar charts. Slide decks. The same formats since 1987.
             Your insights deserve better.
           </p>

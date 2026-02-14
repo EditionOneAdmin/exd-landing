@@ -675,11 +675,11 @@ export default function AICopilot() {
             <span className="text-sm text-gray-400">AI-Powered</span>
           </motion.div>
 
-          <h2 className="text-4xl md:text-6xl font-bold mb-6">
+          <h2 className="text-3xl sm:text-4xl md:text-6xl font-bold mb-6">
             <span className="text-white/90">Ask a Question. </span>
             <span className="gradient-text">Get a Chart.</span>
           </h2>
-          <p className="text-xl text-gray-400 max-w-2xl mx-auto">
+          <p className="text-base sm:text-xl text-gray-400 max-w-2xl mx-auto">
             Type what you want to see in plain English. Our AI understands your intent 
             and creates the perfect visualization instantly.
           </p>

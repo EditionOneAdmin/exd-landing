@@ -83,7 +83,7 @@ export default function HowItWorks() {
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
             Three steps to <span className="gradient-text">wow</span>
           </h2>
-          <p className="text-xl text-gray-400 max-w-2xl mx-auto">
+          <p className="text-base sm:text-xl text-gray-400 max-w-2xl mx-auto">
             From raw data to emotional experience in minutes, not months.
           </p>
         </motion.div>
@@ -103,7 +103,7 @@ export default function HowItWorks() {
                 transition={{ duration: 0.8, delay: i * 0.2 }}
               >
                 {/* Step card */}
-                <div className="glass-card rounded-2xl p-8 text-center relative overflow-hidden group hover:bg-white/[0.04] transition-all duration-500">
+                <div className="glass-card rounded-2xl p-5 sm:p-8 text-center relative overflow-hidden group hover:bg-white/[0.04] transition-all duration-500">
                   {/* Background glow on hover */}
                   <div className={`absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-gradient-to-br ${
                     step.color === 'indigo' ? 'from-indigo-500/10' :

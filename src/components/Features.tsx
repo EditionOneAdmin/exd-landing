@@ -178,7 +178,7 @@ export default function Features() {
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
             Built for <span className="gradient-text">impact</span>
           </h2>
-          <p className="text-xl text-gray-400 max-w-2xl mx-auto">
+          <p className="text-base sm:text-xl text-gray-400 max-w-2xl mx-auto">
             Every tool designed to transform how people experience and understand data.
           </p>
         </motion.div>
@@ -193,7 +193,7 @@ export default function Features() {
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, delay: i * 0.2 }}
             >
-              <div className="glass-card rounded-2xl p-6 h-full transition-all duration-500 hover:border-white/20 hover:bg-white/[0.04]">
+              <div className="glass-card rounded-2xl p-4 sm:p-6 h-full transition-all duration-500 hover:border-white/20 hover:bg-white/[0.04]">
                 {/* Preview area */}
                 <div className="mb-6 overflow-hidden rounded-xl bg-gradient-to-br from-white/[0.02] to-transparent">
                   {feature.preview}
