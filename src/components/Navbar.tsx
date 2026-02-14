@@ -12,6 +12,7 @@ const navLinks = [
   { label: 'AI Copilot', href: '/copilot' },
   { label: 'Compare', href: '/compare' },
   { label: 'API', href: '/api-docs' },
+  { label: 'Changelog', href: '/changelog' },
   { label: 'Pricing', href: '/pricing' },
 ];
 
