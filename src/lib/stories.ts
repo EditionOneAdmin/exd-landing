@@ -91,6 +91,15 @@ export const STORIES: Story[] = [
     icon: '🧠',
   },
   {
+    slug: 'berlin-pulse',
+    title: 'Berlin Pulse',
+    description: 'Europas Startup-Hauptstadt, durchleuchtet mit Daten. 12 Bezirke, Mobilität, Startups und DOOH-Potenzial.',
+    category: 'Real Estate',
+    readTime: '7 min',
+    gradient: 'from-cyan-500 to-indigo-600',
+    icon: '🏙️',
+  },
+  {
     slug: 'real-estate',
     title: 'Real Estate Transformed',
     description: 'How data and technology are reshaping property markets, valuations, and urban development.',
