@@ -8,14 +8,14 @@ export default function Problem() {
   const isInView = useInView(ref, { once: true, margin: '-100px' });
 
   return (
-    <section className="relative py-32 px-6 overflow-hidden" ref={ref}>
+    <section className="relative py-16 sm:py-24 lg:py-32 px-4 sm:px-6 overflow-hidden" ref={ref}>
       {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-indigo-950/10 to-transparent" />
       
       <div className="max-w-6xl mx-auto relative z-10">
         {/* Section header */}
         <motion.div
-          className="text-center mb-20"
+          className="text-center mb-10 sm:mb-16 lg:mb-20"
           initial={{ opacity: 0, y: 40 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8 }}
@@ -41,7 +41,7 @@ export default function Problem() {
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <div className="glass-card rounded-2xl p-8 h-full border-red-500/10">
+            <div className="glass-card rounded-2xl p-5 sm:p-8 h-full border-red-500/10">
               <div className="flex items-center gap-3 mb-6">
                 <div className="w-3 h-3 rounded-full bg-red-500/50" />
                 <span className="text-red-400/80 font-medium">Yesterday</span>
@@ -103,7 +103,7 @@ export default function Problem() {
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-            <div className="glass-card rounded-2xl p-8 h-full border-emerald-500/20 glow-primary">
+            <div className="glass-card rounded-2xl p-5 sm:p-8 h-full border-emerald-500/20 glow-primary">
               <div className="flex items-center gap-3 mb-6">
                 <div className="w-3 h-3 rounded-full bg-emerald-400 animate-pulse" />
                 <span className="text-emerald-400 font-medium">Tomorrow</span>

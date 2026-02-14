@@ -186,7 +186,7 @@ export default function DataLibrary() {
     <section 
       ref={sectionRef}
       id="data-library" 
-      className="relative py-32 px-6 overflow-hidden bg-gradient-to-b from-transparent via-purple-950/10 to-transparent"
+      className="relative py-16 sm:py-24 lg:py-32 px-4 sm:px-6 overflow-hidden bg-gradient-to-b from-transparent via-purple-950/10 to-transparent"
     >
       {/* Background effects */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -231,7 +231,7 @@ export default function DataLibrary() {
 
         {/* Stats counters */}
         <motion.div
-          className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-20"
+          className="grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-6 mb-12 sm:mb-20"
           initial={{ opacity: 0, y: 20 }}
           animate={isVisible ? { opacity: 1, y: 0 } : {}}
           transition={{ delay: 0.3, duration: 0.6 }}

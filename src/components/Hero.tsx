@@ -106,7 +106,7 @@ export default function Hero() {
           </motion.div>
 
           {/* Main headline */}
-          <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-6">
+          <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-6">
             <span className="block text-white/90">Data you don&apos;t just</span>
             <span className="relative inline-block h-[1.2em] overflow-hidden">
               <motion.span

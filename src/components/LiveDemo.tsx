@@ -58,7 +58,7 @@ export default function LiveDemo() {
     <section 
       ref={sectionRef}
       id="demo" 
-      className="relative py-32 px-6 overflow-hidden bg-gradient-to-b from-transparent via-indigo-950/20 to-transparent"
+      className="relative py-16 sm:py-24 lg:py-32 px-4 sm:px-6 overflow-hidden bg-gradient-to-b from-transparent via-indigo-950/20 to-transparent"
     >
       {/* Background effects */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">

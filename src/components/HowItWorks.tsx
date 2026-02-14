@@ -55,7 +55,7 @@ export default function HowItWorks() {
   const y = useTransform(scrollYProgress, [0, 1], [100, -100]);
 
   return (
-    <section className="relative py-32 px-6 overflow-hidden" ref={containerRef}>
+    <section className="relative py-16 sm:py-24 lg:py-32 px-4 sm:px-6 overflow-hidden" ref={containerRef}>
       {/* Gradient background */}
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-purple-950/10 to-transparent" />
       
@@ -72,7 +72,7 @@ export default function HowItWorks() {
       <div className="max-w-6xl mx-auto relative z-10" ref={ref}>
         {/* Section header */}
         <motion.div
-          className="text-center mb-20"
+          className="text-center mb-10 sm:mb-16 lg:mb-20"
           initial={{ opacity: 0, y: 40 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8 }}

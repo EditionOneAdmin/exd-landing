@@ -81,7 +81,7 @@ export default function UseCases() {
     <section 
       ref={sectionRef}
       id="use-cases" 
-      className="relative py-32 px-6 overflow-hidden"
+      className="relative py-16 sm:py-24 lg:py-32 px-4 sm:px-6 overflow-hidden"
     >
       {/* Background effects */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
@@ -106,7 +106,7 @@ export default function UseCases() {
       <div className="max-w-7xl mx-auto relative z-10">
         {/* Section header */}
         <motion.div
-          className="text-center mb-20"
+          className="text-center mb-10 sm:mb-16 lg:mb-20"
           initial={{ opacity: 0, y: 30 }}
           animate={isVisible ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8 }}

@@ -44,7 +44,7 @@ export default function Waitlist() {
   }, []);
 
   return (
-    <section id="waitlist" className="relative py-32 px-6" ref={ref}>
+    <section id="waitlist" className="relative py-16 sm:py-24 lg:py-32 px-4 sm:px-6" ref={ref}>
       {/* Gradient background */}
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-indigo-950/20 to-transparent" />
 
@@ -65,7 +65,7 @@ export default function Waitlist() {
 
       <div className="max-w-3xl mx-auto relative z-10">
         <motion.div
-          className="glass-card rounded-3xl p-8 md:p-12 text-center overflow-hidden"
+          className="glass-card rounded-2xl sm:rounded-3xl p-5 sm:p-8 md:p-12 text-center overflow-hidden"
           initial={{ opacity: 0, y: 60 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8 }}

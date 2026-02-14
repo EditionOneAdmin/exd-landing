@@ -36,7 +36,7 @@ export default function IndustryUseCases() {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   return (
-    <section ref={ref} className="relative py-32 px-6 overflow-hidden">
+    <section ref={ref} className="relative py-16 sm:py-24 lg:py-32 px-4 sm:px-6 overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 pointer-events-none">
         <div

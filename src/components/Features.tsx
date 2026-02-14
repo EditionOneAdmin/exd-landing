@@ -163,11 +163,11 @@ export default function Features() {
   const isInView = useInView(ref, { once: true, margin: '-100px' });
 
   return (
-    <section id="features" className="relative py-32 px-6" ref={ref}>
+    <section id="features" className="relative py-16 sm:py-24 lg:py-32 px-4 sm:px-6" ref={ref}>
       <div className="max-w-6xl mx-auto">
         {/* Section header */}
         <motion.div
-          className="text-center mb-20"
+          className="text-center mb-10 sm:mb-16 lg:mb-20"
           initial={{ opacity: 0, y: 40 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8 }}

@@ -91,7 +91,7 @@ export default function ExperienceData() {
     <section 
       ref={sectionRef}
       id="experience" 
-      className="relative py-32 px-6 overflow-hidden"
+      className="relative py-16 sm:py-24 lg:py-32 px-4 sm:px-6 overflow-hidden"
     >
       {/* Background glow */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">

@@ -527,7 +527,7 @@ function HistorySidebar({
           animate={{ opacity: 1, x: 0 }}
           exit={{ opacity: 0, x: -20 }}
           transition={{ duration: 0.2 }}
-          className="absolute left-0 top-0 bottom-0 w-72 z-20 bg-[#0c0c1d]/95 backdrop-blur-xl border-r border-white/10 rounded-l-2xl overflow-hidden flex flex-col"
+          className="absolute left-0 top-0 bottom-0 w-60 sm:w-72 z-20 bg-[#0c0c1d]/95 backdrop-blur-xl border-r border-white/10 rounded-l-2xl overflow-hidden flex flex-col"
         >
           <div className="flex items-center justify-between p-4 border-b border-white/5">
             <div className="flex items-center gap-2">
@@ -642,7 +642,7 @@ export default function AICopilot() {
     <section
       ref={sectionRef}
       id="ai-copilot"
-      className="relative py-32 px-6 overflow-hidden bg-gradient-to-b from-transparent via-indigo-950/20 to-transparent"
+      className="relative py-16 sm:py-24 lg:py-32 px-4 sm:px-6 overflow-hidden bg-gradient-to-b from-transparent via-indigo-950/20 to-transparent"
     >
       {/* Background */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">

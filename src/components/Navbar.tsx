@@ -150,7 +150,7 @@ export default function Navbar() {
                 <Link
                   key={link.href}
                   href={link.href}
-                  className={`text-sm py-2.5 px-3 rounded-lg transition-colors ${
+                  className={`text-sm py-3 px-4 rounded-lg transition-colors ${
                     isActive(link.href)
                       ? 'text-white bg-white/5'
                       : 'text-gray-400 hover:text-white hover:bg-white/5'
