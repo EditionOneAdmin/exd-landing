@@ -15,6 +15,7 @@ const navLinks = [
   { label: 'API', href: '/api-docs' },
   { label: 'Changelog', href: '/changelog' },
   { label: 'Pricing', href: '/pricing' },
+  { label: 'Blog', href: '/blog' },
   { label: 'About', href: '/about' },
   { label: 'Quiz', href: '/quiz' },
 ];
