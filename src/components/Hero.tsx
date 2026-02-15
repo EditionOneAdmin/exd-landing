@@ -2,16 +2,6 @@
 
 import { motion } from 'framer-motion';
 import { useState, useEffect } from 'react';
-import dynamic from 'next/dynamic';
-
-const GdpRaceChart = dynamic(() => import('./GdpRaceChart'), {
-  ssr: false,
-  loading: () => (
-    <div className="flex items-center justify-center min-h-[300px]">
-      <div className="w-10 h-10 border-4 border-indigo-500 border-t-transparent rounded-full animate-spin" />
-    </div>
-  ),
-});
 
 const words = ['see', 'analyze', 'interpret', 'understand'];
 
@@ -26,7 +16,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative min-h-[85vh] flex items-center justify-center overflow-hidden">
       {/* Animated gradient orbs */}
       <div className="absolute inset-0 overflow-hidden">
         <motion.div
@@ -36,16 +26,8 @@ export default function Hero() {
             left: '-20%',
             top: '-20%',
           }}
-          animate={{
-            x: [0, 100, 0],
-            y: [0, 50, 0],
-            scale: [1, 1.1, 1],
-          }}
-          transition={{
-            duration: 20,
-            repeat: Infinity,
-            ease: 'easeInOut',
-          }}
+          animate={{ x: [0, 100, 0], y: [0, 50, 0], scale: [1, 1.1, 1] }}
+          transition={{ duration: 20, repeat: Infinity, ease: 'easeInOut' }}
         />
         <motion.div
           className="absolute w-[600px] h-[600px] rounded-full opacity-20"
@@ -54,39 +36,13 @@ export default function Hero() {
             right: '-10%',
             bottom: '-10%',
           }}
-          animate={{
-            x: [0, -80, 0],
-            y: [0, -60, 0],
-            scale: [1, 1.2, 1],
-          }}
-          transition={{
-            duration: 15,
-            repeat: Infinity,
-            ease: 'easeInOut',
-          }}
-        />
-        <motion.div
-          className="absolute w-[500px] h-[500px] rounded-full opacity-15"
-          style={{
-            background: 'radial-gradient(circle, rgba(6,182,212,0.4) 0%, transparent 70%)',
-            right: '20%',
-            top: '10%',
-          }}
-          animate={{
-            x: [0, -50, 0],
-            y: [0, 80, 0],
-            scale: [1, 0.9, 1],
-          }}
-          transition={{
-            duration: 18,
-            repeat: Infinity,
-            ease: 'easeInOut',
-          }}
+          animate={{ x: [0, -80, 0], y: [0, -60, 0], scale: [1, 1.2, 1] }}
+          transition={{ duration: 15, repeat: Infinity, ease: 'easeInOut' }}
         />
       </div>
 
       {/* Grid pattern overlay */}
-      <div 
+      <div
         className="absolute inset-0 opacity-[0.02]"
         style={{
           backgroundImage: `
@@ -98,7 +54,7 @@ export default function Hero() {
       />
 
       {/* Content */}
-      <div className="relative z-10 text-center px-6 max-w-6xl mx-auto">
+      <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -149,54 +105,39 @@ export default function Hero() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.6, duration: 0.8 }}
           >
-            Transform dry statistics into aesthetic, interactive experiences 
+            Transform dry statistics into aesthetic, interactive experiences
             that captivate and communicate.
           </motion.p>
 
-          {/* CTA Buttons */}
+          {/* Single CTA */}
           <motion.div
-            className="flex flex-col sm:flex-row gap-4 justify-center items-center"
+            className="flex justify-center"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.8, duration: 0.6 }}
           >
             <a
               href="#waitlist"
-              className="group relative px-8 py-4 rounded-full overflow-hidden"
+              className="group relative px-10 py-5 rounded-full overflow-hidden"
             >
               <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 via-purple-500 to-cyan-500 transition-all duration-300 group-hover:scale-105" />
               <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 via-purple-500 to-cyan-500 blur-xl opacity-50 group-hover:opacity-75 transition-opacity" />
               <span className="relative text-white font-semibold text-lg">
-                Join the Waitlist
+                Get Early Access →
               </span>
             </a>
-            <a
-              href="#features"
-              className="px-8 py-4 rounded-full border border-white/10 text-gray-300 hover:text-white hover:border-white/30 transition-all duration-300"
-            >
-              Explore Features
-            </a>
-          </motion.div>
-
-          {/* Live GDP Race Chart */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 1.0, duration: 0.8 }}
-          >
-            <GdpRaceChart />
           </motion.div>
         </motion.div>
 
         {/* Scroll indicator */}
         <motion.div
-          className="absolute bottom-10 left-1/2 -translate-x-1/2"
+          className="mt-16"
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1.2, duration: 0.6 }}
         >
           <motion.div
-            className="w-6 h-10 rounded-full border-2 border-white/20 flex justify-center pt-2"
+            className="w-6 h-10 rounded-full border-2 border-white/20 flex justify-center pt-2 mx-auto"
             animate={{ y: [0, 8, 0] }}
             transition={{ duration: 1.5, repeat: Infinity }}
           >

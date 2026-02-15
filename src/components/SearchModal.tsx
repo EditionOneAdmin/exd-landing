@@ -47,6 +47,10 @@ const searchIndex: SearchItem[] = [
   { title: 'Media & Advertising', description: 'Data visualization for media and advertising', url: '/use-cases/media-advertising', category: 'Use Cases' },
   { title: 'Real Estate Analytics', description: 'Real estate market analysis and visualization', url: '/use-cases/real-estate', category: 'Use Cases' },
   { title: 'Smart City Solutions', description: 'Urban data solutions for smart cities', url: '/use-cases/smart-city', category: 'Use Cases' },
+
+  // Blog
+  { title: 'Blog', description: 'Insights, updates, and thought leadership from the EXD team', url: '/blog', category: 'Pages' },
+  { title: 'Why Experience Data?', description: 'The case for turning raw data into immersive, felt experiences', url: '/blog/why-experience-data', category: 'Pages' },
 ];
 
 const categoryIcons: Record<Category, string> = {
