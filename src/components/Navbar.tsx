@@ -4,6 +4,7 @@ import { motion, useScroll, useTransform, AnimatePresence } from 'framer-motion'
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import SearchModal from './SearchModal';
 
 const navLinks = [
   { label: 'Dashboard', href: '/dashboard' },
@@ -104,8 +105,9 @@ export default function Navbar() {
           ))}
         </div>
 
-        {/* CTA + Mobile toggle */}
+        {/* Search + CTA + Mobile toggle */}
         <div className="flex items-center gap-3">
+          <SearchModal />
           <motion.a
             href="https://form.typeform.com/to/exd-early-access"
             target="_blank"
