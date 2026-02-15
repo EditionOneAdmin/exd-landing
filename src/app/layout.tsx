@@ -7,6 +7,7 @@ import Footer from "@/components/Footer";
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
+  display: "swap",
 });
 
 const BASE_URL = "https://editiononeadmin.github.io/exd-landing";

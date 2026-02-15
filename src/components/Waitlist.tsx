@@ -1,10 +1,10 @@
 'use client';
 
 import { motion, useInView } from 'framer-motion';
-import { useRef, useEffect } from 'react';
+import { useRef, useState, FormEvent } from 'react';
 import Link from 'next/link';
 
-const TYPEFORM_URL = 'https://form.typeform.com/to/RX9edslL';
+const FORMSPREE_URL = 'https://formspree.io/f/xpwzgvqk';
 
 const featuredStories = [
   {
@@ -30,18 +30,48 @@ const featuredStories = [
   },
 ];
 
+type FormStatus = 'idle' | 'submitting' | 'success' | 'error';
+
 export default function Waitlist() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: '-100px' });
+  const [email, setEmail] = useState('');
+  const [status, setStatus] = useState<FormStatus>('idle');
+  const [errorMsg, setErrorMsg] = useState('');
 
-  useEffect(() => {
-    // Load Typeform embed script
-    const script = document.createElement('script');
-    script.src = '//embed.typeform.com/next/embed.js';
-    script.async = true;
-    document.body.appendChild(script);
-    return () => { script.remove(); };
-  }, []);
+  const handleSubmit = async (e: FormEvent) => {
+    e.preventDefault();
+    setErrorMsg('');
+
+    // Basic email validation
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      setErrorMsg('Please enter a valid email address.');
+      return;
+    }
+
+    setStatus('submitting');
+
+    try {
+      const res = await fetch(FORMSPREE_URL, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify({ email }),
+      });
+
+      if (res.ok) {
+        setStatus('success');
+        setEmail('');
+      } else {
+        const data = await res.json().catch(() => null);
+        setErrorMsg(data?.errors?.[0]?.message || 'Something went wrong. Please try again.');
+        setStatus('error');
+      }
+    } catch {
+      setErrorMsg('Network error. Please check your connection and try again.');
+      setStatus('error');
+    }
+  };
 
   return (
     <section id="waitlist" className="relative py-16 sm:py-24 lg:py-32 px-4 sm:px-6" ref={ref}>
@@ -122,23 +152,64 @@ export default function Waitlist() {
               Join 500+ data enthusiasts on the waitlist
             </motion.p>
 
-            {/* Typeform CTA Button */}
+            {/* Waitlist Form */}
             <div className="max-w-md mx-auto">
-              <button
-                data-tf-popup="RX9edslL"
-                data-tf-opacity="100"
-                data-tf-size="100"
-                data-tf-iframe-props="title=EXD Waitlist"
-                data-tf-transitive-search-params
-                data-tf-medium="snippet"
-                className="w-full px-8 py-4 rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-indigo-500 text-white font-medium text-lg hover:shadow-lg hover:shadow-indigo-500/25 transition-all bg-[length:200%_100%] hover:bg-right cursor-pointer"
-                style={{ backgroundPosition: 'left' }}
-              >
-                Get Early Access →
-              </button>
-              <p className="text-sm text-gray-500 mt-4">
-                No spam, ever. Unsubscribe anytime.
-              </p>
+              {status === 'success' ? (
+                <motion.div
+                  initial={{ opacity: 0, scale: 0.95 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  className="py-6"
+                >
+                  <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-emerald-500/20 flex items-center justify-center">
+                    <svg className="w-8 h-8 text-emerald-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                  </div>
+                  <h3 className="text-xl font-semibold text-white mb-2">You&apos;re on the list! 🎉</h3>
+                  <p className="text-gray-400">We&apos;ll notify you when early access opens.</p>
+                </motion.div>
+              ) : (
+                <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3">
+                  <input
+                    type="email"
+                    value={email}
+                    onChange={(e) => { setEmail(e.target.value); if (status === 'error') setStatus('idle'); }}
+                    placeholder="Enter your email"
+                    required
+                    className="flex-1 px-5 py-4 rounded-full bg-white/5 border border-white/10 text-white placeholder-gray-500 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-colors"
+                  />
+                  <button
+                    type="submit"
+                    disabled={status === 'submitting'}
+                    className="px-8 py-4 rounded-full bg-gradient-to-r from-indigo-500 via-purple-500 to-indigo-500 text-white font-medium text-lg hover:shadow-lg hover:shadow-indigo-500/25 transition-all bg-[length:200%_100%] hover:bg-right disabled:opacity-60 disabled:cursor-not-allowed cursor-pointer whitespace-nowrap"
+                    style={{ backgroundPosition: 'left' }}
+                  >
+                    {status === 'submitting' ? (
+                      <span className="inline-flex items-center gap-2">
+                        <svg className="w-5 h-5 animate-spin" viewBox="0 0 24 24" fill="none">
+                          <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" />
+                          <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4z" />
+                        </svg>
+                        Joining…
+                      </span>
+                    ) : 'Get Early Access →'}
+                  </button>
+                </form>
+              )}
+              {errorMsg && (
+                <motion.p
+                  initial={{ opacity: 0, y: -5 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  className="text-sm text-red-400 mt-3"
+                >
+                  {errorMsg}
+                </motion.p>
+              )}
+              {status !== 'success' && (
+                <p className="text-sm text-gray-500 mt-4">
+                  No spam, ever. Unsubscribe anytime.
+                </p>
+              )}
             </div>
           </motion.div>
 

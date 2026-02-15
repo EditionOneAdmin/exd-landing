@@ -13,6 +13,13 @@ export const metadata: Metadata = {
       "Explore interactive data visualizations: GDP racing charts, CO₂ maps, population pyramids, and more.",
     url: "https://editiononeadmin.github.io/exd-landing/visualizations/",
     type: "website",
+    images: [{ url: "https://editiononeadmin.github.io/exd-landing/og-image.png", width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "EXD Visualization Gallery",
+    description: "Explore interactive data visualizations: GDP racing charts, CO₂ maps, population pyramids, and more.",
+    images: ["https://editiononeadmin.github.io/exd-landing/og-image.png"],
   },
 };
 
