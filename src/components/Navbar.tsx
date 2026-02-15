@@ -15,6 +15,7 @@ const navLinks = [
   { label: 'Changelog', href: '/changelog' },
   { label: 'Pricing', href: '/pricing' },
   { label: 'About', href: '/about' },
+  { label: 'Quiz', href: '/quiz' },
 ];
 
 export default function Navbar() {

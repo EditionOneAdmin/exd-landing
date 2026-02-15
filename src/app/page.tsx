@@ -10,6 +10,7 @@ import LiveDemo from '@/components/LiveDemo';
 import Features from '@/components/Features';
 import HowItWorks from '@/components/HowItWorks';
 import IndustryUseCases from '@/components/IndustryUseCases';
+import SocialProof from '@/components/SocialProof';
 import Waitlist from '@/components/Waitlist';
 
 export default function Home() {
@@ -27,6 +28,7 @@ export default function Home() {
       <Features />
       <HowItWorks />
       <IndustryUseCases />
+      <SocialProof />
       <Waitlist />
     </main>
   );

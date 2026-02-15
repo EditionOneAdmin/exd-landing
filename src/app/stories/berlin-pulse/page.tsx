@@ -386,7 +386,7 @@ function DOOHOpportunityScore() {
 export default function BerlinPulseStory() {
   return (
     <div className="min-h-screen bg-[#050507] text-white">
-      <StoryNavigation />
+      <StoryNavigation currentSlug="berlin-pulse" />
 
       {/* Hero */}
       <div className="relative min-h-screen flex items-center justify-center px-6 overflow-hidden">
