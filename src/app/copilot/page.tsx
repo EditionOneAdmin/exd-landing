@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import dynamic from 'next/dynamic';
 import Link from 'next/link';
 import { Send, Sparkles, ArrowLeft, Loader2, BarChart3, Globe2, Activity, Users } from 'lucide-react';
+import { fetchGDPRacing, fetchCO2Emissions, fetchLifeExpectancy } from '@/lib/worldbank-api';
 
 // Dynamic imports to avoid SSR issues with D3
 const RacingBarChart = dynamic(() => import('@/components/visualizations/RacingBarChart'), { ssr: false });
@@ -139,24 +140,39 @@ function TypingText({ text, onComplete }: { text: string; onComplete: () => void
 // ─── Data Fetching Hook ─────────────────────────────────────────────────────
 
 function useVisualizationData(vizType: VizType) {
-  const [gdpData, setGdpData] = useState(null);
-  const [co2Data, setCo2Data] = useState(null);
-  const [geoData, setGeoData] = useState(null);
-  const [healthData, setHealthData] = useState(null);
-  const [popData, setPopData] = useState(null);
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const [gdpData, setGdpData] = useState<any>(null);
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const [co2Data, setCo2Data] = useState<any>(null);
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const [geoData, setGeoData] = useState<any>(null);
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const [healthData, setHealthData] = useState<any>(null);
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const [popData, setPopData] = useState<any>(null);
 
   useEffect(() => {
     if (vizType === 'gdp' && !gdpData) {
-      fetch('/data/gdp-racing.json').then(r => r.json()).then(setGdpData);
+      // Live World Bank API for GDP data
+      fetchGDPRacing()
+        .then(setGdpData)
+        .catch(() => fetch('/data/gdp-racing.json').then(r => r.json()).then(setGdpData));
     }
     if (vizType === 'co2') {
-      if (!co2Data) fetch('/data/co2-emissions.json').then(r => r.json()).then(setCo2Data);
+      // Live World Bank API for CO2 data
+      if (!co2Data) fetchCO2Emissions()
+        .then(setCo2Data)
+        .catch(() => fetch('/data/co2-emissions.json').then(r => r.json()).then(setCo2Data));
       if (!geoData) fetch('/data/world.geojson').then(r => r.json()).then(setGeoData);
     }
     if (vizType === 'health' && !healthData) {
-      fetch('/data/life-expectancy.json').then(r => r.json()).then(setHealthData);
+      // Live World Bank API for life expectancy data
+      fetchLifeExpectancy()
+        .then(setHealthData)
+        .catch(() => fetch('/data/life-expectancy.json').then(r => r.json()).then(setHealthData));
     }
     if (vizType === 'population' && !popData) {
+      // Population pyramid kept as static (World Bank lacks age-group breakdowns)
       fetch('/data/population-pyramid.json').then(r => r.json()).then(setPopData);
     }
   }, [vizType, gdpData, co2Data, geoData, healthData, popData]);
