@@ -96,8 +96,12 @@ export default function PopulationPyramid({
 
     const svg = d3.select(svgRef.current);
     const { width, height } = dimensions;
-    const margin = { top: 30, right: 20, bottom: 40, left: 20 };
-    const chartWidth = (width - margin.left - margin.right - 60) / 2; // Half for each side
+    const isSmall = width < 500;
+    const margin = isSmall
+      ? { top: 20, right: 10, bottom: 30, left: 10 }
+      : { top: 30, right: 20, bottom: 40, left: 20 };
+    const centerGap = isSmall ? 30 : 60;
+    const chartWidth = (width - margin.left - margin.right - centerGap) / 2; // Half for each side
     const chartHeight = height - margin.top - margin.bottom;
 
     // Clear previous

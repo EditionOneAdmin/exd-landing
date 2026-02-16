@@ -95,7 +95,10 @@ function LineChart({ data, color, label, unit }: { data: DataPoint[]; color: str
     const svg = d3.select(svgRef.current);
     svg.selectAll('*').remove();
 
-    const margin = { top: 20, right: 20, bottom: 40, left: 60 };
+    const isSmall = svgRef.current.clientWidth < 400;
+    const margin = isSmall
+      ? { top: 16, right: 12, bottom: 32, left: 40 }
+      : { top: 20, right: 20, bottom: 40, left: 60 };
     const width = svgRef.current.clientWidth - margin.left - margin.right;
     const height = 260 - margin.top - margin.bottom;
 
@@ -107,7 +110,7 @@ function LineChart({ data, color, label, unit }: { data: DataPoint[]; color: str
     // Grid
     g.append('g')
       .attr('class', 'grid')
-      .call(d3.axisLeft(y).ticks(5).tickSize(-width).tickFormat(() => ''))
+      .call(d3.axisLeft(y).ticks(isSmall ? 3 : 5).tickSize(-width).tickFormat(() => ''))
       .selectAll('line').attr('stroke', 'rgba(255,255,255,0.06)');
     g.selectAll('.grid .domain').remove();
 

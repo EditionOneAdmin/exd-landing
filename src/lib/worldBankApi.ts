@@ -79,6 +79,9 @@ interface LiveQueryDef {
   countryNames?: Record<string, string>;
   transform?: 'horizontal-bar' | 'scatter-dual';
   secondIndicator?: string;
+  xLabel?: string;
+  valueDivisor?: number;
+  seriesName?: string;
 }
 
 const LIVE_QUERIES: Record<string, LiveQueryDef> = {
@@ -112,6 +115,8 @@ const LIVE_QUERIES: Record<string, LiveQueryDef> = {
     yLabel: 'Population (M)',
     yFormat: 'M',
     transform: 'horizontal-bar',
+    valueDivisor: 1e6,
+    seriesName: 'Population',
   },
   'inflation': {
     countries: 'USA;FRA;GBR',
@@ -135,6 +140,56 @@ const LIVE_QUERIES: Record<string, LiveQueryDef> = {
     yFormat: '',
     secondIndicator: 'NY.GDP.PCAP.CD',
     transform: 'scatter-dual',
+    xLabel: 'GDP per Capita ($)',
+  },
+  'renewable-energy': {
+    countries: 'ISL;NOR;SWE;BRA;DNK;DEU;GBR;USA;CHN;IND',
+    indicator: 'EG.FEC.RNEW.ZS',
+    dateRange: '2020:2023',
+    chartType: 'bar',
+    title: 'Renewable Energy Share',
+    subtitle: '% of Total Final Energy Consumption (Live Data)',
+    yLabel: 'Renewable %',
+    yFormat: '%',
+    transform: 'horizontal-bar',
+    valueDivisor: 1,
+    seriesName: 'Renewable',
+  },
+  'healthcare-spending': {
+    countries: 'USA;DEU;FRA;JPN;SWE;GBR;KOR;CHN;IND;NGA',
+    indicator: 'SP.DYN.LE00.IN',
+    dateRange: '2020:2023',
+    chartType: 'scatter',
+    title: 'Healthcare Spending vs Outcomes',
+    subtitle: '% of GDP vs Life Expectancy (Live Data)',
+    yLabel: 'Life Expectancy (years)',
+    yFormat: '',
+    secondIndicator: 'SH.XPD.CHEX.GD.ZS',
+    transform: 'scatter-dual',
+    xLabel: 'Health Spending (% GDP)',
+  },
+  'internet-users': {
+    countries: 'WLD',
+    indicator: 'IT.NET.USER.ZS',
+    dateRange: '2000:2023',
+    chartType: 'line',
+    title: 'Global Internet Users',
+    subtitle: '% of Population Using Internet (Live Data)',
+    yLabel: 'Internet Users (% pop)',
+    yFormat: '%',
+  },
+  'global-debt': {
+    countries: 'JPN;ITA;USA;FRA;GBR;BRA;IND;DEU;CHN;AUS',
+    indicator: 'GC.DOD.TOTL.GD.ZS',
+    dateRange: '2020:2023',
+    chartType: 'horizontal-bar',
+    title: 'Government Debt to GDP Ratio',
+    subtitle: 'Central Government Debt, % of GDP (Live Data)',
+    yLabel: 'Debt/GDP (%)',
+    yFormat: '%',
+    transform: 'horizontal-bar',
+    valueDivisor: 1,
+    seriesName: 'Debt/GDP',
   },
 };
 
@@ -181,7 +236,7 @@ export async function fetchLiveData(queryKey: string): Promise<LiveChartResult |
           type: 'scatter',
           title: def.title,
           subtitle: def.subtitle,
-          xAxis: { label: 'GDP per Capita ($)', type: 'linear' },
+          xAxis: { label: def.xLabel || 'GDP per Capita ($)', type: 'linear' },
           yAxis: { label: def.yLabel },
           series: [{ name: 'Countries', data: points }],
           source: 'World Bank (Live)',
@@ -208,11 +263,11 @@ export async function fetchLiveData(queryKey: string): Promise<LiveChartResult |
           xAxis: { label: 'Country', type: 'category' },
           yAxis: { label: def.yLabel, format: def.yFormat },
           series: [{
-            name: 'Population',
+            name: def.seriesName || 'Value',
             color: '#6366f1',
             data: sorted.map(c => ({
               x: c.name,
-              y: Math.round(c.value / 1e6), // to millions
+              y: Math.round(c.value / (def.valueDivisor || 1e6) * 10) / 10,
             })),
           }],
           source: 'World Bank (Live)',

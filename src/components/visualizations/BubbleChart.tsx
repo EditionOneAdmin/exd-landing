@@ -79,7 +79,10 @@ export default function BubbleChart({
 
   // Scales
   const scales = useMemo(() => {
-    const margin = { top: 40, right: 40, bottom: 60, left: 70 };
+    const isSmall = dimensions.width < 500;
+    const margin = isSmall
+      ? { top: 24, right: 16, bottom: 40, left: 45 }
+      : { top: 40, right: 40, bottom: 60, left: 70 };
     const width = dimensions.width - margin.left - margin.right;
     const height = dimensions.height - margin.top - margin.bottom;
 
@@ -97,7 +100,7 @@ export default function BubbleChart({
     // Population to radius
     const radiusScale = d3.scaleSqrt()
       .domain([0, 1.5e9])
-      .range([3, 60]);
+      .range(isSmall ? [2, 30] : [3, 60]);
 
     return { xScale, yScale, radiusScale, margin, width, height };
   }, [dimensions]);
@@ -273,7 +276,7 @@ export default function BubbleChart({
 
   if (Object.keys(chartData).length === 0) {
     return (
-      <div className="exd-card p-8 flex items-center justify-center min-h-[600px]">
+      <div className="exd-card p-8 flex items-center justify-center min-h-[300px] sm:min-h-[600px]">
         <div className="flex flex-col items-center gap-4">
           <div className="w-12 h-12 border-4 border-[var(--exd-accent-primary)] border-t-transparent rounded-full animate-spin" />
           <p className="text-[var(--exd-text-secondary)]">Loading global health data...</p>
