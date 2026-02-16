@@ -96,6 +96,11 @@ export default function Footer() {
                   Smart City Use Case
                 </Link>
               </li>
+              <li>
+                <Link href="/use-cases/retail" className="text-gray-500 hover:text-gray-300 transition-colors">
+                  Retail & E-Commerce
+                </Link>
+              </li>
             </ul>
           </div>
 

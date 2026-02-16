@@ -91,6 +91,15 @@ export const STORIES: Story[] = [
     icon: '🧠',
   },
   {
+    slug: 'berlin-numbers',
+    title: 'Berlin in Numbers',
+    description: 'Bevölkerung, Mieten, Startups, DOOH und Tourismus — Berlin als Datenstadt, Zahl für Zahl.',
+    category: 'Economy',
+    readTime: '8 min',
+    gradient: 'from-amber-500 to-red-600',
+    icon: '🐻',
+  },
+  {
     slug: 'berlin-pulse',
     title: 'Berlin Pulse',
     description: 'Europas Startup-Hauptstadt, durchleuchtet mit Daten. 12 Bezirke, Mobilität, Startups und DOOH-Potenzial.',
