@@ -100,6 +100,15 @@ export const STORIES: Story[] = [
     icon: '🏙️',
   },
   {
+    slug: 'venture-capital',
+    title: 'The Global VC Boom',
+    description: 'From $60B to $376B — how venture capital reshaped the world economy through AI mega-rounds, unicorn proliferation, and geographic shifts.',
+    category: 'Economy',
+    readTime: '8 min',
+    gradient: 'from-purple-500 to-indigo-600',
+    icon: '🚀',
+  },
+  {
     slug: 'real-estate',
     title: 'Real Estate Transformed',
     description: 'How data and technology are reshaping property markets, valuations, and urban development.',
