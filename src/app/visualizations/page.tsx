@@ -4,6 +4,7 @@ import RacingBarChart from '@/components/visualizations/RacingBarChart';
 import CO2WorldMap from '@/components/visualizations/CO2WorldMap';
 import BubbleChart from '@/components/visualizations/BubbleChart';
 import PopulationPyramid from '@/components/visualizations/PopulationPyramid';
+import ShareButton from '@/components/ShareButton';
 const sectionVariants = {
   hidden: { opacity: 0, y: 40 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.7, ease: 'easeOut' as const } },
@@ -103,7 +104,8 @@ export default function VisualizationsPage() {
                 </div>
                 <p className="text-gray-400 max-w-2xl">{viz.description}</p>
               </div>
-              <div className="flex gap-2">
+              <div className="flex items-center gap-2 flex-wrap">
+                <ShareButton vizId={viz.id} vizTitle={viz.title} />
                 {viz.tags.map((tag) => (
                   <span
                     key={tag}
