@@ -198,20 +198,23 @@ function BarChart({ data, color, label, unit }: { data: DataPoint[]; color: stri
     const svg = d3.select(svgRef.current);
     svg.selectAll('*').remove();
 
-    const margin = { top: 20, right: 20, bottom: 40, left: 55 };
+    const isSmall = svgRef.current.clientWidth < 400;
+    const margin = isSmall
+      ? { top: 16, right: 12, bottom: 32, left: 40 }
+      : { top: 20, right: 20, bottom: 40, left: 55 };
     const width = svgRef.current.clientWidth - margin.left - margin.right;
     const height = 260 - margin.top - margin.bottom;
 
-    // Show last 15 years max
-    const trimmed = data.slice(-15);
+    // Show last 15 years max (fewer on small screens)
+    const trimmed = data.slice(isSmall ? -10 : -15);
     const g = svg.append('g').attr('transform', `translate(${margin.left},${margin.top})`);
 
-    const x = d3.scaleBand().domain(trimmed.map(d => String(d.year))).range([0, width]).padding(0.3);
+    const x = d3.scaleBand().domain(trimmed.map(d => String(d.year))).range([0, width]).padding(isSmall ? 0.2 : 0.3);
     const y = d3.scaleLinear().domain([0, d3.max(trimmed, d => d.value)! * 1.1]).range([height, 0]);
 
     // Grid
     g.append('g')
-      .call(d3.axisLeft(y).ticks(5).tickSize(-width).tickFormat(() => ''))
+      .call(d3.axisLeft(y).ticks(isSmall ? 3 : 5).tickSize(-width).tickFormat(() => ''))
       .selectAll('line').attr('stroke', 'rgba(255,255,255,0.06)');
     g.selectAll('.grid .domain').remove();
 
@@ -330,7 +333,7 @@ export default function DashboardPage() {
     <div className="min-h-screen bg-[#050507] text-white">
       {/* Header */}
       <header className="border-b border-white/[0.06] bg-[#050507]/80 backdrop-blur-xl sticky top-0 z-50">
-        <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
           <div className="flex items-center gap-4">
             <Link href="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
               <div className="relative w-8 h-8">
@@ -351,7 +354,7 @@ export default function DashboardPage() {
       </header>
 
       {/* Main Content */}
-      <main className="max-w-7xl mx-auto px-6 py-8">
+      <main className="max-w-7xl mx-auto px-4 sm:px-6 py-6 sm:py-8">
         {/* Title + Selector */}
         <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-8">
           <div>
@@ -364,7 +367,7 @@ export default function DashboardPage() {
             <select
               value={country}
               onChange={(e) => setCountry(e.target.value)}
-              className="appearance-none bg-white/[0.05] border border-white/[0.1] rounded-xl px-4 py-2.5 pr-10 text-sm text-white focus:outline-none focus:border-indigo-500/50 focus:ring-1 focus:ring-indigo-500/30 cursor-pointer min-w-[200px]"
+              className="appearance-none bg-white/[0.05] border border-white/[0.1] rounded-xl px-4 py-2.5 pr-10 text-sm text-white focus:outline-none focus:border-indigo-500/50 focus:ring-1 focus:ring-indigo-500/30 cursor-pointer w-full sm:min-w-[200px]"
             >
               {COUNTRIES.map(c => (
                 <option key={c.code} value={c.code} className="bg-[#0a0a0f] text-white">

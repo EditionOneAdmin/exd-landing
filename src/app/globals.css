@@ -197,3 +197,16 @@ body {
   0% { transform: translateX(-100%); }
   100% { transform: translateX(100%); }
 }
+
+/* Mobile responsiveness safeguards */
+@media (max-width: 640px) {
+  /* Ensure SVG charts don't overflow */
+  svg {
+    max-width: 100%;
+  }
+  
+  /* D3 axis labels: smaller on mobile */
+  .chart-axis text {
+    font-size: 10px;
+  }
+}

@@ -15,7 +15,7 @@ export default function StoriesHub() {
   return (
     <div className="min-h-screen bg-[#050507] text-white">
       {/* Back nav */}
-      <div className="fixed top-0 left-0 right-0 z-50 px-6 py-4 bg-[#050507]/80 backdrop-blur-xl border-b border-white/5">
+      <div className="fixed top-0 left-0 right-0 z-50 px-4 sm:px-6 py-4 bg-[#050507]/80 backdrop-blur-xl border-b border-white/5">
         <div className="max-w-6xl mx-auto flex items-center justify-between">
           <Link href="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
             <div className="relative w-9 h-9">
@@ -36,7 +36,7 @@ export default function StoriesHub() {
       </div>
 
       {/* Hero */}
-      <div className="pt-32 pb-16 px-6 text-center">
+      <div className="pt-32 pb-16 px-4 sm:px-6 text-center">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
@@ -55,7 +55,7 @@ export default function StoriesHub() {
       </div>
 
       {/* Category filters */}
-      <div className="px-6 pb-12">
+      <div className="px-4 sm:px-6 pb-12">
         <div className="max-w-6xl mx-auto flex flex-wrap justify-center gap-3">
           {CATEGORIES.map((cat) => (
             <button
@@ -74,7 +74,7 @@ export default function StoriesHub() {
       </div>
 
       {/* Story cards grid */}
-      <div className="px-6 pb-32">
+      <div className="px-4 sm:px-6 pb-32">
         <div className="max-w-6xl mx-auto">
           <AnimatePresence mode="wait">
             <motion.div

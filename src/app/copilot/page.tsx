@@ -218,7 +218,7 @@ export default function CopilotPage() {
   return (
     <div className="min-h-screen bg-[#050507] text-white flex flex-col">
       {/* Header */}
-      <header className="flex items-center gap-4 px-6 py-4 border-b border-white/5 bg-[#050507]/80 backdrop-blur-xl z-50">
+      <header className="flex items-center gap-4 px-4 sm:px-6 py-4 border-b border-white/5 bg-[#050507]/80 backdrop-blur-xl z-50">
         <Link href="/" className="text-gray-400 hover:text-white transition-colors">
           <ArrowLeft className="w-5 h-5" />
         </Link>

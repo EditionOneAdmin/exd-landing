@@ -325,7 +325,7 @@ function CountrySelect({
   color: string;
 }) {
   return (
-    <div className="flex-1 min-w-[180px]">
+    <div className="flex-1 min-w-0 sm:min-w-[180px]">
       <label className="text-xs font-medium uppercase tracking-wider mb-1.5 block" style={{ color }}>
         {label}
       </label>
@@ -385,7 +385,7 @@ export default function ComparePage() {
     <div className="min-h-screen bg-[#050507] text-white">
       {/* Header */}
       <header className="border-b border-white/[0.06] bg-[#050507]/80 backdrop-blur-xl sticky top-0 z-50">
-        <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
           <div className="flex items-center gap-4">
             <Link href="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
               <div className="relative w-8 h-8">
@@ -406,7 +406,7 @@ export default function ComparePage() {
       </header>
 
       {/* Main */}
-      <main className="max-w-7xl mx-auto px-6 py-8">
+      <main className="max-w-7xl mx-auto px-4 sm:px-6 py-6 sm:py-8">
         {/* Title */}
         <motion.div
           className="mb-8"
