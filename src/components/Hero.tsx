@@ -74,7 +74,7 @@ export default function Hero() {
           {/* Main headline */}
           <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-6">
             <span className="block text-white/90">Data you don&apos;t just</span>
-            <span className="relative inline-block h-[1.2em] overflow-hidden">
+            <span className="relative inline-block h-[1.2em] overflow-hidden" aria-live="polite" aria-atomic="true">
               <motion.span
                 key={wordIndex}
                 className="gradient-text inline-block"
@@ -143,6 +143,7 @@ export default function Hero() {
           transition={{ delay: 1.2, duration: 0.6 }}
         >
           <motion.div
+            aria-hidden="true"
             className="w-6 h-10 rounded-full border-2 border-white/20 flex justify-center pt-2 mx-auto"
             animate={{ y: [0, 8, 0] }}
             transition={{ duration: 1.5, repeat: Infinity }}

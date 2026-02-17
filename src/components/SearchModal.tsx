@@ -155,6 +155,7 @@ export default function SearchModal() {
       {/* Trigger button for Navbar */}
       <button
         onClick={open}
+        aria-label="Search (⌘K)"
         className="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-white/5 border border-white/10 text-gray-400 hover:text-white hover:bg-white/10 transition-all text-sm"
       >
         <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
@@ -184,6 +185,9 @@ export default function SearchModal() {
 
             {/* Modal content */}
             <motion.div
+              role="dialog"
+              aria-label="Search"
+              aria-modal="true"
               className="relative w-full max-w-xl mx-4 rounded-2xl border border-white/10 shadow-2xl shadow-indigo-500/10 overflow-hidden"
               style={{ background: 'rgba(5, 5, 7, 0.92)', backdropFilter: 'blur(24px)' }}
               initial={{ opacity: 0, scale: 0.95, y: -20 }}

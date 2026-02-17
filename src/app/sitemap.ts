@@ -20,6 +20,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: "/embed", priority: 0.5, changeFrequency: "monthly" },
     { url: "/api-docs", priority: 0.6, changeFrequency: "monthly" },
     { url: "/changelog", priority: 0.6, changeFrequency: "weekly" },
+    { url: "/quiz", priority: 0.5, changeFrequency: "monthly" },
+    // Blog
+    { url: "/blog", priority: 0.7, changeFrequency: "weekly" },
+    { url: "/blog/why-experience-data", priority: 0.6, changeFrequency: "monthly" },
+    { url: "/blog/dooh-eating-advertising", priority: 0.6, changeFrequency: "monthly" },
+    { url: "/blog/smart-cities-experience-layer", priority: 0.6, changeFrequency: "monthly" },
     // Stories
     { url: "/stories", priority: 0.8, changeFrequency: "weekly" },
     { url: "/stories/ai-revolution", priority: 0.7, changeFrequency: "monthly" },
@@ -32,11 +38,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: "/stories/rise-of-ai", priority: 0.7, changeFrequency: "monthly" },
     { url: "/stories/smart-cities", priority: 0.7, changeFrequency: "monthly" },
     { url: "/stories/world-in-50-years", priority: 0.7, changeFrequency: "monthly" },
+    { url: "/stories/berlin-numbers", priority: 0.7, changeFrequency: "monthly" },
+    { url: "/stories/berlin-pulse", priority: 0.7, changeFrequency: "monthly" },
+    { url: "/stories/venture-capital", priority: 0.7, changeFrequency: "monthly" },
     // Use Cases
     { url: "/use-cases/dooh", priority: 0.7, changeFrequency: "monthly" },
     { url: "/use-cases/media-advertising", priority: 0.7, changeFrequency: "monthly" },
     { url: "/use-cases/real-estate", priority: 0.7, changeFrequency: "monthly" },
     { url: "/use-cases/smart-city", priority: 0.7, changeFrequency: "monthly" },
+    { url: "/use-cases/hygh", priority: 0.7, changeFrequency: "monthly" },
+    { url: "/use-cases/retail", priority: 0.7, changeFrequency: "monthly" },
+    // Interactive
+    { url: "/explore/interactive", priority: 0.6, changeFrequency: "weekly" },
   ];
 
   return pages.map(({ url, priority, changeFrequency }) => ({

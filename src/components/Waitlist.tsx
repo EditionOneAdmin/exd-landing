@@ -175,6 +175,7 @@ export default function Waitlist() {
                     value={email}
                     onChange={(e) => { setEmail(e.target.value); if (status === 'error') setStatus('idle'); }}
                     placeholder="Enter your email"
+                    aria-label="Email address for waitlist"
                     required
                     className="flex-1 px-5 py-4 rounded-full bg-white/5 border border-white/10 text-white placeholder-gray-500 focus:outline-none focus:border-indigo-500 focus:ring-1 focus:ring-indigo-500 transition-colors"
                   />
