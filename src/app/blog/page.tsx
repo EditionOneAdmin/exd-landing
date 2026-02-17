@@ -5,6 +5,16 @@ import Link from 'next/link';
 
 const posts = [
   {
+    slug: 'dooh-eating-advertising',
+    title: 'How DOOH is Eating Traditional Advertising',
+    excerpt: 'Digital Out-of-Home is growing at 12% CAGR while static billboards flatline. Here\'s why the shift is accelerating — and why experience data will define the next wave.',
+    category: 'Industry',
+    date: 'Feb 17, 2025',
+    readTime: '5 min read',
+    live: true,
+    featured: true,
+  },
+  {
     slug: 'why-experience-data',
     title: 'Why Experience Data is the Next Frontier',
     excerpt: 'Traditional data tells you what happened. Experience data tells you what it felt like. Here\'s why that distinction will reshape entire industries.',
@@ -34,6 +44,7 @@ const posts = [
 ];
 
 const categoryColors: Record<string, string> = {
+  Industry: 'from-amber-500 to-orange-500',
   Vision: 'from-indigo-500 to-purple-500',
   Engineering: 'from-cyan-500 to-blue-500',
   'Use Cases': 'from-emerald-500 to-teal-500',
