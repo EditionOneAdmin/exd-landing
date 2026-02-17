@@ -105,13 +105,13 @@ export default function Hero() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.6, duration: 0.8 }}
           >
-            Transform dry statistics into aesthetic, interactive experiences
-            that captivate and communicate.
+            36+ interactive pages. 13 data stories. Real-time APIs.
+            Turn global datasets into stunning, shareable experiences.
           </motion.p>
 
-          {/* Single CTA */}
+          {/* CTAs */}
           <motion.div
-            className="flex justify-center"
+            className="flex flex-col sm:flex-row items-center justify-center gap-4"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.8, duration: 0.6 }}
@@ -125,6 +125,12 @@ export default function Hero() {
               <span className="relative text-white font-semibold text-lg">
                 Get Early Access →
               </span>
+            </a>
+            <a
+              href="/stories"
+              className="px-8 py-4 rounded-full border border-white/10 text-white/80 hover:text-white hover:border-white/20 transition-all text-lg font-medium"
+            >
+              Explore Stories
             </a>
           </motion.div>
         </motion.div>

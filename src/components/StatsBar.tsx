@@ -37,7 +37,7 @@ function CountUp({ target, suffix = '', prefix = '', duration = 2, inView }: Cou
 const stats = [
   { target: 13, suffix: '', label: 'Data Stories', icon: '📖' },
   { target: 6, suffix: '', label: 'Use Cases', icon: '🎯' },
-  { target: 35, suffix: '+', label: 'Pages', icon: '📄' },
+  { target: 36, suffix: '+', label: 'Pages', icon: '📄' },
   { target: 0, suffix: '', label: 'Real-time API', icon: '⚡', isText: true, textValue: 'Live' },
 ];
 

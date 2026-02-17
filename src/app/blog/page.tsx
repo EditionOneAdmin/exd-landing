@@ -37,9 +37,9 @@ const posts = [
     title: 'Smart Cities Need an Experience Layer',
     excerpt: 'Urban planning optimizes for traffic and infrastructure. But what about the human experience of living in a city?',
     category: 'Use Cases',
-    date: 'Coming Soon',
+    date: 'Feb 17, 2025',
     readTime: '5 min read',
-    live: false,
+    live: true,
   },
 ];
 

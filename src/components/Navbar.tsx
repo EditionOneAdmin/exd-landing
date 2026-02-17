@@ -9,15 +9,14 @@ import SearchModal from './SearchModal';
 const navLinks = [
   { label: 'Dashboard', href: '/dashboard' },
   { label: 'Stories', href: '/stories' },
-  { label: 'Use Cases', href: '/use-cases/dooh' },
-  { label: 'Explore', href: '/explore' },
   { label: 'Compare', href: '/compare' },
+  { label: 'Explore', href: '/explore' },
+  { label: 'Copilot', href: '/copilot' },
   { label: 'Quiz', href: '/quiz' },
-  { label: 'Blog', href: '/blog' },
-  { label: 'API', href: '/api-docs' },
+  { label: 'Use Cases', href: '/use-cases/dooh' },
   { label: 'Pricing', href: '/pricing' },
+  { label: 'Blog', href: '/blog' },
   { label: 'About', href: '/about' },
-  { label: 'Changelog', href: '/changelog' },
 ];
 
 export default function Navbar() {
@@ -110,9 +109,7 @@ export default function Navbar() {
         <div className="flex items-center gap-3">
           <SearchModal />
           <motion.a
-            href="https://form.typeform.com/to/exd-early-access"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="#waitlist"
             className={`hidden sm:inline-flex px-5 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
               isScrolled
                 ? 'bg-gradient-to-r from-indigo-500 to-purple-500 text-white shadow-lg shadow-indigo-500/20'
@@ -164,9 +161,7 @@ export default function Navbar() {
                 </Link>
               ))}
               <a
-                href="https://form.typeform.com/to/exd-early-access"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="#waitlist"
                 className="mt-3 px-5 py-2.5 rounded-full text-sm font-medium text-center bg-gradient-to-r from-indigo-500 to-purple-500 text-white"
               >
                 Get Early Access
