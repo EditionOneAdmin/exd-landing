@@ -1,9 +1,10 @@
 'use client';
+import dynamic from 'next/dynamic';
 import { motion } from 'framer-motion';
-import RacingBarChart from '@/components/visualizations/RacingBarChart';
-import CO2WorldMap from '@/components/visualizations/CO2WorldMap';
-import BubbleChart from '@/components/visualizations/BubbleChart';
-import PopulationPyramid from '@/components/visualizations/PopulationPyramid';
+const RacingBarChart = dynamic(() => import('@/components/visualizations/RacingBarChart'), { ssr: false, loading: () => <div className="h-[500px] animate-pulse bg-white/5 rounded-2xl" /> });
+const CO2WorldMap = dynamic(() => import('@/components/visualizations/CO2WorldMap'), { ssr: false, loading: () => <div className="h-[500px] animate-pulse bg-white/5 rounded-2xl" /> });
+const BubbleChart = dynamic(() => import('@/components/visualizations/BubbleChart'), { ssr: false, loading: () => <div className="h-[500px] animate-pulse bg-white/5 rounded-2xl" /> });
+const PopulationPyramid = dynamic(() => import('@/components/visualizations/PopulationPyramid'), { ssr: false, loading: () => <div className="h-[500px] animate-pulse bg-white/5 rounded-2xl" /> });
 import ShareButton from '@/components/ShareButton';
 const sectionVariants = {
   hidden: { opacity: 0, y: 40 },

@@ -4,8 +4,9 @@ import StoryNavigation from '@/components/StoryNavigation';
 import { useRef, useState, useEffect } from 'react';
 import { motion, useScroll, useTransform, useInView } from 'framer-motion';
 import ScrollySection from '@/components/story/ScrollySection';
-import RacingBarChart from '@/components/visualizations/RacingBarChart';
-import PopulationPyramid from '@/components/visualizations/PopulationPyramid';
+import dynamic from 'next/dynamic';
+const RacingBarChart = dynamic(() => import('@/components/visualizations/RacingBarChart'), { ssr: false, loading: () => <div className="h-[400px] animate-pulse bg-white/5 rounded-2xl" /> });
+const PopulationPyramid = dynamic(() => import('@/components/visualizations/PopulationPyramid'), { ssr: false, loading: () => <div className="h-[400px] animate-pulse bg-white/5 rounded-2xl" /> });
 
 // ─── Inline Demo Data ────────────────────────────────────────────────
 
