@@ -9,15 +9,15 @@ import SearchModal from './SearchModal';
 const navLinks = [
   { label: 'Dashboard', href: '/dashboard' },
   { label: 'Stories', href: '/stories' },
-  { label: 'Visualizations', href: '/visualizations' },
-  { label: 'AI Copilot', href: '/copilot' },
+  { label: 'Use Cases', href: '/use-cases/dooh' },
+  { label: 'Explore', href: '/explore' },
   { label: 'Compare', href: '/compare' },
-  { label: 'API', href: '/api-docs' },
-  { label: 'Changelog', href: '/changelog' },
-  { label: 'Pricing', href: '/pricing' },
-  { label: 'Blog', href: '/blog' },
-  { label: 'About', href: '/about' },
   { label: 'Quiz', href: '/quiz' },
+  { label: 'Blog', href: '/blog' },
+  { label: 'API', href: '/api-docs' },
+  { label: 'Pricing', href: '/pricing' },
+  { label: 'About', href: '/about' },
+  { label: 'Changelog', href: '/changelog' },
 ];
 
 export default function Navbar() {
